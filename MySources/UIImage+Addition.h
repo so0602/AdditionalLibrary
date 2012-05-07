@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
+#import "ImageIO/ImageIO.h"
+
 #import "YTDefineValues.h"
 #import "YTGlobalValues.h"
 
@@ -16,23 +18,30 @@
 -(UIImage*)withMaskAlpha:(CGFloat)alpha;
 -(UIImage*)multiplyImage:(float)multiplyAlpha;
 
-#pragma mark BitmapRGBA8
+#pragma mark - BitmapRGBA8
 
 -(unsigned char*)bitmapRGBA8;
 +(CGContextRef)newBitmapRGBA8ContextFromImage:(CGImageRef)image;
 +(UIImage*)convertBitmapRGBA8ToUIImage:(unsigned char*)buffer imageSize:(CGSize)size;
 
-#pragma mark GrayScale
+#pragma mark - GrayScale
 
 @property (nonatomic, readonly) UIImage* grayScaleImage;
 
-#pragma mark PointTransparent
+#pragma mark - PointTransparent
 
 -(NSData*)ARGBData;
 -(BOOL)isPointTransparent:(CGPoint)point;
 
-#pragma mark FixOrientation
+#pragma mark - FixOrientation
 
 -(UIImage*)fixOrientation;
+
+#pragma mark - GIF
+
++(UIImage*)animatedGIFNamed:(NSString*)name;
++(UIImage*)animatedGIFWithData:(NSData*)data;
+
+-(UIImage*)animatedImageByScalingAndCroppingToSize:(CGSize)size;
 
 @end

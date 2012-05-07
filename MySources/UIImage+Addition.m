@@ -322,6 +322,8 @@ CGContextRef CreateARGBBitmapContext(CGImageRef inImage){
 			transform = CGAffineTransformTranslate(transform, 0, self.size.height);
 			transform = CGAffineTransformRotate(transform, -M_PI_2);
 			break;
+		default:
+			break;
 	}
 	
 	switch( self.imageOrientation ){
@@ -334,6 +336,8 @@ CGContextRef CreateARGBBitmapContext(CGImageRef inImage){
 		case UIImageOrientationRightMirrored:
 			transform = CGAffineTransformTranslate(transform, self.size.height, 0);
 			transform = CGAffineTransformScale(transform, -1, 1);
+			break;
+		default:
 			break;
 	}
 	
@@ -360,6 +364,98 @@ CGContextRef CreateARGBBitmapContext(CGImageRef inImage){
 	CGContextRelease(context);
 	CGImageRelease(cgImage);
 	return image;
+}
+
+#pragma mark - GIF
+
++(UIImage*)animatedGIFNamed:(NSString*)name{
+	UIScreen* screen = UIScreen.mainScreen;
+	NSUInteger scale = 1;
+	
+	SEL selector = @selector(scale);
+	if( [screen respondsToSelector:selector] ){
+		scale = (NSUInteger)[screen performSelector:selector];
+	}
+	
+	NSString* path = nil;
+	NSData* data = nil;
+	if( scale > 1 ){
+		path = [NSBundle.mainBundle pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
+		data = [NSData dataWithContentsOfFile:path];
+		
+		if( data ){
+			return [UIImage animatedGIFWithData:data];
+		}
+	}
+	
+	path = [NSBundle.mainBundle pathForResource:name ofType:@"gif"];
+	data = [NSData dataWithContentsOfFile:path];
+	
+	if( data ){
+		return [UIImage animatedGIFWithData:data];
+	}
+	
+	return [UIImage imageNamed:name];
+}
+
++(UIImage*)animatedGIFWithData:(NSData*)data{
+	CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)data, NULL);
+	
+	NSDictionary* properties = (NSDictionary*)CGImageSourceCopyProperties(source, NULL);
+	NSDictionary* gifProperties = [properties objectForKey:(NSString*)kCGImagePropertyGIFDictionary];
+	[properties release];
+	
+	size_t count = CGImageSourceGetCount(source);
+	NSMutableArray* images = [NSMutableArray array];
+	
+	for( size_t i = 0; i < count; i++ ){
+		CGImageRef image = CGImageSourceCreateImageAtIndex(source, i, NULL);
+		[images addObject:[UIImage imageWithCGImage:image]];
+		CGImageRelease(image);
+	}
+	
+	NSTimeInterval duration = [[gifProperties objectForKey:(NSString*)kCGImagePropertyGIFDelayTime] doubleValue];
+	if( !duration ){
+		duration = (1.0f/10.0f) * count;
+	}
+	
+	CFRelease(source);
+	return [UIImage animatedImageWithImages:images duration:duration];
+}
+
+-(UIImage*)animatedImageByScalingAndCroppingToSize:(CGSize)size{
+	if( CGSizeEqualToSize(self.size, size) || CGSizeEqualToSize(size, CGSizeZero) ){
+		return self;
+	}
+	
+	CGSize scaledSize = size;
+	CGPoint thumbnailPoint = CGPointZero;
+	
+	CGFloat widthFactor = size.width / self.size.width;
+	CGFloat heightFactor = size.height / self.size.height;
+	CGFloat scaleFactor = (widthFactor > heightFactor) ? widthFactor : heightFactor;
+	
+	scaledSize.width = self.size.width * scaleFactor;
+	scaledSize.height = self.size.height * scaleFactor;
+	if( widthFactor > heightFactor ){
+		thumbnailPoint.y = (size.height - scaledSize.height) * 0.5;
+	}else if( widthFactor < heightFactor ){
+		thumbnailPoint.x = (size.width - scaledSize.width) * 0.5;
+	}
+	
+	NSMutableArray* scaledImages = [NSMutableArray array];
+	
+	UIGraphicsBeginImageContextWithOptions(size, FALSE, 0.0);
+	
+	for( UIImage* image in self.images ){
+		[image drawInRect:CGRectMake(thumbnailPoint.x, thumbnailPoint.y, scaledSize.width, scaledSize.height)];
+		UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+		[scaledImages addObject:newImage];
+	}
+	
+	UIGraphicsEndImageContext();
+	
+	return [UIImage animatedImageWithImages:scaledImages duration:self.duration];
 }
 
 @end

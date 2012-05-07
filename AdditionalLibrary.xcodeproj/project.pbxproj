@@ -24,6 +24,15 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		2899E5220DE3E06400AC0155 /* AdditionalLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* AdditionalLibraryViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		4204BF3215578ACE00DCA6E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		4204BF3315578ACE00DCA6E7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8F13D82DEB003CA78D /* QuartzCore.framework */; };
+		4204BF3415578ACE00DCA6E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		4204BF3615578ADB00DCA6E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		4204BF3C15578B1A00DCA6E7 /* UIGlossyButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4204BF3815578B1A00DCA6E7 /* UIGlossyButton.h */; };
+		4204BF3D15578B1A00DCA6E7 /* UIGlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4204BF3915578B1A00DCA6E7 /* UIGlossyButton.m */; };
+		4204BF3E15578B1A00DCA6E7 /* UIView+LayerEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4204BF3A15578B1A00DCA6E7 /* UIView+LayerEffects.h */; };
+		4204BF3F15578B1A00DCA6E7 /* UIView+LayerEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */; };
+		4204BF4215578B3F00DCA6E7 /* libUIGlossyButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4204BF2F15578ABE00DCA6E7 /* libUIGlossyButton.a */; };
 		4225CA4A14F745F2003B893A /* CurledViewBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225CA4414F745F2003B893A /* CurledViewBase.h */; };
 		4225CA4B14F745F2003B893A /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4225CA4514F745F2003B893A /* CurledViewBase.m */; };
 		4225CA4C14F745F2003B893A /* UIButton+Curled.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225CA4614F745F2003B893A /* UIButton+Curled.h */; };
@@ -69,6 +78,13 @@
 		424A2156145E48F4007E0EF8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424A2155145E48F4007E0EF8 /* MapKit.framework */; };
 		424A215A145E4923007E0EF8 /* MKMapView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424A2158145E4923007E0EF8 /* MKMapView+Addition.h */; };
 		424A215B145E4923007E0EF8 /* MKMapView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424A2159145E4923007E0EF8 /* MKMapView+Addition.m */; };
+		425260DB155791C900D4D689 /* ADLivelyTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 425260D9155791C900D4D689 /* ADLivelyTableView.h */; };
+		425260DC155791C900D4D689 /* ADLivelyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425260DA155791C900D4D689 /* ADLivelyTableView.m */; };
+		425260DE155791F800D4D689 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		425260DF155791F800D4D689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		425260E0155791F800D4D689 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8F13D82DEB003CA78D /* QuartzCore.framework */; };
+		425260E1155791F800D4D689 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		425260E61557921000D4D689 /* libADLivelyTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 425260BE1557919300D4D689 /* libADLivelyTableView.a */; };
 		427B5A031473BAD700747E9B /* DCRoundSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FB1473BAC100747E9B /* DCRoundSwitch.h */; };
 		427B5A041473BAD700747E9B /* DCRoundSwitchKnobLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FD1473BAC100747E9B /* DCRoundSwitchKnobLayer.h */; };
 		427B5A051473BAD700747E9B /* DCRoundSwitchOutlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FF1473BAC100747E9B /* DCRoundSwitchOutlineLayer.h */; };
@@ -419,6 +435,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4204BF4015578B3400DCA6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4204BF2E15578ABE00DCA6E7;
+			remoteInfo = UIGlossyButton;
+		};
 		4225CA5C14F74650003B893A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -439,6 +462,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 423F456315240BC900F11D23;
 			remoteInfo = iCarousel;
+		};
+		425260E41557920D00D4D689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 425260BD1557919300D4D689 /* ADLivelyTableView */;
+			remoteInfo = ADLivelyTableView;
 		};
 		427B5A1B1473BB2400747E9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -536,6 +566,11 @@
 		28D7ACF70DDB3853001CB0EB /* AdditionalLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionalLibraryViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* AdditionalLibrary_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionalLibrary_Prefix.pch; sourceTree = "<group>"; };
+		4204BF2F15578ABE00DCA6E7 /* libUIGlossyButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIGlossyButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4204BF3815578B1A00DCA6E7 /* UIGlossyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGlossyButton.h; sourceTree = "<group>"; };
+		4204BF3915578B1A00DCA6E7 /* UIGlossyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGlossyButton.m; sourceTree = "<group>"; };
+		4204BF3A15578B1A00DCA6E7 /* UIView+LayerEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerEffects.h"; sourceTree = "<group>"; };
+		4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerEffects.m"; sourceTree = "<group>"; };
 		4225CA4014F745DC003B893A /* libCurledView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCurledView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4225CA4414F745F2003B893A /* CurledViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurledViewBase.h; sourceTree = "<group>"; };
 		4225CA4514F745F2003B893A /* CurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurledViewBase.m; sourceTree = "<group>"; };
@@ -592,6 +627,9 @@
 		424A2155145E48F4007E0EF8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		424A2158145E4923007E0EF8 /* MKMapView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Addition.h"; sourceTree = "<group>"; };
 		424A2159145E4923007E0EF8 /* MKMapView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Addition.m"; sourceTree = "<group>"; };
+		425260BE1557919300D4D689 /* libADLivelyTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADLivelyTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		425260D9155791C900D4D689 /* ADLivelyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLivelyTableView.h; sourceTree = "<group>"; };
+		425260DA155791C900D4D689 /* ADLivelyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLivelyTableView.m; sourceTree = "<group>"; };
 		427B59F11473BA9A00747E9B /* libDCRoundSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCRoundSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		427B59FB1473BAC100747E9B /* DCRoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRoundSwitch.h; sourceTree = "<group>"; };
 		427B59FC1473BAC100747E9B /* DCRoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRoundSwitch.m; sourceTree = "<group>"; };
@@ -603,6 +641,7 @@
 		427B5A021473BAC100747E9B /* DCRoundSwitchToggleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRoundSwitchToggleLayer.m; sourceTree = "<group>"; };
 		427DA39113FCBEDF00830952 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
 		427DA39213FCBEDF00830952 /* NSNotificationCenter+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Addition.m"; sourceTree = "<group>"; };
+		427EE57E15578CD700E9330D /* AttributeList.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AttributeList.sh; sourceTree = "<group>"; };
 		427EEA5314065E1600A6BB57 /* YTUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTUploadOperation.h; sourceTree = "<group>"; };
 		427EEA5414065E1600A6BB57 /* YTUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTUploadOperation.m; sourceTree = "<group>"; };
 		427EEB5B1407531000A6BB57 /* YTSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSound.h; sourceTree = "<group>"; };
@@ -903,6 +942,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4204BF2D15578ABE00DCA6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4204BF3615578ADB00DCA6E7 /* CoreGraphics.framework in Frameworks */,
+				4204BF3215578ACE00DCA6E7 /* Foundation.framework in Frameworks */,
+				4204BF3315578ACE00DCA6E7 /* QuartzCore.framework in Frameworks */,
+				4204BF3415578ACE00DCA6E7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4225CA3E14F745DC003B893A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -926,6 +976,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425260BC1557919300D4D689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425260DE155791F800D4D689 /* CoreGraphics.framework in Frameworks */,
+				425260DF155791F800D4D689 /* Foundation.framework in Frameworks */,
+				425260E0155791F800D4D689 /* QuartzCore.framework in Frameworks */,
+				425260E1155791F800D4D689 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1012,10 +1073,14 @@
 				427B5A341473BB5000747E9B /* libDCRoundSwitch.a in Frameworks */,
 				42C2190D1498A77C00AD9FED /* libEGOPhotoViewer.a in Frameworks */,
 				42F6629213E93E740068F7CF /* libFTUtils.a in Frameworks */,
+				423F456F15240BF600F11D23 /* libiCarousel.a in Frameworks */,
+				C4640FD215565BCC0029DF8F /* libPrettyKit.a in Frameworks */,
 				42BB88611495F9000099E2E4 /* libRTLabel.a in Frameworks */,
 				4225CAA814F74EFC003B893A /* libSpriteAnimation.a in Frameworks */,
 				42F65BB913E6AE470068F7CF /* libsqlite3.dylib in Frameworks */,
 				42BB88811495F9D40099E2E4 /* libSVProgressHUD.a in Frameworks */,
+				42AD39FF14F7723000C18A08 /* libUAModalPanel.a in Frameworks */,
+				4204BF4215578B3F00DCA6E7 /* libUIGlossyButton.a in Frameworks */,
 				428AB21E143DD94900670A8A /* libxml2.dylib in Frameworks */,
 				42F6602D13E9291D0068F7CF /* libz.dylib in Frameworks */,
 				42F6613313E932B60068F7CF /* libZipArchive.a in Frameworks */,
@@ -1025,9 +1090,7 @@
 				42F65BBB13E6AE470068F7CF /* QuartzCore.framework in Frameworks */,
 				42F65BBC13E6AE470068F7CF /* SystemConfiguration.framework in Frameworks */,
 				42F65BBD13E6AE470068F7CF /* UIKit.framework in Frameworks */,
-				42AD39FF14F7723000C18A08 /* libUAModalPanel.a in Frameworks */,
-				423F456F15240BF600F11D23 /* libiCarousel.a in Frameworks */,
-				C4640FD215565BCC0029DF8F /* libPrettyKit.a in Frameworks */,
+				425260E61557921000D4D689 /* libADLivelyTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1114,6 +1177,8 @@
 				42AD39C714F7712300C18A08 /* libUAModalPanel.a */,
 				423F456415240BC900F11D23 /* libiCarousel.a */,
 				C4640F7C15565B1D0029DF8F /* libPrettyKit.a */,
+				4204BF2F15578ABE00DCA6E7 /* libUIGlossyButton.a */,
+				425260BE1557919300D4D689 /* libADLivelyTableView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1134,6 +1199,7 @@
 			isa = PBXGroup;
 			children = (
 				32CA4F630368D1EE00C91783 /* AdditionalLibrary_Prefix.pch */,
+				425260D8155791C900D4D689 /* ADLivelyTableView */,
 				42ABACB314147B4000537B39 /* ASIHTTPRequest */,
 				42F6636E13E9618E0068F7CF /* AudioStreamer */,
 				C4A0504814756956006CC4B0 /* CocoaAMF */,
@@ -1149,6 +1215,7 @@
 				42BB88721495F9B20099E2E4 /* SVProgressHUD */,
 				42AD39D014F771B900C18A08 /* UAModalPanel */,
 				C4A0505E14756956006CC4B0 /* UICalendarMonthView */,
+				4204BF3715578B1A00DCA6E7 /* UIGlossyButton */,
 				42F6600C13E9289D0068F7CF /* ZipArchive */,
 			);
 			name = "Other Sources";
@@ -1188,6 +1255,17 @@
 				423EEF9113D82DEB003CA78D /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4204BF3715578B1A00DCA6E7 /* UIGlossyButton */ = {
+			isa = PBXGroup;
+			children = (
+				4204BF3815578B1A00DCA6E7 /* UIGlossyButton.h */,
+				4204BF3915578B1A00DCA6E7 /* UIGlossyButton.m */,
+				4204BF3A15578B1A00DCA6E7 /* UIView+LayerEffects.h */,
+				4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */,
+			);
+			path = UIGlossyButton;
 			sourceTree = "<group>";
 		};
 		4225CA4314F745F2003B893A /* CurledView */ = {
@@ -1301,6 +1379,15 @@
 				424A2159145E4923007E0EF8 /* MKMapView+Addition.m */,
 			);
 			name = MK;
+			sourceTree = "<group>";
+		};
+		425260D8155791C900D4D689 /* ADLivelyTableView */ = {
+			isa = PBXGroup;
+			children = (
+				425260D9155791C900D4D689 /* ADLivelyTableView.h */,
+				425260DA155791C900D4D689 /* ADLivelyTableView.m */,
+			);
+			path = ADLivelyTableView;
 			sourceTree = "<group>";
 		};
 		427B59FA1473BAC100747E9B /* DCRoundSwitch */ = {
@@ -1873,6 +1960,7 @@
 			isa = PBXGroup;
 			children = (
 				42F6618513E937070068F7CF /* CreateLibrary.sh */,
+				427EE57E15578CD700E9330D /* AttributeList.sh */,
 			);
 			name = CreateLibraries;
 			sourceTree = "<group>";
@@ -2016,6 +2104,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4204BF2B15578ABE00DCA6E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4204BF3C15578B1A00DCA6E7 /* UIGlossyButton.h in Headers */,
+				4204BF3E15578B1A00DCA6E7 /* UIView+LayerEffects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4225CA3C14F745DC003B893A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2039,6 +2136,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				423F456A15240BE400F11D23 /* iCarousel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425260BA1557919300D4D689 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425260DB155791C900D4D689 /* ADLivelyTableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2156,7 +2261,9 @@
 				C4A050AA14756A33006CC4B0 /* NSDate+NSCategory.h in Headers */,
 				42F65A8C13E6AE220068F7CF /* NSDateFormatter+Addition.h in Headers */,
 				42F6600413E927F10068F7CF /* NSFileManager+Addition.h in Headers */,
+				422D566315469DD900B648C0 /* NSInvocation+Addition.h in Headers */,
 				42F65A8D13E6AE220068F7CF /* NSLocale+Addition.h in Headers */,
+				42F9E3211525548400975CB4 /* NSManagedObject+Addition.h in Headers */,
 				42C216A714986FEA00AD9FED /* NSMutableArray+Addition.h in Headers */,
 				42AE82881457CB6200DD72C5 /* NSMutableDictionary+Addition.h in Headers */,
 				427DA39313FCBEDF00830952 /* NSNotificationCenter+Addition.h in Headers */,
@@ -2183,6 +2290,7 @@
 				42F65A9813E6AE220068F7CF /* YTAdditions.h in Headers */,
 				42F65A9913E6AE220068F7CF /* YTAnimation.h in Headers */,
 				42F668C613EBA7460068F7CF /* YTBoldLabel.h in Headers */,
+				42268BCC1550D46F00F24DC8 /* YTCachedData.h in Headers */,
 				42F65A9A13E6AE220068F7CF /* YTCachedImage.h in Headers */,
 				42F65F8F13E90D4B0068F7CF /* YTClickableView.h in Headers */,
 				C44F13BA13E8507A00849700 /* YTDatabase.h in Headers */,
@@ -2196,8 +2304,10 @@
 				42F662D113E944970068F7CF /* YTInputAlertView.h in Headers */,
 				42AD4FCE145E825000EE3DBF /* YTLabel.h in Headers */,
 				42F65A9F13E6AE220068F7CF /* YTLibrary.h in Headers */,
+				423F458A1524112A00F11D23 /* YTLocalizationSystem.h in Headers */,
 				42F65F9013E90D4C0068F7CF /* YTModalAlertView.h in Headers */,
 				42FAF84F13F4D05200D9F083 /* YTPagingScrollView.h in Headers */,
+				C47235D5155689E500119B89 /* YTPieChartView.h in Headers */,
 				42F65AA213E6AE220068F7CF /* YTPList.h in Headers */,
 				427EF048140B7C6F00A6BB57 /* YTProgressAlertView.h in Headers */,
 				42444B2A14ED027A001F72F3 /* YTScrollWebView.h in Headers */,
@@ -2208,11 +2318,6 @@
 				42F6613713E932DB0068F7CF /* zip.h in Headers */,
 				42F6614A13E933580068F7CF /* ZipArchive+Addition.h in Headers */,
 				42F6613813E932DC0068F7CF /* ZipArchive.h in Headers */,
-				423F458A1524112A00F11D23 /* YTLocalizationSystem.h in Headers */,
-				42F9E3211525548400975CB4 /* NSManagedObject+Addition.h in Headers */,
-				422D566315469DD900B648C0 /* NSInvocation+Addition.h in Headers */,
-				42268BCC1550D46F00F24DC8 /* YTCachedData.h in Headers */,
-				C47235D5155689E500119B89 /* YTPieChartView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2305,6 +2410,23 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* AdditionalLibrary.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4204BF3515578ACF00DCA6E7 /* Build configuration list for PBXNativeTarget "UIGlossyButton" */;
+			buildPhases = (
+				4204BF2B15578ABE00DCA6E7 /* Headers */,
+				4204BF2C15578ABE00DCA6E7 /* Sources */,
+				4204BF2D15578ABE00DCA6E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIGlossyButton;
+			productName = UIGlossyButton;
+			productReference = 4204BF2F15578ABE00DCA6E7 /* libUIGlossyButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		4225CA3F14F745DC003B893A /* CurledView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4225CA5014F745F2003B893A /* Build configuration list for PBXNativeTarget "CurledView" */;
@@ -2354,6 +2476,23 @@
 			name = iCarousel;
 			productName = iCarousel;
 			productReference = 423F456415240BC900F11D23 /* libiCarousel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		425260BD1557919300D4D689 /* ADLivelyTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 425260D7155791A700D4D689 /* Build configuration list for PBXNativeTarget "ADLivelyTableView" */;
+			buildPhases = (
+				425260BB1557919300D4D689 /* Sources */,
+				425260BA1557919300D4D689 /* Headers */,
+				425260BC1557919300D4D689 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADLivelyTableView;
+			productName = ADLivelyTableView;
+			productReference = 425260BE1557919300D4D689 /* libADLivelyTableView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		427B59F01473BA9A00747E9B /* DCRoundSwitch */ = {
@@ -2469,20 +2608,22 @@
 			buildRules = (
 			);
 			dependencies = (
-				42F663CD13E9626C0068F7CF /* PBXTargetDependency */,
+				425260E51557920D00D4D689 /* PBXTargetDependency */,
 				42ABAD3314147C2800537B39 /* PBXTargetDependency */,
-				427B5A1C1473BB2400747E9B /* PBXTargetDependency */,
-				42F6629113E93E6F0068F7CF /* PBXTargetDependency */,
-				42F6613213E932B30068F7CF /* PBXTargetDependency */,
+				42F663CD13E9626C0068F7CF /* PBXTargetDependency */,
 				C4A0509C147569CD006CC4B0 /* PBXTargetDependency */,
-				42BB88601495F8FA0099E2E4 /* PBXTargetDependency */,
-				42BB88801495F9D00099E2E4 /* PBXTargetDependency */,
-				42C2190C1498A77600AD9FED /* PBXTargetDependency */,
 				4225CA5D14F74650003B893A /* PBXTargetDependency */,
-				4225CAA714F74EF7003B893A /* PBXTargetDependency */,
-				42AD39FE14F7722C00C18A08 /* PBXTargetDependency */,
+				427B5A1C1473BB2400747E9B /* PBXTargetDependency */,
+				42C2190C1498A77600AD9FED /* PBXTargetDependency */,
+				42F6629113E93E6F0068F7CF /* PBXTargetDependency */,
 				423F456E15240BF100F11D23 /* PBXTargetDependency */,
 				C4640FD115565BC70029DF8F /* PBXTargetDependency */,
+				42BB88601495F8FA0099E2E4 /* PBXTargetDependency */,
+				4225CAA714F74EF7003B893A /* PBXTargetDependency */,
+				42BB88801495F9D00099E2E4 /* PBXTargetDependency */,
+				42AD39FE14F7722C00C18A08 /* PBXTargetDependency */,
+				4204BF4115578B3400DCA6E7 /* PBXTargetDependency */,
+				42F6613213E932B30068F7CF /* PBXTargetDependency */,
 			);
 			name = YTLibrary;
 			productName = YTLibrary;
@@ -2595,6 +2736,7 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* _AdditionalLibrary */,
 				42F6618713E938360068F7CF /* _CreateLibrary */,
+				425260BD1557919300D4D689 /* ADLivelyTableView */,
 				42ABACAD1414790F00537B39 /* ASIHTTPRequest */,
 				42F6636113E961770068F7CF /* AudioStreamer */,
 				C4A0506C14756973006CC4B0 /* CocoaAMF */,
@@ -2608,6 +2750,7 @@
 				4225CA9214F74D78003B893A /* SpriteAnimation */,
 				42BB886B1495F97D0099E2E4 /* SVProgressHUD */,
 				42AD39C614F7712300C18A08 /* UAModalPanel */,
+				4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */,
 				42F65A6E13E6AD3F0068F7CF /* YTLibrary */,
 				42F6605B13E92D330068F7CF /* ZipArchive */,
 			);
@@ -2653,6 +2796,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4204BF2C15578ABE00DCA6E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4204BF3D15578B1A00DCA6E7 /* UIGlossyButton.m in Sources */,
+				4204BF3F15578B1A00DCA6E7 /* UIView+LayerEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4225CA3D14F745DC003B893A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2676,6 +2828,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				423F456B15240BE400F11D23 /* iCarousel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425260BB1557919300D4D689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425260DC155791C900D4D689 /* ADLivelyTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2777,7 +2937,9 @@
 				C4A050AB14756A33006CC4B0 /* NSDate+NSCategory.m in Sources */,
 				42F65AA713E6AE3E0068F7CF /* NSDateFormatter+Addition.m in Sources */,
 				42F6600513E927F10068F7CF /* NSFileManager+Addition.m in Sources */,
+				422D566415469DD900B648C0 /* NSInvocation+Addition.m in Sources */,
 				42F65AA813E6AE3E0068F7CF /* NSLocale+Addition.m in Sources */,
+				42F9E3221525548400975CB4 /* NSManagedObject+Addition.m in Sources */,
 				42C216A814986FEA00AD9FED /* NSMutableArray+Addition.m in Sources */,
 				42AE82891457CB6200DD72C5 /* NSMutableDictionary+Addition.m in Sources */,
 				427DA39413FCBEDF00830952 /* NSNotificationCenter+Addition.m in Sources */,
@@ -2802,6 +2964,7 @@
 				42F65F9D13E90DEA0068F7CF /* UIWebView+Addition.m in Sources */,
 				42F65AB313E6AE3E0068F7CF /* YTAnimation.m in Sources */,
 				42F668C713EBA7460068F7CF /* YTBoldLabel.m in Sources */,
+				42268BCD1550D46F00F24DC8 /* YTCachedData.m in Sources */,
 				42F65AB413E6AE3E0068F7CF /* YTCachedImage.m in Sources */,
 				42F65F8D13E90D260068F7CF /* YTClickableView.m in Sources */,
 				C44F13B713E8504600849700 /* YTDatabase.m in Sources */,
@@ -2813,8 +2976,10 @@
 				422D249A14F34E15001599BC /* YTImagePickerController.m in Sources */,
 				42F662D213E944970068F7CF /* YTInputAlertView.m in Sources */,
 				42AD4FCF145E825000EE3DBF /* YTLabel.m in Sources */,
+				423F458B1524112A00F11D23 /* YTLocalizationSystem.m in Sources */,
 				42F65F8E13E90D260068F7CF /* YTModalAlertView.m in Sources */,
 				42FAF85013F4D05200D9F083 /* YTPagingScrollView.m in Sources */,
+				C47235D6155689E500119B89 /* YTPieChartView.m in Sources */,
 				42F65ABA13E6AE3E0068F7CF /* YTPList.m in Sources */,
 				427EF049140B7C6F00A6BB57 /* YTProgressAlertView.m in Sources */,
 				42444B2B14ED027A001F72F3 /* YTScrollWebView.m in Sources */,
@@ -2823,11 +2988,6 @@
 				427EEA5614065E1600A6BB57 /* YTUploadOperation.m in Sources */,
 				422D24BB14F355C4001599BC /* YTWebViewController.m in Sources */,
 				42F6614B13E933580068F7CF /* ZipArchive+Addition.m in Sources */,
-				423F458B1524112A00F11D23 /* YTLocalizationSystem.m in Sources */,
-				42F9E3221525548400975CB4 /* NSManagedObject+Addition.m in Sources */,
-				422D566415469DD900B648C0 /* NSInvocation+Addition.m in Sources */,
-				42268BCD1550D46F00F24DC8 /* YTCachedData.m in Sources */,
-				C47235D6155689E500119B89 /* YTPieChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2897,6 +3057,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4204BF4115578B3400DCA6E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */;
+			targetProxy = 4204BF4015578B3400DCA6E7 /* PBXContainerItemProxy */;
+		};
 		4225CA5D14F74650003B893A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4225CA3F14F745DC003B893A /* CurledView */;
@@ -2911,6 +3076,11 @@
 			isa = PBXTargetDependency;
 			target = 423F456315240BC900F11D23 /* iCarousel */;
 			targetProxy = 423F456D15240BF100F11D23 /* PBXContainerItemProxy */;
+		};
+		425260E51557920D00D4D689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 425260BD1557919300D4D689 /* ADLivelyTableView */;
+			targetProxy = 425260E41557920D00D4D689 /* PBXContainerItemProxy */;
 		};
 		427B5A1C1473BB2400747E9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3022,6 +3192,33 @@
 			};
 			name = Release;
 		};
+		4204BF3015578ABF00DCA6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = UIGlossyButton;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4204BF3115578ABF00DCA6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = UIGlossyButton;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		4225CA4114F745DC003B893A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3098,6 +3295,33 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = iCarousel;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		425260BF1557919500D4D689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = ADLivelyTableView;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		425260C01557919500D4D689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = ADLivelyTableView;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -3274,7 +3498,9 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Release-iphonesimulator\"",
@@ -3292,7 +3518,9 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Release-iphonesimulator\"",
@@ -3505,6 +3733,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4204BF3515578ACF00DCA6E7 /* Build configuration list for PBXNativeTarget "UIGlossyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4204BF3015578ABF00DCA6E7 /* Debug */,
+				4204BF3115578ABF00DCA6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4225CA5014F745F2003B893A /* Build configuration list for PBXNativeTarget "CurledView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3528,6 +3765,15 @@
 			buildConfigurations = (
 				423F456515240BCB00F11D23 /* Debug */,
 				423F456615240BCB00F11D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		425260D7155791A700D4D689 /* Build configuration list for PBXNativeTarget "ADLivelyTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425260BF1557919500D4D689 /* Debug */,
+				425260C01557919500D4D689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
