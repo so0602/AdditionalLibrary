@@ -8,6 +8,10 @@ NSString* PathFromDocument(NSString* name){
 	return [DocumentPath() stringByAppendingPathComponent:name];
 }
 
+NSString* PathFromCache(NSString* name){
+	return [CachedPath() stringByAppendingPathComponent:name];
+}
+
 NSString* PathFromResource(NSString* name){
 	return [ResourcePath() stringByAppendingPathComponent:name];
 }
@@ -89,7 +93,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 		if( isCopy ) CopyFileToDocumentPath(name, FALSE);
 		else [self createDatabase];
 		
-		[self openDatabase:&_database path:PathFromDocument(name)];
+		[self openDatabase:&_database path:PathFromCache(name)];
 		
 		if( updateToLatest ){
 			sqlite3* tempDatabase;
@@ -420,10 +424,10 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 -(void)createDatabase{
 	NSFileManager* fileManager = [NSFileManager defaultManager];
 	
-	if( [fileManager fileExistsAtPath:PathFromDocument(self.databaseName)] ) return;
+	if( [fileManager fileExistsAtPath:PathFromCache(self.databaseName)] ) return;
 	
 	NSData* tempDBFile = [NSData data];
-	[tempDBFile writeToFile:PathFromDocument(self.databaseName) atomically:TRUE];
+	[tempDBFile writeToFile:PathFromCache(self.databaseName) atomically:TRUE];
 }
 
 -(void)openDatabase:(sqlite3**)database path:(NSString*)path{

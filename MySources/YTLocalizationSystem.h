@@ -29,3 +29,4 @@ extern NSString* const UD_YTLocalizationSystemLanguage;
 YTLocalizationSystem* YTLocalizedSystem(void);
 NSString* YTLocalizedString(NSString* key, NSString* comment);
 NSLocale* YTLocalizedUsingLocale(void);
+NSString* YTLocalizedUsingPath(void);

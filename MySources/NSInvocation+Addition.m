@@ -22,13 +22,19 @@
 		[invocation setArgument:&firstArgument atIndex:index++];
 		
 		va_start(argumentList, firstArgument);
-		while( eachArgument = va_arg(argumentList, void*) ){
+		while( (eachArgument = va_arg(argumentList, void*)) ){
 			[invocation setArgument:&eachArgument atIndex:index++];
 		}
 		va_end(argumentList);
 	}
 	
 	return invocation;
+}
+
+-(NSInteger)argumentCount{
+	SEL selector = self.selector;
+	NSString* selectorString = NSStringFromSelector(selector);
+	return [selectorString componentsSeparatedByString:@":"].count - 1;
 }
 
 @end

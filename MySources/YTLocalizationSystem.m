@@ -125,3 +125,7 @@ NSString* YTLocalizedString(NSString* key, NSString* comment){
 NSLocale* YTLocalizedUsingLocale(void){
 	return [[[NSLocale alloc] initWithLocaleIdentifier:YTLocalizedSystem().usingLanguage] autorelease];
 }
+
+NSString* YTLocalizedUsingPath(void){
+	return [[NSBundle mainBundle] pathForResource:YTLocalizedSystem().usingLanguage ofType:@"lproj"];
+}
