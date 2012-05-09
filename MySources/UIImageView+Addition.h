@@ -3,6 +3,7 @@
 #import "YTGlobalValues.h"
 
 #import "UIView+Addition.h"
+#import "UIImage+Addition.h"
 
 @protocol YTUIAnimationImageDataSource;
 @protocol YTUIImageViewDataSource;

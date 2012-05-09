@@ -53,6 +53,10 @@
 	if( RespondsToSelector(dataSource, @selector(animationImageDataSource:)) ) [self setAnimationDataSource:[dataSource animationImageDataSource:self]];
 }
 
+-(void)stretchableImageByCenter{
+	self.image = self.image.stretchableImageByCenter;
+}
+
 @end
 
 #pragma mark -

@@ -15,6 +15,8 @@
 
 #pragma mark -
 
+-(void)stretchableImageByCenter;
+
 -(void)sizeToFitAndSharp;
 -(void)sharp;
 

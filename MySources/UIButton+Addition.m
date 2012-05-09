@@ -62,6 +62,21 @@
 	for( id<YTUIButtonDataSource> dataSource in [dataSourceList dataSources:self] ) [self setDataSource:dataSource];
 }
 
+-(void)stretchableImageByCenter{
+	UIImage* image = [self backgroundImageForState:UIControlStateNormal];
+	if( image ) [self setBackgroundImage:image.stretchableImageByCenter forState:UIControlStateNormal];
+	
+	image = [self backgroundImageForState:UIControlStateSelected];
+	
+	if( image && [NSStringFromClass(image.class) isEqualToString:NSStringFromClass(UIImage.class)] ) [self setBackgroundImage:image.stretchableImageByCenter forState:UIControlStateSelected];
+	
+	image = [self backgroundImageForState:UIControlStateHighlighted];
+	if( image && [NSStringFromClass(image.class) isEqualToString:NSStringFromClass(UIImage.class)] ) [self setBackgroundImage:image.stretchableImageByCenter forState:UIControlStateHighlighted];
+	
+	image = [self backgroundImageForState:UIControlStateDisabled];
+	if( image && [NSStringFromClass(image.class) isEqualToString:NSStringFromClass(UIImage.class)] ) [self setBackgroundImage:image.stretchableImageByCenter forState:UIControlStateDisabled];
+}
+
 @end
 
 #pragma mark -
