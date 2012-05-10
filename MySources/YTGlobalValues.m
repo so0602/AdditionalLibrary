@@ -22,6 +22,15 @@ NSString* UDID(){
 	return CurrentDevice().uniqueIdentifier ? [UIDevice currentDevice].uniqueIdentifier : NOT_ENOUGH_UDID;
 }
 
+NSString* CFUDID(){
+	CFUUIDRef uuidObj = CFUUIDCreate(kCFAllocatorDefault);
+	CFStringRef strRef = CFUUIDCreateString(kCFAllocatorDefault, uuidObj);
+	NSString* uuidString = [NSString stringWithString:(NSString*)strRef];
+	CFRelease(strRef);
+	CFRelease(uuidObj);
+	return uuidString;
+}
+
 BOOL IsIPad(){
 //	CGRect iPhoneKeyWindowBounds = {{0, 0},{320, 480}};
 //	CGRect iPadKeyWindowBounds = {{0, 0},{768, 1024}};

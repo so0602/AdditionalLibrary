@@ -5,6 +5,8 @@
 @property (nonatomic, readonly) NSString* currentText;
 @property (nonatomic, readonly) NSNumberFormatter* numberFormatter;
 
+-(void)setButtonExclusiveTouch:(BOOL)buttonExclusiveTouch superview:(UIView*)superview;
+
 @end
 
 @implementation UIView (Addition)
@@ -215,6 +217,25 @@
 
 -(void)enableUserInteraction{
 	self.userInteractionEnabled = TRUE;
+}
+
+-(BOOL)buttonExclusiveTouch{
+	return FALSE;
+}
+-(void)setButtonExclusiveTouch:(BOOL)buttonExclusiveTouch{
+	[self setButtonExclusiveTouch:buttonExclusiveTouch superview:self];
+}
+
+#pragma mark - Private Functions
+
+-(void)setButtonExclusiveTouch:(BOOL)buttonExclusiveTouch superview:(UIView*)superview{
+	for( UIView* subview in superview.subviews ){
+		if( [subview isMemberOfClass:UIButton.class] || [subview isKindOfClass:UIButton.class] ){
+			((UIButton*)subview).exclusiveTouch = buttonExclusiveTouch;
+		}else if( [subview isKindOfClass:UIView.class] ){
+			[self setButtonExclusiveTouch:buttonExclusiveTouch superview:subview];
+		}
+	}
 }
 
 #pragma mark -

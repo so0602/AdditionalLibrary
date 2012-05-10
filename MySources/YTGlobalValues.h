@@ -23,6 +23,7 @@ extern "C"
 	NSString* ApplicationName();
 	NSString* BundleVersion();
 	NSString* UDID();
+	NSString* CFUDID();
 	
 	BOOL IsIPad();
 	BOOL IsHD();

@@ -40,6 +40,8 @@
 -(void)disableUserInteraction;
 -(void)enableUserInteraction;
 
+@property (nonatomic, assign) BOOL buttonExclusiveTouch;
+
 #pragma mark -
 
 @property (nonatomic, readonly) float minX, minY, maxX, maxY, halfWidth, halfHeight;

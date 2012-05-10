@@ -9,4 +9,6 @@
 +(id)loadNib;
 +(id)loadNibWithNavigationController;
 
+@property (nonatomic, assign) BOOL buttonExclusiveTouch;
+
 @end
