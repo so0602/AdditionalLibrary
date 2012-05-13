@@ -14,8 +14,8 @@ xcodebuild -sdk $DEVICE "ARCHS=armv6 armv7" -target $TARGET
 xcodebuild -sdk $SIMULATOR "ARCHS=i386 x86_64" "VALID_ARCHS=i386 x86_64" -target $TARGET
 
 BUILD_PATH=${BUILD_DIR}
-#BUILD_PATH="/Users/DeViLsO/Desktop/iPhone/Builds"
-BUILD_PATH="/Users/freddyso/Desktop/iPhone/AdditionalLibrary/build"
+BUILD_PATH="/Users/DeViLsO/Desktop/iPhone/Builds"
+#BUILD_PATH="/Users/freddyso/Desktop/iPhone/AdditionalLibrary/build"
 
 RELEASE_DEVICE_DIR=${BUILD_PATH}/Release-iphoneos
 RELEASE_SIMULATOR_DIR=${BUILD_PATH}/Release-iphonesimulator

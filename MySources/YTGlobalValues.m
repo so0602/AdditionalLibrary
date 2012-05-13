@@ -32,9 +32,13 @@ NSString* CFUDID(){
 }
 
 BOOL IsIPad(){
+	if( RespondsToSelector(CurrentDevice(), @selector(userInterfaceIdiom)) ){
+		return CurrentDevice().userInterfaceIdiom == UIUserInterfaceIdiomPad;
+	}
+	return FALSE;
 //	CGRect iPhoneKeyWindowBounds = {{0, 0},{320, 480}};
 //	CGRect iPadKeyWindowBounds = {{0, 0},{768, 1024}};
-	return CGRectEqualToRect(KeyWindow().bounds, CGRectMake(0, 0, 768, 1024));
+//	return CGRectEqualToRect(KeyWindow().bounds, CGRectMake(0, 0, 768, 1024));
 //	return [[CurrentDevice().model lowercaseString] rangeOfString:@"ipad"].location != NSNotFound;
 }
 
