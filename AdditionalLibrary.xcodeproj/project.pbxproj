@@ -467,7 +467,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 425260BD1557919300D4D689 /* ADLivelyTableView */;
+			remoteGlobalIDString = 425260BD1557919300D4D689;
 			remoteInfo = ADLivelyTableView;
 		};
 		427B5A1B1473BB2400747E9B /* PBXContainerItemProxy */ = {
