@@ -18,6 +18,10 @@
 
 #pragma mark - PetHunterDataSourceInput
 
+-(NSString*)method{
+	return @"show";
+}
+
 -(NSString*)showId{
 	return @"47";
 }

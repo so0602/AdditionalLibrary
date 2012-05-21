@@ -3,4 +3,13 @@ typedef enum{
 	RequestType_Mission,
 	RequestType_MissionDetail,
 	RequestType_MissionComplete,
+	RequestType_Action,
+	RequestType_Friends,
+	RequestType_FriendsGift,
+	RequestType_ChallengeGift,
+	RequestType_Challenge,
+	RequestType_Battle,
+	RequestType_SpecialBattle,
+	RequestType_ItemList,
+	RequestType_UseItem,
 }RequestType;

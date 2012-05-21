@@ -13,4 +13,6 @@
 	#import "PetHunterDefaultValues.h"
 	#import "PetHunterExternValues.h"
 	#import "PetHunterGlobalManager.h"
+
+	#import "SBJson.h"
 #endif
