@@ -32,11 +32,11 @@
 -(void)setResultString:(NSString *)resultString{
 	[super setResultString:resultString];
 	
-	NSArray* array = [resultString componentsSeparatedByString:@","];
-	if( array.count >= 3 ){
-		self.ID = [array objectAtIndex:0];
-		self.name = [array objectAtIndex:1];
-		self.completed = [array objectAtIndex:2];
+	NSArray* components = [resultString componentsSeparatedByString:@","];
+	if( components.count == 3 ){
+		self.ID = [components objectAtIndex:0];
+		self.name = [components objectAtIndex:1];
+		self.completed = [components objectAtIndex:2];
 	}
 }
 

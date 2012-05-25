@@ -34,6 +34,19 @@
 -(void)applicationWillTerminate:(UIApplication *)application{
 }
 
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+	YTLogF();
+	[application scheduleLocalNotification:notification];
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+	
+}
+
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
+	
+}
+
 -(void)dealloc{
 	[_window release];
 	[_navigationController release];

@@ -19,10 +19,11 @@
 -(void)setResultString:(NSString *)resultString{
 	[super setResultString:resultString];
 	
-	NSArray* array = [resultString componentsSeparatedByString:@","];
-	if( array.count < 2 ) return;
-	self.ttype = [array objectAtIndex:0];
-	self.gid = [array objectAtIndex:1];
+	NSArray* components = [resultString componentsSeparatedByString:@","];
+	if( components.count >= 2 ){
+		self.ttype = [components objectAtIndex:0];
+		self.gid = [components objectAtIndex:1];
+	}
 }
 
 @end

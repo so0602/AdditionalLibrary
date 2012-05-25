@@ -22,6 +22,41 @@ static NSString* PetHunterAccount_Source = @"Source";
 	[_data setNilObject:password forKey:PetHunterAccount_Password];
 }
 
+-(BOOL)autoUpdateAction{
+	return [[self.data objectForKey:PetHunterAccount_AutoUpdateAction] boolValue];
+}
+-(void)setAutoUpdateAction:(BOOL)autoUpdateAction{
+	[_data setNilObject:[NSNumber numberWithBool:autoUpdateAction] forKey:PetHunterAccount_AutoUpdateAction];
+}
+
+-(BOOL)autoBattle{
+	return [[self.data objectForKey:PetHunterAccount_AutoBattle] boolValue];
+}
+-(void)setAutoBattle:(BOOL)autoBattle{
+	[_data setNilObject:[NSNumber numberWithBool:autoBattle] forKey:PetHunterAccount_AutoBattle];
+}
+
+-(NSInteger)autoNormalBattleMap{
+	return [[self.data objectForKey:PetHunterAccount_AutoNormalBattleMap] intValue];
+}
+-(void)setAutoNormalBattleMap:(NSInteger)autoNormalBattleMap{
+	[_data setNilObject:[NSNumber numberWithInt:autoNormalBattleMap] forKey:PetHunterAccount_AutoNormalBattleMap];
+}
+
+-(NSInteger)autoSpecialBattleMap{
+	return [[self.data objectForKey:PetHunterAccount_AutoSpecialBattleMap] intValue];
+}
+-(void)setAutoSpecialBattleMap:(NSInteger)autoSpecialBattleMap{
+	[_data setNilObject:[NSNumber numberWithInt:autoSpecialBattleMap] forKey:PetHunterAccount_AutoSpecialBattleMap];
+}
+
+-(BOOL)autoChallenge{
+	return [[self.data objectForKey:PetHunterAccount_AutoChallenge] boolValue];
+}
+-(void)setAutoChallenge:(BOOL)autoChallenge{
+	[_data setNilObject:[NSNumber numberWithBool:autoChallenge] forKey:PetHunterAccount_AutoChallenge];
+}
+
 #pragma mark - PetHunterPickerTitle
 
 -(NSString*)title{
@@ -55,7 +90,6 @@ static NSString* PetHunterAccount_Source = @"Source";
 -(id)initWithCoder:(NSCoder *)aDecoder{
 	NSDictionary* data = [aDecoder decodeObjectForKey:PetHunterAccount_Source];
 	if( self = [super initWithDictionary:data] ){
-		
 	}
 	return self;
 }
@@ -64,3 +98,8 @@ static NSString* PetHunterAccount_Source = @"Source";
 
 NSString* PetHunterAccount_Name = @"Name";
 NSString* PetHunterAccount_Password = @"Password";
+NSString* PetHunterAccount_AutoUpdateAction = @"AutoUpdateAction";
+NSString* PetHunterAccount_AutoBattle = @"AutoBattle";
+NSString* PetHunterAccount_AutoNormalBattleMap = @"AutoNormalBattleMap";
+NSString* PetHunterAccount_AutoSpecialBattleMap = @"AutoSpecialBattleMap";
+NSString* PetHunterAccount_AutoChallenge = @"AutoChallenge";

@@ -380,7 +380,7 @@ CGContextRef CreateARGBBitmapContext(CGImageRef inImage){
 	NSString* path = nil;
 	NSData* data = nil;
 	if( scale > 1 ){
-		path = [NSBundle.mainBundle pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
+		path = [[NSBundle mainBundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
 		data = [NSData dataWithContentsOfFile:path];
 		
 		if( data ){
@@ -388,7 +388,7 @@ CGContextRef CreateARGBBitmapContext(CGImageRef inImage){
 		}
 	}
 	
-	path = [NSBundle.mainBundle pathForResource:name ofType:@"gif"];
+	path = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
 	data = [NSData dataWithContentsOfFile:path];
 	
 	if( data ){
