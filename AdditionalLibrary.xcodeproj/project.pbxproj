@@ -33,6 +33,12 @@
 		4204BF3E15578B1A00DCA6E7 /* UIView+LayerEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4204BF3A15578B1A00DCA6E7 /* UIView+LayerEffects.h */; };
 		4204BF3F15578B1A00DCA6E7 /* UIView+LayerEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */; };
 		4204BF4215578B3F00DCA6E7 /* libUIGlossyButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4204BF2F15578ABE00DCA6E7 /* libUIGlossyButton.a */; };
+		420B1DD01566030D005796A6 /* MGSplitCornersView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCA1566030D005796A6 /* MGSplitCornersView.h */; };
+		420B1DD11566030D005796A6 /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCB1566030D005796A6 /* MGSplitCornersView.m */; };
+		420B1DD21566030D005796A6 /* MGSplitDividerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCC1566030D005796A6 /* MGSplitDividerView.h */; };
+		420B1DD31566030D005796A6 /* MGSplitDividerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCD1566030D005796A6 /* MGSplitDividerView.m */; };
+		420B1DD41566030D005796A6 /* MGSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCE1566030D005796A6 /* MGSplitViewController.h */; };
+		420B1DD51566030D005796A6 /* MGSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCF1566030D005796A6 /* MGSplitViewController.m */; };
 		4225CA4A14F745F2003B893A /* CurledViewBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225CA4414F745F2003B893A /* CurledViewBase.h */; };
 		4225CA4B14F745F2003B893A /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4225CA4514F745F2003B893A /* CurledViewBase.m */; };
 		4225CA4C14F745F2003B893A /* UIButton+Curled.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225CA4614F745F2003B893A /* UIButton+Curled.h */; };
@@ -85,6 +91,10 @@
 		425260E0155791F800D4D689 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8F13D82DEB003CA78D /* QuartzCore.framework */; };
 		425260E1155791F800D4D689 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
 		425260E61557921000D4D689 /* libADLivelyTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 425260BE1557919300D4D689 /* libADLivelyTableView.a */; };
+		42596ECD15660243005366CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		42596ECE15660243005366CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		42596ECF15660243005366CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		42596ED21566026A005366CD /* libMGSplitViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42596EC81566021E005366CD /* libMGSplitViewController.a */; };
 		427B5A031473BAD700747E9B /* DCRoundSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FB1473BAC100747E9B /* DCRoundSwitch.h */; };
 		427B5A041473BAD700747E9B /* DCRoundSwitchKnobLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FD1473BAC100747E9B /* DCRoundSwitchKnobLayer.h */; };
 		427B5A051473BAD700747E9B /* DCRoundSwitchOutlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FF1473BAC100747E9B /* DCRoundSwitchOutlineLayer.h */; };
@@ -110,6 +120,9 @@
 		428AB21E143DD94900670A8A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ABAD2614147BBE00537B39 /* libxml2.dylib */; };
 		428AB239143DD9D900670A8A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ABAD2214147BBE00537B39 /* MobileCoreServices.framework */; };
 		428AB23A143DD9D900670A8A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ABAD2614147BBE00537B39 /* libxml2.dylib */; };
+		42AA4646156F492400DADD6A /* YTKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AA4644156F492400DADD6A /* YTKeychain.h */; };
+		42AA4647156F492400DADD6A /* YTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA4645156F492400DADD6A /* YTKeychain.m */; };
+		42AA4648156F492400DADD6A /* YTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA4645156F492400DADD6A /* YTKeychain.m */; };
 		42ABACE814147B4000537B39 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ABACB414147B4000537B39 /* ASIAuthenticationDialog.h */; };
 		42ABACE914147B4000537B39 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ABACB514147B4000537B39 /* ASIAuthenticationDialog.m */; };
 		42ABACEA14147B4000537B39 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ABACB614147B4000537B39 /* ASICacheDelegate.h */; };
@@ -515,6 +528,13 @@
 			remoteGlobalIDString = 425260BD1557919300D4D689;
 			remoteInfo = ADLivelyTableView;
 		};
+		42596ED015660264005366CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42596EC71566021E005366CD;
+			remoteInfo = MGSplitViewController;
+		};
 		427B5A1B1473BB2400747E9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -623,6 +643,12 @@
 		4204BF3915578B1A00DCA6E7 /* UIGlossyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGlossyButton.m; sourceTree = "<group>"; };
 		4204BF3A15578B1A00DCA6E7 /* UIView+LayerEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerEffects.h"; sourceTree = "<group>"; };
 		4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerEffects.m"; sourceTree = "<group>"; };
+		420B1DCA1566030D005796A6 /* MGSplitCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitCornersView.h; sourceTree = "<group>"; };
+		420B1DCB1566030D005796A6 /* MGSplitCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitCornersView.m; sourceTree = "<group>"; };
+		420B1DCC1566030D005796A6 /* MGSplitDividerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitDividerView.h; sourceTree = "<group>"; };
+		420B1DCD1566030D005796A6 /* MGSplitDividerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitDividerView.m; sourceTree = "<group>"; };
+		420B1DCE1566030D005796A6 /* MGSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewController.h; sourceTree = "<group>"; };
+		420B1DCF1566030D005796A6 /* MGSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewController.m; sourceTree = "<group>"; };
 		4225CA4014F745DC003B893A /* libCurledView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCurledView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4225CA4414F745F2003B893A /* CurledViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurledViewBase.h; sourceTree = "<group>"; };
 		4225CA4514F745F2003B893A /* CurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurledViewBase.m; sourceTree = "<group>"; };
@@ -682,6 +708,7 @@
 		425260BE1557919300D4D689 /* libADLivelyTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADLivelyTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		425260D9155791C900D4D689 /* ADLivelyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLivelyTableView.h; sourceTree = "<group>"; };
 		425260DA155791C900D4D689 /* ADLivelyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLivelyTableView.m; sourceTree = "<group>"; };
+		42596EC81566021E005366CD /* libMGSplitViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMGSplitViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		427B59F11473BA9A00747E9B /* libDCRoundSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCRoundSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		427B59FB1473BAC100747E9B /* DCRoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRoundSwitch.h; sourceTree = "<group>"; };
 		427B59FC1473BAC100747E9B /* DCRoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRoundSwitch.m; sourceTree = "<group>"; };
@@ -712,6 +739,8 @@
 		428ED9F013DEB77300F10F87 /* YTLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLibrary.h; sourceTree = "<group>"; };
 		428EDD5C13E015DD00F10F87 /* UIButton+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addition.h"; sourceTree = "<group>"; };
 		428EDD5D13E015DD00F10F87 /* UIButton+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addition.m"; sourceTree = "<group>"; };
+		42AA4644156F492400DADD6A /* YTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKeychain.h; sourceTree = "<group>"; };
+		42AA4645156F492400DADD6A /* YTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKeychain.m; sourceTree = "<group>"; };
 		42ABACAE1414790F00537B39 /* libASIHTTPRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASIHTTPRequest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ABACB414147B4000537B39 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		42ABACB514147B4000537B39 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
@@ -1090,6 +1119,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42596EC61566021E005366CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42596ECD15660243005366CD /* CoreGraphics.framework in Frameworks */,
+				42596ECE15660243005366CD /* Foundation.framework in Frameworks */,
+				42596ECF15660243005366CD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427B59EF1473BA9A00747E9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1191,6 +1230,7 @@
 				42F65BBC13E6AE470068F7CF /* SystemConfiguration.framework in Frameworks */,
 				42F65BBD13E6AE470068F7CF /* UIKit.framework in Frameworks */,
 				425260E61557921000D4D689 /* libADLivelyTableView.a in Frameworks */,
+				42596ED21566026A005366CD /* libMGSplitViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1309,6 +1349,7 @@
 				4204BF2F15578ABE00DCA6E7 /* libUIGlossyButton.a */,
 				425260BE1557919300D4D689 /* libADLivelyTableView.a */,
 				C4DA0F81155E948F0079321E /* PetHunter.app */,
+				42596EC81566021E005366CD /* libMGSplitViewController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1339,6 +1380,7 @@
 				42C218AD1498A62400AD9FED /* EGOPhotoViewer */,
 				42F6627D13E93E5C0068F7CF /* FTUtils */,
 				423F456715240BE400F11D23 /* iCarousel */,
+				420B1DC91566030D005796A6 /* MGSplitViewController */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				C4640F9915565B2F0029DF8F /* PrettyKit */,
 				42BB884F1495F8AC0099E2E4 /* RTLabel */,
@@ -1400,6 +1442,19 @@
 				4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */,
 			);
 			path = UIGlossyButton;
+			sourceTree = "<group>";
+		};
+		420B1DC91566030D005796A6 /* MGSplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				420B1DCA1566030D005796A6 /* MGSplitCornersView.h */,
+				420B1DCB1566030D005796A6 /* MGSplitCornersView.m */,
+				420B1DCC1566030D005796A6 /* MGSplitDividerView.h */,
+				420B1DCD1566030D005796A6 /* MGSplitDividerView.m */,
+				420B1DCE1566030D005796A6 /* MGSplitViewController.h */,
+				420B1DCF1566030D005796A6 /* MGSplitViewController.m */,
+			);
+			path = MGSplitViewController;
 			sourceTree = "<group>";
 		};
 		4225CA4314F745F2003B893A /* CurledView */ = {
@@ -1977,6 +2032,8 @@
 				422D249814F34E15001599BC /* YTImagePickerController.m */,
 				42F662CF13E944970068F7CF /* YTInputAlertView.h */,
 				42F662D013E944970068F7CF /* YTInputAlertView.m */,
+				42AA4644156F492400DADD6A /* YTKeychain.h */,
+				42AA4645156F492400DADD6A /* YTKeychain.m */,
 				42AD4FCC145E825000EE3DBF /* YTLabel.h */,
 				42AD4FCD145E825000EE3DBF /* YTLabel.m */,
 				423F45881524112A00F11D23 /* YTLocalizationSystem.h */,
@@ -2444,6 +2501,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42596EC41566021E005366CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B1DD01566030D005796A6 /* MGSplitCornersView.h in Headers */,
+				420B1DD21566030D005796A6 /* MGSplitDividerView.h in Headers */,
+				420B1DD41566030D005796A6 /* MGSplitViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427B59ED1473BA9A00747E9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2615,6 +2682,7 @@
 				42F6613713E932DB0068F7CF /* zip.h in Headers */,
 				42F6614A13E933580068F7CF /* ZipArchive+Addition.h in Headers */,
 				42F6613813E932DC0068F7CF /* ZipArchive.h in Headers */,
+				42AA4646156F492400DADD6A /* YTKeychain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2792,6 +2860,23 @@
 			productReference = 425260BE1557919300D4D689 /* libADLivelyTableView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		42596EC71566021E005366CD /* MGSplitViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42596ECC15660223005366CD /* Build configuration list for PBXNativeTarget "MGSplitViewController" */;
+			buildPhases = (
+				42596EC41566021E005366CD /* Headers */,
+				42596EC51566021E005366CD /* Sources */,
+				42596EC61566021E005366CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGSplitViewController;
+			productName = MGSplitViewController;
+			productReference = 42596EC81566021E005366CD /* libMGSplitViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		427B59F01473BA9A00747E9B /* DCRoundSwitch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 427B59F91473BAA600747E9B /* Build configuration list for PBXNativeTarget "DCRoundSwitch" */;
@@ -2921,6 +3006,7 @@
 				42AD39FE14F7722C00C18A08 /* PBXTargetDependency */,
 				4204BF4115578B3400DCA6E7 /* PBXTargetDependency */,
 				42F6613213E932B30068F7CF /* PBXTargetDependency */,
+				42596ED115660264005366CD /* PBXTargetDependency */,
 			);
 			name = YTLibrary;
 			productName = YTLibrary;
@@ -3061,6 +3147,8 @@
 				42C218A91498A60A00AD9FED /* EGOPhotoViewer */,
 				42F6627013E93E460068F7CF /* FTUtils */,
 				423F456315240BC900F11D23 /* iCarousel */,
+				42596EC71566021E005366CD /* MGSplitViewController */,
+				C4DA0F80155E948F0079321E /* PetHunter */,
 				C4640F7B15565B1D0029DF8F /* PrettyKit */,
 				42BB88471495F8960099E2E4 /* RTLabel */,
 				4225CA9214F74D78003B893A /* SpriteAnimation */,
@@ -3069,7 +3157,6 @@
 				4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */,
 				42F65A6E13E6AD3F0068F7CF /* YTLibrary */,
 				42F6605B13E92D330068F7CF /* ZipArchive */,
-				C4DA0F80155E948F0079321E /* PetHunter */,
 			);
 		};
 /* End PBXProject section */
@@ -3121,6 +3208,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				42F65BFD13E6AFD20068F7CF /* AdditionalLibraryAppDelegate.m in Sources */,
 				42F65BFE13E6AFD20068F7CF /* AdditionalLibraryViewController.m in Sources */,
+				42AA4647156F492400DADD6A /* YTKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3164,6 +3252,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				425260DC155791C900D4D689 /* ADLivelyTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42596EC51566021E005366CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B1DD11566030D005796A6 /* MGSplitCornersView.m in Sources */,
+				420B1DD31566030D005796A6 /* MGSplitDividerView.m in Sources */,
+				420B1DD51566030D005796A6 /* MGSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3316,6 +3414,7 @@
 				427EEA5614065E1600A6BB57 /* YTUploadOperation.m in Sources */,
 				422D24BB14F355C4001599BC /* YTWebViewController.m in Sources */,
 				42F6614B13E933580068F7CF /* ZipArchive+Addition.m in Sources */,
+				42AA4648156F492400DADD6A /* YTKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3435,6 +3534,11 @@
 			isa = PBXTargetDependency;
 			target = 425260BD1557919300D4D689 /* ADLivelyTableView */;
 			targetProxy = 425260E41557920D00D4D689 /* PBXContainerItemProxy */;
+		};
+		42596ED115660264005366CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42596EC71566021E005366CD /* MGSplitViewController */;
+			targetProxy = 42596ED015660264005366CD /* PBXContainerItemProxy */;
 		};
 		427B5A1C1473BB2400747E9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3692,6 +3796,33 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = ADLivelyTableView;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		42596EC91566021F005366CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = MGSplitViewController;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42596ECA1566021F005366CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = MGSplitViewController;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -4198,6 +4329,15 @@
 			buildConfigurations = (
 				425260BF1557919500D4D689 /* Debug */,
 				425260C01557919500D4D689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42596ECC15660223005366CD /* Build configuration list for PBXNativeTarget "MGSplitViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42596EC91566021F005366CD /* Debug */,
+				42596ECA1566021F005366CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

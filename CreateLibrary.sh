@@ -125,6 +125,13 @@ if [ ! -e "$ICAROUSEL_PATH" ]; then
 fi
 cp iCarousel/*.h "$ICAROUSEL_PATH"
 
+#MGSplitViewController
+MGSPLITVIEWCONTROLLER_PATH=${STATICLIB}/MGSplitViewController
+if [ ! -e "$MGSPLITVIEWCONTROLLER_PATH" ]; then
+	mkdir "$MGSPLITVIEWCONTROLLER_PATH"
+fi
+cp MGSplitViewController/*.h "$MGSPLITVIEWCONTROLLER_PATH"
+
 #PrettyKit
 PRETTYKIT_PATH=${STATICLIB}/PrettyKit
 if [ ! -e "$PRETTYKIT_PATH" ]; then
