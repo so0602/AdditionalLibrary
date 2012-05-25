@@ -81,6 +81,12 @@
 		42444AA914ECFCE3001F72F3 /* YTDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 42444AA714ECFCE1001F72F3 /* YTDataSource.m */; };
 		42444B2A14ED027A001F72F3 /* YTScrollWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42444B2814ED0276001F72F3 /* YTScrollWebView.h */; };
 		42444B2B14ED027A001F72F3 /* YTScrollWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42444B2914ED0278001F72F3 /* YTScrollWebView.m */; };
+		42448788156F72BC0008055E /* MCSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 42448786156F72BC0008055E /* MCSegmentedControl.h */; };
+		42448789156F72BC0008055E /* MCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 42448787156F72BC0008055E /* MCSegmentedControl.m */; };
+		4244878C156F72EA0008055E /* libMCSegmentedControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42448780156F729C0008055E /* libMCSegmentedControl.a */; };
+		42448792156F732F0008055E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		42448793156F732F0008055E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		42448794156F732F0008055E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
 		424A2156145E48F4007E0EF8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424A2155145E48F4007E0EF8 /* MapKit.framework */; };
 		424A215A145E4923007E0EF8 /* MKMapView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424A2158145E4923007E0EF8 /* MKMapView+Addition.h */; };
 		424A215B145E4923007E0EF8 /* MKMapView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424A2159145E4923007E0EF8 /* MKMapView+Addition.m */; };
@@ -548,6 +554,13 @@
 			remoteGlobalIDString = 423F456315240BC900F11D23;
 			remoteInfo = iCarousel;
 		};
+		4244878A156F72E60008055E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4244877F156F729C0008055E;
+			remoteInfo = MCSegmentedControl;
+		};
 		425260E41557920D00D4D689 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -764,6 +777,9 @@
 		42444AA714ECFCE1001F72F3 /* YTDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTDataSource.m; sourceTree = "<group>"; };
 		42444B2814ED0276001F72F3 /* YTScrollWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTScrollWebView.h; sourceTree = "<group>"; };
 		42444B2914ED0278001F72F3 /* YTScrollWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTScrollWebView.m; sourceTree = "<group>"; };
+		42448780156F729C0008055E /* libMCSegmentedControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMCSegmentedControl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42448786156F72BC0008055E /* MCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSegmentedControl.h; sourceTree = "<group>"; };
+		42448787156F72BC0008055E /* MCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSegmentedControl.m; sourceTree = "<group>"; };
 		424A2155145E48F4007E0EF8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		424A2158145E4923007E0EF8 /* MKMapView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Addition.h"; sourceTree = "<group>"; };
 		424A2159145E4923007E0EF8 /* MKMapView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Addition.m"; sourceTree = "<group>"; };
@@ -1223,6 +1239,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4244877E156F729C0008055E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42448792156F732F0008055E /* CoreGraphics.framework in Frameworks */,
+				42448793156F732F0008055E /* Foundation.framework in Frameworks */,
+				42448794156F732F0008055E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		425260BC1557919300D4D689 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1346,6 +1372,7 @@
 				42F65BBD13E6AE470068F7CF /* UIKit.framework in Frameworks */,
 				425260E61557921000D4D689 /* libADLivelyTableView.a in Frameworks */,
 				42596ED21566026A005366CD /* libMGSplitViewController.a in Frameworks */,
+				4244878C156F72EA0008055E /* libMCSegmentedControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1466,6 +1493,7 @@
 				425260BE1557919300D4D689 /* libADLivelyTableView.a */,
 				C4DA0F81155E948F0079321E /* PetHunter.app */,
 				42596EC81566021E005366CD /* libMGSplitViewController.a */,
+				42448780156F729C0008055E /* libMCSegmentedControl.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1496,6 +1524,7 @@
 				42C218AD1498A62400AD9FED /* EGOPhotoViewer */,
 				42F6627D13E93E5C0068F7CF /* FTUtils */,
 				423F456715240BE400F11D23 /* iCarousel */,
+				42448785156F72BC0008055E /* MCSegmentedControl */,
 				420B1DC91566030D005796A6 /* MGSplitViewController */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				C4640F9915565B2F0029DF8F /* PrettyKit */,
@@ -1675,6 +1704,15 @@
 				42444AA314ECED95001F72F3 /* ASIFormDataRequest+Addition.m */,
 			);
 			name = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		42448785156F72BC0008055E /* MCSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				42448786156F72BC0008055E /* MCSegmentedControl.h */,
+				42448787156F72BC0008055E /* MCSegmentedControl.m */,
+			);
+			path = MCSegmentedControl;
 			sourceTree = "<group>";
 		};
 		424A2157145E4902007E0EF8 /* MK */ = {
@@ -2705,6 +2743,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4244877C156F729C0008055E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42448788156F72BC0008055E /* MCSegmentedControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		425260BA1557919300D4D689 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3055,6 +3101,23 @@
 			productReference = 423F456415240BC900F11D23 /* libiCarousel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		4244877F156F729C0008055E /* MCSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42448784156F72AC0008055E /* Build configuration list for PBXNativeTarget "MCSegmentedControl" */;
+			buildPhases = (
+				4244877C156F729C0008055E /* Headers */,
+				4244877D156F729C0008055E /* Sources */,
+				4244877E156F729C0008055E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCSegmentedControl;
+			productName = MCSegmentedControl;
+			productReference = 42448780156F729C0008055E /* libMCSegmentedControl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		425260BD1557919300D4D689 /* ADLivelyTableView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 425260D7155791A700D4D689 /* Build configuration list for PBXNativeTarget "ADLivelyTableView" */;
@@ -3219,6 +3282,7 @@
 				4204BF4115578B3400DCA6E7 /* PBXTargetDependency */,
 				42F6613213E932B30068F7CF /* PBXTargetDependency */,
 				42596ED115660264005366CD /* PBXTargetDependency */,
+				4244878B156F72E60008055E /* PBXTargetDependency */,
 			);
 			name = YTLibrary;
 			productName = YTLibrary;
@@ -3366,6 +3430,7 @@
 				42C218A91498A60A00AD9FED /* EGOPhotoViewer */,
 				42F6627013E93E460068F7CF /* FTUtils */,
 				423F456315240BC900F11D23 /* iCarousel */,
+				4244877F156F729C0008055E /* MCSegmentedControl */,
 				42596EC71566021E005366CD /* MGSplitViewController */,
 				C4DA0F80155E948F0079321E /* PetHunter */,
 				C4640F7B15565B1D0029DF8F /* PrettyKit */,
@@ -3494,6 +3559,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				423F456B15240BE400F11D23 /* iCarousel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4244877D156F729C0008055E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42448789156F72BC0008055E /* MCSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3806,6 +3879,11 @@
 			target = 423F456315240BC900F11D23 /* iCarousel */;
 			targetProxy = 423F456D15240BF100F11D23 /* PBXContainerItemProxy */;
 		};
+		4244878B156F72E60008055E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4244877F156F729C0008055E /* MCSegmentedControl */;
+			targetProxy = 4244878A156F72E60008055E /* PBXContainerItemProxy */;
+		};
 		425260E51557920D00D4D689 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 425260BD1557919300D4D689 /* ADLivelyTableView */;
@@ -4050,6 +4128,33 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = iCarousel;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		42448781156F729D0008055E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = MCSegmentedControl;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42448782156F729D0008055E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = MCSegmentedControl;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -4601,6 +4706,15 @@
 			buildConfigurations = (
 				423F456515240BCB00F11D23 /* Debug */,
 				423F456615240BCB00F11D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42448784156F72AC0008055E /* Build configuration list for PBXNativeTarget "MCSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42448781156F729D0008055E /* Debug */,
+				42448782156F729D0008055E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

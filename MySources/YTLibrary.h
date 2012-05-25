@@ -52,6 +52,7 @@
 #import "EGOPhotoGlobal.h"
 #import "FTAnimation.h"
 #import "iCarousel.h"
+#import "MCSegmentedControl.h"
 #import "MGSplitViewController.h"
 #import "PrettyKit.h"
 #import "Reachability.h"
