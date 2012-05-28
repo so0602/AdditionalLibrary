@@ -56,6 +56,7 @@
 #import "MGSplitViewController.h"
 #import "PrettyKit.h"
 #import "Reachability.h"
+#import "StyledPageControl.h"
 #import "SVProgressHUD.h"
 #import "UAModalPanel.h"
 #import "UIGlossyButton.h"

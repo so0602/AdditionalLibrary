@@ -166,6 +166,13 @@ if [ ! -e "$SPRITEANIMATION_PATH" ]; then
 fi
 cp SpriteAnimation/*.h "$SPRITEANIMATION_PATH"
 
+#StyledPageControl
+STYLEDPAGECONTROL_PATH=${STATICLIB}/StyledPageControl
+if [ ! -e "$STYLEDPAGECONTROL_PATH" ]; then
+	mkdir "$STYLEDPAGECONTROL_PATH"
+fi
+cp StyledPageControl/*.h "$STYLEDPAGECONTROL_PATH"
+
 #SVProgressHUD
 SVPROGRESSHUD_PATH=${STATICLIB}/SVProgressHUD
 if [ ! -e "$SVPROGRESSHUD_PATH" ]; then

@@ -101,6 +101,12 @@
 		42596ECE15660243005366CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
 		42596ECF15660243005366CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
 		42596ED21566026A005366CD /* libMGSplitViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42596EC81566021E005366CD /* libMGSplitViewController.a */; };
+		425AE96E15733E100002CBE8 /* StyledPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 425AE96C15733E100002CBE8 /* StyledPageControl.h */; };
+		425AE96F15733E100002CBE8 /* StyledPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 425AE96D15733E100002CBE8 /* StyledPageControl.m */; };
+		425AE97715733E7B0002CBE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		425AE97815733E7B0002CBE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		425AE97915733E7B0002CBE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		425AE97D15733EC60002CBE8 /* libStyledPageControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 425AE96615733DF10002CBE8 /* libStyledPageControl.a */; };
 		427B5A031473BAD700747E9B /* DCRoundSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FB1473BAC100747E9B /* DCRoundSwitch.h */; };
 		427B5A041473BAD700747E9B /* DCRoundSwitchKnobLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FD1473BAC100747E9B /* DCRoundSwitchKnobLayer.h */; };
 		427B5A051473BAD700747E9B /* DCRoundSwitchOutlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FF1473BAC100747E9B /* DCRoundSwitchOutlineLayer.h */; };
@@ -575,6 +581,13 @@
 			remoteGlobalIDString = 42596EC71566021E005366CD;
 			remoteInfo = MGSplitViewController;
 		};
+		425AE97B15733EB50002CBE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 425AE96515733DF10002CBE8 /* StyledPageControl */;
+			remoteInfo = StyledPageControl;
+		};
 		427B5A1B1473BB2400747E9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -787,6 +800,9 @@
 		425260D9155791C900D4D689 /* ADLivelyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLivelyTableView.h; sourceTree = "<group>"; };
 		425260DA155791C900D4D689 /* ADLivelyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLivelyTableView.m; sourceTree = "<group>"; };
 		42596EC81566021E005366CD /* libMGSplitViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMGSplitViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		425AE96615733DF10002CBE8 /* libStyledPageControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStyledPageControl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		425AE96C15733E100002CBE8 /* StyledPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledPageControl.h; sourceTree = "<group>"; };
+		425AE96D15733E100002CBE8 /* StyledPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledPageControl.m; sourceTree = "<group>"; };
 		427B59F11473BA9A00747E9B /* libDCRoundSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCRoundSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		427B59FB1473BAC100747E9B /* DCRoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRoundSwitch.h; sourceTree = "<group>"; };
 		427B59FC1473BAC100747E9B /* DCRoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRoundSwitch.m; sourceTree = "<group>"; };
@@ -1270,6 +1286,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		425AE96415733DF10002CBE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425AE97715733E7B0002CBE8 /* CoreGraphics.framework in Frameworks */,
+				425AE97815733E7B0002CBE8 /* Foundation.framework in Frameworks */,
+				425AE97915733E7B0002CBE8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427B59EF1473BA9A00747E9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1373,6 +1399,7 @@
 				425260E61557921000D4D689 /* libADLivelyTableView.a in Frameworks */,
 				42596ED21566026A005366CD /* libMGSplitViewController.a in Frameworks */,
 				4244878C156F72EA0008055E /* libMCSegmentedControl.a in Frameworks */,
+				425AE97D15733EC60002CBE8 /* libStyledPageControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1494,6 +1521,7 @@
 				C4DA0F81155E948F0079321E /* PetHunter.app */,
 				42596EC81566021E005366CD /* libMGSplitViewController.a */,
 				42448780156F729C0008055E /* libMCSegmentedControl.a */,
+				425AE96615733DF10002CBE8 /* libStyledPageControl.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1530,6 +1558,7 @@
 				C4640F9915565B2F0029DF8F /* PrettyKit */,
 				42BB884F1495F8AC0099E2E4 /* RTLabel */,
 				4225CA9D14F74DA5003B893A /* SpriteAnimation */,
+				425AE96B15733E100002CBE8 /* StyledPageControl */,
 				42BB88721495F9B20099E2E4 /* SVProgressHUD */,
 				42AD39D014F771B900C18A08 /* UAModalPanel */,
 				C4A0505E14756956006CC4B0 /* UICalendarMonthView */,
@@ -1731,6 +1760,15 @@
 				425260DA155791C900D4D689 /* ADLivelyTableView.m */,
 			);
 			path = ADLivelyTableView;
+			sourceTree = "<group>";
+		};
+		425AE96B15733E100002CBE8 /* StyledPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				425AE96C15733E100002CBE8 /* StyledPageControl.h */,
+				425AE96D15733E100002CBE8 /* StyledPageControl.m */,
+			);
+			path = StyledPageControl;
 			sourceTree = "<group>";
 		};
 		427B59FA1473BAC100747E9B /* DCRoundSwitch */ = {
@@ -2769,6 +2807,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		425AE96215733DF10002CBE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425AE96E15733E100002CBE8 /* StyledPageControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427B59ED1473BA9A00747E9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3152,6 +3198,23 @@
 			productReference = 42596EC81566021E005366CD /* libMGSplitViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		425AE96515733DF10002CBE8 /* StyledPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 425AE96A15733E060002CBE8 /* Build configuration list for PBXNativeTarget "StyledPageControl" */;
+			buildPhases = (
+				425AE96315733DF10002CBE8 /* Sources */,
+				425AE96215733DF10002CBE8 /* Headers */,
+				425AE96415733DF10002CBE8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StyledPageControl;
+			productName = StyledPageControl;
+			productReference = 425AE96615733DF10002CBE8 /* libStyledPageControl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		427B59F01473BA9A00747E9B /* DCRoundSwitch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 427B59F91473BAA600747E9B /* Build configuration list for PBXNativeTarget "DCRoundSwitch" */;
@@ -3274,15 +3337,16 @@
 				42C2190C1498A77600AD9FED /* PBXTargetDependency */,
 				42F6629113E93E6F0068F7CF /* PBXTargetDependency */,
 				423F456E15240BF100F11D23 /* PBXTargetDependency */,
+				4244878B156F72E60008055E /* PBXTargetDependency */,
+				42596ED115660264005366CD /* PBXTargetDependency */,
 				C4640FD115565BC70029DF8F /* PBXTargetDependency */,
 				42BB88601495F8FA0099E2E4 /* PBXTargetDependency */,
 				4225CAA714F74EF7003B893A /* PBXTargetDependency */,
+				425AE97C15733EB50002CBE8 /* PBXTargetDependency */,
 				42BB88801495F9D00099E2E4 /* PBXTargetDependency */,
 				42AD39FE14F7722C00C18A08 /* PBXTargetDependency */,
 				4204BF4115578B3400DCA6E7 /* PBXTargetDependency */,
 				42F6613213E932B30068F7CF /* PBXTargetDependency */,
-				42596ED115660264005366CD /* PBXTargetDependency */,
-				4244878B156F72E60008055E /* PBXTargetDependency */,
 			);
 			name = YTLibrary;
 			productName = YTLibrary;
@@ -3436,6 +3500,7 @@
 				C4640F7B15565B1D0029DF8F /* PrettyKit */,
 				42BB88471495F8960099E2E4 /* RTLabel */,
 				4225CA9214F74D78003B893A /* SpriteAnimation */,
+				425AE96515733DF10002CBE8 /* StyledPageControl */,
 				42BB886B1495F97D0099E2E4 /* SVProgressHUD */,
 				42AD39C614F7712300C18A08 /* UAModalPanel */,
 				4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */,
@@ -3585,6 +3650,14 @@
 				420B1DD11566030D005796A6 /* MGSplitCornersView.m in Sources */,
 				420B1DD31566030D005796A6 /* MGSplitDividerView.m in Sources */,
 				420B1DD51566030D005796A6 /* MGSplitViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425AE96315733DF10002CBE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425AE96F15733E100002CBE8 /* StyledPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3893,6 +3966,11 @@
 			isa = PBXTargetDependency;
 			target = 42596EC71566021E005366CD /* MGSplitViewController */;
 			targetProxy = 42596ED015660264005366CD /* PBXContainerItemProxy */;
+		};
+		425AE97C15733EB50002CBE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 425AE96515733DF10002CBE8 /* StyledPageControl */;
+			targetProxy = 425AE97B15733EB50002CBE8 /* PBXContainerItemProxy */;
 		};
 		427B5A1C1473BB2400747E9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4209,6 +4287,33 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = MGSplitViewController;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		425AE96715733DF30002CBE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = StyledPageControl;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		425AE96815733DF30002CBE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = StyledPageControl;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -4733,6 +4838,15 @@
 			buildConfigurations = (
 				42596EC91566021F005366CD /* Debug */,
 				42596ECA1566021F005366CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		425AE96A15733E060002CBE8 /* Build configuration list for PBXNativeTarget "StyledPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425AE96715733DF30002CBE8 /* Debug */,
+				425AE96815733DF30002CBE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
