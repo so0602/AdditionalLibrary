@@ -107,6 +107,14 @@
 		425AE97815733E7B0002CBE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
 		425AE97915733E7B0002CBE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
 		425AE97D15733EC60002CBE8 /* libStyledPageControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 425AE96615733DF10002CBE8 /* libStyledPageControl.a */; };
+		425AE9D5157342370002CBE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		425AE9D6157342370002CBE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		425AE9E11573425C0002CBE8 /* CocoaSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 425AE9DB1573425C0002CBE8 /* CocoaSecurity.h */; };
+		425AE9E21573425C0002CBE8 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 425AE9DC1573425C0002CBE8 /* CocoaSecurity.m */; };
+		425AE9E31573425C0002CBE8 /* CocoaSecurity-GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 425AE9DE1573425C0002CBE8 /* CocoaSecurity-GTMBase64.h */; };
+		425AE9E41573425C0002CBE8 /* CocoaSecurity-GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 425AE9DF1573425C0002CBE8 /* CocoaSecurity-GTMBase64.m */; };
+		425AE9E51573425C0002CBE8 /* CocoaSecurity-GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 425AE9E01573425C0002CBE8 /* CocoaSecurity-GTMDefines.h */; };
+		425AE9EA157342A80002CBE8 /* libCocoaSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 425AE9D0157341F40002CBE8 /* libCocoaSecurity.a */; };
 		427B5A031473BAD700747E9B /* DCRoundSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FB1473BAC100747E9B /* DCRoundSwitch.h */; };
 		427B5A041473BAD700747E9B /* DCRoundSwitchKnobLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FD1473BAC100747E9B /* DCRoundSwitchKnobLayer.h */; };
 		427B5A051473BAD700747E9B /* DCRoundSwitchOutlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B59FF1473BAC100747E9B /* DCRoundSwitchOutlineLayer.h */; };
@@ -128,6 +136,10 @@
 		427EEF3B140B528500A6BB57 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427EEF3A140B528500A6BB57 /* OpenAL.framework */; };
 		427EF048140B7C6F00A6BB57 /* YTProgressAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 427EF046140B7C6F00A6BB57 /* YTProgressAlertView.h */; };
 		427EF049140B7C6F00A6BB57 /* YTProgressAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427EF047140B7C6F00A6BB57 /* YTProgressAlertView.m */; };
+		427EFF2715736A30009ED244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		427EFF4215736A4D009ED244 /* ITNSStreamUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 427EFF4015736A4D009ED244 /* ITNSStreamUtil.h */; };
+		427EFF4315736A4D009ED244 /* ITNSStreamUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 427EFF4115736A4D009ED244 /* ITNSStreamUtil.m */; };
+		427EFF4615736A86009ED244 /* libITNSStreamUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 427EFF2415736A27009ED244 /* libITNSStreamUtil.a */; };
 		428AB21D143DD94900670A8A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ABAD2214147BBE00537B39 /* MobileCoreServices.framework */; };
 		428AB21E143DD94900670A8A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ABAD2614147BBE00537B39 /* libxml2.dylib */; };
 		428AB239143DD9D900670A8A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ABAD2214147BBE00537B39 /* MobileCoreServices.framework */; };
@@ -585,8 +597,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 425AE96515733DF10002CBE8 /* StyledPageControl */;
+			remoteGlobalIDString = 425AE96515733DF10002CBE8;
 			remoteInfo = StyledPageControl;
+		};
+		425AE9E8157342A10002CBE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 425AE9CF157341F40002CBE8;
+			remoteInfo = CocoaSecurity;
 		};
 		427B5A1B1473BB2400747E9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -594,6 +613,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 427B59F01473BA9A00747E9B;
 			remoteInfo = DCRoundSwitch;
+		};
+		427EFF4415736A82009ED244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427EFF2315736A27009ED244 /* ITNSStreamUtil */;
+			remoteInfo = ITNSStreamUtil;
 		};
 		42ABAD3214147C2800537B39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -803,6 +829,12 @@
 		425AE96615733DF10002CBE8 /* libStyledPageControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStyledPageControl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		425AE96C15733E100002CBE8 /* StyledPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledPageControl.h; sourceTree = "<group>"; };
 		425AE96D15733E100002CBE8 /* StyledPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledPageControl.m; sourceTree = "<group>"; };
+		425AE9D0157341F40002CBE8 /* libCocoaSecurity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaSecurity.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		425AE9DB1573425C0002CBE8 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		425AE9DC1573425C0002CBE8 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		425AE9DE1573425C0002CBE8 /* CocoaSecurity-GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaSecurity-GTMBase64.h"; sourceTree = "<group>"; };
+		425AE9DF1573425C0002CBE8 /* CocoaSecurity-GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CocoaSecurity-GTMBase64.m"; sourceTree = "<group>"; };
+		425AE9E01573425C0002CBE8 /* CocoaSecurity-GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaSecurity-GTMDefines.h"; sourceTree = "<group>"; };
 		427B59F11473BA9A00747E9B /* libDCRoundSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCRoundSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		427B59FB1473BAC100747E9B /* DCRoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRoundSwitch.h; sourceTree = "<group>"; };
 		427B59FC1473BAC100747E9B /* DCRoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRoundSwitch.m; sourceTree = "<group>"; };
@@ -825,6 +857,9 @@
 		427EEF3A140B528500A6BB57 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		427EF046140B7C6F00A6BB57 /* YTProgressAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTProgressAlertView.h; sourceTree = "<group>"; };
 		427EF047140B7C6F00A6BB57 /* YTProgressAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTProgressAlertView.m; sourceTree = "<group>"; };
+		427EFF2415736A27009ED244 /* libITNSStreamUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libITNSStreamUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		427EFF4015736A4D009ED244 /* ITNSStreamUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITNSStreamUtil.h; sourceTree = "<group>"; };
+		427EFF4115736A4D009ED244 /* ITNSStreamUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITNSStreamUtil.m; sourceTree = "<group>"; };
 		428ED99A13DE9FFF00F10F87 /* MFMailComposeViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFMailComposeViewController+Addition.h"; sourceTree = "<group>"; };
 		428ED99B13DE9FFF00F10F87 /* MFMailComposeViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFMailComposeViewController+Addition.m"; sourceTree = "<group>"; };
 		428ED9DF13DEB30000F10F87 /* UIAlertView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Addition.h"; sourceTree = "<group>"; };
@@ -1296,6 +1331,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		425AE9CE157341F40002CBE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425AE9D5157342370002CBE8 /* Foundation.framework in Frameworks */,
+				425AE9D6157342370002CBE8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427B59EF1473BA9A00747E9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1304,6 +1348,14 @@
 				427B5A181473BB0B00747E9B /* Foundation.framework in Frameworks */,
 				427B5A191473BB0B00747E9B /* QuartzCore.framework in Frameworks */,
 				427B5A1A1473BB0B00747E9B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427EFF2215736A27009ED244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427EFF2715736A30009ED244 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1400,6 +1452,8 @@
 				42596ED21566026A005366CD /* libMGSplitViewController.a in Frameworks */,
 				4244878C156F72EA0008055E /* libMCSegmentedControl.a in Frameworks */,
 				425AE97D15733EC60002CBE8 /* libStyledPageControl.a in Frameworks */,
+				425AE9EA157342A80002CBE8 /* libCocoaSecurity.a in Frameworks */,
+				427EFF4615736A86009ED244 /* libITNSStreamUtil.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1522,6 +1576,8 @@
 				42596EC81566021E005366CD /* libMGSplitViewController.a */,
 				42448780156F729C0008055E /* libMCSegmentedControl.a */,
 				425AE96615733DF10002CBE8 /* libStyledPageControl.a */,
+				425AE9D0157341F40002CBE8 /* libCocoaSecurity.a */,
+				427EFF2415736A27009ED244 /* libITNSStreamUtil.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1547,14 +1603,16 @@
 				42ABACB314147B4000537B39 /* ASIHTTPRequest */,
 				42F6636E13E9618E0068F7CF /* AudioStreamer */,
 				C4A0504814756956006CC4B0 /* CocoaAMF */,
+				425AE9DA1573425C0002CBE8 /* CocoaSecurity */,
 				4225CA4314F745F2003B893A /* CurledView */,
 				427B59FA1473BAC100747E9B /* DCRoundSwitch */,
 				42C218AD1498A62400AD9FED /* EGOPhotoViewer */,
 				42F6627D13E93E5C0068F7CF /* FTUtils */,
 				423F456715240BE400F11D23 /* iCarousel */,
+				427EFF3F15736A4D009ED244 /* ITNSStreamUtil */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
 				42448785156F72BC0008055E /* MCSegmentedControl */,
 				420B1DC91566030D005796A6 /* MGSplitViewController */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
 				C4640F9915565B2F0029DF8F /* PrettyKit */,
 				42BB884F1495F8AC0099E2E4 /* RTLabel */,
 				4225CA9D14F74DA5003B893A /* SpriteAnimation */,
@@ -1771,6 +1829,26 @@
 			path = StyledPageControl;
 			sourceTree = "<group>";
 		};
+		425AE9DA1573425C0002CBE8 /* CocoaSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				425AE9DB1573425C0002CBE8 /* CocoaSecurity.h */,
+				425AE9DC1573425C0002CBE8 /* CocoaSecurity.m */,
+				425AE9DD1573425C0002CBE8 /* GTMBase64 */,
+			);
+			path = CocoaSecurity;
+			sourceTree = "<group>";
+		};
+		425AE9DD1573425C0002CBE8 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				425AE9DE1573425C0002CBE8 /* CocoaSecurity-GTMBase64.h */,
+				425AE9DF1573425C0002CBE8 /* CocoaSecurity-GTMBase64.m */,
+				425AE9E01573425C0002CBE8 /* CocoaSecurity-GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
 		427B59FA1473BAC100747E9B /* DCRoundSwitch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1813,6 +1891,15 @@
 				427EEB65140756C000A6BB57 /* YTSoundPlayer.m */,
 			);
 			name = SoundPlayer;
+			sourceTree = "<group>";
+		};
+		427EFF3F15736A4D009ED244 /* ITNSStreamUtil */ = {
+			isa = PBXGroup;
+			children = (
+				427EFF4015736A4D009ED244 /* ITNSStreamUtil.h */,
+				427EFF4115736A4D009ED244 /* ITNSStreamUtil.m */,
+			);
+			path = ITNSStreamUtil;
 			sourceTree = "<group>";
 		};
 		428ED9F513DEB82300F10F87 /* MFMailComposeViewController */ = {
@@ -2815,6 +2902,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		425AE9CC157341F40002CBE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425AE9E11573425C0002CBE8 /* CocoaSecurity.h in Headers */,
+				425AE9E31573425C0002CBE8 /* CocoaSecurity-GTMBase64.h in Headers */,
+				425AE9E51573425C0002CBE8 /* CocoaSecurity-GTMDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427B59ED1473BA9A00747E9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2823,6 +2920,14 @@
 				427B5A041473BAD700747E9B /* DCRoundSwitchKnobLayer.h in Headers */,
 				427B5A051473BAD700747E9B /* DCRoundSwitchOutlineLayer.h in Headers */,
 				427B5A061473BAD700747E9B /* DCRoundSwitchToggleLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427EFF2015736A27009ED244 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427EFF4215736A4D009ED244 /* ITNSStreamUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3215,6 +3320,23 @@
 			productReference = 425AE96615733DF10002CBE8 /* libStyledPageControl.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		425AE9CF157341F40002CBE8 /* CocoaSecurity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 425AE9D4157341F80002CBE8 /* Build configuration list for PBXNativeTarget "CocoaSecurity" */;
+			buildPhases = (
+				425AE9CC157341F40002CBE8 /* Headers */,
+				425AE9CD157341F40002CBE8 /* Sources */,
+				425AE9CE157341F40002CBE8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaSecurity;
+			productName = CocoaSecurity;
+			productReference = 425AE9D0157341F40002CBE8 /* libCocoaSecurity.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		427B59F01473BA9A00747E9B /* DCRoundSwitch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 427B59F91473BAA600747E9B /* Build configuration list for PBXNativeTarget "DCRoundSwitch" */;
@@ -3230,6 +3352,23 @@
 			name = DCRoundSwitch;
 			productName = DCRoundSwitch;
 			productReference = 427B59F11473BA9A00747E9B /* libDCRoundSwitch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		427EFF2315736A27009ED244 /* ITNSStreamUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427EFF3E15736A3E009ED244 /* Build configuration list for PBXNativeTarget "ITNSStreamUtil" */;
+			buildPhases = (
+				427EFF2015736A27009ED244 /* Headers */,
+				427EFF2115736A27009ED244 /* Sources */,
+				427EFF2215736A27009ED244 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ITNSStreamUtil;
+			productName = ITNSStreamUtil;
+			productReference = 427EFF2415736A27009ED244 /* libITNSStreamUtil.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		42ABACAD1414790F00537B39 /* ASIHTTPRequest */ = {
@@ -3347,6 +3486,8 @@
 				42AD39FE14F7722C00C18A08 /* PBXTargetDependency */,
 				4204BF4115578B3400DCA6E7 /* PBXTargetDependency */,
 				42F6613213E932B30068F7CF /* PBXTargetDependency */,
+				425AE9E9157342A10002CBE8 /* PBXTargetDependency */,
+				427EFF4515736A82009ED244 /* PBXTargetDependency */,
 			);
 			name = YTLibrary;
 			productName = YTLibrary;
@@ -3489,11 +3630,13 @@
 				42ABACAD1414790F00537B39 /* ASIHTTPRequest */,
 				42F6636113E961770068F7CF /* AudioStreamer */,
 				C4A0506C14756973006CC4B0 /* CocoaAMF */,
+				425AE9CF157341F40002CBE8 /* CocoaSecurity */,
 				4225CA3F14F745DC003B893A /* CurledView */,
 				427B59F01473BA9A00747E9B /* DCRoundSwitch */,
 				42C218A91498A60A00AD9FED /* EGOPhotoViewer */,
 				42F6627013E93E460068F7CF /* FTUtils */,
 				423F456315240BC900F11D23 /* iCarousel */,
+				427EFF2315736A27009ED244 /* ITNSStreamUtil */,
 				4244877F156F729C0008055E /* MCSegmentedControl */,
 				42596EC71566021E005366CD /* MGSplitViewController */,
 				C4DA0F80155E948F0079321E /* PetHunter */,
@@ -3661,6 +3804,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		425AE9CD157341F40002CBE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425AE9E21573425C0002CBE8 /* CocoaSecurity.m in Sources */,
+				425AE9E41573425C0002CBE8 /* CocoaSecurity-GTMBase64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427B59EE1473BA9A00747E9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3669,6 +3821,14 @@
 				427B5A081473BADB00747E9B /* DCRoundSwitchKnobLayer.m in Sources */,
 				427B5A091473BADB00747E9B /* DCRoundSwitchOutlineLayer.m in Sources */,
 				427B5A0A1473BADB00747E9B /* DCRoundSwitchToggleLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427EFF2115736A27009ED244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427EFF4315736A4D009ED244 /* ITNSStreamUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3972,10 +4132,20 @@
 			target = 425AE96515733DF10002CBE8 /* StyledPageControl */;
 			targetProxy = 425AE97B15733EB50002CBE8 /* PBXContainerItemProxy */;
 		};
+		425AE9E9157342A10002CBE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 425AE9CF157341F40002CBE8 /* CocoaSecurity */;
+			targetProxy = 425AE9E8157342A10002CBE8 /* PBXContainerItemProxy */;
+		};
 		427B5A1C1473BB2400747E9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 427B59F01473BA9A00747E9B /* DCRoundSwitch */;
 			targetProxy = 427B5A1B1473BB2400747E9B /* PBXContainerItemProxy */;
+		};
+		427EFF4515736A82009ED244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427EFF2315736A27009ED244 /* ITNSStreamUtil */;
+			targetProxy = 427EFF4415736A82009ED244 /* PBXContainerItemProxy */;
 		};
 		42ABAD3314147C2800537B39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4319,6 +4489,33 @@
 			};
 			name = Release;
 		};
+		425AE9D1157341F50002CBE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaSecurity;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		425AE9D2157341F50002CBE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaSecurity;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		427B59F21473BA9B00747E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4341,6 +4538,33 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = DCRoundSwitch;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		427EFF2515736A27009ED244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = ITNSStreamUtil;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		427EFF2615736A27009ED244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = ITNSStreamUtil;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -4851,11 +5075,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		425AE9D4157341F80002CBE8 /* Build configuration list for PBXNativeTarget "CocoaSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425AE9D1157341F50002CBE8 /* Debug */,
+				425AE9D2157341F50002CBE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		427B59F91473BAA600747E9B /* Build configuration list for PBXNativeTarget "DCRoundSwitch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				427B59F21473BA9B00747E9B /* Debug */,
 				427B59F31473BA9B00747E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427EFF3E15736A3E009ED244 /* Build configuration list for PBXNativeTarget "ITNSStreamUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427EFF2515736A27009ED244 /* Debug */,
+				427EFF2615736A27009ED244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -89,6 +89,19 @@ if [ ! -e "$COCOAAMF_PATH" ]; then
 fi
 cp CocoaAMF/*.h "$COCOAAMF_PATH"
 
+#CocoaSecurity
+COCOASECURITY_PATH=${STATICLIB}/CocoaSecurity
+if [ ! -e "$COCOASECURITY_PATH" ]; then
+	mkdir "$COCOASECURITY_PATH"
+fi
+cp CocoaSecurity/*.h "$COCOASECURITY_PATH"
+
+COCOASECURITY_GTMBASE64_PATH=${COCOASECURITY_PATH}/GTMBase64
+if [ ! -e "$COCOASECURITY_GTMBASE64_PATH" ]; then
+	mkdir "$COCOASECURITY_GTMBASE64_PATH"
+fi
+cp CocoaSecurity/GTMBase64/*.h "$COCOASECURITY_GTMBASE64_PATH"
+
 #CurledView
 CURLEDVIEW_PATH=${STATICLIB}/CurledView
 if [ ! -e "$CURLEDVIEW_PATH" ]; then
@@ -124,6 +137,13 @@ if [ ! -e "$ICAROUSEL_PATH" ]; then
 	mkdir "$ICAROUSEL_PATH"
 fi
 cp iCarousel/*.h "$ICAROUSEL_PATH"
+
+#ITNSStreamUtil
+ITNSSTREAMUTIL_PATH=${STATICLIB}/ITNSStreamUtil
+if [ ! -e "$ITNSSTREAMUTIL_PATH" ]; then
+	mkdir "$ITNSSTREAMUTIL_PATH"
+fi
+cp ITNSStreamUtil/*.h "$ITNSSTREAMUTIL_PATH"
 
 #MCSegmentedControl
 MCSEGMENTEDCONTROL_PATH=${STATICLIB}/MCSegmentedControl
