@@ -52,6 +52,7 @@
 #import "DCRoundSwitch.h"
 #import "EGOPhotoGlobal.h"
 #import "FTAnimation.h"
+#import "HTMLParser.h"
 #import "ITNSStreamUtil.h"
 #import "iCarousel.h"
 #import "MCSegmentedControl.h"

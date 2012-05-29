@@ -618,7 +618,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 427EFF2315736A27009ED244 /* ITNSStreamUtil */;
+			remoteGlobalIDString = 427EFF2315736A27009ED244;
 			remoteInfo = ITNSStreamUtil;
 		};
 		42ABAD3214147C2800537B39 /* PBXContainerItemProxy */ = {
@@ -988,6 +988,7 @@
 		42C656D714581F2300D576C8 /* YTTapDetectingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTapDetectingWindow.m; sourceTree = "<group>"; };
 		42D7877214049C0400AB17F1 /* NSURL+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Addition.h"; sourceTree = "<group>"; };
 		42D7877314049C0400AB17F1 /* NSURL+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Addition.m"; sourceTree = "<group>"; };
+		42E694D81574999200F9679F /* libHTMLParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHTMLParser.a; path = "build/Release-iphonesimulator/libHTMLParser.a"; sourceTree = "<group>"; };
 		42F26A7D14960AC800F28181 /* UINavigationController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Addition.h"; sourceTree = "<group>"; };
 		42F26A7E14960AC800F28181 /* UINavigationController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Addition.m"; sourceTree = "<group>"; };
 		42F26C4F14970E0F00F28181 /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
@@ -1416,6 +1417,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42E694D61574999200F9679F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6D13E6AD3F0068F7CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1578,6 +1586,7 @@
 				425AE96615733DF10002CBE8 /* libStyledPageControl.a */,
 				425AE9D0157341F40002CBE8 /* libCocoaSecurity.a */,
 				427EFF2415736A27009ED244 /* libITNSStreamUtil.a */,
+				42E694D81574999200F9679F /* libHTMLParser.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3012,6 +3021,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42E694D41574999200F9679F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6B13E6AD3F0068F7CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3456,6 +3472,23 @@
 			productReference = 42C218AA1498A60A00AD9FED /* libEGOPhotoViewer.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		42E694D71574999200F9679F /* HTMLParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42E694DF1574999A00F9679F /* Build configuration list for PBXNativeTarget "HTMLParser" */;
+			buildPhases = (
+				42E694D41574999200F9679F /* Headers */,
+				42E694D51574999200F9679F /* Sources */,
+				42E694D61574999200F9679F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTMLParser;
+			productName = HTMLParser;
+			productReference = 42E694D81574999200F9679F /* libHTMLParser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		42F65A6E13E6AD3F0068F7CF /* YTLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42F65A8313E6AD660068F7CF /* Build configuration list for PBXNativeTarget "YTLibrary" */;
@@ -3649,6 +3682,7 @@
 				4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */,
 				42F65A6E13E6AD3F0068F7CF /* YTLibrary */,
 				42F6605B13E92D330068F7CF /* ZipArchive */,
+				42E694D71574999200F9679F /* HTMLParser */,
 			);
 		};
 /* End PBXProject section */
@@ -3903,6 +3937,13 @@
 				42C218D21498A62400AD9FED /* EGOPhotoViewController.m in Sources */,
 				42C218D41498A62400AD9FED /* EGOQuickPhoto.m in Sources */,
 				42C218D61498A62400AD9FED /* EGOQuickPhotoSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E694D51574999200F9679F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4707,6 +4748,33 @@
 			};
 			name = Release;
 		};
+		42E694D91574999200F9679F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = HTMLParser;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42E694DA1574999200F9679F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = HTMLParser;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		42F65A7013E6AD3F0068F7CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5143,6 +5211,15 @@
 			buildConfigurations = (
 				42C218AB1498A60A00AD9FED /* Debug */,
 				42C218AC1498A60A00AD9FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42E694DF1574999A00F9679F /* Build configuration list for PBXNativeTarget "HTMLParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42E694D91574999200F9679F /* Debug */,
+				42E694DA1574999200F9679F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
