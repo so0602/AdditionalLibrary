@@ -291,6 +291,12 @@
 		42EE4CCF1575EEB6003F2F57 /* LoggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4CCC1575EEB6003F2F57 /* LoggerClient.h */; };
 		42EE4CD01575EEB6003F2F57 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4CCD1575EEB6003F2F57 /* LoggerClient.m */; };
 		42EE4CD11575EEB6003F2F57 /* LoggerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4CCE1575EEB6003F2F57 /* LoggerCommon.h */; };
+		42EE4CD915760527003F2F57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		42EE4CE215760553003F2F57 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CE115760553003F2F57 /* CoreFoundation.framework */; };
+		42EE4CE61576057F003F2F57 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4CE41576057F003F2F57 /* JSONKit.h */; };
+		42EE4CE71576057F003F2F57 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4CE51576057F003F2F57 /* JSONKit.m */; };
+		42EE4CE8157605C2003F2F57 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CE115760553003F2F57 /* CoreFoundation.framework */; };
+		42EE4CEB15760624003F2F57 /* libJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CE015760527003F2F57 /* libJSONKit.a */; };
 		42F26A7F14960AC800F28181 /* UINavigationController+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F26A7D14960AC800F28181 /* UINavigationController+Addition.h */; };
 		42F26A8014960AC800F28181 /* UINavigationController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F26A7E14960AC800F28181 /* UINavigationController+Addition.m */; };
 		42F26AC8149618E200F28181 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BB88A51495FB600099E2E4 /* CoreText.framework */; };
@@ -687,6 +693,13 @@
 			remoteGlobalIDString = 42C218A91498A60A00AD9FED;
 			remoteInfo = EGOPhotoViewer;
 		};
+		42EE4CE915760619003F2F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE4CD215760527003F2F57;
+			remoteInfo = JSONKit;
+		};
 		42F6613113E932B30068F7CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -1028,6 +1041,10 @@
 		42EE4CCC1575EEB6003F2F57 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerClient.h; path = NSLogger/ClientLogger/iOS/LoggerClient.h; sourceTree = "<group>"; };
 		42EE4CCD1575EEB6003F2F57 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoggerClient.m; path = NSLogger/ClientLogger/iOS/LoggerClient.m; sourceTree = "<group>"; };
 		42EE4CCE1575EEB6003F2F57 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerCommon.h; path = NSLogger/ClientLogger/iOS/LoggerCommon.h; sourceTree = "<group>"; };
+		42EE4CE015760527003F2F57 /* libJSONKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSONKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE4CE115760553003F2F57 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		42EE4CE41576057F003F2F57 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		42EE4CE51576057F003F2F57 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		42F26A7D14960AC800F28181 /* UINavigationController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Addition.h"; sourceTree = "<group>"; };
 		42F26A7E14960AC800F28181 /* UINavigationController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Addition.m"; sourceTree = "<group>"; };
 		42F26C4F14970E0F00F28181 /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
@@ -1477,10 +1494,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE4CD815760527003F2F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4CE215760553003F2F57 /* CoreFoundation.framework in Frameworks */,
+				42EE4CD915760527003F2F57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6D13E6AD3F0068F7CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EE4CEB15760624003F2F57 /* libJSONKit.a in Frameworks */,
 				42F65BB613E6AE470068F7CF /* CoreGraphics.framework in Frameworks */,
 				42F65BB713E6AE470068F7CF /* CoreLocation.framework in Frameworks */,
 				42BB88A91495FB6D0099E2E4 /* CoreText.framework in Frameworks */,
@@ -1518,6 +1545,7 @@
 				42A277351575EB5A000C59A1 /* libHTMLParser.a in Frameworks */,
 				42A277361575EB5A000C59A1 /* libNSLogger.a in Frameworks */,
 				42A277371575EB71000C59A1 /* CFNetwork.framework in Frameworks */,
+				42EE4CE8157605C2003F2F57 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1644,6 +1672,7 @@
 				427EFF2415736A27009ED244 /* libITNSStreamUtil.a */,
 				42E694D81574999200F9679F /* libHTMLParser.a */,
 				42A277231575EA53000C59A1 /* libNSLogger.a */,
+				42EE4CE015760527003F2F57 /* libJSONKit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1677,6 +1706,7 @@
 				42852FC01575EC8F005D7632 /* HTMLParser */,
 				423F456715240BE400F11D23 /* iCarousel */,
 				427EFF3F15736A4D009ED244 /* ITNSStreamUtil */,
+				42EE4CE31576057F003F2F57 /* JSONKit */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				42448785156F72BC0008055E /* MCSegmentedControl */,
 				420B1DC91566030D005796A6 /* MGSplitViewController */,
@@ -1712,6 +1742,7 @@
 				42F6637713E961B50068F7CF /* AVFoundation.framework */,
 				42F663BE13E962430068F7CF /* CFNetwork.framework */,
 				C4DA0FB9155E9A6C0079321E /* CoreData.framework */,
+				42EE4CE115760553003F2F57 /* CoreFoundation.framework */,
 				423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */,
 				C4DA0FBB155E9A790079321E /* CoreImage.framework */,
 				423EEF8B13D82DEB003CA78D /* CoreLocation.framework */,
@@ -2284,6 +2315,15 @@
 				42D7877314049C0400AB17F1 /* NSURL+Addition.m */,
 			);
 			name = NSURL;
+			sourceTree = "<group>";
+		};
+		42EE4CE31576057F003F2F57 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				42EE4CE41576057F003F2F57 /* JSONKit.h */,
+				42EE4CE51576057F003F2F57 /* JSONKit.m */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 		42F26A7A14960A9400F28181 /* UINavigationController */ = {
@@ -3119,6 +3159,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE4CD315760527003F2F57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4CE61576057F003F2F57 /* JSONKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6B13E6AD3F0068F7CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3597,6 +3645,23 @@
 			productReference = 42E694D81574999200F9679F /* libHTMLParser.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		42EE4CD215760527003F2F57 /* JSONKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE4CDD15760527003F2F57 /* Build configuration list for PBXNativeTarget "JSONKit" */;
+			buildPhases = (
+				42EE4CD315760527003F2F57 /* Headers */,
+				42EE4CD615760527003F2F57 /* Sources */,
+				42EE4CD815760527003F2F57 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONKit;
+			productName = NSLogger;
+			productReference = 42EE4CE015760527003F2F57 /* libJSONKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		42F65A6E13E6AD3F0068F7CF /* YTLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42F65A8313E6AD660068F7CF /* Build configuration list for PBXNativeTarget "YTLibrary" */;
@@ -3608,6 +3673,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				42EE4CEA15760619003F2F57 /* PBXTargetDependency */,
 				425260E51557920D00D4D689 /* PBXTargetDependency */,
 				42ABAD3314147C2800537B39 /* PBXTargetDependency */,
 				42F663CD13E9626C0068F7CF /* PBXTargetDependency */,
@@ -3778,10 +3844,13 @@
 				427B59F01473BA9A00747E9B /* DCRoundSwitch */,
 				42C218A91498A60A00AD9FED /* EGOPhotoViewer */,
 				42F6627013E93E460068F7CF /* FTUtils */,
+				42E694D71574999200F9679F /* HTMLParser */,
 				423F456315240BC900F11D23 /* iCarousel */,
 				427EFF2315736A27009ED244 /* ITNSStreamUtil */,
+				42EE4CD215760527003F2F57 /* JSONKit */,
 				4244877F156F729C0008055E /* MCSegmentedControl */,
 				42596EC71566021E005366CD /* MGSplitViewController */,
+				42A277221575EA53000C59A1 /* NSLogger */,
 				C4DA0F80155E948F0079321E /* PetHunter */,
 				C4640F7B15565B1D0029DF8F /* PrettyKit */,
 				42BB88471495F8960099E2E4 /* RTLabel */,
@@ -3792,8 +3861,6 @@
 				4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */,
 				42F65A6E13E6AD3F0068F7CF /* YTLibrary */,
 				42F6605B13E92D330068F7CF /* ZipArchive */,
-				42E694D71574999200F9679F /* HTMLParser */,
-				42A277221575EA53000C59A1 /* NSLogger */,
 			);
 		};
 /* End PBXProject section */
@@ -4065,6 +4132,14 @@
 			files = (
 				42852FC61575EC8F005D7632 /* HTMLNode.m in Sources */,
 				42852FC81575EC8F005D7632 /* HTMLParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE4CD615760527003F2F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4CE71576057F003F2F57 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4343,6 +4418,11 @@
 			isa = PBXTargetDependency;
 			target = 42C218A91498A60A00AD9FED /* EGOPhotoViewer */;
 			targetProxy = 42C2190B1498A77600AD9FED /* PBXContainerItemProxy */;
+		};
+		42EE4CEA15760619003F2F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EE4CD215760527003F2F57 /* JSONKit */;
+			targetProxy = 42EE4CE915760619003F2F57 /* PBXContainerItemProxy */;
 		};
 		42F6613213E932B30068F7CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4935,6 +5015,33 @@
 			};
 			name = Release;
 		};
+		42EE4CDE15760527003F2F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = JSONKit;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42EE4CDF15760527003F2F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = JSONKit;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		42F65A7013E6AD3F0068F7CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5389,6 +5496,15 @@
 			buildConfigurations = (
 				42E694D91574999200F9679F /* Debug */,
 				42E694DA1574999200F9679F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EE4CDD15760527003F2F57 /* Build configuration list for PBXNativeTarget "JSONKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE4CDE15760527003F2F57 /* Debug */,
+				42EE4CDF15760527003F2F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

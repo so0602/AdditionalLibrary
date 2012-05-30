@@ -132,6 +132,13 @@ if [ ! -e "$FTUTILS_PATH" ]; then
 fi
 cp FTUtils/*.h "$FTUTILS_PATH"
 
+#JSONKit
+JSONKIT_PATH=${STATICLIB}/JSONKit
+if [ ! -e "$JSONKIT_PATH" ]; then
+mkdir "$JSONKIT_PATH"
+fi
+cp JSONKit/*.h "$JSONKIT_PATH"
+
 #iCarousel
 ICAROUSEL_PATH=${STATICLIB}/iCarousel
 if [ ! -e "$ICAROUSEL_PATH" ]; then
