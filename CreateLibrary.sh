@@ -132,13 +132,6 @@ if [ ! -e "$FTUTILS_PATH" ]; then
 fi
 cp FTUtils/*.h "$FTUTILS_PATH"
 
-#JSONKit
-JSONKIT_PATH=${STATICLIB}/JSONKit
-if [ ! -e "$JSONKIT_PATH" ]; then
-mkdir "$JSONKIT_PATH"
-fi
-cp JSONKit/*.h "$JSONKIT_PATH"
-
 #iCarousel
 ICAROUSEL_PATH=${STATICLIB}/iCarousel
 if [ ! -e "$ICAROUSEL_PATH" ]; then
@@ -152,6 +145,13 @@ if [ ! -e "$ITNSSTREAMUTIL_PATH" ]; then
 	mkdir "$ITNSSTREAMUTIL_PATH"
 fi
 cp ITNSStreamUtil/*.h "$ITNSSTREAMUTIL_PATH"
+
+#JSONKit
+JSONKIT_PATH=${STATICLIB}/JSONKit
+if [ ! -e "$JSONKIT_PATH" ]; then
+mkdir "$JSONKIT_PATH"
+fi
+cp JSONKit/*.h "$JSONKIT_PATH"
 
 #NSLogger
 NSLOGGER_PATH=${STATICLIB}/NSLogger
@@ -221,6 +221,14 @@ if [ ! -e "$SVPROGRESSHUD_PATH" ]; then
 fi
 cp SVProgressHUD/*.h "$SVPROGRESSHUD_PATH"
 cp -R SVProgressHUD/*.bundle "$SVPROGRESSHUD_PATH"
+
+#SVPullToRefresh
+SVPULLTOREFRESH_PATH=${STATICLIB}/SVPullToRefresh
+if [ ! -e "$SVPULLTOREFRESH_PATH" ]; then
+mkdir "$SVPULLTOREFRESH_PATH"
+fi
+cp SVPullToRefresh/*.h "$SVPULLTOREFRESH_PATH"
+cp -R SVPullToRefresh/*.bundle "$SVPULLTOREFRESH_PATH"
 
 #UAModalPanel
 UAMODALPANEL_PATH=${STATICLIB}/UAModalPanel
