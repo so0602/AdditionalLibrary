@@ -14,6 +14,7 @@ xcodebuild -sdk $DEVICE "ARCHS=armv6 armv7" -target $TARGET
 xcodebuild -sdk $SIMULATOR "ARCHS=i386 x86_64" "VALID_ARCHS=i386 x86_64" -target $TARGET
 
 BUILD_PATH=${BUILD_DIR}
+#Change Your Build Directory
 #BUILD_PATH="/Users/DeViLsO/Desktop/iPhone/Builds"
 BUILD_PATH="/Users/freddyso/Desktop/iPhone/AdditionalLibrary/build"
 
@@ -144,6 +145,13 @@ if [ ! -e "$ITNSSTREAMUTIL_PATH" ]; then
 	mkdir "$ITNSSTREAMUTIL_PATH"
 fi
 cp ITNSStreamUtil/*.h "$ITNSSTREAMUTIL_PATH"
+
+#NSLogger
+NSLOGGER_PATH=${STATICLIB}/NSLogger
+if [ ! -e "$NSLOGGER_PATH" ]; then
+	mkdir "$NSLOGGER_PATH"
+fi
+cp NSLogger/ClientLogger/iOS/*.h "$NSLOGGER_PATH"
 
 #MCSegmentedControl
 MCSEGMENTEDCONTROL_PATH=${STATICLIB}/MCSegmentedControl

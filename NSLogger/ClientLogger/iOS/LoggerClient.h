@@ -37,6 +37,7 @@
 #import <pthread.h>
 #import <libkern/OSAtomic.h>
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <CoreFoundation/CoreFoundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #if !TARGET_OS_IPHONE

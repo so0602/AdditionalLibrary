@@ -55,6 +55,7 @@
 #import "HTMLParser.h"
 #import "ITNSStreamUtil.h"
 #import "iCarousel.h"
+#import "LoggerClient.h"
 #import "MCSegmentedControl.h"
 #import "MGSplitViewController.h"
 #import "PrettyKit.h"
