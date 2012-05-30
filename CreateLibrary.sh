@@ -153,6 +153,12 @@ if [ ! -e "$NSLOGGER_PATH" ]; then
 fi
 cp NSLogger/ClientLogger/iOS/*.h "$NSLOGGER_PATH"
 
+NSLOGGER_DESTOPVIEWER_PATH=${NSLOGGER_PATH}/DestopViewer
+if [ ! -e "$NSLOGGER_DESTOPVIEWER_PATH" ]; then
+mkdir "$NSLOGGER_DESTOPVIEWER_PATH"
+fi
+cp -r NSLogger/DesktopViewer/* "$NSLOGGER_DESTOPVIEWER_PATH"
+
 #MCSegmentedControl
 MCSEGMENTEDCONTROL_PATH=${STATICLIB}/MCSegmentedControl
 if [ ! -e "$MCSEGMENTEDCONTROL_PATH" ]; then
