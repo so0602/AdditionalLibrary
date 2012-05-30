@@ -304,6 +304,20 @@
 		42EE4D0715760B77003F2F57 /* SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4D0515760B77003F2F57 /* SVPullToRefresh.h */; };
 		42EE4D0815760B77003F2F57 /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4D0615760B77003F2F57 /* SVPullToRefresh.m */; };
 		42EE4D0B15760BF9003F2F57 /* libSVPullToRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CFB15760AE3003F2F57 /* libSVPullToRefresh.a */; };
+		42EE4D1415760FB3003F2F57 /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4D0615760B77003F2F57 /* SVPullToRefresh.m */; };
+		42EE4D1715760FB3003F2F57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		42EE4D1815760FB3003F2F57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		42EE4D1915760FB3003F2F57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		42EE4D1E15760FF2003F2F57 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424A2155145E48F4007E0EF8 /* MapKit.framework */; };
+		42EE4D2015760FF9003F2F57 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4D1F15760FF9003F2F57 /* AddressBook.framework */; };
+		42EE4D2115761008003F2F57 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8B13D82DEB003CA78D /* CoreLocation.framework */; };
+		42EE4D241576102E003F2F57 /* libJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CE015760527003F2F57 /* libJSONKit.a */; };
+		42EE4D2A1576106A003F2F57 /* SVGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4D261576106A003F2F57 /* SVGeocoder.h */; };
+		42EE4D2B1576106A003F2F57 /* SVGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4D271576106A003F2F57 /* SVGeocoder.m */; };
+		42EE4D2C1576106A003F2F57 /* SVPlacemark.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4D281576106A003F2F57 /* SVPlacemark.h */; };
+		42EE4D2D1576106A003F2F57 /* SVPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4D291576106A003F2F57 /* SVPlacemark.m */; };
+		42EE4D301576115A003F2F57 /* libSVGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4D1D15760FB3003F2F57 /* libSVGeocoder.a */; };
+		42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4D1F15760FF9003F2F57 /* AddressBook.framework */; };
 		42F26A7F14960AC800F28181 /* UINavigationController+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F26A7D14960AC800F28181 /* UINavigationController+Addition.h */; };
 		42F26A8014960AC800F28181 /* UINavigationController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F26A7E14960AC800F28181 /* UINavigationController+Addition.m */; };
 		42F26AC8149618E200F28181 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BB88A51495FB600099E2E4 /* CoreText.framework */; };
@@ -714,6 +728,20 @@
 			remoteGlobalIDString = 42EE4CF015760AE3003F2F57;
 			remoteInfo = SVPullToRefresh;
 		};
+		42EE4D2215761025003F2F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE4CD215760527003F2F57;
+			remoteInfo = JSONKit;
+		};
+		42EE4D2E15761152003F2F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE4D1015760FB3003F2F57;
+			remoteInfo = SVGeocoder;
+		};
 		42F6613113E932B30068F7CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -1063,6 +1091,12 @@
 		42EE4D0415760B77003F2F57 /* SVPullToRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVPullToRefresh.bundle; sourceTree = "<group>"; };
 		42EE4D0515760B77003F2F57 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
 		42EE4D0615760B77003F2F57 /* SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPullToRefresh.m; sourceTree = "<group>"; };
+		42EE4D1D15760FB3003F2F57 /* libSVGeocoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVGeocoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE4D1F15760FF9003F2F57 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		42EE4D261576106A003F2F57 /* SVGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGeocoder.h; sourceTree = "<group>"; };
+		42EE4D271576106A003F2F57 /* SVGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGeocoder.m; sourceTree = "<group>"; };
+		42EE4D281576106A003F2F57 /* SVPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPlacemark.h; sourceTree = "<group>"; };
+		42EE4D291576106A003F2F57 /* SVPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPlacemark.m; sourceTree = "<group>"; };
 		42F26A7D14960AC800F28181 /* UINavigationController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Addition.h"; sourceTree = "<group>"; };
 		42F26A7E14960AC800F28181 /* UINavigationController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Addition.m"; sourceTree = "<group>"; };
 		42F26C4F14970E0F00F28181 /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
@@ -1532,10 +1566,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE4D1515760FB3003F2F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4D241576102E003F2F57 /* libJSONKit.a in Frameworks */,
+				42EE4D2115761008003F2F57 /* CoreLocation.framework in Frameworks */,
+				42EE4D2015760FF9003F2F57 /* AddressBook.framework in Frameworks */,
+				42EE4D1E15760FF2003F2F57 /* MapKit.framework in Frameworks */,
+				42EE4D1715760FB3003F2F57 /* CoreGraphics.framework in Frameworks */,
+				42EE4D1815760FB3003F2F57 /* UIKit.framework in Frameworks */,
+				42EE4D1915760FB3003F2F57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6D13E6AD3F0068F7CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */,
+				42EE4D301576115A003F2F57 /* libSVGeocoder.a in Frameworks */,
 				42EE4D0B15760BF9003F2F57 /* libSVPullToRefresh.a in Frameworks */,
 				42EE4CEB15760624003F2F57 /* libJSONKit.a in Frameworks */,
 				42F65BB613E6AE470068F7CF /* CoreGraphics.framework in Frameworks */,
@@ -1704,6 +1754,7 @@
 				42A277231575EA53000C59A1 /* libNSLogger.a */,
 				42EE4CE015760527003F2F57 /* libJSONKit.a */,
 				42EE4CFB15760AE3003F2F57 /* libSVPullToRefresh.a */,
+				42EE4D1D15760FB3003F2F57 /* libSVGeocoder.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1746,6 +1797,7 @@
 				42BB884F1495F8AC0099E2E4 /* RTLabel */,
 				4225CA9D14F74DA5003B893A /* SpriteAnimation */,
 				425AE96B15733E100002CBE8 /* StyledPageControl */,
+				42EE4D251576106A003F2F57 /* SVGeocoder */,
 				42BB88721495F9B20099E2E4 /* SVProgressHUD */,
 				42EE4D0315760B77003F2F57 /* SVPullToRefresh */,
 				42AD39D014F771B900C18A08 /* UAModalPanel */,
@@ -1770,6 +1822,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42EE4D1F15760FF9003F2F57 /* AddressBook.framework */,
 				42F6637513E961B50068F7CF /* AudioToolbox.framework */,
 				42F6637713E961B50068F7CF /* AVFoundation.framework */,
 				42F663BE13E962430068F7CF /* CFNetwork.framework */,
@@ -2366,6 +2419,17 @@
 				42EE4D0615760B77003F2F57 /* SVPullToRefresh.m */,
 			);
 			path = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
+		42EE4D251576106A003F2F57 /* SVGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				42EE4D261576106A003F2F57 /* SVGeocoder.h */,
+				42EE4D271576106A003F2F57 /* SVGeocoder.m */,
+				42EE4D281576106A003F2F57 /* SVPlacemark.h */,
+				42EE4D291576106A003F2F57 /* SVPlacemark.m */,
+			);
+			path = SVGeocoder;
 			sourceTree = "<group>";
 		};
 		42F26A7A14960A9400F28181 /* UINavigationController */ = {
@@ -3217,6 +3281,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE4D1115760FB3003F2F57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4D2A1576106A003F2F57 /* SVGeocoder.h in Headers */,
+				42EE4D2C1576106A003F2F57 /* SVPlacemark.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6B13E6AD3F0068F7CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3729,6 +3802,24 @@
 			productReference = 42EE4CFB15760AE3003F2F57 /* libSVPullToRefresh.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		42EE4D1015760FB3003F2F57 /* SVGeocoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE4D1A15760FB3003F2F57 /* Build configuration list for PBXNativeTarget "SVGeocoder" */;
+			buildPhases = (
+				42EE4D1115760FB3003F2F57 /* Headers */,
+				42EE4D1315760FB3003F2F57 /* Sources */,
+				42EE4D1515760FB3003F2F57 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42EE4D2315761025003F2F57 /* PBXTargetDependency */,
+			);
+			name = SVGeocoder;
+			productName = NSLogger;
+			productReference = 42EE4D1D15760FB3003F2F57 /* libSVGeocoder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		42F65A6E13E6AD3F0068F7CF /* YTLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42F65A8313E6AD660068F7CF /* Build configuration list for PBXNativeTarget "YTLibrary" */;
@@ -3740,6 +3831,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				42EE4D2F15761152003F2F57 /* PBXTargetDependency */,
 				42EE4D0A15760BF3003F2F57 /* PBXTargetDependency */,
 				42EE4CEA15760619003F2F57 /* PBXTargetDependency */,
 				425260E51557920D00D4D689 /* PBXTargetDependency */,
@@ -3924,6 +4016,7 @@
 				42BB88471495F8960099E2E4 /* RTLabel */,
 				4225CA9214F74D78003B893A /* SpriteAnimation */,
 				425AE96515733DF10002CBE8 /* StyledPageControl */,
+				42EE4D1015760FB3003F2F57 /* SVGeocoder */,
 				42BB886B1495F97D0099E2E4 /* SVProgressHUD */,
 				42EE4CF015760AE3003F2F57 /* SVPullToRefresh */,
 				42AD39C614F7712300C18A08 /* UAModalPanel */,
@@ -4220,6 +4313,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE4D1315760FB3003F2F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4D1415760FB3003F2F57 /* SVPullToRefresh.m in Sources */,
+				42EE4D2B1576106A003F2F57 /* SVGeocoder.m in Sources */,
+				42EE4D2D1576106A003F2F57 /* SVPlacemark.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6C13E6AD3F0068F7CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4505,6 +4608,16 @@
 			isa = PBXTargetDependency;
 			target = 42EE4CF015760AE3003F2F57 /* SVPullToRefresh */;
 			targetProxy = 42EE4D0915760BF3003F2F57 /* PBXContainerItemProxy */;
+		};
+		42EE4D2315761025003F2F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EE4CD215760527003F2F57 /* JSONKit */;
+			targetProxy = 42EE4D2215761025003F2F57 /* PBXContainerItemProxy */;
+		};
+		42EE4D2F15761152003F2F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EE4D1015760FB3003F2F57 /* SVGeocoder */;
+			targetProxy = 42EE4D2E15761152003F2F57 /* PBXContainerItemProxy */;
 		};
 		42F6613213E932B30068F7CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5151,6 +5264,33 @@
 			};
 			name = Release;
 		};
+		42EE4D1B15760FB3003F2F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = SVGeocoder;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42EE4D1C15760FB3003F2F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = SVGeocoder;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		42F65A7013E6AD3F0068F7CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5623,6 +5763,15 @@
 			buildConfigurations = (
 				42EE4CF915760AE3003F2F57 /* Debug */,
 				42EE4CFA15760AE3003F2F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EE4D1A15760FB3003F2F57 /* Build configuration list for PBXNativeTarget "SVGeocoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE4D1B15760FB3003F2F57 /* Debug */,
+				42EE4D1C15760FB3003F2F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

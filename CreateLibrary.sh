@@ -214,6 +214,13 @@ if [ ! -e "$STYLEDPAGECONTROL_PATH" ]; then
 fi
 cp StyledPageControl/*.h "$STYLEDPAGECONTROL_PATH"
 
+#SVGeocoder
+SVGEOCODER_PATH=${STATICLIB}/SVGeocoder
+if [ ! -e "$SVGEOCODER_PATH" ]; then
+mkdir "$SVGEOCODER_PATH"
+fi
+cp SVGeocoder/*.h "$SVGEOCODER_PATH"
+
 #SVProgressHUD
 SVPROGRESSHUD_PATH=${STATICLIB}/SVProgressHUD
 if [ ! -e "$SVPROGRESSHUD_PATH" ]; then
