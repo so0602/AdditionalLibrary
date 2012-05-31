@@ -200,6 +200,28 @@ if [ ! -e "$RTLABEL_PATH" ]; then
 fi
 cp RTLabel/*.h "$RTLABEL_PATH"
 
+#SYCache
+SYCACHE_PATH=${STATICLIB}/SYCache
+if [ ! -e "$SYCACHE_PATH" ]; then
+mkdir "$SYCACHE_PATH"
+fi
+cp SYCache/*.h "$SYCACHE_PATH"
+
+#SYCompositor
+SYCOMPOSITOR_PATH=${STATICLIB}/SYCompositor
+if [ ! -e "$SYCOMPOSITOR_PATH" ]; then
+mkdir "$SYCOMPOSITOR_PATH"
+fi
+cp SYCompositor/*.h "$SYCOMPOSITOR_PATH"
+
+#SYPaginator
+SYPAGINATOR_PATH=${STATICLIB}/SYPaginator
+if [ ! -e "$SYPAGINATOR_PATH" ]; then
+mkdir "$SYPAGINATOR_PATH"
+fi
+cp SYPaginator/*.h "$SYPAGINATOR_PATH"
+cp -R SYPaginator/*.bundle "$SYPAGINATOR_PATH"
+
 #SpriteAnimation
 SPRITEANIMATION_PATH=${STATICLIB}/SpriteAnimation
 if [ ! -e "$SPRITEANIMATION_PATH" ]; then

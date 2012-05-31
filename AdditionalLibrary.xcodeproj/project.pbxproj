@@ -318,6 +318,33 @@
 		42EE4D2D1576106A003F2F57 /* SVPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4D291576106A003F2F57 /* SVPlacemark.m */; };
 		42EE4D301576115A003F2F57 /* libSVGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4D1D15760FB3003F2F57 /* libSVGeocoder.a */; };
 		42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4D1F15760FF9003F2F57 /* AddressBook.framework */; };
+		42EE4E5515775D16003F2F57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		42EE4E5615775D16003F2F57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		42EE4E5E15775D45003F2F57 /* SYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E5C15775D45003F2F57 /* SYCache.h */; };
+		42EE4E5F15775D45003F2F57 /* SYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E5D15775D45003F2F57 /* SYCache.m */; };
+		42EE4E6715775DA4003F2F57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		42EE4E6815775DA4003F2F57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		42EE4E6F15775DCE003F2F57 /* libSYCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4E5A15775D16003F2F57 /* libSYCache.a */; };
+		42EE4E7315775DE4003F2F57 /* SYCompositor.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E7115775DE4003F2F57 /* SYCompositor.h */; };
+		42EE4E7415775DE4003F2F57 /* SYCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E7215775DE4003F2F57 /* SYCompositor.m */; };
+		42EE4E7E15775E4B003F2F57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		42EE4E7F15775E4B003F2F57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		42EE4E9315775E92003F2F57 /* NSBundle+SYPaginator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E8515775E92003F2F57 /* NSBundle+SYPaginator.h */; };
+		42EE4E9415775E92003F2F57 /* NSBundle+SYPaginator.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E8615775E92003F2F57 /* NSBundle+SYPaginator.m */; };
+		42EE4E9515775E92003F2F57 /* SYPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E8715775E92003F2F57 /* SYPageControl.h */; };
+		42EE4E9615775E92003F2F57 /* SYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E8815775E92003F2F57 /* SYPageControl.m */; };
+		42EE4E9715775E92003F2F57 /* SYPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E8915775E92003F2F57 /* SYPageView.h */; };
+		42EE4E9815775E92003F2F57 /* SYPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E8A15775E92003F2F57 /* SYPageView.m */; };
+		42EE4E9915775E92003F2F57 /* SYPaginator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E8B15775E92003F2F57 /* SYPaginator.h */; };
+		42EE4E9A15775E92003F2F57 /* SYPaginatorScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E8D15775E92003F2F57 /* SYPaginatorScrollView.h */; };
+		42EE4E9B15775E92003F2F57 /* SYPaginatorScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E8E15775E92003F2F57 /* SYPaginatorScrollView.m */; };
+		42EE4E9C15775E92003F2F57 /* SYPaginatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E8F15775E92003F2F57 /* SYPaginatorView.h */; };
+		42EE4E9D15775E92003F2F57 /* SYPaginatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E9015775E92003F2F57 /* SYPaginatorView.m */; };
+		42EE4E9E15775E92003F2F57 /* SYPaginatorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E9115775E92003F2F57 /* SYPaginatorViewController.h */; };
+		42EE4E9F15775E92003F2F57 /* SYPaginatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E9215775E92003F2F57 /* SYPaginatorViewController.m */; };
+		42EE4EA615775ED2003F2F57 /* libSYCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4E5A15775D16003F2F57 /* libSYCache.a */; };
+		42EE4EA715775ED2003F2F57 /* libSYCompositor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4E6C15775DA4003F2F57 /* libSYCompositor.a */; };
+		42EE4EA815775ED2003F2F57 /* libSYPaginator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4E8315775E4B003F2F57 /* libSYPaginator.a */; };
 		42F26A7F14960AC800F28181 /* UINavigationController+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F26A7D14960AC800F28181 /* UINavigationController+Addition.h */; };
 		42F26A8014960AC800F28181 /* UINavigationController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F26A7E14960AC800F28181 /* UINavigationController+Addition.m */; };
 		42F26AC8149618E200F28181 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BB88A51495FB600099E2E4 /* CoreText.framework */; };
@@ -742,6 +769,34 @@
 			remoteGlobalIDString = 42EE4D1015760FB3003F2F57;
 			remoteInfo = SVGeocoder;
 		};
+		42EE4E6D15775DC6003F2F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE4E4F15775D16003F2F57;
+			remoteInfo = SYCache;
+		};
+		42EE4EA015775EC8003F2F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE4E4F15775D16003F2F57;
+			remoteInfo = SYCache;
+		};
+		42EE4EA215775EC8003F2F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE4E6115775DA4003F2F57;
+			remoteInfo = SYCompositor;
+		};
+		42EE4EA415775EC8003F2F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE4E7515775E4B003F2F57;
+			remoteInfo = SYPaginator;
+		};
 		42F6613113E932B30068F7CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -1097,6 +1152,27 @@
 		42EE4D271576106A003F2F57 /* SVGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGeocoder.m; sourceTree = "<group>"; };
 		42EE4D281576106A003F2F57 /* SVPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPlacemark.h; sourceTree = "<group>"; };
 		42EE4D291576106A003F2F57 /* SVPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPlacemark.m; sourceTree = "<group>"; };
+		42EE4E5A15775D16003F2F57 /* libSYCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSYCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE4E5C15775D45003F2F57 /* SYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYCache.h; sourceTree = "<group>"; };
+		42EE4E5D15775D45003F2F57 /* SYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYCache.m; sourceTree = "<group>"; };
+		42EE4E6C15775DA4003F2F57 /* libSYCompositor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSYCompositor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE4E7115775DE4003F2F57 /* SYCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYCompositor.h; sourceTree = "<group>"; };
+		42EE4E7215775DE4003F2F57 /* SYCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYCompositor.m; sourceTree = "<group>"; };
+		42EE4E8315775E4B003F2F57 /* libSYPaginator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSYPaginator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE4E8515775E92003F2F57 /* NSBundle+SYPaginator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SYPaginator.h"; sourceTree = "<group>"; };
+		42EE4E8615775E92003F2F57 /* NSBundle+SYPaginator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SYPaginator.m"; sourceTree = "<group>"; };
+		42EE4E8715775E92003F2F57 /* SYPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYPageControl.h; sourceTree = "<group>"; };
+		42EE4E8815775E92003F2F57 /* SYPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYPageControl.m; sourceTree = "<group>"; };
+		42EE4E8915775E92003F2F57 /* SYPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYPageView.h; sourceTree = "<group>"; };
+		42EE4E8A15775E92003F2F57 /* SYPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYPageView.m; sourceTree = "<group>"; };
+		42EE4E8B15775E92003F2F57 /* SYPaginator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYPaginator.h; sourceTree = "<group>"; };
+		42EE4E8C15775E92003F2F57 /* SYPaginatorResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SYPaginatorResources.bundle; sourceTree = "<group>"; };
+		42EE4E8D15775E92003F2F57 /* SYPaginatorScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYPaginatorScrollView.h; sourceTree = "<group>"; };
+		42EE4E8E15775E92003F2F57 /* SYPaginatorScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYPaginatorScrollView.m; sourceTree = "<group>"; };
+		42EE4E8F15775E92003F2F57 /* SYPaginatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYPaginatorView.h; sourceTree = "<group>"; };
+		42EE4E9015775E92003F2F57 /* SYPaginatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYPaginatorView.m; sourceTree = "<group>"; };
+		42EE4E9115775E92003F2F57 /* SYPaginatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYPaginatorViewController.h; sourceTree = "<group>"; };
+		42EE4E9215775E92003F2F57 /* SYPaginatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYPaginatorViewController.m; sourceTree = "<group>"; };
 		42F26A7D14960AC800F28181 /* UINavigationController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Addition.h"; sourceTree = "<group>"; };
 		42F26A7E14960AC800F28181 /* UINavigationController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Addition.m"; sourceTree = "<group>"; };
 		42F26C4F14970E0F00F28181 /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
@@ -1580,10 +1656,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE4E5415775D16003F2F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E5515775D16003F2F57 /* Foundation.framework in Frameworks */,
+				42EE4E5615775D16003F2F57 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE4E6615775DA4003F2F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E6F15775DCE003F2F57 /* libSYCache.a in Frameworks */,
+				42EE4E6715775DA4003F2F57 /* Foundation.framework in Frameworks */,
+				42EE4E6815775DA4003F2F57 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE4E7C15775E4B003F2F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E7E15775E4B003F2F57 /* Foundation.framework in Frameworks */,
+				42EE4E7F15775E4B003F2F57 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6D13E6AD3F0068F7CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EE4EA615775ED2003F2F57 /* libSYCache.a in Frameworks */,
+				42EE4EA715775ED2003F2F57 /* libSYCompositor.a in Frameworks */,
+				42EE4EA815775ED2003F2F57 /* libSYPaginator.a in Frameworks */,
 				42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */,
 				42EE4D301576115A003F2F57 /* libSVGeocoder.a in Frameworks */,
 				42EE4D0B15760BF9003F2F57 /* libSVPullToRefresh.a in Frameworks */,
@@ -1755,6 +1862,9 @@
 				42EE4CE015760527003F2F57 /* libJSONKit.a */,
 				42EE4CFB15760AE3003F2F57 /* libSVPullToRefresh.a */,
 				42EE4D1D15760FB3003F2F57 /* libSVGeocoder.a */,
+				42EE4E5A15775D16003F2F57 /* libSYCache.a */,
+				42EE4E6C15775DA4003F2F57 /* libSYCompositor.a */,
+				42EE4E8315775E4B003F2F57 /* libSYPaginator.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1800,6 +1910,9 @@
 				42EE4D251576106A003F2F57 /* SVGeocoder */,
 				42BB88721495F9B20099E2E4 /* SVProgressHUD */,
 				42EE4D0315760B77003F2F57 /* SVPullToRefresh */,
+				42EE4E5B15775D45003F2F57 /* SYCache */,
+				42EE4E7015775DE4003F2F57 /* SYCompositor */,
+				42EE4E8415775E92003F2F57 /* SYPaginator */,
 				42AD39D014F771B900C18A08 /* UAModalPanel */,
 				C4A0505E14756956006CC4B0 /* UICalendarMonthView */,
 				4204BF3715578B1A00DCA6E7 /* UIGlossyButton */,
@@ -2430,6 +2543,45 @@
 				42EE4D291576106A003F2F57 /* SVPlacemark.m */,
 			);
 			path = SVGeocoder;
+			sourceTree = "<group>";
+		};
+		42EE4E5B15775D45003F2F57 /* SYCache */ = {
+			isa = PBXGroup;
+			children = (
+				42EE4E5C15775D45003F2F57 /* SYCache.h */,
+				42EE4E5D15775D45003F2F57 /* SYCache.m */,
+			);
+			path = SYCache;
+			sourceTree = "<group>";
+		};
+		42EE4E7015775DE4003F2F57 /* SYCompositor */ = {
+			isa = PBXGroup;
+			children = (
+				42EE4E7115775DE4003F2F57 /* SYCompositor.h */,
+				42EE4E7215775DE4003F2F57 /* SYCompositor.m */,
+			);
+			path = SYCompositor;
+			sourceTree = "<group>";
+		};
+		42EE4E8415775E92003F2F57 /* SYPaginator */ = {
+			isa = PBXGroup;
+			children = (
+				42EE4E8515775E92003F2F57 /* NSBundle+SYPaginator.h */,
+				42EE4E8615775E92003F2F57 /* NSBundle+SYPaginator.m */,
+				42EE4E8715775E92003F2F57 /* SYPageControl.h */,
+				42EE4E8815775E92003F2F57 /* SYPageControl.m */,
+				42EE4E8915775E92003F2F57 /* SYPageView.h */,
+				42EE4E8A15775E92003F2F57 /* SYPageView.m */,
+				42EE4E8B15775E92003F2F57 /* SYPaginator.h */,
+				42EE4E8C15775E92003F2F57 /* SYPaginatorResources.bundle */,
+				42EE4E8D15775E92003F2F57 /* SYPaginatorScrollView.h */,
+				42EE4E8E15775E92003F2F57 /* SYPaginatorScrollView.m */,
+				42EE4E8F15775E92003F2F57 /* SYPaginatorView.h */,
+				42EE4E9015775E92003F2F57 /* SYPaginatorView.m */,
+				42EE4E9115775E92003F2F57 /* SYPaginatorViewController.h */,
+				42EE4E9215775E92003F2F57 /* SYPaginatorViewController.m */,
+			);
+			path = SYPaginator;
 			sourceTree = "<group>";
 		};
 		42F26A7A14960A9400F28181 /* UINavigationController */ = {
@@ -3290,6 +3442,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE4E5015775D16003F2F57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E5E15775D45003F2F57 /* SYCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE4E6215775DA4003F2F57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E7315775DE4003F2F57 /* SYCompositor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE4E7815775E4B003F2F57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E9315775E92003F2F57 /* NSBundle+SYPaginator.h in Headers */,
+				42EE4E9515775E92003F2F57 /* SYPageControl.h in Headers */,
+				42EE4E9715775E92003F2F57 /* SYPageView.h in Headers */,
+				42EE4E9915775E92003F2F57 /* SYPaginator.h in Headers */,
+				42EE4E9A15775E92003F2F57 /* SYPaginatorScrollView.h in Headers */,
+				42EE4E9C15775E92003F2F57 /* SYPaginatorView.h in Headers */,
+				42EE4E9E15775E92003F2F57 /* SYPaginatorViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6B13E6AD3F0068F7CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3820,6 +4002,58 @@
 			productReference = 42EE4D1D15760FB3003F2F57 /* libSVGeocoder.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		42EE4E4F15775D16003F2F57 /* SYCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE4E5715775D16003F2F57 /* Build configuration list for PBXNativeTarget "SYCache" */;
+			buildPhases = (
+				42EE4E5015775D16003F2F57 /* Headers */,
+				42EE4E5215775D16003F2F57 /* Sources */,
+				42EE4E5415775D16003F2F57 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYCache;
+			productName = SVProgressHUD;
+			productReference = 42EE4E5A15775D16003F2F57 /* libSYCache.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		42EE4E6115775DA4003F2F57 /* SYCompositor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE4E6915775DA4003F2F57 /* Build configuration list for PBXNativeTarget "SYCompositor" */;
+			buildPhases = (
+				42EE4E6215775DA4003F2F57 /* Headers */,
+				42EE4E6415775DA4003F2F57 /* Sources */,
+				42EE4E6615775DA4003F2F57 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42EE4E6E15775DC6003F2F57 /* PBXTargetDependency */,
+			);
+			name = SYCompositor;
+			productName = SVProgressHUD;
+			productReference = 42EE4E6C15775DA4003F2F57 /* libSYCompositor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		42EE4E7515775E4B003F2F57 /* SYPaginator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE4E8015775E4B003F2F57 /* Build configuration list for PBXNativeTarget "SYPaginator" */;
+			buildPhases = (
+				42EE4E7815775E4B003F2F57 /* Headers */,
+				42EE4E7A15775E4B003F2F57 /* Sources */,
+				42EE4E7C15775E4B003F2F57 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYPaginator;
+			productName = SVProgressHUD;
+			productReference = 42EE4E8315775E4B003F2F57 /* libSYPaginator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		42F65A6E13E6AD3F0068F7CF /* YTLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42F65A8313E6AD660068F7CF /* Build configuration list for PBXNativeTarget "YTLibrary" */;
@@ -3831,6 +4065,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				42EE4EA115775EC8003F2F57 /* PBXTargetDependency */,
+				42EE4EA315775EC8003F2F57 /* PBXTargetDependency */,
+				42EE4EA515775EC8003F2F57 /* PBXTargetDependency */,
 				42EE4D2F15761152003F2F57 /* PBXTargetDependency */,
 				42EE4D0A15760BF3003F2F57 /* PBXTargetDependency */,
 				42EE4CEA15760619003F2F57 /* PBXTargetDependency */,
@@ -4023,6 +4260,9 @@
 				4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */,
 				42F65A6E13E6AD3F0068F7CF /* YTLibrary */,
 				42F6605B13E92D330068F7CF /* ZipArchive */,
+				42EE4E4F15775D16003F2F57 /* SYCache */,
+				42EE4E6115775DA4003F2F57 /* SYCompositor */,
+				42EE4E7515775E4B003F2F57 /* SYPaginator */,
 			);
 		};
 /* End PBXProject section */
@@ -4323,6 +4563,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE4E5215775D16003F2F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E5F15775D45003F2F57 /* SYCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE4E6415775DA4003F2F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E7415775DE4003F2F57 /* SYCompositor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE4E7A15775E4B003F2F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE4E9415775E92003F2F57 /* NSBundle+SYPaginator.m in Sources */,
+				42EE4E9615775E92003F2F57 /* SYPageControl.m in Sources */,
+				42EE4E9815775E92003F2F57 /* SYPageView.m in Sources */,
+				42EE4E9B15775E92003F2F57 /* SYPaginatorScrollView.m in Sources */,
+				42EE4E9D15775E92003F2F57 /* SYPaginatorView.m in Sources */,
+				42EE4E9F15775E92003F2F57 /* SYPaginatorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F65A6C13E6AD3F0068F7CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4618,6 +4887,26 @@
 			isa = PBXTargetDependency;
 			target = 42EE4D1015760FB3003F2F57 /* SVGeocoder */;
 			targetProxy = 42EE4D2E15761152003F2F57 /* PBXContainerItemProxy */;
+		};
+		42EE4E6E15775DC6003F2F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EE4E4F15775D16003F2F57 /* SYCache */;
+			targetProxy = 42EE4E6D15775DC6003F2F57 /* PBXContainerItemProxy */;
+		};
+		42EE4EA115775EC8003F2F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EE4E4F15775D16003F2F57 /* SYCache */;
+			targetProxy = 42EE4EA015775EC8003F2F57 /* PBXContainerItemProxy */;
+		};
+		42EE4EA315775EC8003F2F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EE4E6115775DA4003F2F57 /* SYCompositor */;
+			targetProxy = 42EE4EA215775EC8003F2F57 /* PBXContainerItemProxy */;
+		};
+		42EE4EA515775EC8003F2F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EE4E7515775E4B003F2F57 /* SYPaginator */;
+			targetProxy = 42EE4EA415775EC8003F2F57 /* PBXContainerItemProxy */;
 		};
 		42F6613213E932B30068F7CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5291,6 +5580,87 @@
 			};
 			name = Release;
 		};
+		42EE4E5815775D16003F2F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = SYCache;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42EE4E5915775D16003F2F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = SYCache;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		42EE4E6A15775DA4003F2F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = SYCompositor;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42EE4E6B15775DA4003F2F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = SYCompositor;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		42EE4E8115775E4B003F2F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = SYPaginator;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42EE4E8215775E4B003F2F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = SYPaginator;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		42F65A7013E6AD3F0068F7CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5772,6 +6142,33 @@
 			buildConfigurations = (
 				42EE4D1B15760FB3003F2F57 /* Debug */,
 				42EE4D1C15760FB3003F2F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EE4E5715775D16003F2F57 /* Build configuration list for PBXNativeTarget "SYCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE4E5815775D16003F2F57 /* Debug */,
+				42EE4E5915775D16003F2F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EE4E6915775DA4003F2F57 /* Build configuration list for PBXNativeTarget "SYCompositor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE4E6A15775DA4003F2F57 /* Debug */,
+				42EE4E6B15775DA4003F2F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EE4E8015775E4B003F2F57 /* Build configuration list for PBXNativeTarget "SYPaginator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE4E8115775E4B003F2F57 /* Debug */,
+				42EE4E8215775E4B003F2F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
