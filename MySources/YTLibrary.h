@@ -6,6 +6,7 @@
 #import "YTAnimation.h"
 
 // Custom
+#import "YTAlertView.h"
 #import "YTBoldLabel.h"
 #import "YTClickableView.h"
 #import "YTDataSource.h"

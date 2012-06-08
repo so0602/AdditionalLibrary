@@ -2,12 +2,12 @@
 
 #import "ASIHTTPRequest.h"
 #import "UINavigationController+Addition.h"
+#import "YTAlertView.h"
 
 @implementation AdditionalLibraryViewController
 
 -(void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
-	printFunc;
 }
 
 -(void)viewDidLoad{

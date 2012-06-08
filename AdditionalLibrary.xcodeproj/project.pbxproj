@@ -244,6 +244,8 @@
 		42AE82791457CAB100DD72C5 /* NSNumber+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE82771457CAB100DD72C5 /* NSNumber+Addition.m */; };
 		42AE82881457CB6200DD72C5 /* NSMutableDictionary+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AE82861457CB6200DD72C5 /* NSMutableDictionary+Addition.h */; };
 		42AE82891457CB6200DD72C5 /* NSMutableDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE82871457CB6200DD72C5 /* NSMutableDictionary+Addition.m */; };
+		42B005291581FC5300362CBF /* YTAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B005271581FC5300362CBF /* YTAlertView.h */; };
+		42B0052A1581FC5300362CBF /* YTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B005281581FC5300362CBF /* YTAlertView.m */; };
 		42BB88521495F8AC0099E2E4 /* RTLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BB88501495F8AC0099E2E4 /* RTLabel.h */; };
 		42BB88531495F8AC0099E2E4 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB88511495F8AC0099E2E4 /* RTLabel.m */; };
 		42BB88561495F8D90099E2E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
@@ -1090,6 +1092,8 @@
 		42AE82771457CAB100DD72C5 /* NSNumber+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Addition.m"; sourceTree = "<group>"; };
 		42AE82861457CB6200DD72C5 /* NSMutableDictionary+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Addition.h"; sourceTree = "<group>"; };
 		42AE82871457CB6200DD72C5 /* NSMutableDictionary+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Addition.m"; sourceTree = "<group>"; };
+		42B005271581FC5300362CBF /* YTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTAlertView.h; sourceTree = "<group>"; };
+		42B005281581FC5300362CBF /* YTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTAlertView.m; sourceTree = "<group>"; };
 		42B93A9613E2BA4F0072B1BA /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
 		42B93A9713E2BA4F0072B1BA /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
 		42B93B9913E64BE40072B1BA /* UIImageView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Addition.h"; sourceTree = "<group>"; };
@@ -2720,6 +2724,8 @@
 				42C656D714581F2300D576C8 /* YTTapDetectingWindow.m */,
 				422D24B814F355C4001599BC /* YTWebViewController.h */,
 				422D24B914F355C4001599BC /* YTWebViewController.m */,
+				42B005271581FC5300362CBF /* YTAlertView.h */,
+				42B005281581FC5300362CBF /* YTAlertView.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -3552,6 +3558,7 @@
 				42F6614A13E933580068F7CF /* ZipArchive+Addition.h in Headers */,
 				42F6613813E932DC0068F7CF /* ZipArchive.h in Headers */,
 				42AA4646156F492400DADD6A /* YTKeychain.h in Headers */,
+				42B005291581FC5300362CBF /* YTAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4657,6 +4664,7 @@
 				422D24BB14F355C4001599BC /* YTWebViewController.m in Sources */,
 				42F6614B13E933580068F7CF /* ZipArchive+Addition.m in Sources */,
 				42AA4648156F492400DADD6A /* YTKeychain.m in Sources */,
+				42B0052A1581FC5300362CBF /* YTAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
