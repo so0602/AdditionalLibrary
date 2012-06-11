@@ -11,12 +11,12 @@
 
 @interface SVPullToRefresh : UIView
 
-@property (nonatomic, strong) UIColor *arrowColor;
-@property (nonatomic, strong) UIColor *textColor;
+@property (nonatomic, retain) UIColor *arrowColor;
+@property (nonatomic, retain) UIColor *textColor;
 @property (nonatomic, readwrite) UIActivityIndicatorViewStyle activityIndicatorViewStyle;
 
-@property (nonatomic, strong) NSDate *lastUpdatedDate;
-@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+@property (nonatomic, retain) NSDate *lastUpdatedDate;
+@property (nonatomic, retain) NSDateFormatter *dateFormatter;
 
 - (void)triggerRefresh;
 - (void)stopAnimating;
@@ -30,6 +30,6 @@
 
 - (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler;
 
-@property (nonatomic, strong) SVPullToRefresh *pullToRefreshView;
+@property (nonatomic, retain) SVPullToRefresh *pullToRefreshView;
 
 @end

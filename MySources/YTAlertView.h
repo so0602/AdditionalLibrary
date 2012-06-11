@@ -18,13 +18,22 @@ typedef BOOL (^YTAlertViewShouldEnableFirstOtherButton)();
 	YTAlertViewShouldEnableFirstOtherButton _shouldEnableFirstOtherButtonBlock;
 }
 
-@property (nonatomic, retain) YTAlertViewClickedButton clickedButtonBlock;
-@property (nonatomic, retain) YTAlertViewCancel cancelBlock;
-@property (nonatomic, retain) YTAlertViewWillPresent willPresentBlock;
-@property (nonatomic, retain) YTAlertViewDidPresent didPresentBlock;
-@property (nonatomic, retain) YTAlertViewWillDismiss willDismissBlock;
-@property (nonatomic, retain) YTAlertViewDidDismiss didDismissBlock;
-@property (nonatomic, retain) YTAlertViewShouldEnableFirstOtherButton shouldEnableFirstOtherButtonBlock;
+
+
+- (YTAlertViewClickedButton)clickedButtonBlock;
+- (void)setClickedButtonBlock:(YTAlertViewClickedButton)clickedButtonBlock;
+- (YTAlertViewCancel)cancelBlock;
+- (void)setCancelBlock:(YTAlertViewCancel)cancelBlock;
+- (YTAlertViewWillPresent)willPresentBlock;
+- (void)setWillPresentBlock:(YTAlertViewWillPresent)willPresentBlock;
+- (YTAlertViewDidPresent)didPresentBlock;
+- (void)setDidPresentBlock:(YTAlertViewDidPresent)didPresentBlock;
+- (YTAlertViewWillDismiss)willDismissBlock;
+- (void)setWillDismissBlock:(YTAlertViewWillDismiss)willDismissBlock;
+- (YTAlertViewDidDismiss)didDismissBlock;
+- (void)setDidDismissBlock:(YTAlertViewDidDismiss)didDismissBlock;
+- (YTAlertViewShouldEnableFirstOtherButton)shouldEnableFirstOtherButtonBlock;
+- (void)setShouldEnableFirstOtherButtonBlock:(YTAlertViewShouldEnableFirstOtherButton)shouldEnableFirstOtherButtonBlock;
 
 -(void)showUsingBlock;
 

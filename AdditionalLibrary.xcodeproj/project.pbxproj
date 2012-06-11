@@ -298,14 +298,12 @@
 		42EE4CE61576057F003F2F57 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4CE41576057F003F2F57 /* JSONKit.h */; };
 		42EE4CE71576057F003F2F57 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4CE51576057F003F2F57 /* JSONKit.m */; };
 		42EE4CE8157605C2003F2F57 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CE115760553003F2F57 /* CoreFoundation.framework */; };
-		42EE4CEB15760624003F2F57 /* libJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CE015760527003F2F57 /* libJSONKit.a */; };
 		42EE4CF715760AE3003F2F57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
 		42EE4CFC15760B3A003F2F57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
 		42EE4CFD15760B40003F2F57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
 		42EE4D0215760B5C003F2F57 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8F13D82DEB003CA78D /* QuartzCore.framework */; };
 		42EE4D0715760B77003F2F57 /* SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4D0515760B77003F2F57 /* SVPullToRefresh.h */; };
 		42EE4D0815760B77003F2F57 /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4D0615760B77003F2F57 /* SVPullToRefresh.m */; };
-		42EE4D0B15760BF9003F2F57 /* libSVPullToRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CFB15760AE3003F2F57 /* libSVPullToRefresh.a */; };
 		42EE4D1415760FB3003F2F57 /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4D0615760B77003F2F57 /* SVPullToRefresh.m */; };
 		42EE4D1715760FB3003F2F57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
 		42EE4D1815760FB3003F2F57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
@@ -344,7 +342,6 @@
 		42EE4E9D15775E92003F2F57 /* SYPaginatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E9015775E92003F2F57 /* SYPaginatorView.m */; };
 		42EE4E9E15775E92003F2F57 /* SYPaginatorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EE4E9115775E92003F2F57 /* SYPaginatorViewController.h */; };
 		42EE4E9F15775E92003F2F57 /* SYPaginatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE4E9215775E92003F2F57 /* SYPaginatorViewController.m */; };
-		42EE4EA615775ED2003F2F57 /* libSYCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4E5A15775D16003F2F57 /* libSYCache.a */; };
 		42EE4EA715775ED2003F2F57 /* libSYCompositor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4E6C15775DA4003F2F57 /* libSYCompositor.a */; };
 		42EE4EA815775ED2003F2F57 /* libSYPaginator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4E8315775E4B003F2F57 /* libSYPaginator.a */; };
 		42F26A7F14960AC800F28181 /* UINavigationController+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F26A7D14960AC800F28181 /* UINavigationController+Addition.h */; };
@@ -694,6 +691,13 @@
 			remoteGlobalIDString = 427EFF2315736A27009ED244;
 			remoteInfo = ITNSStreamUtil;
 		};
+		4284E70B1585959D0089718F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE4CD215760527003F2F57;
+			remoteInfo = JSONKit;
+		};
 		42A277311575EB4B000C59A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -743,13 +747,6 @@
 			remoteGlobalIDString = 42C218A91498A60A00AD9FED;
 			remoteInfo = EGOPhotoViewer;
 		};
-		42EE4CE915760619003F2F57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42EE4CD215760527003F2F57;
-			remoteInfo = JSONKit;
-		};
 		42EE4D0915760BF3003F2F57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -772,13 +769,6 @@
 			remoteInfo = SVGeocoder;
 		};
 		42EE4E6D15775DC6003F2F57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42EE4E4F15775D16003F2F57;
-			remoteInfo = SYCache;
-		};
-		42EE4EA015775EC8003F2F57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
@@ -1692,13 +1682,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42EE4EA615775ED2003F2F57 /* libSYCache.a in Frameworks */,
 				42EE4EA715775ED2003F2F57 /* libSYCompositor.a in Frameworks */,
 				42EE4EA815775ED2003F2F57 /* libSYPaginator.a in Frameworks */,
 				42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */,
 				42EE4D301576115A003F2F57 /* libSVGeocoder.a in Frameworks */,
-				42EE4D0B15760BF9003F2F57 /* libSVPullToRefresh.a in Frameworks */,
-				42EE4CEB15760624003F2F57 /* libJSONKit.a in Frameworks */,
 				42F65BB613E6AE470068F7CF /* CoreGraphics.framework in Frameworks */,
 				42F65BB713E6AE470068F7CF /* CoreLocation.framework in Frameworks */,
 				42BB88A91495FB6D0099E2E4 /* CoreText.framework in Frameworks */,
@@ -4072,12 +4059,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				42EE4EA115775EC8003F2F57 /* PBXTargetDependency */,
+				4284E70C1585959D0089718F /* PBXTargetDependency */,
 				42EE4EA315775EC8003F2F57 /* PBXTargetDependency */,
 				42EE4EA515775EC8003F2F57 /* PBXTargetDependency */,
 				42EE4D2F15761152003F2F57 /* PBXTargetDependency */,
 				42EE4D0A15760BF3003F2F57 /* PBXTargetDependency */,
-				42EE4CEA15760619003F2F57 /* PBXTargetDependency */,
 				425260E51557920D00D4D689 /* PBXTargetDependency */,
 				42ABAD3314147C2800537B39 /* PBXTargetDependency */,
 				42F663CD13E9626C0068F7CF /* PBXTargetDependency */,
@@ -4841,6 +4827,11 @@
 			target = 427EFF2315736A27009ED244 /* ITNSStreamUtil */;
 			targetProxy = 427EFF4415736A82009ED244 /* PBXContainerItemProxy */;
 		};
+		4284E70C1585959D0089718F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EE4CD215760527003F2F57 /* JSONKit */;
+			targetProxy = 4284E70B1585959D0089718F /* PBXContainerItemProxy */;
+		};
 		42A277321575EB4B000C59A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 42E694D71574999200F9679F /* HTMLParser */;
@@ -4876,11 +4867,6 @@
 			target = 42C218A91498A60A00AD9FED /* EGOPhotoViewer */;
 			targetProxy = 42C2190B1498A77600AD9FED /* PBXContainerItemProxy */;
 		};
-		42EE4CEA15760619003F2F57 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42EE4CD215760527003F2F57 /* JSONKit */;
-			targetProxy = 42EE4CE915760619003F2F57 /* PBXContainerItemProxy */;
-		};
 		42EE4D0A15760BF3003F2F57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 42EE4CF015760AE3003F2F57 /* SVPullToRefresh */;
@@ -4900,11 +4886,6 @@
 			isa = PBXTargetDependency;
 			target = 42EE4E4F15775D16003F2F57 /* SYCache */;
 			targetProxy = 42EE4E6D15775DC6003F2F57 /* PBXContainerItemProxy */;
-		};
-		42EE4EA115775EC8003F2F57 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42EE4E4F15775D16003F2F57 /* SYCache */;
-			targetProxy = 42EE4EA015775EC8003F2F57 /* PBXContainerItemProxy */;
 		};
 		42EE4EA315775EC8003F2F57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

@@ -66,7 +66,7 @@
 #import "SVGeocoder.h" 
 #import "SVPlacemark.h"
 #import "SVProgressHUD.h"
-#import "SVPullToRefresh.h"
+//#import "SVPullToRefresh.h"
 #import "UAModalPanel.h"
 #import "UIGlossyButton.h"
 #import "UICalendarMonthView.h"
