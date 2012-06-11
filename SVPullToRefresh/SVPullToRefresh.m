@@ -7,7 +7,6 @@
 // https://github.com/samvermette/SVPullToRefresh
 //
 
-#import <QuartzCore/QuartzCore.h>
 #import "SVPullToRefresh.h"
 
 enum {

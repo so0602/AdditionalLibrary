@@ -132,6 +132,13 @@ if [ ! -e "$FTUTILS_PATH" ]; then
 fi
 cp FTUtils/*.h "$FTUTILS_PATH"
 
+#HTMLParser
+HTMLPARSER_PATH=${STATICLIB}/HTMLParser
+if [ ! -e "$HTMLPARSER_PATH" ]; then
+mkdir "$HTMLPARSER_PATH"
+fi
+cp HTMLParser/*.h "$HTMLPARSER_PATH"
+
 #iCarousel
 ICAROUSEL_PATH=${STATICLIB}/iCarousel
 if [ ! -e "$ICAROUSEL_PATH" ]; then
@@ -153,19 +160,6 @@ mkdir "$JSONKIT_PATH"
 fi
 cp JSONKit/*.h "$JSONKIT_PATH"
 
-#NSLogger
-NSLOGGER_PATH=${STATICLIB}/NSLogger
-if [ ! -e "$NSLOGGER_PATH" ]; then
-	mkdir "$NSLOGGER_PATH"
-fi
-cp NSLogger/ClientLogger/iOS/*.h "$NSLOGGER_PATH"
-
-NSLOGGER_DESTOPVIEWER_PATH=${NSLOGGER_PATH}/DestopViewer
-if [ ! -e "$NSLOGGER_DESTOPVIEWER_PATH" ]; then
-mkdir "$NSLOGGER_DESTOPVIEWER_PATH"
-fi
-cp -r NSLogger/DesktopViewer/* "$NSLOGGER_DESTOPVIEWER_PATH"
-
 #MCSegmentedControl
 MCSEGMENTEDCONTROL_PATH=${STATICLIB}/MCSegmentedControl
 if [ ! -e "$MCSEGMENTEDCONTROL_PATH" ]; then
@@ -179,6 +173,38 @@ if [ ! -e "$MGSPLITVIEWCONTROLLER_PATH" ]; then
 	mkdir "$MGSPLITVIEWCONTROLLER_PATH"
 fi
 cp MGSplitViewController/*.h "$MGSPLITVIEWCONTROLLER_PATH"
+
+#NSLogger
+NSLOGGER_PATH=${STATICLIB}/NSLogger
+if [ ! -e "$NSLOGGER_PATH" ]; then
+mkdir "$NSLOGGER_PATH"
+fi
+cp NSLogger/ClientLogger/iOS/*.h "$NSLOGGER_PATH"
+
+NSLOGGER_DESTOPVIEWER_PATH=${BUILD_PATH}/_Library/DestopViewer
+if [ ! -e "$NSLOGGER_DESTOPVIEWER_PATH" ]; then
+mkdir "$NSLOGGER_DESTOPVIEWER_PATH"
+fi
+cp -r NSLogger/DesktopViewer/* "$NSLOGGER_DESTOPVIEWER_PATH"
+
+#Objective-Zip
+OBJECTIVEZIP_PATH=${STATICLIB}/Objective-Zip
+if [ ! -e "$OBJECTIVEZIP_PATH" ]; then
+mkdir "$OBJECTIVEZIP_PATH"
+fi
+cp Objective-Zip/*.h "$OBJECTIVEZIP_PATH"
+
+OBJECTIVEZIP_OBJECTIVEZIP_PATH=${OBJECTIVEZIP_PATH}/Objective-Zip
+if [ ! -e "$OBJECTIVEZIP_OBJECTIVEZIP_PATH" ]; then
+mkdir "$OBJECTIVEZIP_OBJECTIVEZIP_PATH"
+fi
+cp Objective-Zip/Objective-Zip/*.h "$OBJECTIVEZIP_OBJECTIVEZIP_PATH"
+
+OBJECTIVEZIP_ZLIB_PATH=${OBJECTIVEZIP_PATH}/ZLib
+if [ ! -e "$OBJECTIVEZIP_ZLIB_PATH" ]; then
+mkdir "$OBJECTIVEZIP_ZLIB_PATH"
+fi
+cp Objective-Zip/ZLib/*.h "$OBJECTIVEZIP_ZLIB_PATH"
 
 #PrettyKit
 PRETTYKIT_PATH=${STATICLIB}/PrettyKit

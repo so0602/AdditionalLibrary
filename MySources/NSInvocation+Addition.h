@@ -4,7 +4,7 @@
 
 +(id)invocationWithTarget:(NSObject*)target selector:(SEL)selector;
 
-+(id)invocationWithTarget:(NSObject*)target selector:(SEL)selector arguments:(void*)firstArgument, ...;
++(id)invocationWithTarget:(NSObject*)target selector:(SEL)selector arguments:(void*)firstArgument, ... NS_REQUIRES_NIL_TERMINATION;
 
 @property (nonatomic, assign, readonly) NSInteger argumentCount;
 
