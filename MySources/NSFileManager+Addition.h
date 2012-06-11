@@ -2,6 +2,15 @@
 
 #import "YTGlobalValues.h"
 
+@interface NSFileManager (Additions)
+
+-(BOOL)isDirectory:(NSString*)path;
++(BOOL)isDirectory:(NSString*)path;
+
++(NSString*)mimeTypeForFileAtPath:(NSString*)path;
+
+@end
+
 @interface NSFileManager (DocumentPath)
 
 +(BOOL)fileExistsAtDocumentPath:(NSString*)path;

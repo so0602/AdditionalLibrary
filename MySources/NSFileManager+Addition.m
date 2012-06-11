@@ -1,6 +1,38 @@
+#import <MobileCoreServices/MobileCoreServices.h>
+
 #import "NSFileManager+Addition.h"
 
 #import "NSArray+Addition.h"
+
+@implementation NSFileManager (Additions)
+
+-(BOOL)isDirectory:(NSString*)path{
+	return [NSFileManager isDirectory:path];
+}
+
++(BOOL)isDirectory:(NSString*)path{
+	NSFileManager* fileManager = [NSFileManager defaultManager];
+	BOOL isDirectory = TRUE;
+	[fileManager fileExistsAtPath:path isDirectory:&isDirectory];
+	
+	return TRUE;
+}
+
++(NSString*)mimeTypeForFileAtPath:(NSString*)path{
+	if( ![[NSFileManager defaultManager] fileExistsAtPath:path] ){
+		return nil;
+	}
+	
+	CFStringRef UTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (CFStringRef)[path pathExtension], NULL);
+	CFStringRef mimeType = UTTypeCopyPreferredTagWithClass (UTI, kUTTagClassMIMEType);
+	CFRelease(UTI);
+	if(!mimeType){
+		return @"application/octet-stream";
+    }
+	return [NSMakeCollectable((NSString *)mimeType) autorelease];
+}
+
+@end
 
 @implementation NSFileManager (DocumentPath)
 

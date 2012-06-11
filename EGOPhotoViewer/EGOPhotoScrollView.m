@@ -47,6 +47,7 @@
 		self.backgroundColor = [UIColor blackColor];
 		self.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
 		self.decelerationRate = UIScrollViewDecelerationRateFast;
+		self.scrollEnabled = FALSE;
 		
     }
     return self;
@@ -55,11 +56,12 @@
 - (void)zoomRectWithCenter:(CGPoint)center{
 	
 	if (self.zoomScale > 1.0f) {
-
+		self.scrollEnabled = FALSE;
 		[((EGOPhotoImageView*)self.superview) killScrollViewZoom];
 	
 		return;
 	}
+	self.scrollEnabled = TRUE;
 
 	CGRect rect;
 	rect.size = CGSizeMake(self.frame.size.width / EGOPV_ZOOM_SCALE, self.frame.size.height / EGOPV_ZOOM_SCALE);

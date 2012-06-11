@@ -1,5 +1,7 @@
 #import "NSString+Addition.h"
 
+#import "NSFileManager+Addition.h"
+
 @implementation NSString (DecodeHTML)
 
 +(NSString*)replaceXMLStuffInString:(NSString*)source{
@@ -84,6 +86,10 @@
 
 +(id)stringWithData:(NSData*)data encoding:(NSStringEncoding)encoding{
 	return [[[self alloc] initWithData:data encoding:encoding] autorelease];
+}
+
+-(NSString*)mimeType{
+	return [NSFileManager mimeTypeForFileAtPath:self];
 }
 
 @end

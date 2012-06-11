@@ -4,7 +4,9 @@
 
 @interface UITableViewCell (Addition)
 
-+(UITableViewCell*)cell;
++(id)cellWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString*)reuseIdentifier;
+
++(id)cell;
 
 +(NSString*)reuseIdentifier;
 

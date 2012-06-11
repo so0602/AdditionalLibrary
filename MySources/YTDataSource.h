@@ -11,6 +11,7 @@
 }
 
 -(id)initWithDictionary:(NSDictionary*)data;
++(id)dataSource;
 +(id)dataSourceWithDictionary:(NSDictionary*)data;
 
 +(NSArray*)arrayWithDictionaries:(NSArray*)data;

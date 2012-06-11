@@ -2,16 +2,21 @@
 
 @implementation UITableViewCell (Addition)
 
-+(UITableViewCell*)cell{
++(id)cellWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString*)reuseIdentifier{
+	UITableViewCell* cell = [[UITableViewCell alloc] initWithStyle:style reuseIdentifier:reuseIdentifier];
+	return [cell autorelease];
+}
+
++(id)cell{
 	return [[[NSBundle mainBundle] loadNibNamed:[[self class] description] owner:nil options:nil] lastObject];
 }
 
 +(NSString*)reuseIdentifier{
-	return [self cell].reuseIdentifier;
+	return [[self cell] reuseIdentifier];
 }
 
 +(CGFloat)cellHeight{
-	return [self cell].height;
+	return [[self cell] height];
 }
 
 -(void)didSelect{

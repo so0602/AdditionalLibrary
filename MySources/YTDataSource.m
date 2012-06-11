@@ -16,6 +16,10 @@
 	return self;
 }
 
++(id)dataSource{
+	return [[[self alloc] initWithDictionary:nil] autorelease];
+}
+
 +(id)dataSourceWithDictionary:(NSDictionary*)data{
 	return [[[self alloc] initWithDictionary:data] autorelease];
 }
