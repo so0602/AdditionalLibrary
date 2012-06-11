@@ -1,5 +1,3 @@
-#import <MobileCoreServices/MobileCoreServices.h>
-
 #import "NSFileManager+Addition.h"
 
 #import "NSArray+Addition.h"
