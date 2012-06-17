@@ -16,6 +16,7 @@
 }
 
 -(id)initWithTitle:(NSString*)title message:(NSString*)message maxOfItems:(NSUInteger)maxOfItems showNumber:(BOOL)showNumber;
++(id)alertViewWithTitle:(NSString*)title message:(NSString*)message maxOfItems:(NSUInteger)maxOfItems showNumber:(BOOL)showNumber;
 +(id)showWithTitle:(NSString*)title message:(NSString*)message maxOfItems:(NSUInteger)maxOfItems showNumber:(BOOL)showNumber;
 
 @property (nonatomic, assign) NSUInteger numberOfItems;
