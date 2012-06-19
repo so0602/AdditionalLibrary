@@ -40,7 +40,6 @@
 		420B1DD41566030D005796A6 /* MGSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCE1566030D005796A6 /* MGSplitViewController.h */; };
 		420B1DD51566030D005796A6 /* MGSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCF1566030D005796A6 /* MGSplitViewController.m */; };
 		421452AE158B1EA9001AB96C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
-		421452B4158B1EA9001AB96C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 421452B2158B1EA9001AB96C /* InfoPlist.strings */; };
 		4225CA4A14F745F2003B893A /* CurledViewBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225CA4414F745F2003B893A /* CurledViewBase.h */; };
 		4225CA4B14F745F2003B893A /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4225CA4514F745F2003B893A /* CurledViewBase.m */; };
 		4225CA4C14F745F2003B893A /* UIButton+Curled.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225CA4614F745F2003B893A /* UIButton+Curled.h */; };
@@ -183,23 +182,11 @@
 		4284E9C51585BE950089718F /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7311585B72E0089718F /* mztools.h */; };
 		4284E9C61585BE950089718F /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7331585B72E0089718F /* unzip.h */; };
 		4284E9C71585BE950089718F /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7351585B72E0089718F /* zip.h */; };
-		4284E9CF1585BF210089718F /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4284E72E1585B72E0089718F /* ioapi.c */; };
-		4284E9D01585BF210089718F /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7301585B72E0089718F /* mztools.c */; };
-		4284E9D11585BF210089718F /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7321585B72E0089718F /* unzip.c */; };
-		4284E9D21585BF210089718F /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7341585B72E0089718F /* zip.c */; };
-		4284E9D51585BF210089718F /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E72D1585B72E0089718F /* crypt.h */; };
-		4284E9D61585BF210089718F /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E72F1585B72E0089718F /* ioapi.h */; };
-		4284E9D71585BF210089718F /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7311585B72E0089718F /* mztools.h */; };
-		4284E9D81585BF210089718F /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7331585B72E0089718F /* unzip.h */; };
-		4284E9D91585BF210089718F /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7351585B72E0089718F /* zip.h */; };
-		4284E9DB1585BF210089718F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F6602C13E9291D0068F7CF /* libz.dylib */; };
-		4284E9E21585BF6E0089718F /* libMiniZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4284E9DF1585BF210089718F /* libMiniZip.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4284E9E31585BF990089718F /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E72D1585B72E0089718F /* crypt.h */; };
 		4284E9E41585BF990089718F /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E72F1585B72E0089718F /* ioapi.h */; };
 		4284E9E51585BF990089718F /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7311585B72E0089718F /* mztools.h */; };
 		4284E9E61585BF990089718F /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7331585B72E0089718F /* unzip.h */; };
 		4284E9E71585BF990089718F /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7351585B72E0089718F /* zip.h */; };
-		4284E9EA1585BFB00089718F /* libMiniZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4284E9DF1585BF210089718F /* libMiniZip.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4284EA7B1585D9720089718F /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4284E72E1585B72E0089718F /* ioapi.c */; };
 		4284EA7C1585D9720089718F /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7301585B72E0089718F /* mztools.c */; };
 		4284EA7D1585D9720089718F /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7321585B72E0089718F /* unzip.c */; };
@@ -598,6 +585,12 @@
 		42AE82891457CB6200DD72C5 /* NSMutableDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE82871457CB6200DD72C5 /* NSMutableDictionary+Addition.m */; };
 		42B005291581FC5300362CBF /* YTAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B005271581FC5300362CBF /* YTAlertView.h */; };
 		42B0052A1581FC5300362CBF /* YTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B005281581FC5300362CBF /* YTAlertView.m */; };
+		42BA66001590927F00092EA6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F6602C13E9291D0068F7CF /* libz.dylib */; };
+		42BA6605159092FB00092EA6 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E72D1585B72E0089718F /* crypt.h */; };
+		42BA6606159092FB00092EA6 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E72F1585B72E0089718F /* ioapi.h */; };
+		42BA6607159092FB00092EA6 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7311585B72E0089718F /* mztools.h */; };
+		42BA6608159092FB00092EA6 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7331585B72E0089718F /* unzip.h */; };
+		42BA6609159092FB00092EA6 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284E7351585B72E0089718F /* zip.h */; };
 		42BB88521495F8AC0099E2E4 /* RTLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BB88501495F8AC0099E2E4 /* RTLabel.h */; };
 		42BB88531495F8AC0099E2E4 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB88511495F8AC0099E2E4 /* RTLabel.m */; };
 		42BB88561495F8D90099E2E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
@@ -1255,20 +1248,6 @@
 			remoteGlobalIDString = 42EE4CD215760527003F2F57;
 			remoteInfo = JSONKit;
 		};
-		4284E9E01585BF680089718F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4284E9CC1585BF210089718F;
-			remoteInfo = MiniZip;
-		};
-		4284E9E81585BFA70089718F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4284E9CC1585BF210089718F;
-			remoteInfo = MiniZip;
-		};
 		42A277311575EB4B000C59A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -1467,9 +1446,6 @@
 		420B1DCD1566030D005796A6 /* MGSplitDividerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitDividerView.m; sourceTree = "<group>"; };
 		420B1DCE1566030D005796A6 /* MGSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewController.h; sourceTree = "<group>"; };
 		420B1DCF1566030D005796A6 /* MGSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewController.m; sourceTree = "<group>"; };
-		421452B1158B1EA9001AB96C /* YTFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YTFramework-Info.plist"; sourceTree = "<group>"; };
-		421452B3158B1EA9001AB96C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		421452B5158B1EA9001AB96C /* YTFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTFramework-Prefix.pch"; sourceTree = "<group>"; };
 		4225CA4014F745DC003B893A /* libCurledView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCurledView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4225CA4414F745F2003B893A /* CurledViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurledViewBase.h; sourceTree = "<group>"; };
 		4225CA4514F745F2003B893A /* CurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurledViewBase.m; sourceTree = "<group>"; };
@@ -1610,7 +1586,6 @@
 		4284E7561585B72E0089718F /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		4284E7571585B72E0089718F /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		4284E7851585B8390089718F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		4284E9DF1585BF210089718F /* libMiniZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMiniZip.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		42852FC11575EC8F005D7632 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
 		42852FC21575EC8F005D7632 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
 		42852FC31575EC8F005D7632 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
@@ -1712,6 +1687,10 @@
 		42B93BB513E653DC0072B1BA /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
 		42B93BD913E660D60072B1BA /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
 		42B93BDA13E660D60072B1BA /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
+		42BA66041590927F00092EA6 /* libMiniZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMiniZip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BA66161590932C00092EA6 /* YTFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YTFramework-Info.plist"; sourceTree = "<group>"; };
+		42BA66181590932C00092EA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42BA661A1590932C00092EA6 /* YTFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTFramework-Prefix.pch"; sourceTree = "<group>"; };
 		42BB88481495F8960099E2E4 /* libRTLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRTLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BB88501495F8AC0099E2E4 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
 		42BB88511495F8AC0099E2E4 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
@@ -2248,18 +2227,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4284E9EA1585BFB00089718F /* libMiniZip.a in Frameworks */,
 				4284E7811585B74E0089718F /* CoreGraphics.framework in Frameworks */,
 				4284E7251585B6BC0089718F /* Foundation.framework in Frameworks */,
 				4284E7261585B6BC0089718F /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4284E9DA1585BF210089718F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4284E9DB1585BF210089718F /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2297,6 +2267,14 @@
 				42AD39F814F7721500C18A08 /* Foundation.framework in Frameworks */,
 				42AD39F914F7721500C18A08 /* QuartzCore.framework in Frameworks */,
 				42AD39FA14F7721500C18A08 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BA65FF1590927F00092EA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BA66001590927F00092EA6 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2456,7 +2434,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4284E9E21585BF6E0089718F /* libMiniZip.a in Frameworks */,
 				42F6607813E92DAC0068F7CF /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2595,8 +2572,8 @@
 				42EE4E6C15775DA4003F2F57 /* libSYCompositor.a */,
 				42EE4E8315775E4B003F2F57 /* libSYPaginator.a */,
 				4284E72A1585B6BC0089718F /* libObjectiveZip.a */,
-				4284E9DF1585BF210089718F /* libMiniZip.a */,
 				C45A9F3015890A9B00019B38 /* libCocoaHTTPServer.a */,
+				42BA66041590927F00092EA6 /* libMiniZip.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2608,7 +2585,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				C4DA0F86155E948F0079321E /* PetHunter */,
-				421452AF158B1EA9001AB96C /* YTFramework */,
+				42BA66141590932C00092EA6 /* YTFramework */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -2720,24 +2697,6 @@
 				420B1DCF1566030D005796A6 /* MGSplitViewController.m */,
 			);
 			path = MGSplitViewController;
-			sourceTree = "<group>";
-		};
-		421452AF158B1EA9001AB96C /* YTFramework */ = {
-			isa = PBXGroup;
-			children = (
-				421452B0158B1EA9001AB96C /* Supporting Files */,
-			);
-			path = YTFramework;
-			sourceTree = "<group>";
-		};
-		421452B0158B1EA9001AB96C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				421452B1158B1EA9001AB96C /* YTFramework-Info.plist */,
-				421452B2158B1EA9001AB96C /* InfoPlist.strings */,
-				421452B5158B1EA9001AB96C /* YTFramework-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4225CA4314F745F2003B893A /* CurledView */ = {
@@ -3284,6 +3243,24 @@
 				42B93BDA13E660D60072B1BA /* UILabel+Addition.m */,
 			);
 			name = UILabel;
+			sourceTree = "<group>";
+		};
+		42BA66141590932C00092EA6 /* YTFramework */ = {
+			isa = PBXGroup;
+			children = (
+				42BA66151590932C00092EA6 /* Supporting Files */,
+			);
+			path = YTFramework;
+			sourceTree = "<group>";
+		};
+		42BA66151590932C00092EA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42BA66161590932C00092EA6 /* YTFramework-Info.plist */,
+				42BA66171590932C00092EA6 /* InfoPlist.strings */,
+				42BA661A1590932C00092EA6 /* YTFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		42BB884F1495F8AC0099E2E4 /* RTLabel */ = {
@@ -4514,18 +4491,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4284E9D31585BF210089718F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4284E9D51585BF210089718F /* crypt.h in Headers */,
-				4284E9D61585BF210089718F /* ioapi.h in Headers */,
-				4284E9D71585BF210089718F /* mztools.h in Headers */,
-				4284E9D81585BF210089718F /* unzip.h in Headers */,
-				4284E9D91585BF210089718F /* zip.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		42A2771F1575EA53000C59A1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -4579,6 +4544,18 @@
 				42AD39E414F771B900C18A08 /* UARoundedRectView.h in Headers */,
 				42AD39E614F771B900C18A08 /* UATitledModalPanel.h in Headers */,
 				42AD39E814F771B900C18A08 /* UIView+JMNoise.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BA65F81590927F00092EA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BA6605159092FB00092EA6 /* crypt.h in Headers */,
+				42BA6606159092FB00092EA6 /* ioapi.h in Headers */,
+				42BA6607159092FB00092EA6 /* mztools.h in Headers */,
+				42BA6608159092FB00092EA6 /* unzip.h in Headers */,
+				42BA6609159092FB00092EA6 /* zip.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5125,28 +5102,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				4284E9E91585BFA70089718F /* PBXTargetDependency */,
 			);
 			name = "Objective-Zip";
 			productName = SVProgressHUD;
 			productReference = 4284E72A1585B6BC0089718F /* libObjectiveZip.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4284E9CC1585BF210089718F /* MiniZip */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4284E9DC1585BF210089718F /* Build configuration list for PBXNativeTarget "MiniZip" */;
-			buildPhases = (
-				4284E9CD1585BF210089718F /* Sources */,
-				4284E9D31585BF210089718F /* Headers */,
-				4284E9DA1585BF210089718F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MiniZip;
-			productName = ZipArchive;
-			productReference = 4284E9DF1585BF210089718F /* libMiniZip.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		42A277221575EA53000C59A1 /* NSLogger */ = {
@@ -5198,6 +5157,23 @@
 			name = UAModalPanel;
 			productName = UAModalPanel;
 			productReference = 42AD39C714F7712300C18A08 /* libUAModalPanel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		42BA65F51590927F00092EA6 /* MiniZip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42BA66011590927F00092EA6 /* Build configuration list for PBXNativeTarget "MiniZip" */;
+			buildPhases = (
+				42BA65F61590927F00092EA6 /* Sources */,
+				42BA65F81590927F00092EA6 /* Headers */,
+				42BA65FF1590927F00092EA6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniZip;
+			productName = ZipArchive;
+			productReference = 42BA66041590927F00092EA6 /* libMiniZip.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		42BB88471495F8960099E2E4 /* RTLabel */ = {
@@ -5428,7 +5404,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4284E9E11585BF680089718F /* PBXTargetDependency */,
 			);
 			name = ZipArchive;
 			productName = ZipArchive;
@@ -5581,7 +5556,6 @@
 				423F456315240BC900F11D23 /* iCarousel */,
 				427EFF2315736A27009ED244 /* ITNSStreamUtil */,
 				42EE4CD215760527003F2F57 /* JSONKit */,
-				4284E9CC1585BF210089718F /* MiniZip */,
 				4244877F156F729C0008055E /* MCSegmentedControl */,
 				42596EC71566021E005366CD /* MGSplitViewController */,
 				42A277221575EA53000C59A1 /* NSLogger */,
@@ -5601,8 +5575,8 @@
 				4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */,
 				42F65A6E13E6AD3F0068F7CF /* YTLibrary */,
 				42F6605B13E92D330068F7CF /* ZipArchive */,
-				4284E9CC1585BF210089718F /* MiniZip */,
 				421452AD158B1EA9001AB96C /* YTFramework */,
+				42BA65F51590927F00092EA6 /* MiniZip */,
 			);
 		};
 /* End PBXProject section */
@@ -5652,7 +5626,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421452B4158B1EA9001AB96C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6049,17 +6022,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4284E9CD1585BF210089718F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4284E9CF1585BF210089718F /* ioapi.c in Sources */,
-				4284E9D01585BF210089718F /* mztools.c in Sources */,
-				4284E9D11585BF210089718F /* unzip.c in Sources */,
-				4284E9D21585BF210089718F /* zip.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		42A277201575EA53000C59A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6107,6 +6069,13 @@
 				42AD39E514F771B900C18A08 /* UARoundedRectView.m in Sources */,
 				42AD39E714F771B900C18A08 /* UATitledModalPanel.m in Sources */,
 				42AD39E914F771B900C18A08 /* UIView+JMNoise.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BA65F61590927F00092EA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6502,16 +6471,6 @@
 			target = 42EE4CD215760527003F2F57 /* JSONKit */;
 			targetProxy = 4284E70B1585959D0089718F /* PBXContainerItemProxy */;
 		};
-		4284E9E11585BF680089718F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4284E9CC1585BF210089718F /* MiniZip */;
-			targetProxy = 4284E9E01585BF680089718F /* PBXContainerItemProxy */;
-		};
-		4284E9E91585BFA70089718F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4284E9CC1585BF210089718F /* MiniZip */;
-			targetProxy = 4284E9E81585BFA70089718F /* PBXContainerItemProxy */;
-		};
 		42A277321575EB4B000C59A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 42E694D71574999200F9679F /* HTMLParser */;
@@ -6620,10 +6579,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		421452B2158B1EA9001AB96C /* InfoPlist.strings */ = {
+		42BA66171590932C00092EA6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				421452B3158B1EA9001AB96C /* en */,
+				42BA66181590932C00092EA6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -7066,33 +7025,6 @@
 			};
 			name = Release;
 		};
-		4284E9DD1585BF210089718F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PREBINDING = NO;
-				PRODUCT_NAME = MiniZip;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		4284E9DE1585BF210089718F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PREBINDING = NO;
-				PRODUCT_NAME = MiniZip;
-				SDKROOT = iphoneos;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 		42A277241575EA53000C59A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7171,6 +7103,33 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = UAModalPanel;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		42BA66021590927F00092EA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = MiniZip;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42BA66031590927F00092EA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = MiniZip;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -7888,15 +7847,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4284E9DC1585BF210089718F /* Build configuration list for PBXNativeTarget "MiniZip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4284E9DD1585BF210089718F /* Debug */,
-				4284E9DE1585BF210089718F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		42A277271575EA5A000C59A1 /* Build configuration list for PBXNativeTarget "NSLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -7920,6 +7870,15 @@
 			buildConfigurations = (
 				42AD39C814F7712300C18A08 /* Debug */,
 				42AD39C914F7712300C18A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42BA66011590927F00092EA6 /* Build configuration list for PBXNativeTarget "MiniZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BA66021590927F00092EA6 /* Debug */,
+				42BA66031590927F00092EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
