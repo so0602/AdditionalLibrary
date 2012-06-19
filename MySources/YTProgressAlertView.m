@@ -1,6 +1,6 @@
 #import "YTProgressAlertView.h"
 
-@interface YTProgressAlertView ()
+@interface YTProgressAlertView ()<UIAlertViewDelegate>
 
 @property (nonatomic, retain) UIProgressView* progressView;
 @property (nonatomic, retain) UILabel* numberOfItemLabel;
@@ -24,29 +24,20 @@
 	return self;
 }
 
++(id)alertViewWithTitle:(NSString*)title message:(NSString*)message maxOfItems:(NSUInteger)maxOfItems showNumber:(BOOL)showNumber{
+	return [[[self alloc] initWithTitle:title message:message maxOfItems:maxOfItems showNumber:showNumber] autorelease];
+}
+
 +(id)showWithTitle:(NSString*)title message:(NSString*)message maxOfItems:(NSUInteger)maxOfItems showNumber:(BOOL)showNumber{
-	YTProgressAlertView* alertView = [[YTProgressAlertView alloc] initWithTitle:title message:message maxOfItems:maxOfItems showNumber:showNumber];
+	YTProgressAlertView* alertView = [YTProgressAlertView alertViewWithTitle:title message:message maxOfItems:maxOfItems showNumber:showNumber];
 	[alertView show];
-	return [alertView autorelease];
+	return alertView;
 }
 
 -(void)show{
 	[super show];
 	
-	UILabel* label = nil;
-	for( UILabel* view in self.subviews ){
-		if( ![view isKindOfClass:[UILabel class]] ) continue;
-		if( [view.text isEqualToString:self.message] ){
-			label = view;
-			break;
-		}
-	}
-	self.indicatorView.center = CGPointMake(self.halfWidth - self.indicatorView.halfWidth + self.x, 0);
-	self.indicatorView.y = label.maxY - 25;
-	self.progressView.y = self.indicatorView.maxY + 8;
-	if( self.showNumber ){
-		self.numberOfItemLabel.y = self.progressView.y + 15;
-	}
+	self.delegate = self;
 }
 
 #pragma mark Private Functions
@@ -90,6 +81,25 @@
 	_maxOfItems = maxOfItems;
 	if( self.showNumber ){
 		self.numberOfItemLabel.text = [NSString stringWithFormat:@"%d / %d", _numberOfItems, _maxOfItems];
+	}
+}
+
+#pragma mark - UIAlertViewDelegate
+
+-(void)willPresentAlertView:(UIAlertView *)alertView{
+	UILabel* label = nil;
+	for( UILabel* view in self.subviews ){
+		if( ![view isKindOfClass:[UILabel class]] ) continue;
+		if( [view.text isEqualToString:self.message] ){
+			label = view;
+			break;
+		}
+	}
+	self.indicatorView.center = CGPointMake(self.halfWidth, 0);
+	self.indicatorView.y = label.maxY - 25;
+	self.progressView.y = self.indicatorView.maxY + 8;
+	if( self.showNumber ){
+		self.numberOfItemLabel.y = self.progressView.y + 15;
 	}
 }
 

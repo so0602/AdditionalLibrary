@@ -25,6 +25,8 @@ extern "C"
 	NSString* UDID();
 	NSString* CFUDID();
 	
+	NSString* IPAddress();
+	
 	BOOL IsIPad();
 	BOOL IsHD();
 	BOOL IsSimulator();
