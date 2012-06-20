@@ -6,4 +6,7 @@
 @property (nonatomic, readonly) NSArray* aNodes;
 @property (nonatomic, readonly) NSURL* href;
 
+@property (nonatomic, readonly) HTMLNode* liNode;
+@property (nonatomic, readonly) NSArray* liNodes;
+
 @end
