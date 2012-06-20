@@ -27,6 +27,7 @@
 }
 
 - (void)didPressLink {
+	NSLog(@"LINE: %d", __LINE__);
     if (![[DBSession sharedSession] isLinked]) {
 		[[DBSession sharedSession] linkFromController:self];
     } else {
@@ -41,17 +42,19 @@
 }
 
 - (IBAction)didPressPhotos {
-	NSLog(@"hihi");
+	NSLog(@"LINE: %d", __LINE__);
     [self.navigationController pushViewController:photoViewController animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+	NSLog(@"LINE: %d", __LINE__);
     [self updateButtons];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	NSLog(@"LINE: %d", __LINE__);
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] 
             initWithTitle:@"Photos" style:UIBarButtonItemStylePlain 
             target:self action:@selector(didPressPhotos)] autorelease];
@@ -59,11 +62,13 @@
 }
 
 - (void)viewDidUnload {
+	NSLog(@"LINE: %d", __LINE__);
     [linkButton release];
     linkButton = nil;
 }
 
 - (void)dealloc {
+	NSLog(@"LINE: %d", __LINE__);
     [linkButton release];
     [photoViewController release];
     [super dealloc];
@@ -84,6 +89,8 @@
 @synthesize photoViewController;
 
 - (void)updateButtons {
+	NSLog(@"LINE: %d", __LINE__);
+	NSLog(@"isLinked: %d", [[DBSession sharedSession] isLinked]);
     NSString* title = [[DBSession sharedSession] isLinked] ? @"Unlink Dropbox" : @"Link Dropbox";
     [linkButton setTitle:title forState:UIControlStateNormal];
     
