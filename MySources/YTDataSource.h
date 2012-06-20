@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@protocol YTDataSource<NSObject>
+@protocol YTDataSource<NSObject, NSCoding>
 
 @property (nonatomic, retain, readonly) NSDictionary* data;
 

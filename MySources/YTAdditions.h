@@ -37,4 +37,6 @@
 
 #import "ASIFormDataRequest+Addition.h"
 
+#import "HTMLNode+Addition.h"
+
 #import "ZipArchive+Addition.h"

@@ -1,5 +1,7 @@
 #import "YTDataSource.h"
 
+static NSString* CodeKey_Data = @"DATA";
+
 @interface YTDataSource ()
 
 @property (nonatomic, retain, readwrite) NSMutableDictionary* data;
@@ -43,6 +45,20 @@
 		NSObject* values = [dictionary objectForKey:key];
 		[_data setObject:values forKey:key];
 	}
+}
+
+#pragma mark - NSCoding
+
+-(id)initWithCoder:(NSCoder *)aDecoder{
+	NSDictionary* dictionary = [aDecoder decodeObjectForKey:CodeKey_Data];
+	if( self = [super initWithDictionary:dictionary] ){
+		
+	}
+	return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder{
+	[aCoder encodeObject:self.data forKey:CodeKey_Data];
 }
 
 #pragma mark - Memory Management
