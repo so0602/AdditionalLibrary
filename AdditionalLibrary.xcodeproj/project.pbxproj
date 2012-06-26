@@ -90,6 +90,10 @@
 		424A2156145E48F4007E0EF8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424A2155145E48F4007E0EF8 /* MapKit.framework */; };
 		424A215A145E4923007E0EF8 /* MKMapView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424A2158145E4923007E0EF8 /* MKMapView+Addition.h */; };
 		424A215B145E4923007E0EF8 /* MKMapView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424A2159145E4923007E0EF8 /* MKMapView+Addition.m */; };
+		424D19F715999E97002825B1 /* UITableView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424D19F515999E97002825B1 /* UITableView+Addition.h */; };
+		424D19F815999E97002825B1 /* UITableView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424D19F515999E97002825B1 /* UITableView+Addition.h */; };
+		424D19F915999E97002825B1 /* UITableView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424D19F615999E97002825B1 /* UITableView+Addition.m */; };
+		424D19FA15999E97002825B1 /* UITableView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424D19F615999E97002825B1 /* UITableView+Addition.m */; };
 		425260DB155791C900D4D689 /* ADLivelyTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 425260D9155791C900D4D689 /* ADLivelyTableView.h */; };
 		425260DC155791C900D4D689 /* ADLivelyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425260DA155791C900D4D689 /* ADLivelyTableView.m */; };
 		425260DE155791F800D4D689 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
@@ -1558,6 +1562,8 @@
 		424A2155145E48F4007E0EF8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		424A2158145E4923007E0EF8 /* MKMapView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Addition.h"; sourceTree = "<group>"; };
 		424A2159145E4923007E0EF8 /* MKMapView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Addition.m"; sourceTree = "<group>"; };
+		424D19F515999E97002825B1 /* UITableView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Addition.h"; sourceTree = "<group>"; };
+		424D19F615999E97002825B1 /* UITableView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Addition.m"; sourceTree = "<group>"; };
 		425260BE1557919300D4D689 /* libADLivelyTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADLivelyTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		425260D9155791C900D4D689 /* ADLivelyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLivelyTableView.h; sourceTree = "<group>"; };
 		425260DA155791C900D4D689 /* ADLivelyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLivelyTableView.m; sourceTree = "<group>"; };
@@ -2874,6 +2880,15 @@
 			name = MK;
 			sourceTree = "<group>";
 		};
+		424D19F415999E76002825B1 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				424D19F515999E97002825B1 /* UITableView+Addition.h */,
+				424D19F615999E97002825B1 /* UITableView+Addition.m */,
+			);
+			name = UITableView;
+			sourceTree = "<group>";
+		};
 		425260D8155791C900D4D689 /* ADLivelyTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -3107,6 +3122,7 @@
 				42B93BD813E660CA0072B1BA /* UILabel */,
 				42F26A7A14960A9400F28181 /* UINavigationController */,
 				42F65FF613E926680068F7CF /* UITabBarController */,
+				424D19F415999E76002825B1 /* UITableView */,
 				42F65FE713E910A00068F7CF /* UITableViewCell */,
 				42B93BB313E653CD0072B1BA /* UIView */,
 				42F65FDE13E9102E0068F7CF /* UIViewController */,
@@ -4604,6 +4620,7 @@
 				42F6613A13E932DE0068F7CF /* ioapi.h in Headers */,
 				42F6613613E932DB0068F7CF /* mztools.h in Headers */,
 				4293D8AC15907C040019DAC7 /* HTMLNode+Addition.h in Headers */,
+				424D19F715999E97002825B1 /* UITableView+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4870,6 +4887,7 @@
 				C439184A1590ECFE001DBE24 /* UIGlossyButton.h in Headers */,
 				C439184B1590ECFE001DBE24 /* UIView+LayerEffects.h in Headers */,
 				C43918501590ECFE001DBE24 /* ZipArchive.h in Headers */,
+				424D19F815999E97002825B1 /* UITableView+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6156,6 +6174,7 @@
 				4284EA8F1585D9720089718F /* zutil.c in Sources */,
 				4284EA901585D9720089718F /* ZipArchive.m in Sources */,
 				4293D8AE15907C040019DAC7 /* HTMLNode+Addition.m in Sources */,
+				424D19F915999E97002825B1 /* UITableView+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6398,6 +6417,7 @@
 				C43917651590EC2C001DBE24 /* trees.c in Sources */,
 				C43917661590EC2C001DBE24 /* uncompr.c in Sources */,
 				C43917671590EC2C001DBE24 /* zutil.c in Sources */,
+				424D19FA15999E97002825B1 /* UITableView+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

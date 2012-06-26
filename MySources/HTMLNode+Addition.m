@@ -15,6 +15,12 @@
 	return [NSURL URLWithString:href];
 }
 
+-(NSURL*)hrefAtIndex:(NSInteger)index{
+	HTMLNode* aNode = [self.aNodes objectAtIndex:index];
+	NSString* href = [aNode getAttributeNamed:@"href"];
+	return [NSURL URLWithString:href];
+}
+
 -(HTMLNode*)liNode{
 	return [self findChildTag:@"li"];
 }
