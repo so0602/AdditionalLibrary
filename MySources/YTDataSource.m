@@ -51,7 +51,7 @@ static NSString* CodeKey_Data = @"DATA";
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
 	NSDictionary* dictionary = [aDecoder decodeObjectForKey:CodeKey_Data];
-	if( self = [super initWithDictionary:dictionary] ){
+	if( self = [self initWithDictionary:dictionary] ){
 		
 	}
 	return self;
