@@ -30,6 +30,28 @@
 	return [NSMakeCollectable((NSString *)mimeType) autorelease];
 }
 
++(void)createFolder:(NSString *)path{
+	NSFileManager* fileManager = [NSFileManager defaultManager];
+	
+	NSString* rootPath = DocumentPath();
+	if( ![path hasPrefix:rootPath] ){
+		rootPath = CachedPath();
+		if( ![path hasPrefix:rootPath] ){
+			return;
+		}
+	}
+	
+	path = [path stringByReplacingOccurrencesOfString:rootPath withString:@""];
+	NSArray* subPaths = [path componentsSeparatedByString:@"/"];
+	path = rootPath;
+	for( NSString* subPath in subPaths ){
+		path = [path stringByAppendingPathComponent:subPath];
+		if( ![fileManager fileExistsAtPath:path] ){
+			[fileManager createDirectoryAtPath:path withIntermediateDirectories:TRUE attributes:nil error:nil];
+		}
+	}
+}
+
 @end
 
 @implementation NSFileManager (DocumentPath)

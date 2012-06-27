@@ -10,6 +10,8 @@
 
 +(NSString*)mimeTypeForFileAtPath:(NSString*)path;
 
++(void)createFolder:(NSString*)path;
+
 @end
 
 @interface NSFileManager (DocumentPath)
