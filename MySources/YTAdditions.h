@@ -30,6 +30,7 @@
 #import "UILabel+Addition.h"
 #import "UINavigationController+Addition.h"
 #import "UITabBarController+Addition.h"
+#import "UITableView+Addition.h"
 #import "UITableViewCell+Addition.h"
 #import "UIView+Addition.h"
 #import "UIViewController+Addition.h"
