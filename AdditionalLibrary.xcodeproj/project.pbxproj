@@ -257,6 +257,10 @@
 		42AA4646156F492400DADD6A /* YTKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AA4644156F492400DADD6A /* YTKeychain.h */; };
 		42AA4647156F492400DADD6A /* YTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA4645156F492400DADD6A /* YTKeychain.m */; };
 		42AA4648156F492400DADD6A /* YTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA4645156F492400DADD6A /* YTKeychain.m */; };
+		42AAEEAE15AD76F80071F394 /* YTGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AAEEAC15AD76F80071F394 /* YTGradientView.h */; };
+		42AAEEAF15AD76F80071F394 /* YTGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AAEEAC15AD76F80071F394 /* YTGradientView.h */; };
+		42AAEEB015AD76F80071F394 /* YTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAEEAD15AD76F80071F394 /* YTGradientView.m */; };
+		42AAEEB115AD76F80071F394 /* YTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAEEAD15AD76F80071F394 /* YTGradientView.m */; };
 		42ABACE814147B4000537B39 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ABACB414147B4000537B39 /* ASIAuthenticationDialog.h */; };
 		42ABACE914147B4000537B39 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ABACB514147B4000537B39 /* ASIAuthenticationDialog.m */; };
 		42ABACEA14147B4000537B39 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ABACB614147B4000537B39 /* ASICacheDelegate.h */; };
@@ -1662,6 +1666,8 @@
 		42A277231575EA53000C59A1 /* libNSLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNSLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AA4644156F492400DADD6A /* YTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKeychain.h; sourceTree = "<group>"; };
 		42AA4645156F492400DADD6A /* YTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKeychain.m; sourceTree = "<group>"; };
+		42AAEEAC15AD76F80071F394 /* YTGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTGradientView.h; sourceTree = "<group>"; };
+		42AAEEAD15AD76F80071F394 /* YTGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTGradientView.m; sourceTree = "<group>"; };
 		42ABACAE1414790F00537B39 /* libASIHTTPRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASIHTTPRequest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ABACB414147B4000537B39 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		42ABACB514147B4000537B39 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
@@ -1897,7 +1903,7 @@
 		C42057951564122F00668AA5 /* PetHunterChallengeGiftInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterChallengeGiftInput.m; sourceTree = "<group>"; };
 		C4205797156412E700668AA5 /* PetHunterChallengeGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetHunterChallengeGift.h; sourceTree = "<group>"; };
 		C4205798156412E700668AA5 /* PetHunterChallengeGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterChallengeGift.m; sourceTree = "<group>"; };
-		C43916881590EB31001DBE24 /* YTFramework.framework */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.framework; path = YTFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43916881590EB31001DBE24 /* YTFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = YTFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C439168C1590EB31001DBE24 /* YTFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YTFramework-Info.plist"; sourceTree = "<group>"; };
 		C439168E1590EB31001DBE24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C43916901590EB31001DBE24 /* YTFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTFramework-Prefix.pch"; sourceTree = "<group>"; };
@@ -3549,6 +3555,8 @@
 		42F65F2413E8EF590068F7CF /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				42B005271581FC5300362CBF /* YTAlertView.h */,
+				42B005281581FC5300362CBF /* YTAlertView.m */,
 				42F668C413EBA7460068F7CF /* YTBoldLabel.h */,
 				42F668C513EBA7460068F7CF /* YTBoldLabel.m */,
 				42F65F2513E8EF630068F7CF /* YTClickableView.h */,
@@ -3557,6 +3565,8 @@
 				42444AA714ECFCE1001F72F3 /* YTDataSource.m */,
 				42ABB160141711BE00537B39 /* YTFlashingView.h */,
 				42ABB161141711BE00537B39 /* YTFlashingView.m */,
+				42AAEEAC15AD76F80071F394 /* YTGradientView.h */,
+				42AAEEAD15AD76F80071F394 /* YTGradientView.m */,
 				422D249714F34E15001599BC /* YTImagePickerController.h */,
 				422D249814F34E15001599BC /* YTImagePickerController.m */,
 				42F662CF13E944970068F7CF /* YTInputAlertView.h */,
@@ -3583,8 +3593,6 @@
 				42C656D714581F2300D576C8 /* YTTapDetectingWindow.m */,
 				422D24B814F355C4001599BC /* YTWebViewController.h */,
 				422D24B914F355C4001599BC /* YTWebViewController.m */,
-				42B005271581FC5300362CBF /* YTAlertView.h */,
-				42B005281581FC5300362CBF /* YTAlertView.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -4621,6 +4629,7 @@
 				42F6613613E932DB0068F7CF /* mztools.h in Headers */,
 				4293D8AC15907C040019DAC7 /* HTMLNode+Addition.h in Headers */,
 				424D19F715999E97002825B1 /* UITableView+Addition.h in Headers */,
+				42AAEEAE15AD76F80071F394 /* YTGradientView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4888,6 +4897,7 @@
 				C439184B1590ECFE001DBE24 /* UIView+LayerEffects.h in Headers */,
 				C43918501590ECFE001DBE24 /* ZipArchive.h in Headers */,
 				424D19F815999E97002825B1 /* UITableView+Addition.h in Headers */,
+				42AAEEAF15AD76F80071F394 /* YTGradientView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6175,6 +6185,7 @@
 				4284EA901585D9720089718F /* ZipArchive.m in Sources */,
 				4293D8AE15907C040019DAC7 /* HTMLNode+Addition.m in Sources */,
 				424D19F915999E97002825B1 /* UITableView+Addition.m in Sources */,
+				42AAEEB015AD76F80071F394 /* YTGradientView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6418,6 +6429,7 @@
 				C43917661590EC2C001DBE24 /* uncompr.c in Sources */,
 				C43917671590EC2C001DBE24 /* zutil.c in Sources */,
 				424D19FA15999E97002825B1 /* UITableView+Addition.m in Sources */,
+				42AAEEB115AD76F80071F394 /* YTGradientView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import "YTClickableView.h"
 #import "YTDataSource.h"
 #import "YTFlashingView.h"
+#import "YTGradientView.h"
 #import "YTImagePickerController.h"
 #import "YTInputAlertView.h"
 #import "YTLabel.h"
