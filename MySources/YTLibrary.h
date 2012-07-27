@@ -21,6 +21,7 @@
 #import "YTProgressAlertView.h"
 #import "YTScrollWebView.h"
 #import "YTSelectDomainActionSheet.h"
+#import "YTSplitViewController.h"
 #import "YTTapDetectingWindow.h"
 #import "YTWebViewController.h"
 
