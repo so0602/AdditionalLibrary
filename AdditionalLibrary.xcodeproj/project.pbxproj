@@ -56,6 +56,10 @@
 		4225CAA814F74EFC003B893A /* libSpriteAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4225CA9314F74D78003B893A /* libSpriteAnimation.a */; };
 		42268BCC1550D46F00F24DC8 /* YTCachedData.h in Headers */ = {isa = PBXBuildFile; fileRef = 42268BCA1550D46F00F24DC8 /* YTCachedData.h */; };
 		42268BCD1550D46F00F24DC8 /* YTCachedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 42268BCB1550D46F00F24DC8 /* YTCachedData.m */; };
+		42280D9215C2661900C360A1 /* YTSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42280D9015C2661900C360A1 /* YTSplitViewController.h */; };
+		42280D9315C2661900C360A1 /* YTSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42280D9015C2661900C360A1 /* YTSplitViewController.h */; };
+		42280D9415C2661900C360A1 /* YTSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42280D9115C2661900C360A1 /* YTSplitViewController.m */; };
+		42280D9515C2661900C360A1 /* YTSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42280D9115C2661900C360A1 /* YTSplitViewController.m */; };
 		422D249914F34E15001599BC /* YTImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422D249714F34E15001599BC /* YTImagePickerController.h */; };
 		422D249A14F34E15001599BC /* YTImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422D249814F34E15001599BC /* YTImagePickerController.m */; };
 		422D24BA14F355C4001599BC /* YTWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422D24B814F355C4001599BC /* YTWebViewController.h */; };
@@ -1519,6 +1523,8 @@
 		4225CA9F14F74DA5003B893A /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
 		42268BCA1550D46F00F24DC8 /* YTCachedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTCachedData.h; sourceTree = "<group>"; };
 		42268BCB1550D46F00F24DC8 /* YTCachedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTCachedData.m; sourceTree = "<group>"; };
+		42280D9015C2661900C360A1 /* YTSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSplitViewController.h; sourceTree = "<group>"; };
+		42280D9115C2661900C360A1 /* YTSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSplitViewController.m; sourceTree = "<group>"; };
 		422D249714F34E15001599BC /* YTImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTImagePickerController.h; sourceTree = "<group>"; };
 		422D249814F34E15001599BC /* YTImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTImagePickerController.m; sourceTree = "<group>"; };
 		422D24B814F355C4001599BC /* YTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTWebViewController.h; sourceTree = "<group>"; };
@@ -1903,7 +1909,7 @@
 		C42057951564122F00668AA5 /* PetHunterChallengeGiftInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterChallengeGiftInput.m; sourceTree = "<group>"; };
 		C4205797156412E700668AA5 /* PetHunterChallengeGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetHunterChallengeGift.h; sourceTree = "<group>"; };
 		C4205798156412E700668AA5 /* PetHunterChallengeGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterChallengeGift.m; sourceTree = "<group>"; };
-		C43916881590EB31001DBE24 /* YTFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = YTFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43916881590EB31001DBE24 /* YTFramework.framework */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.framework; path = YTFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C439168C1590EB31001DBE24 /* YTFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YTFramework-Info.plist"; sourceTree = "<group>"; };
 		C439168E1590EB31001DBE24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C43916901590EB31001DBE24 /* YTFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTFramework-Prefix.pch"; sourceTree = "<group>"; };
@@ -2785,6 +2791,15 @@
 			path = SpriteAnimation;
 			sourceTree = "<group>";
 		};
+		42280D8F15C265CD00C360A1 /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				42280D9015C2661900C360A1 /* YTSplitViewController.h */,
+				42280D9115C2661900C360A1 /* YTSplitViewController.m */,
+			);
+			name = Split;
+			sourceTree = "<group>";
+		};
 		422D565A15469DB100B648C0 /* NSInvocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2843,6 +2858,7 @@
 				423EEEB913D82DDA003CA78D /* Reachability.m */,
 				42F65F2313E8EE6B0068F7CF /* Read File */,
 				427EEB5A140752F800A6BB57 /* SoundPlayer */,
+				42280D8F15C265CD00C360A1 /* Split */,
 				428EDD5813E0154D00F10F87 /* UI */,
 				427EEA5214065DF800A6BB57 /* Upload */,
 				42F6614713E933480068F7CF /* ZipArchive */,
@@ -4630,6 +4646,7 @@
 				4293D8AC15907C040019DAC7 /* HTMLNode+Addition.h in Headers */,
 				424D19F715999E97002825B1 /* UITableView+Addition.h in Headers */,
 				42AAEEAE15AD76F80071F394 /* YTGradientView.h in Headers */,
+				42280D9215C2661900C360A1 /* YTSplitViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4898,6 +4915,7 @@
 				C43918501590ECFE001DBE24 /* ZipArchive.h in Headers */,
 				424D19F815999E97002825B1 /* UITableView+Addition.h in Headers */,
 				42AAEEAF15AD76F80071F394 /* YTGradientView.h in Headers */,
+				42280D9315C2661900C360A1 /* YTSplitViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6186,6 +6204,7 @@
 				4293D8AE15907C040019DAC7 /* HTMLNode+Addition.m in Sources */,
 				424D19F915999E97002825B1 /* UITableView+Addition.m in Sources */,
 				42AAEEB015AD76F80071F394 /* YTGradientView.m in Sources */,
+				42280D9415C2661900C360A1 /* YTSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6430,6 +6449,7 @@
 				C43917671590EC2C001DBE24 /* zutil.c in Sources */,
 				424D19FA15999E97002825B1 /* UITableView+Addition.m in Sources */,
 				42AAEEB115AD76F80071F394 /* YTGradientView.m in Sources */,
+				42280D9515C2661900C360A1 /* YTSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

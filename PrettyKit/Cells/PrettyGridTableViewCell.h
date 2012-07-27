@@ -96,7 +96,7 @@
 @interface PrettyGridTableViewCell : PrettyCustomViewTableViewCell {
 @package
     UITableViewCellStyle _style;
-    NSIndexPath *_indexPath;    
+    NSIndexPath *__indexPath;
 
 @private
     NSMutableDictionary *_texts;

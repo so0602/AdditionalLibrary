@@ -351,7 +351,7 @@
 {
     if (self.selectedSegment != -1 && self.cell.actionBlock != nil) 
     {
-        self.cell.actionBlock(self.cell->_indexPath, self.selectedSegment);
+        self.cell.actionBlock(self.cell->__indexPath, self.selectedSegment);
     }
 }
 
@@ -393,9 +393,9 @@
         [_detailTexts release];
         _detailTexts = nil;
     }
-    if (_indexPath != nil) {
-        [_indexPath release];
-        _indexPath = nil;
+    if (__indexPath != nil) {
+        [__indexPath release];
+        __indexPath = nil;
     }
     
     
@@ -517,10 +517,10 @@
 {
     [super prepareForTableView:tableView indexPath:indexPath];
     
-    if (_indexPath != nil) {
-        [_indexPath release];
+    if (__indexPath != nil) {
+        [__indexPath release];
     }
-    _indexPath = [indexPath retain];
+    __indexPath = [indexPath retain];
 }
 
 - (void) selectIndex:(int)index 
