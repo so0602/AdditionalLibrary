@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 #import "YTGlobalValues.h"
 
@@ -30,6 +31,39 @@
 +(id)showAlertViewWithMessage:(NSString*)message cancelButtonTitle:(NSString*)cancelButtonTitle okButtonTitle:(NSString*)okButtonTitle;
 
 +(id)showAlertViewWithDataSource:(id<YTUIAlertViewDataSource>)dataSource;
+
+@end
+
+typedef void(^UIAlertViewDidClickBlock)(NSInteger index);
+typedef void(^UIAlertViewDidCancelBlock)();
+typedef void(^UIAlertViewWillPresentBlock)();
+typedef void(^UIAlertViewDidPresentBlock)();
+typedef void(^UIAlertViewWillDismissBlock)(NSInteger index);
+typedef void(^UIAlertViewDidDismissBlock)(NSInteger index);
+typedef BOOL(^UIAlertViewShouldEnableFirstOtherButtonBlock)();
+
+@interface UIAlertView (Block)
+
+-(UIAlertViewDidClickBlock)didClickBlock;
+-(void)setDidClickBlock:(UIAlertViewDidClickBlock)didClickBlock;
+
+-(UIAlertViewDidCancelBlock)didCancelBlock;
+-(void)setDidCancelBlock:(UIAlertViewDidCancelBlock)didCancelBlock;
+
+-(UIAlertViewWillPresentBlock)willPresentBlock;
+-(void)setWillPresentBlock:(UIAlertViewWillPresentBlock)willPresentBlock;
+
+-(UIAlertViewDidPresentBlock)didPresentBlock;
+-(void)setDidPresentBlock:(UIAlertViewDidPresentBlock)didPresentBlock;
+
+-(UIAlertViewWillDismissBlock)willDismissBlock;
+-(void)setWillDismissBlock:(UIAlertViewWillDismissBlock)willDismissBlock;
+
+-(UIAlertViewDidDismissBlock)didDismissBlock;
+-(void)setDidDismissBlock:(UIAlertViewDidDismissBlock)didDismissBlock;
+
+-(UIAlertViewShouldEnableFirstOtherButtonBlock)shouldEnableFirstOtherButtonBlock;
+-(void)setShouldEnableFirstOtherButtonBlock:(UIAlertViewShouldEnableFirstOtherButtonBlock)shouldEnableFirstOtherButtonBlock;
 
 @end
 

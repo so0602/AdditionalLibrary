@@ -1,5 +1,7 @@
 #import "YTSplitViewController.h"
 
+#import "UIViewController+Addition.h"
+
 @interface YTSplitViewController ()
 
 @end
@@ -9,14 +11,21 @@
 #pragma mark - View Lifecycle
 
 -(void)viewDidLoad{
-	[super viewDidLoad];
-	
-	self.masterViewController = self.preMasterViewController;
-	self.detailViewController = self.preDetailViewController;
+	[super viewDidLoad];	
 }
 
 -(void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
+	
+	if( !self.masterViewController ){
+		self.masterViewController = self.preMasterViewController;
+	}
+	self.masterViewController.mySplitViewController = self;
+	
+	if( !self.detailViewController ){
+		self.detailViewController = self.preDetailViewController;
+	}
+	self.detailViewController.mySplitViewController = self;
 }
 
 -(void)viewDidAppear:(BOOL)animated{

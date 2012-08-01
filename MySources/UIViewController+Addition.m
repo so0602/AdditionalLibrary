@@ -1,5 +1,7 @@
 #import "UIViewController+Addition.h"
 
+#import <objc/runtime.h>
+
 @interface UIViewController ()
 
 -(void)setButtonExclusiveTouch:(BOOL)buttonExclusiveTouch superview:(UIView*)superview;
@@ -40,6 +42,19 @@
 			[self setButtonExclusiveTouch:buttonExclusiveTouch superview:subview];
 		}
 	}
+}
+
+@end
+
+static const char* MySplitViewControllerKey = "&#_MySplitViewControllerKey_#&";
+
+@implementation UIViewController (SplitView)
+
+-(YTSplitViewController*)mySplitViewController{
+	return objc_getAssociatedObject(self, MySplitViewControllerKey);
+}
+-(void)setMySplitViewController:(YTSplitViewController*)newMySplitViewController{
+	objc_setAssociatedObject(self, MySplitViewControllerKey, newMySplitViewController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

@@ -60,6 +60,10 @@
 		42280D9315C2661900C360A1 /* YTSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42280D9015C2661900C360A1 /* YTSplitViewController.h */; };
 		42280D9415C2661900C360A1 /* YTSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42280D9115C2661900C360A1 /* YTSplitViewController.m */; };
 		42280D9515C2661900C360A1 /* YTSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42280D9115C2661900C360A1 /* YTSplitViewController.m */; };
+		422C48B415C6858E004255FC /* MGSplitViewController+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 422C48B215C6858E004255FC /* MGSplitViewController+Addition.h */; };
+		422C48B515C6858E004255FC /* MGSplitViewController+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 422C48B215C6858E004255FC /* MGSplitViewController+Addition.h */; };
+		422C48B615C6858E004255FC /* MGSplitViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 422C48B315C6858E004255FC /* MGSplitViewController+Addition.m */; };
+		422C48B715C6858E004255FC /* MGSplitViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 422C48B315C6858E004255FC /* MGSplitViewController+Addition.m */; };
 		422D249914F34E15001599BC /* YTImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422D249714F34E15001599BC /* YTImagePickerController.h */; };
 		422D249A14F34E15001599BC /* YTImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422D249814F34E15001599BC /* YTImagePickerController.m */; };
 		422D24BA14F355C4001599BC /* YTWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422D24B814F355C4001599BC /* YTWebViewController.h */; };
@@ -258,6 +262,26 @@
 		42A277351575EB5A000C59A1 /* libHTMLParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E694D81574999200F9679F /* libHTMLParser.a */; };
 		42A277361575EB5A000C59A1 /* libNSLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A277231575EA53000C59A1 /* libNSLogger.a */; };
 		42A277371575EB71000C59A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F663BE13E962430068F7CF /* CFNetwork.framework */; };
+		42A445E215C9298A00A907F0 /* ATMHud.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A445D515C9298A00A907F0 /* ATMHud.h */; };
+		42A445E315C9298A00A907F0 /* ATMHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A445D615C9298A00A907F0 /* ATMHud.m */; };
+		42A445E415C9298A00A907F0 /* ATMHudDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A445D715C9298A00A907F0 /* ATMHudDelegate.h */; };
+		42A445E515C9298A00A907F0 /* ATMHudQueueItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A445D815C9298A00A907F0 /* ATMHudQueueItem.h */; };
+		42A445E615C9298A00A907F0 /* ATMHudQueueItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A445D915C9298A00A907F0 /* ATMHudQueueItem.m */; };
+		42A445E715C9298A00A907F0 /* ATMHudView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A445DA15C9298A00A907F0 /* ATMHudView.h */; };
+		42A445E815C9298A00A907F0 /* ATMHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A445DB15C9298A00A907F0 /* ATMHudView.m */; };
+		42A445E915C9298A00A907F0 /* ATMProgressLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A445DC15C9298A00A907F0 /* ATMProgressLayer.h */; };
+		42A445EA15C9298A00A907F0 /* ATMProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A445DD15C9298A00A907F0 /* ATMProgressLayer.m */; };
+		42A445EB15C9298A00A907F0 /* ATMSoundFX.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A445DE15C9298A00A907F0 /* ATMSoundFX.h */; };
+		42A445EC15C9298A00A907F0 /* ATMSoundFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A445DF15C9298A00A907F0 /* ATMSoundFX.m */; };
+		42A445ED15C9298A00A907F0 /* ATMTextLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A445E015C9298A00A907F0 /* ATMTextLayer.h */; };
+		42A445EE15C9298A00A907F0 /* ATMTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A445E115C9298A00A907F0 /* ATMTextLayer.m */; };
+		42A445EF15C929A100A907F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		42A445F015C929A700A907F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		42A445F115C929AF00A907F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		42A445F215C929B600A907F0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F6637513E961B50068F7CF /* AudioToolbox.framework */; };
+		42A445F315C929BC00A907F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8F13D82DEB003CA78D /* QuartzCore.framework */; };
+		42A445F415C92B2C00A907F0 /* libATMHud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A445CF15C9293000A907F0 /* libATMHud.a */; };
+		42A445F515C92B3B00A907F0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F6637513E961B50068F7CF /* AudioToolbox.framework */; };
 		42AA4646156F492400DADD6A /* YTKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AA4644156F492400DADD6A /* YTKeychain.h */; };
 		42AA4647156F492400DADD6A /* YTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA4645156F492400DADD6A /* YTKeychain.m */; };
 		42AA4648156F492400DADD6A /* YTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA4645156F492400DADD6A /* YTKeychain.m */; };
@@ -1525,6 +1549,8 @@
 		42268BCB1550D46F00F24DC8 /* YTCachedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTCachedData.m; sourceTree = "<group>"; };
 		42280D9015C2661900C360A1 /* YTSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSplitViewController.h; sourceTree = "<group>"; };
 		42280D9115C2661900C360A1 /* YTSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSplitViewController.m; sourceTree = "<group>"; };
+		422C48B215C6858E004255FC /* MGSplitViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MGSplitViewController+Addition.h"; sourceTree = "<group>"; };
+		422C48B315C6858E004255FC /* MGSplitViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MGSplitViewController+Addition.m"; sourceTree = "<group>"; };
 		422D249714F34E15001599BC /* YTImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTImagePickerController.h; sourceTree = "<group>"; };
 		422D249814F34E15001599BC /* YTImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTImagePickerController.m; sourceTree = "<group>"; };
 		422D24B814F355C4001599BC /* YTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTWebViewController.h; sourceTree = "<group>"; };
@@ -1587,6 +1613,8 @@
 		425AE9DE1573425C0002CBE8 /* CocoaSecurity-GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaSecurity-GTMBase64.h"; sourceTree = "<group>"; };
 		425AE9DF1573425C0002CBE8 /* CocoaSecurity-GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CocoaSecurity-GTMBase64.m"; sourceTree = "<group>"; };
 		425AE9E01573425C0002CBE8 /* CocoaSecurity-GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaSecurity-GTMDefines.h"; sourceTree = "<group>"; };
+		4261707D15C67521006AF529 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4261708115C67522006AF529 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		427B59F11473BA9A00747E9B /* libDCRoundSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCRoundSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		427B59FB1473BAC100747E9B /* DCRoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRoundSwitch.h; sourceTree = "<group>"; };
 		427B59FC1473BAC100747E9B /* DCRoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRoundSwitch.m; sourceTree = "<group>"; };
@@ -1670,6 +1698,21 @@
 		4293D8AA15907C040019DAC7 /* HTMLNode+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTMLNode+Addition.h"; sourceTree = "<group>"; };
 		4293D8AB15907C040019DAC7 /* HTMLNode+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTMLNode+Addition.m"; sourceTree = "<group>"; };
 		42A277231575EA53000C59A1 /* libNSLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNSLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A445CF15C9293000A907F0 /* libATMHud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libATMHud.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A445D415C9298A00A907F0 /* ATMHud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ATMHud.bundle; sourceTree = "<group>"; };
+		42A445D515C9298A00A907F0 /* ATMHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMHud.h; sourceTree = "<group>"; };
+		42A445D615C9298A00A907F0 /* ATMHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMHud.m; sourceTree = "<group>"; };
+		42A445D715C9298A00A907F0 /* ATMHudDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMHudDelegate.h; sourceTree = "<group>"; };
+		42A445D815C9298A00A907F0 /* ATMHudQueueItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMHudQueueItem.h; sourceTree = "<group>"; };
+		42A445D915C9298A00A907F0 /* ATMHudQueueItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMHudQueueItem.m; sourceTree = "<group>"; };
+		42A445DA15C9298A00A907F0 /* ATMHudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMHudView.h; sourceTree = "<group>"; };
+		42A445DB15C9298A00A907F0 /* ATMHudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMHudView.m; sourceTree = "<group>"; };
+		42A445DC15C9298A00A907F0 /* ATMProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMProgressLayer.h; sourceTree = "<group>"; };
+		42A445DD15C9298A00A907F0 /* ATMProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMProgressLayer.m; sourceTree = "<group>"; };
+		42A445DE15C9298A00A907F0 /* ATMSoundFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMSoundFX.h; sourceTree = "<group>"; };
+		42A445DF15C9298A00A907F0 /* ATMSoundFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMSoundFX.m; sourceTree = "<group>"; };
+		42A445E015C9298A00A907F0 /* ATMTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMTextLayer.h; sourceTree = "<group>"; };
+		42A445E115C9298A00A907F0 /* ATMTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMTextLayer.m; sourceTree = "<group>"; };
 		42AA4644156F492400DADD6A /* YTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKeychain.h; sourceTree = "<group>"; };
 		42AA4645156F492400DADD6A /* YTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKeychain.m; sourceTree = "<group>"; };
 		42AAEEAC15AD76F80071F394 /* YTGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTGradientView.h; sourceTree = "<group>"; };
@@ -2285,6 +2328,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42A445CA15C9293000A907F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A445F315C929BC00A907F0 /* QuartzCore.framework in Frameworks */,
+				42A445F215C929B600A907F0 /* AudioToolbox.framework in Frameworks */,
+				42A445F115C929AF00A907F0 /* CoreGraphics.framework in Frameworks */,
+				42A445F015C929A700A907F0 /* Foundation.framework in Frameworks */,
+				42A445EF15C929A100A907F0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42ABACAC1414790F00537B39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2425,6 +2480,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A445F515C92B3B00A907F0 /* AudioToolbox.framework in Frameworks */,
+				42A445F415C92B2C00A907F0 /* libATMHud.a in Frameworks */,
 				C45A9FBE15890C6500019B38 /* libCocoaHTTPServer.a in Frameworks */,
 				42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */,
 				42A277371575EB71000C59A1 /* CFNetwork.framework in Frameworks */,
@@ -2644,6 +2701,7 @@
 				C45A9F3015890A9B00019B38 /* libCocoaHTTPServer.a */,
 				42BA66041590927F00092EA6 /* libMiniZip.a */,
 				C43916881590EB31001DBE24 /* YTFramework.framework */,
+				42A445CF15C9293000A907F0 /* libATMHud.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2665,6 +2723,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				42A445D315C9298A00A907F0 /* ATMHud */,
 				32CA4F630368D1EE00C91783 /* AdditionalLibrary_Prefix.pch */,
 				425260D8155791C900D4D689 /* ADLivelyTableView */,
 				42ABACB314147B4000537B39 /* ASIHTTPRequest */,
@@ -2800,6 +2859,15 @@
 			name = Split;
 			sourceTree = "<group>";
 		};
+		422C48AE15C6855B004255FC /* MGSplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				422C48B215C6858E004255FC /* MGSplitViewController+Addition.h */,
+				422C48B315C6858E004255FC /* MGSplitViewController+Addition.m */,
+			);
+			name = MGSplitViewController;
+			sourceTree = "<group>";
+		};
 		422D565A15469DB100B648C0 /* NSInvocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2852,6 +2920,7 @@
 				4293D8A315907B020019DAC7 /* HTMLParser */,
 				42F65F2213E8EE4C0068F7CF /* Location */,
 				428ED9F513DEB82300F10F87 /* MFMailComposeViewController */,
+				422C48AE15C6855B004255FC /* MGSplitViewController */,
 				424A2157145E4902007E0EF8 /* MK */,
 				423E1CAC13E12802005B9D9B /* NS */,
 				423EEEB813D82DDA003CA78D /* Reachability.h */,
@@ -3179,6 +3248,27 @@
 				42EE4CCE1575EEB6003F2F57 /* LoggerCommon.h */,
 			);
 			name = NSLogger;
+			sourceTree = "<group>";
+		};
+		42A445D315C9298A00A907F0 /* ATMHud */ = {
+			isa = PBXGroup;
+			children = (
+				42A445D415C9298A00A907F0 /* ATMHud.bundle */,
+				42A445D515C9298A00A907F0 /* ATMHud.h */,
+				42A445D615C9298A00A907F0 /* ATMHud.m */,
+				42A445D715C9298A00A907F0 /* ATMHudDelegate.h */,
+				42A445D815C9298A00A907F0 /* ATMHudQueueItem.h */,
+				42A445D915C9298A00A907F0 /* ATMHudQueueItem.m */,
+				42A445DA15C9298A00A907F0 /* ATMHudView.h */,
+				42A445DB15C9298A00A907F0 /* ATMHudView.m */,
+				42A445DC15C9298A00A907F0 /* ATMProgressLayer.h */,
+				42A445DD15C9298A00A907F0 /* ATMProgressLayer.m */,
+				42A445DE15C9298A00A907F0 /* ATMSoundFX.h */,
+				42A445DF15C9298A00A907F0 /* ATMSoundFX.m */,
+				42A445E015C9298A00A907F0 /* ATMTextLayer.h */,
+				42A445E115C9298A00A907F0 /* ATMTextLayer.m */,
+			);
+			path = ATMHud;
 			sourceTree = "<group>";
 		};
 		42ABACB314147B4000537B39 /* ASIHTTPRequest */ = {
@@ -4385,6 +4475,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42A445C315C9293000A907F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A445E215C9298A00A907F0 /* ATMHud.h in Headers */,
+				42A445E415C9298A00A907F0 /* ATMHudDelegate.h in Headers */,
+				42A445E515C9298A00A907F0 /* ATMHudQueueItem.h in Headers */,
+				42A445E715C9298A00A907F0 /* ATMHudView.h in Headers */,
+				42A445E915C9298A00A907F0 /* ATMProgressLayer.h in Headers */,
+				42A445EB15C9298A00A907F0 /* ATMSoundFX.h in Headers */,
+				42A445ED15C9298A00A907F0 /* ATMTextLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42ABACAA1414790F00537B39 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -4647,6 +4751,7 @@
 				424D19F715999E97002825B1 /* UITableView+Addition.h in Headers */,
 				42AAEEAE15AD76F80071F394 /* YTGradientView.h in Headers */,
 				42280D9215C2661900C360A1 /* YTSplitViewController.h in Headers */,
+				422C48B415C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4916,6 +5021,7 @@
 				424D19F815999E97002825B1 /* UITableView+Addition.h in Headers */,
 				42AAEEAF15AD76F80071F394 /* YTGradientView.h in Headers */,
 				42280D9315C2661900C360A1 /* YTSplitViewController.h in Headers */,
+				422C48B515C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5227,6 +5333,23 @@
 			name = NSLogger;
 			productName = NSLogger;
 			productReference = 42A277231575EA53000C59A1 /* libNSLogger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		42A445C015C9293000A907F0 /* ATMHud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A445CC15C9293000A907F0 /* Build configuration list for PBXNativeTarget "ATMHud" */;
+			buildPhases = (
+				42A445C115C9293000A907F0 /* Sources */,
+				42A445C315C9293000A907F0 /* Headers */,
+				42A445CA15C9293000A907F0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATMHud;
+			productName = ZipArchive;
+			productReference = 42A445CF15C9293000A907F0 /* libATMHud.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		42ABACAD1414790F00537B39 /* ASIHTTPRequest */ = {
@@ -5668,6 +5791,7 @@
 				1D6058900D05DD3D006BFB54 /* _AdditionalLibrary */,
 				42F6618713E938360068F7CF /* _CreateLibrary */,
 				425260BD1557919300D4D689 /* ADLivelyTableView */,
+				42A445C015C9293000A907F0 /* ATMHud */,
 				42ABACAD1414790F00537B39 /* ASIHTTPRequest */,
 				42F6636113E961770068F7CF /* AudioStreamer */,
 				C4A0506C14756973006CC4B0 /* CocoaAMF */,
@@ -5969,6 +6093,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42A445C115C9293000A907F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A445E315C9298A00A907F0 /* ATMHud.m in Sources */,
+				42A445E615C9298A00A907F0 /* ATMHudQueueItem.m in Sources */,
+				42A445E815C9298A00A907F0 /* ATMHudView.m in Sources */,
+				42A445EA15C9298A00A907F0 /* ATMProgressLayer.m in Sources */,
+				42A445EC15C9298A00A907F0 /* ATMSoundFX.m in Sources */,
+				42A445EE15C9298A00A907F0 /* ATMTextLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42ABACAB1414790F00537B39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6205,6 +6342,7 @@
 				424D19F915999E97002825B1 /* UITableView+Addition.m in Sources */,
 				42AAEEB015AD76F80071F394 /* YTGradientView.m in Sources */,
 				42280D9415C2661900C360A1 /* YTSplitViewController.m in Sources */,
+				422C48B615C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6450,6 +6588,7 @@
 				424D19FA15999E97002825B1 /* UITableView+Addition.m in Sources */,
 				42AAEEB115AD76F80071F394 /* YTGradientView.m in Sources */,
 				42280D9515C2661900C360A1 /* YTSplitViewController.m in Sources */,
+				422C48B715C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6744,6 +6883,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C439168E1590EB31001DBE24 /* en */,
+				4261708115C67522006AF529 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -6752,6 +6892,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C4DA0F8A155E948F0079321E /* en */,
+				4261707D15C67521006AF529 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -7153,6 +7294,33 @@
 			};
 			name = Release;
 		};
+		42A445CD15C9293000A907F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = ATMHud;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42A445CE15C9293000A907F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = ATMHud;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		42ABACAF1414790F00537B39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7160,7 +7328,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = ASIHTTPRequest;
 				SDKROOT = iphoneos;
@@ -7174,7 +7343,8 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = ASIHTTPRequest;
 				SDKROOT = iphoneos;
@@ -7324,7 +7494,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
 				PREBINDING = NO;
 				PRODUCT_NAME = HTMLParser;
 				SDKROOT = iphoneos;
@@ -7338,7 +7508,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
 				PREBINDING = NO;
 				PRODUCT_NAME = HTMLParser;
 				SDKROOT = iphoneos;
@@ -7516,12 +7686,16 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"${SDK_DIR}/usr/include/libxml2/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Release-iphonesimulator\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				PRODUCT_NAME = YT;
 				SDKROOT = iphoneos;
@@ -7536,12 +7710,16 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"${SDK_DIR}/usr/include/libxml2/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Release-iphonesimulator\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				PRODUCT_NAME = YT;
 				SDKROOT = iphoneos;
@@ -8004,6 +8182,15 @@
 			buildConfigurations = (
 				42A277241575EA53000C59A1 /* Debug */,
 				42A277251575EA53000C59A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A445CC15C9293000A907F0 /* Build configuration list for PBXNativeTarget "ATMHud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A445CD15C9293000A907F0 /* Debug */,
+				42A445CE15C9293000A907F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

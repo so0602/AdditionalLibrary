@@ -40,4 +40,6 @@
 
 #import "HTMLNode+Addition.h"
 
+#import "MGSplitViewController+Addition.h"
+
 #import "ZipArchive+Addition.h"

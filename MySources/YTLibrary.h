@@ -49,6 +49,8 @@
 
 // Other
 #import "ADLivelyTableView.h"
+#import "ATMHud.h"
+#import "ATMHudQueueItem.h"
 #import "AudioStreamer.h"
 #import "CocoaAMF.h"
 #import "CocoaSecurity.h"

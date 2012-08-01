@@ -1,5 +1,7 @@
 #import "UIAlertView+Addition.h"
 
+#import <objc/runtime.h>
+
 #pragma mark UIAlertView Addition
 
 @implementation UIAlertView (Addition)
@@ -65,6 +67,121 @@
 	UIAlertView* alertView = [self alertViewWithDataSource:dataSource];
 	[alertView show];
 	return alertView;
+}
+
+@end
+
+static const char* UIAlertViewDidClickBlockKey = "&#_UIAlertViewDidClickBlockKey_#&";
+static const char* UIAlertViewDidCancelBlockKey = "&#_UIAlertViewDidCancelBlockKey_#&";
+static const char* UIAlertViewWillPresentBlockKey = "&#_UIAlertViewWillPresentBlockKey_#&";
+static const char* UIAlertViewDidPresentBlockKey = "&#_UIAlertViewDidPresentBlockKey_#&";
+static const char* UIAlertViewWillDismissBlockKey = "&#_UIAlertViewWillDismissBlockKey_#&";
+static const char* UIAlertViewDidDismissBlockKey = "&#_UIAlertViewDidDismissBlockKey_#&";
+static const char* UIAlertViewShouldEnableFirstOtherButtonBlockKey = "&#_UIAlertViewShouldEnableFirstOtherButtonBlockKey_#&";
+
+@implementation UIAlertView (Block)
+
+-(UIAlertViewDidClickBlock)didClickBlock{
+	return objc_getAssociatedObject(self, UIAlertViewDidClickBlockKey);
+}
+-(void)setDidClickBlock:(UIAlertViewDidClickBlock)didClickBlock{
+	self.delegate = self;
+	objc_setAssociatedObject(self, UIAlertViewDidClickBlockKey, didClickBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(UIAlertViewDidCancelBlock)didCancelBlock{
+	return objc_getAssociatedObject(self, UIAlertViewDidCancelBlockKey);
+}
+-(void)setDidCancelBlock:(UIAlertViewDidCancelBlock)didCancelBlock{
+	self.delegate = self;
+	objc_setAssociatedObject(self, UIAlertViewDidCancelBlockKey, didCancelBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(UIAlertViewWillPresentBlock)willPresentBlock{
+	return objc_getAssociatedObject(self, UIAlertViewWillPresentBlockKey);
+}
+-(void)setWillPresentBlock:(UIAlertViewWillPresentBlock)willPresentBlock{
+	self.delegate = self;
+	objc_setAssociatedObject(self, UIAlertViewWillPresentBlockKey, willPresentBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(UIAlertViewDidPresentBlock)didPresentBlock{
+	return objc_getAssociatedObject(self, UIAlertViewDidPresentBlockKey);
+}
+-(void)setDidPresentBlock:(UIAlertViewDidPresentBlock)didPresentBlock{
+	self.delegate = self;
+	objc_setAssociatedObject(self, UIAlertViewDidPresentBlockKey, didPresentBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(UIAlertViewWillDismissBlock)willDismissBlock{
+	return objc_getAssociatedObject(self, UIAlertViewWillDismissBlockKey);
+}
+-(void)setWillDismissBlock:(UIAlertViewWillDismissBlock)willDismissBlock{
+	self.delegate = self;
+	objc_setAssociatedObject(self, UIAlertViewWillDismissBlockKey, willDismissBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(UIAlertViewDidDismissBlock)didDismissBlock{
+	return objc_getAssociatedObject(self, UIAlertViewDidDismissBlockKey);
+}
+-(void)setDidDismissBlock:(UIAlertViewDidDismissBlock)didDismissBlock{
+	self.delegate = self;
+	objc_setAssociatedObject(self, UIAlertViewDidDismissBlockKey, didDismissBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(UIAlertViewShouldEnableFirstOtherButtonBlock)shouldEnableFirstOtherButtonBlock{
+	return objc_getAssociatedObject(self, UIAlertViewShouldEnableFirstOtherButtonBlockKey);
+}
+-(void)setShouldEnableFirstOtherButtonBlock:(UIAlertViewShouldEnableFirstOtherButtonBlock)shouldEnableFirstOtherButtonBlock{
+	self.delegate = self;
+	objc_setAssociatedObject(self, UIAlertViewShouldEnableFirstOtherButtonBlockKey, shouldEnableFirstOtherButtonBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+#pragma mark - UIAlertViewDelegate
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+	if( self.didClickBlock ){
+		self.didClickBlock(buttonIndex);
+	}
+}
+
+-(void)alertViewCancel:(UIAlertView *)alertView{
+	if( self.didCancelBlock ){
+		self.didCancelBlock();
+	}
+}
+
+-(void)willPresentAlertView:(UIAlertView *)alertView{
+	if( self.willPresentBlock ){
+		self.willPresentBlock();
+	}
+}
+
+-(void)didPresentAlertView:(UIAlertView *)alertView{
+	if( self.didPresentBlock ){
+		self.didPresentBlock();
+	}
+}
+
+-(void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex{
+	if( self.willDismissBlock ){
+		self.willDismissBlock(buttonIndex);
+	}
+}
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+	if( self.didDismissBlock ){
+		self.didDismissBlock(buttonIndex);
+	}
+	
+	self.delegate = nil;
+}
+
+-(BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView{
+	if( self.shouldEnableFirstOtherButtonBlock ){
+		return self.shouldEnableFirstOtherButtonBlock();
+	}
+	return TRUE;
 }
 
 @end

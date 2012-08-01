@@ -76,6 +76,14 @@ if [ ! -e "$ASIHTTPREQUEST_CLOUDFILES_PATH" ]; then
 fi
 cp ASIHTTPRequest/CloudFiles/*.h "$ASIHTTPREQUEST_CLOUDFILES_PATH"
 
+#ATMHud
+ATMHUD_PATH=${STATICLIB}/ATMHud
+if [ ! -e "$ATMHUD_PATH" ]; then
+mkdir "$ATMHUD_PATH"
+fi
+cp ATMHud/*.h "$ATMHUD_PATH"
+cp -R ATMHud/*.bundle "$ATMHUD_PATH"
+
 #AudioStreamer
 AUDIOSTREAMER_PATH=${STATICLIB}/AudioStreamer
 if [ ! -e "$AUDIOSTREAMER_PATH" ]; then
