@@ -168,6 +168,13 @@ mkdir "$JSONKIT_PATH"
 fi
 cp JSONKit/*.h "$JSONKIT_PATH"
 
+#MBProgressHUD
+MBPROGRESSHUD_PATH=${STATICLIB}/MBProgressHUD
+if [ ! -e "$MBPROGRESSHUD_PATH" ]; then
+mkdir "$MBPROGRESSHUD_PATH"
+fi
+cp MBProgressHUD/*.h "$JSONKIT_PATH"
+
 #MCSegmentedControl
 MCSEGMENTEDCONTROL_PATH=${STATICLIB}/MCSegmentedControl
 if [ ! -e "$MCSEGMENTEDCONTROL_PATH" ]; then

@@ -39,6 +39,7 @@
 		4208F53615CA3A6F0032490B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
 		4208F53A15CA3AB10032490B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4208F53815CA3AB10032490B /* MBProgressHUD.h */; };
 		4208F53B15CA3AB10032490B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208F53915CA3AB10032490B /* MBProgressHUD.m */; };
+		4208F53C15CA3CBE0032490B /* libJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CE015760527003F2F57 /* libJSONKit.a */; };
 		420B1DD01566030D005796A6 /* MGSplitCornersView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCA1566030D005796A6 /* MGSplitCornersView.h */; };
 		420B1DD11566030D005796A6 /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCB1566030D005796A6 /* MGSplitCornersView.m */; };
 		420B1DD21566030D005796A6 /* MGSplitDividerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCC1566030D005796A6 /* MGSplitDividerView.h */; };
@@ -2513,6 +2514,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4208F53C15CA3CBE0032490B /* libJSONKit.a in Frameworks */,
 				4208F53315CA38D70032490B /* libMBProgressHUD.a in Frameworks */,
 				42A445F515C92B3B00A907F0 /* AudioToolbox.framework in Frameworks */,
 				42A445F415C92B2C00A907F0 /* libATMHud.a in Frameworks */,
@@ -2758,11 +2760,10 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4208F53715CA3AB10032490B /* MBProgressHUD */,
-				42A445D315C9298A00A907F0 /* ATMHud */,
 				32CA4F630368D1EE00C91783 /* AdditionalLibrary_Prefix.pch */,
 				425260D8155791C900D4D689 /* ADLivelyTableView */,
 				42ABACB314147B4000537B39 /* ASIHTTPRequest */,
+				42A445D315C9298A00A907F0 /* ATMHud */,
 				42F6636E13E9618E0068F7CF /* AudioStreamer */,
 				C4A0504814756956006CC4B0 /* CocoaAMF */,
 				C45A9F3115890AE100019B38 /* CocoaHTTPServer */,
@@ -2776,6 +2777,7 @@
 				427EFF3F15736A4D009ED244 /* ITNSStreamUtil */,
 				42EE4CE31576057F003F2F57 /* JSONKit */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				4208F53715CA3AB10032490B /* MBProgressHUD */,
 				42448785156F72BC0008055E /* MCSegmentedControl */,
 				420B1DC91566030D005796A6 /* MGSplitViewController */,
 				42A276F71575EA37000C59A1 /* NSLogger */,

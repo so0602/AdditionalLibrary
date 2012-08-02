@@ -62,6 +62,7 @@
 #import "iCarousel.h"
 #import "JSONKit.h"
 #import "LoggerClient.h"
+#import "MBProgressHUD.h"
 #import "MCSegmentedControl.h"
 #import "MGSplitViewController.h"
 #import "ZipFile.h"
