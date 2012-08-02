@@ -33,6 +33,12 @@
 		4204BF3E15578B1A00DCA6E7 /* UIView+LayerEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4204BF3A15578B1A00DCA6E7 /* UIView+LayerEffects.h */; };
 		4204BF3F15578B1A00DCA6E7 /* UIView+LayerEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */; };
 		4204BF4215578B3F00DCA6E7 /* libUIGlossyButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4204BF2F15578ABE00DCA6E7 /* libUIGlossyButton.a */; };
+		4208F53315CA38D70032490B /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4208F52E15CA33860032490B /* libMBProgressHUD.a */; };
+		4208F53415CA38EC0032490B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		4208F53515CA38F10032490B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		4208F53615CA3A6F0032490B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		4208F53A15CA3AB10032490B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4208F53815CA3AB10032490B /* MBProgressHUD.h */; };
+		4208F53B15CA3AB10032490B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208F53915CA3AB10032490B /* MBProgressHUD.m */; };
 		420B1DD01566030D005796A6 /* MGSplitCornersView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCA1566030D005796A6 /* MGSplitCornersView.h */; };
 		420B1DD11566030D005796A6 /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCB1566030D005796A6 /* MGSplitCornersView.m */; };
 		420B1DD21566030D005796A6 /* MGSplitDividerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCC1566030D005796A6 /* MGSplitDividerView.h */; };
@@ -1260,6 +1266,20 @@
 			remoteGlobalIDString = 4204BF2E15578ABE00DCA6E7;
 			remoteInfo = UIGlossyButton;
 		};
+		4208F52F15CA38CC0032490B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42A445C015C9293000A907F0;
+			remoteInfo = ATMHud;
+		};
+		4208F53115CA38CC0032490B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4208F51F15CA33860032490B;
+			remoteInfo = MBProgressHUD;
+		};
 		4225CA5C14F74650003B893A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -1529,6 +1549,9 @@
 		4204BF3915578B1A00DCA6E7 /* UIGlossyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGlossyButton.m; sourceTree = "<group>"; };
 		4204BF3A15578B1A00DCA6E7 /* UIView+LayerEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerEffects.h"; sourceTree = "<group>"; };
 		4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerEffects.m"; sourceTree = "<group>"; };
+		4208F52E15CA33860032490B /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4208F53815CA3AB10032490B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4208F53915CA3AB10032490B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		420B1DCA1566030D005796A6 /* MGSplitCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitCornersView.h; sourceTree = "<group>"; };
 		420B1DCB1566030D005796A6 /* MGSplitCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitCornersView.m; sourceTree = "<group>"; };
 		420B1DCC1566030D005796A6 /* MGSplitDividerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitDividerView.h; sourceTree = "<group>"; };
@@ -2212,6 +2235,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4208F52915CA33860032490B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4208F53615CA3A6F0032490B /* CoreGraphics.framework in Frameworks */,
+				4208F53515CA38F10032490B /* Foundation.framework in Frameworks */,
+				4208F53415CA38EC0032490B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4225CA3E14F745DC003B893A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2480,6 +2513,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4208F53315CA38D70032490B /* libMBProgressHUD.a in Frameworks */,
 				42A445F515C92B3B00A907F0 /* AudioToolbox.framework in Frameworks */,
 				42A445F415C92B2C00A907F0 /* libATMHud.a in Frameworks */,
 				C45A9FBE15890C6500019B38 /* libCocoaHTTPServer.a in Frameworks */,
@@ -2702,6 +2736,7 @@
 				42BA66041590927F00092EA6 /* libMiniZip.a */,
 				C43916881590EB31001DBE24 /* YTFramework.framework */,
 				42A445CF15C9293000A907F0 /* libATMHud.a */,
+				4208F52E15CA33860032490B /* libMBProgressHUD.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2723,6 +2758,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4208F53715CA3AB10032490B /* MBProgressHUD */,
 				42A445D315C9298A00A907F0 /* ATMHud */,
 				32CA4F630368D1EE00C91783 /* AdditionalLibrary_Prefix.pch */,
 				425260D8155791C900D4D689 /* ADLivelyTableView */,
@@ -2813,6 +2849,15 @@
 				4204BF3B15578B1A00DCA6E7 /* UIView+LayerEffects.m */,
 			);
 			path = UIGlossyButton;
+			sourceTree = "<group>";
+		};
+		4208F53715CA3AB10032490B /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4208F53815CA3AB10032490B /* MBProgressHUD.h */,
+				4208F53915CA3AB10032490B /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		420B1DC91566030D005796A6 /* MGSplitViewController */ = {
@@ -4350,6 +4395,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4208F52215CA33860032490B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4208F53A15CA3AB10032490B /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4225CA3C14F745DC003B893A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -5131,6 +5184,23 @@
 			productReference = 4204BF2F15578ABE00DCA6E7 /* libUIGlossyButton.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		4208F51F15CA33860032490B /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4208F52B15CA33860032490B /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				4208F52015CA33860032490B /* Sources */,
+				4208F52215CA33860032490B /* Headers */,
+				4208F52915CA33860032490B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = ZipArchive;
+			productReference = 4208F52E15CA33860032490B /* libMBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		4225CA3F14F745DC003B893A /* CurledView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4225CA5014F745F2003B893A /* Build configuration list for PBXNativeTarget "CurledView" */;
@@ -5586,6 +5656,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				4208F53015CA38CC0032490B /* PBXTargetDependency */,
+				4208F53215CA38CC0032490B /* PBXTargetDependency */,
 				C45A9FBD15890C5F00019B38 /* PBXTargetDependency */,
 				4284E70C1585959D0089718F /* PBXTargetDependency */,
 				42EE4EA315775EC8003F2F57 /* PBXTargetDependency */,
@@ -5805,6 +5877,7 @@
 				423F456315240BC900F11D23 /* iCarousel */,
 				427EFF2315736A27009ED244 /* ITNSStreamUtil */,
 				42EE4CD215760527003F2F57 /* JSONKit */,
+				4208F51F15CA33860032490B /* MBProgressHUD */,
 				4244877F156F729C0008055E /* MCSegmentedControl */,
 				42596EC71566021E005366CD /* MGSplitViewController */,
 				42A277221575EA53000C59A1 /* NSLogger */,
@@ -5970,6 +6043,14 @@
 			files = (
 				4204BF3D15578B1A00DCA6E7 /* UIGlossyButton.m in Sources */,
 				4204BF3F15578B1A00DCA6E7 /* UIView+LayerEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4208F52015CA33860032490B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4208F53B15CA3AB10032490B /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6716,6 +6797,16 @@
 			target = 4204BF2E15578ABE00DCA6E7 /* UIGlossyButton */;
 			targetProxy = 4204BF4015578B3400DCA6E7 /* PBXContainerItemProxy */;
 		};
+		4208F53015CA38CC0032490B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42A445C015C9293000A907F0 /* ATMHud */;
+			targetProxy = 4208F52F15CA38CC0032490B /* PBXContainerItemProxy */;
+		};
+		4208F53215CA38CC0032490B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4208F51F15CA33860032490B /* MBProgressHUD */;
+			targetProxy = 4208F53115CA38CC0032490B /* PBXContainerItemProxy */;
+		};
 		4225CA5D14F74650003B893A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4225CA3F14F745DC003B893A /* CurledView */;
@@ -6965,6 +7056,33 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = UIGlossyButton;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4208F52C15CA33860032490B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4208F52D15CA33860032490B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = MBProgressHUD;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -8074,6 +8192,15 @@
 			buildConfigurations = (
 				4204BF3015578ABF00DCA6E7 /* Debug */,
 				4204BF3115578ABF00DCA6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4208F52B15CA33860032490B /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4208F52C15CA33860032490B /* Debug */,
+				4208F52D15CA33860032490B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
