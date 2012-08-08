@@ -55,6 +55,7 @@
 #import "CocoaAMF.h"
 #import "CocoaSecurity.h"
 #import "DCRoundSwitch.h"
+#import "DDXML.h"
 #import "EGOPhotoGlobal.h"
 #import "FTAnimation.h"
 #import "HTMLParser.h"

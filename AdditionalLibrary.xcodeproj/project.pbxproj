@@ -39,13 +39,27 @@
 		4208F53615CA3A6F0032490B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
 		4208F53A15CA3AB10032490B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4208F53815CA3AB10032490B /* MBProgressHUD.h */; };
 		4208F53B15CA3AB10032490B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208F53915CA3AB10032490B /* MBProgressHUD.m */; };
-		4208F53C15CA3CBE0032490B /* libJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE4CE015760527003F2F57 /* libJSONKit.a */; };
 		420B1DD01566030D005796A6 /* MGSplitCornersView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCA1566030D005796A6 /* MGSplitCornersView.h */; };
 		420B1DD11566030D005796A6 /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCB1566030D005796A6 /* MGSplitCornersView.m */; };
 		420B1DD21566030D005796A6 /* MGSplitDividerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCC1566030D005796A6 /* MGSplitDividerView.h */; };
 		420B1DD31566030D005796A6 /* MGSplitDividerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCD1566030D005796A6 /* MGSplitDividerView.m */; };
 		420B1DD41566030D005796A6 /* MGSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B1DCE1566030D005796A6 /* MGSplitViewController.h */; };
 		420B1DD51566030D005796A6 /* MGSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B1DCF1566030D005796A6 /* MGSplitViewController.m */; };
+		420E68E315CF6BB4001127FF /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 420E68D515CF6BB4001127FF /* DDXMLElementAdditions.h */; };
+		420E68E415CF6BB4001127FF /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E68D615CF6BB4001127FF /* DDXMLElementAdditions.m */; };
+		420E68E515CF6BB4001127FF /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 420E68D815CF6BB4001127FF /* NSString+DDXML.h */; };
+		420E68E615CF6BB4001127FF /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E68D915CF6BB4001127FF /* NSString+DDXML.m */; };
+		420E68E715CF6BB4001127FF /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 420E68DA15CF6BB4001127FF /* DDXML.h */; };
+		420E68E815CF6BB4001127FF /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 420E68DB15CF6BB4001127FF /* DDXMLDocument.h */; };
+		420E68E915CF6BB4001127FF /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E68DC15CF6BB4001127FF /* DDXMLDocument.m */; };
+		420E68EA15CF6BB4001127FF /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 420E68DD15CF6BB4001127FF /* DDXMLElement.h */; };
+		420E68EB15CF6BB4001127FF /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E68DE15CF6BB4001127FF /* DDXMLElement.m */; };
+		420E68EC15CF6BB4001127FF /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 420E68DF15CF6BB4001127FF /* DDXMLNode.h */; };
+		420E68ED15CF6BB4001127FF /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E68E015CF6BB4001127FF /* DDXMLNode.m */; };
+		420E68EE15CF6BB4001127FF /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 420E68E215CF6BB4001127FF /* DDXMLPrivate.h */; };
+		420E68EF15CF6BC3001127FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		420E68F015CF6BE7001127FF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ABAD2614147BBE00537B39 /* libxml2.dylib */; };
+		420E68F315CF6CB7001127FF /* libKissXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 420E68C715CF6B5B001127FF /* libKissXML.a */; };
 		4225CA4A14F745F2003B893A /* CurledViewBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225CA4414F745F2003B893A /* CurledViewBase.h */; };
 		4225CA4B14F745F2003B893A /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4225CA4514F745F2003B893A /* CurledViewBase.m */; };
 		4225CA4C14F745F2003B893A /* UIButton+Curled.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225CA4614F745F2003B893A /* UIButton+Curled.h */; };
@@ -1281,6 +1295,13 @@
 			remoteGlobalIDString = 4208F51F15CA33860032490B;
 			remoteInfo = MBProgressHUD;
 		};
+		420E68F115CF6C42001127FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 420E68B815CF6B5A001127FF;
+			remoteInfo = KissXML;
+		};
 		4225CA5C14F74650003B893A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -1559,6 +1580,19 @@
 		420B1DCD1566030D005796A6 /* MGSplitDividerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitDividerView.m; sourceTree = "<group>"; };
 		420B1DCE1566030D005796A6 /* MGSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewController.h; sourceTree = "<group>"; };
 		420B1DCF1566030D005796A6 /* MGSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewController.m; sourceTree = "<group>"; };
+		420E68C715CF6B5B001127FF /* libKissXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKissXML.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		420E68D515CF6BB4001127FF /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		420E68D615CF6BB4001127FF /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		420E68D815CF6BB4001127FF /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		420E68D915CF6BB4001127FF /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		420E68DA15CF6BB4001127FF /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		420E68DB15CF6BB4001127FF /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		420E68DC15CF6BB4001127FF /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		420E68DD15CF6BB4001127FF /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		420E68DE15CF6BB4001127FF /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		420E68DF15CF6BB4001127FF /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		420E68E015CF6BB4001127FF /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		420E68E215CF6BB4001127FF /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		4225CA4014F745DC003B893A /* libCurledView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCurledView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4225CA4414F745F2003B893A /* CurledViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurledViewBase.h; sourceTree = "<group>"; };
 		4225CA4514F745F2003B893A /* CurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurledViewBase.m; sourceTree = "<group>"; };
@@ -2246,6 +2280,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		420E68C215CF6B5A001127FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420E68F015CF6BE7001127FF /* libxml2.dylib in Frameworks */,
+				420E68EF15CF6BC3001127FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4225CA3E14F745DC003B893A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2514,11 +2557,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4208F53C15CA3CBE0032490B /* libJSONKit.a in Frameworks */,
-				4208F53315CA38D70032490B /* libMBProgressHUD.a in Frameworks */,
 				42A445F515C92B3B00A907F0 /* AudioToolbox.framework in Frameworks */,
-				42A445F415C92B2C00A907F0 /* libATMHud.a in Frameworks */,
-				C45A9FBE15890C6500019B38 /* libCocoaHTTPServer.a in Frameworks */,
 				42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */,
 				42A277371575EB71000C59A1 /* CFNetwork.framework in Frameworks */,
 				42EE4CE8157605C2003F2F57 /* CoreFoundation.framework in Frameworks */,
@@ -2535,32 +2574,36 @@
 				42F65BB913E6AE470068F7CF /* libsqlite3.dylib in Frameworks */,
 				428AB21E143DD94900670A8A /* libxml2.dylib in Frameworks */,
 				42F6602D13E9291D0068F7CF /* libz.dylib in Frameworks */,
-				42EE4EA715775ED2003F2F57 /* libSYCompositor.a in Frameworks */,
-				4284EAA61585DA480089718F /* libSVPullToRefresh.a in Frameworks */,
-				42EE4EA815775ED2003F2F57 /* libSYPaginator.a in Frameworks */,
-				42EE4D301576115A003F2F57 /* libSVGeocoder.a in Frameworks */,
+				425260E61557921000D4D689 /* libADLivelyTableView.a in Frameworks */,
 				42ABAD3414147C3500537B39 /* libASIHTTPRequest.a in Frameworks */,
+				42A445F415C92B2C00A907F0 /* libATMHud.a in Frameworks */,
 				42F663CE13E962710068F7CF /* libAudioStreamer.a in Frameworks */,
 				C4A0509D147569D1006CC4B0 /* libCocoaAMF.a in Frameworks */,
+				C45A9FBE15890C6500019B38 /* libCocoaHTTPServer.a in Frameworks */,
+				425AE9EA157342A80002CBE8 /* libCocoaSecurity.a in Frameworks */,
 				4225CA5E14F74654003B893A /* libCurledView.a in Frameworks */,
 				427B5A341473BB5000747E9B /* libDCRoundSwitch.a in Frameworks */,
 				42C2190D1498A77C00AD9FED /* libEGOPhotoViewer.a in Frameworks */,
 				42F6629213E93E740068F7CF /* libFTUtils.a in Frameworks */,
 				423F456F15240BF600F11D23 /* libiCarousel.a in Frameworks */,
+				427EFF4615736A86009ED244 /* libITNSStreamUtil.a in Frameworks */,
+				42A277351575EB5A000C59A1 /* libHTMLParser.a in Frameworks */,
+				420E68F315CF6CB7001127FF /* libKissXML.a in Frameworks */,
+				4208F53315CA38D70032490B /* libMBProgressHUD.a in Frameworks */,
+				4244878C156F72EA0008055E /* libMCSegmentedControl.a in Frameworks */,
+				42596ED21566026A005366CD /* libMGSplitViewController.a in Frameworks */,
+				42A277361575EB5A000C59A1 /* libNSLogger.a in Frameworks */,
 				C4640FD215565BCC0029DF8F /* libPrettyKit.a in Frameworks */,
 				42BB88611495F9000099E2E4 /* libRTLabel.a in Frameworks */,
 				4225CAA814F74EFC003B893A /* libSpriteAnimation.a in Frameworks */,
+				425AE97D15733EC60002CBE8 /* libStyledPageControl.a in Frameworks */,
+				42EE4D301576115A003F2F57 /* libSVGeocoder.a in Frameworks */,
 				42BB88811495F9D40099E2E4 /* libSVProgressHUD.a in Frameworks */,
+				4284EAA61585DA480089718F /* libSVPullToRefresh.a in Frameworks */,
+				42EE4EA715775ED2003F2F57 /* libSYCompositor.a in Frameworks */,
+				42EE4EA815775ED2003F2F57 /* libSYPaginator.a in Frameworks */,
 				42AD39FF14F7723000C18A08 /* libUAModalPanel.a in Frameworks */,
 				4204BF4215578B3F00DCA6E7 /* libUIGlossyButton.a in Frameworks */,
-				425260E61557921000D4D689 /* libADLivelyTableView.a in Frameworks */,
-				42596ED21566026A005366CD /* libMGSplitViewController.a in Frameworks */,
-				4244878C156F72EA0008055E /* libMCSegmentedControl.a in Frameworks */,
-				425AE97D15733EC60002CBE8 /* libStyledPageControl.a in Frameworks */,
-				425AE9EA157342A80002CBE8 /* libCocoaSecurity.a in Frameworks */,
-				427EFF4615736A86009ED244 /* libITNSStreamUtil.a in Frameworks */,
-				42A277351575EB5A000C59A1 /* libHTMLParser.a in Frameworks */,
-				42A277361575EB5A000C59A1 /* libNSLogger.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2739,6 +2782,7 @@
 				C43916881590EB31001DBE24 /* YTFramework.framework */,
 				42A445CF15C9293000A907F0 /* libATMHud.a */,
 				4208F52E15CA33860032490B /* libMBProgressHUD.a */,
+				420E68C715CF6B5B001127FF /* libKissXML.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2776,6 +2820,7 @@
 				423F456715240BE400F11D23 /* iCarousel */,
 				427EFF3F15736A4D009ED244 /* ITNSStreamUtil */,
 				42EE4CE31576057F003F2F57 /* JSONKit */,
+				420E68D315CF6BB4001127FF /* KissXML */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				4208F53715CA3AB10032490B /* MBProgressHUD */,
 				42448785156F72BC0008055E /* MCSegmentedControl */,
@@ -2873,6 +2918,49 @@
 				420B1DCF1566030D005796A6 /* MGSplitViewController.m */,
 			);
 			path = MGSplitViewController;
+			sourceTree = "<group>";
+		};
+		420E68D315CF6BB4001127FF /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				420E68D415CF6BB4001127FF /* Additions */,
+				420E68D715CF6BB4001127FF /* Categories */,
+				420E68DA15CF6BB4001127FF /* DDXML.h */,
+				420E68DB15CF6BB4001127FF /* DDXMLDocument.h */,
+				420E68DC15CF6BB4001127FF /* DDXMLDocument.m */,
+				420E68DD15CF6BB4001127FF /* DDXMLElement.h */,
+				420E68DE15CF6BB4001127FF /* DDXMLElement.m */,
+				420E68DF15CF6BB4001127FF /* DDXMLNode.h */,
+				420E68E015CF6BB4001127FF /* DDXMLNode.m */,
+				420E68E115CF6BB4001127FF /* Private */,
+			);
+			path = KissXML;
+			sourceTree = "<group>";
+		};
+		420E68D415CF6BB4001127FF /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				420E68D515CF6BB4001127FF /* DDXMLElementAdditions.h */,
+				420E68D615CF6BB4001127FF /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		420E68D715CF6BB4001127FF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				420E68D815CF6BB4001127FF /* NSString+DDXML.h */,
+				420E68D915CF6BB4001127FF /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		420E68E115CF6BB4001127FF /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				420E68E215CF6BB4001127FF /* DDXMLPrivate.h */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 		4225CA4314F745F2003B893A /* CurledView */ = {
@@ -4405,6 +4493,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		420E68BB15CF6B5A001127FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420E68E315CF6BB4001127FF /* DDXMLElementAdditions.h in Headers */,
+				420E68E515CF6BB4001127FF /* NSString+DDXML.h in Headers */,
+				420E68E715CF6BB4001127FF /* DDXML.h in Headers */,
+				420E68E815CF6BB4001127FF /* DDXMLDocument.h in Headers */,
+				420E68EA15CF6BB4001127FF /* DDXMLElement.h in Headers */,
+				420E68EC15CF6BB4001127FF /* DDXMLNode.h in Headers */,
+				420E68EE15CF6BB4001127FF /* DDXMLPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4225CA3C14F745DC003B893A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -5203,6 +5305,23 @@
 			productReference = 4208F52E15CA33860032490B /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		420E68B815CF6B5A001127FF /* KissXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420E68C415CF6B5A001127FF /* Build configuration list for PBXNativeTarget "KissXML" */;
+			buildPhases = (
+				420E68B915CF6B5A001127FF /* Sources */,
+				420E68BB15CF6B5A001127FF /* Headers */,
+				420E68C215CF6B5A001127FF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KissXML;
+			productName = ZipArchive;
+			productReference = 420E68C715CF6B5B001127FF /* libKissXML.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		4225CA3F14F745DC003B893A /* CurledView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4225CA5014F745F2003B893A /* Build configuration list for PBXNativeTarget "CurledView" */;
@@ -5658,23 +5777,20 @@
 			buildRules = (
 			);
 			dependencies = (
-				4208F53015CA38CC0032490B /* PBXTargetDependency */,
-				4208F53215CA38CC0032490B /* PBXTargetDependency */,
-				C45A9FBD15890C5F00019B38 /* PBXTargetDependency */,
-				4284E70C1585959D0089718F /* PBXTargetDependency */,
-				42EE4EA315775EC8003F2F57 /* PBXTargetDependency */,
-				42EE4EA515775EC8003F2F57 /* PBXTargetDependency */,
-				42EE4D2F15761152003F2F57 /* PBXTargetDependency */,
-				42EE4D0A15760BF3003F2F57 /* PBXTargetDependency */,
 				425260E51557920D00D4D689 /* PBXTargetDependency */,
+				4208F53015CA38CC0032490B /* PBXTargetDependency */,
 				42ABAD3314147C2800537B39 /* PBXTargetDependency */,
 				42F663CD13E9626C0068F7CF /* PBXTargetDependency */,
 				C4A0509C147569CD006CC4B0 /* PBXTargetDependency */,
+				C45A9FBD15890C5F00019B38 /* PBXTargetDependency */,
 				4225CA5D14F74650003B893A /* PBXTargetDependency */,
 				427B5A1C1473BB2400747E9B /* PBXTargetDependency */,
 				42C2190C1498A77600AD9FED /* PBXTargetDependency */,
 				42F6629113E93E6F0068F7CF /* PBXTargetDependency */,
 				423F456E15240BF100F11D23 /* PBXTargetDependency */,
+				4284E70C1585959D0089718F /* PBXTargetDependency */,
+				420E68F215CF6C42001127FF /* PBXTargetDependency */,
+				4208F53215CA38CC0032490B /* PBXTargetDependency */,
 				4244878B156F72E60008055E /* PBXTargetDependency */,
 				42596ED115660264005366CD /* PBXTargetDependency */,
 				C4640FD115565BC70029DF8F /* PBXTargetDependency */,
@@ -5682,12 +5798,16 @@
 				4225CAA714F74EF7003B893A /* PBXTargetDependency */,
 				425AE97C15733EB50002CBE8 /* PBXTargetDependency */,
 				42BB88801495F9D00099E2E4 /* PBXTargetDependency */,
-				42AD39FE14F7722C00C18A08 /* PBXTargetDependency */,
-				4204BF4115578B3400DCA6E7 /* PBXTargetDependency */,
 				425AE9E9157342A10002CBE8 /* PBXTargetDependency */,
 				427EFF4515736A82009ED244 /* PBXTargetDependency */,
 				42A277321575EB4B000C59A1 /* PBXTargetDependency */,
 				42A277341575EB4B000C59A1 /* PBXTargetDependency */,
+				42EE4EA315775EC8003F2F57 /* PBXTargetDependency */,
+				42EE4EA515775EC8003F2F57 /* PBXTargetDependency */,
+				42EE4D2F15761152003F2F57 /* PBXTargetDependency */,
+				42EE4D0A15760BF3003F2F57 /* PBXTargetDependency */,
+				42AD39FE14F7722C00C18A08 /* PBXTargetDependency */,
+				4204BF4115578B3400DCA6E7 /* PBXTargetDependency */,
 			);
 			name = YTLibrary;
 			productName = YTLibrary;
@@ -5879,6 +5999,7 @@
 				423F456315240BC900F11D23 /* iCarousel */,
 				427EFF2315736A27009ED244 /* ITNSStreamUtil */,
 				42EE4CD215760527003F2F57 /* JSONKit */,
+				420E68B815CF6B5A001127FF /* KissXML */,
 				4208F51F15CA33860032490B /* MBProgressHUD */,
 				4244877F156F729C0008055E /* MCSegmentedControl */,
 				42596EC71566021E005366CD /* MGSplitViewController */,
@@ -6053,6 +6174,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4208F53B15CA3AB10032490B /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420E68B915CF6B5A001127FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420E68E415CF6BB4001127FF /* DDXMLElementAdditions.m in Sources */,
+				420E68E615CF6BB4001127FF /* NSString+DDXML.m in Sources */,
+				420E68E915CF6BB4001127FF /* DDXMLDocument.m in Sources */,
+				420E68EB15CF6BB4001127FF /* DDXMLElement.m in Sources */,
+				420E68ED15CF6BB4001127FF /* DDXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6809,6 +6942,11 @@
 			target = 4208F51F15CA33860032490B /* MBProgressHUD */;
 			targetProxy = 4208F53115CA38CC0032490B /* PBXContainerItemProxy */;
 		};
+		420E68F215CF6C42001127FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 420E68B815CF6B5A001127FF /* KissXML */;
+			targetProxy = 420E68F115CF6C42001127FF /* PBXContainerItemProxy */;
+		};
 		4225CA5D14F74650003B893A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4225CA3F14F745DC003B893A /* CurledView */;
@@ -7085,6 +7223,35 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		420E68C515CF6B5A001127FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				PREBINDING = NO;
+				PRODUCT_NAME = KissXML;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		420E68C615CF6B5A001127FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				PREBINDING = NO;
+				PRODUCT_NAME = KissXML;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -8203,6 +8370,15 @@
 			buildConfigurations = (
 				4208F52C15CA33860032490B /* Debug */,
 				4208F52D15CA33860032490B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420E68C415CF6B5A001127FF /* Build configuration list for PBXNativeTarget "KissXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420E68C515CF6B5A001127FF /* Debug */,
+				420E68C615CF6B5A001127FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
