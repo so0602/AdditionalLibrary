@@ -30,6 +30,8 @@
 
 +(id)stringWithData:(NSData*)data encoding:(NSStringEncoding)encoding;
 
+-(NSString*)trimEndNewline;
+
 @property (nonatomic, readonly) NSString* mimeType;
 
 @end

@@ -2040,7 +2040,7 @@
 		C42057951564122F00668AA5 /* PetHunterChallengeGiftInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterChallengeGiftInput.m; sourceTree = "<group>"; };
 		C4205797156412E700668AA5 /* PetHunterChallengeGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetHunterChallengeGift.h; sourceTree = "<group>"; };
 		C4205798156412E700668AA5 /* PetHunterChallengeGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterChallengeGift.m; sourceTree = "<group>"; };
-		C43916881590EB31001DBE24 /* YTFramework.framework */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.framework; path = YTFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43916881590EB31001DBE24 /* YTFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = YTFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C439168C1590EB31001DBE24 /* YTFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YTFramework-Info.plist"; sourceTree = "<group>"; };
 		C439168E1590EB31001DBE24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C43916901590EB31001DBE24 /* YTFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTFramework-Prefix.pch"; sourceTree = "<group>"; };

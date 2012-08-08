@@ -182,7 +182,7 @@
 				}
 				[sql_value appendString:@");"];
 				[sql appendString:sql_value];
-				if( [tableName isEqualToString:@"document"] ) NSLog(@"sql: %@", sql);
+//				if( [tableName isEqualToString:@"PETS"] ) NSLog(@"sql: %@", sql);
 				rs = [database executeQuery:sql];
 				[rs next];
 			}else{
@@ -215,7 +215,7 @@
 					}
 					[sql appendFormat:@"UNION SELECT %@ ", [values componentsJoinedByString:@", "]];
 				}
-				if( [tableName isEqualToString:@"document"] ) NSLog(@"sql: %@", sql);
+//				if( [tableName isEqualToString:@"PETS"] ) NSLog(@"sql: %@", sql);
 				rs = [database executeQuery:sql];
 				[rs next];
 			}

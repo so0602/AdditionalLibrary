@@ -88,6 +88,17 @@
 	return [[[self alloc] initWithData:data encoding:encoding] autorelease];
 }
 
+-(NSString*)trimEndNewline{
+	NSString* newline = @"\n";
+	NSRange range = NSMakeRange(self.length - newline.length, newline.length);
+	NSString* string = [self substringWithRange:range];
+	if( [string isEqualToString:newline] ){
+		string = [self stringByReplacingOccurrencesOfString:newline withString:@"" options:0 range:range];
+		return string;
+	}
+	return self;
+}
+
 -(NSString*)mimeType{
 	return [NSFileManager mimeTypeForFileAtPath:self];
 }
