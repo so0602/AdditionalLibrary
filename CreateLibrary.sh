@@ -140,6 +140,13 @@ if [ ! -e "$FTUTILS_PATH" ]; then
 fi
 cp FTUtils/*.h "$FTUTILS_PATH"
 
+#FMDatabase
+FMDATABASE_PATH=${STATICLIB}/FMDatabase
+if [ ! -e "$FMDATABASE_PATH" ]; then
+mkdir "$FMDATABASE_PATH"
+fi
+cp FMDatabase/*.h "$FMDATABASE_PATH"
+
 #HTMLParser
 HTMLPARSER_PATH=${STATICLIB}/HTMLParser
 if [ ! -e "$HTMLPARSER_PATH" ]; then
@@ -167,6 +174,31 @@ if [ ! -e "$JSONKIT_PATH" ]; then
 mkdir "$JSONKIT_PATH"
 fi
 cp JSONKit/*.h "$JSONKIT_PATH"
+
+#KissXML
+KISSXML_PATH=${STATICLIB}/KissXML
+if [ ! -e "$KISSXML_PATH" ]; then
+mkdir "$KISSXML_PATH"
+fi
+cp KissXML/*.h "$KISSXML_PATH"
+
+KISSXML_ADDITIONS_PATH=${KISSXML_PATH}/Additions
+if [ ! -e "$KISSXML_ADDITIONS_PATH" ]; then
+mkdir "$KISSXML_ADDITIONS_PATH"
+fi
+cp KissXML/Additions/*.h "$KISSXML_ADDITIONS_PATH"
+
+KISSXML_CATEGORIES_PATH=${KISSXML_PATH}/Categories
+if [ ! -e "$KISSXML_CATEGORIES_PATH" ]; then
+mkdir "$KISSXML_CATEGORIES_PATH"
+fi
+cp KissXML/Categories/*.h "$KISSXML_CATEGORIES_PATH"
+
+KISSXML_PRIVATE_PATH=${KISSXML_PATH}/Private
+if [ ! -e "$KISSXML_PRIVATE_PATH" ]; then
+mkdir "$KISSXML_PRIVATE_PATH"
+fi
+cp KissXML/Private/*.h "$KISSXML_PRIVATE_PATH"
 
 #MBProgressHUD
 MBPROGRESSHUD_PATH=${STATICLIB}/MBProgressHUD

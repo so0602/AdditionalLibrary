@@ -57,6 +57,7 @@
 #import "DCRoundSwitch.h"
 #import "DDXML.h"
 #import "EGOPhotoGlobal.h"
+#import "FMDatabase.h"
 #import "FTAnimation.h"
 #import "HTMLParser.h"
 #import "ITNSStreamUtil.h"

@@ -105,3 +105,125 @@
 }
 
 @end
+
+@implementation NSArray (FMDatabase)
+
+-(BOOL)createTable:(NSString*)tableName atDatabase:(FMDatabase*)database{
+	NSLog(@"Create Table: %@", tableName);
+	if( !tableName ){
+		NSLog(@"TableName is null.");
+		return FALSE;
+	}
+	if( !database ){
+		NSLog(@"Database is null.");
+		return FALSE;
+	}
+	if( ![database open] ){
+		NSLog(@"Could not open database: %@.", database);
+		return FALSE;
+	}
+	if( self.count == 0 ){
+		NSLog(@"Empty Array.");
+		return FALSE;
+	}
+	NSDictionary* firstDict = [self objectAtIndex:0];
+	if( ![firstDict isKindOfClass:[NSDictionary class]] ){
+		NSLog(@"Is not Array of Dictionary.");
+		return FALSE;
+	}
+	
+	FMResultSet* rs = nil;
+	
+	NSMutableString* sql = [NSString stringWithFormat:@"create table if not exists %@ (%@);", tableName, [[firstDict allKeys] componentsJoinedByString:@","]];
+	//	NSLog(@"SQL: %@", sql);
+	rs = [database executeQuery:sql];
+	[rs next];
+	
+	sql = [NSString stringWithFormat:@"delete from %@;", tableName];
+	//	NSLog(@"SQL: %@", sql);
+	rs = [database executeQuery:sql];
+	[rs next];
+	
+	NSMutableString* sql_value = nil;
+	NSMutableArray* keyArray = nil;
+	NSMutableArray* valueArray = nil;
+	
+	static int MAX_EACH_COUNT = 20;
+	
+	int count = self.count / MAX_EACH_COUNT;
+	if( self.count % MAX_EACH_COUNT != 0 ) count += 1;
+	NSLog(@"self.count: %d", self.count);
+	
+	for( int i = 0; i < count; i++ ){
+		NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+		{
+			NSRange range = NSMakeRange(i * MAX_EACH_COUNT, self.count < (i + 1) * MAX_EACH_COUNT ? self.count - (i * MAX_EACH_COUNT) : MAX_EACH_COUNT);
+			NSArray* array = [self objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:range]];
+			sql = [NSMutableString string];
+			if( array.count == 1 ){
+				[sql appendFormat:@"insert into %@ (", tableName];
+				sql_value = [NSMutableString stringWithString:@") values ("];
+				keyArray = [NSMutableArray array];
+				valueArray = [NSMutableArray array];
+				NSDictionary* dict = [array objectAtIndex:0];
+				int count = 0;
+				for( NSString* key in [dict allKeys] ){
+					[keyArray addObject:key];
+					NSString* value = [dict objectForKey:key];
+					[valueArray addObject:value];
+					[sql appendFormat:@"'%@'", key];
+					if( [value isKindOfClass:[NSString class]] ) value = [value stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
+					[sql_value appendFormat:@"'%@'", value];
+					if( count < [dict allKeys].count - 1 ){
+						[sql appendString:@","];
+						[sql_value appendString:@","];
+					}
+					count++;
+				}
+				[sql_value appendString:@");"];
+				[sql appendString:sql_value];
+				if( [tableName isEqualToString:@"document"] ) NSLog(@"sql: %@", sql);
+				rs = [database executeQuery:sql];
+				[rs next];
+			}else{
+				[sql appendFormat:@"insert into %@ select ", tableName];
+				NSDictionary* firstDict = [array objectAtIndex:0];
+				NSMutableArray* values = [NSMutableArray array];
+				
+				for( NSString* key in [firstDict allKeys] ){
+					NSObject* obj = [firstDict objectForKey:key];
+					NSString* value = [NSString stringWithFormat:@"'%@' AS '%@'",
+											 [obj isKindOfClass:[NSString class]] ?
+											 [(NSString*)obj stringByReplacingOccurrencesOfString:@"'" withString:@"''"] :
+											 obj, key];
+					[values addObject:value];
+				}
+				[sql appendFormat:@"%@ ", [values componentsJoinedByString:@", "]];
+				
+				
+				for( int j = 1; j < array.count; j++ ){
+					firstDict = [array objectAtIndex:j];
+					[values removeAllObjects];
+					values = [NSMutableArray array];
+					for( NSString* key in [firstDict allKeys] ){
+						NSObject* obj = [firstDict objectForKey:key];
+						NSString* value = [NSString stringWithFormat:@"'%@'",
+												 [obj isKindOfClass:[NSString class]] ?
+												 [(NSString*)obj stringByReplacingOccurrencesOfString:@"'" withString:@"''"] :
+												 obj];
+						[values addObject:value];
+					}
+					[sql appendFormat:@"UNION SELECT %@ ", [values componentsJoinedByString:@", "]];
+				}
+				if( [tableName isEqualToString:@"document"] ) NSLog(@"sql: %@", sql);
+				rs = [database executeQuery:sql];
+				[rs next];
+			}
+		}
+		[pool drain];
+	}
+	
+	return TRUE;
+}
+
+@end

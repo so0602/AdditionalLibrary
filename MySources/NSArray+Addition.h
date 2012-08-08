@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+#import "FMDatabase.h"
+
 typedef enum{
 	FilteringOption_None = 0,
 	FilteringOption_Case = 1,
@@ -35,5 +37,11 @@ typedef enum{
 -(NSArray*)filteredArrayWithLike:(NSString*)like inclusive:(BOOL)inclusive;
 -(NSArray*)filteredArrayWithLike:(NSString*)like filteringOption:(FilteringOption)option;
 -(NSArray*)filteredArrayWithLike:(NSString*)like filteringOption:(FilteringOption)option inclusive:(BOOL)inclusive;
+
+@end
+
+@interface NSArray (FMDatabase)
+
+-(BOOL)createTable:(NSString*)tableName atDatabase:(FMDatabase*)database;
 
 @end

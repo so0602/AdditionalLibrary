@@ -119,6 +119,20 @@
 		424A2156145E48F4007E0EF8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424A2155145E48F4007E0EF8 /* MapKit.framework */; };
 		424A215A145E4923007E0EF8 /* MKMapView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424A2158145E4923007E0EF8 /* MKMapView+Addition.h */; };
 		424A215B145E4923007E0EF8 /* MKMapView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424A2159145E4923007E0EF8 /* MKMapView+Addition.m */; };
+		424C4EA615D232EA00DFF323 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 424C4EA015D232EA00DFF323 /* FMDatabase.h */; };
+		424C4EA715D232EA00DFF323 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 424C4EA115D232EA00DFF323 /* FMDatabase.m */; };
+		424C4EA815D232EA00DFF323 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 424C4EA215D232EA00DFF323 /* FMDatabaseAdditions.h */; };
+		424C4EA915D232EA00DFF323 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 424C4EA315D232EA00DFF323 /* FMDatabaseAdditions.m */; };
+		424C4EAA15D232EA00DFF323 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 424C4EA415D232EA00DFF323 /* FMResultSet.h */; };
+		424C4EAB15D232EA00DFF323 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 424C4EA515D232EA00DFF323 /* FMResultSet.m */; };
+		424C4EAC15D2331400DFF323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		424C4EAD15D2331400DFF323 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8D13D82DEB003CA78D /* libsqlite3.dylib */; };
+		424C4EAE15D2331400DFF323 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		424C4EB115D2333A00DFF323 /* libFMDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424C4E9B15D2321100DFF323 /* libFMDatabase.a */; };
+		424C4EB515D2348900DFF323 /* NSDictionary+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424C4EB315D2348900DFF323 /* NSDictionary+Addition.h */; };
+		424C4EB615D2348900DFF323 /* NSDictionary+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424C4EB315D2348900DFF323 /* NSDictionary+Addition.h */; };
+		424C4EB715D2348900DFF323 /* NSDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424C4EB415D2348900DFF323 /* NSDictionary+Addition.m */; };
+		424C4EB815D2348900DFF323 /* NSDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424C4EB415D2348900DFF323 /* NSDictionary+Addition.m */; };
 		424D19F715999E97002825B1 /* UITableView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424D19F515999E97002825B1 /* UITableView+Addition.h */; };
 		424D19F815999E97002825B1 /* UITableView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 424D19F515999E97002825B1 /* UITableView+Addition.h */; };
 		424D19F915999E97002825B1 /* UITableView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 424D19F615999E97002825B1 /* UITableView+Addition.m */; };
@@ -1330,6 +1344,13 @@
 			remoteGlobalIDString = 4244877F156F729C0008055E;
 			remoteInfo = MCSegmentedControl;
 		};
+		424C4EAF15D2333100DFF323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 424C4E8C15D2321100DFF323;
+			remoteInfo = FMDatabase;
+		};
 		425260E41557920D00D4D689 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -1656,6 +1677,15 @@
 		424A2155145E48F4007E0EF8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		424A2158145E4923007E0EF8 /* MKMapView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Addition.h"; sourceTree = "<group>"; };
 		424A2159145E4923007E0EF8 /* MKMapView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Addition.m"; sourceTree = "<group>"; };
+		424C4E9B15D2321100DFF323 /* libFMDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		424C4EA015D232EA00DFF323 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		424C4EA115D232EA00DFF323 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		424C4EA215D232EA00DFF323 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		424C4EA315D232EA00DFF323 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		424C4EA415D232EA00DFF323 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		424C4EA515D232EA00DFF323 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		424C4EB315D2348900DFF323 /* NSDictionary+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Addition.h"; sourceTree = "<group>"; };
+		424C4EB415D2348900DFF323 /* NSDictionary+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Addition.m"; sourceTree = "<group>"; };
 		424D19F515999E97002825B1 /* UITableView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Addition.h"; sourceTree = "<group>"; };
 		424D19F615999E97002825B1 /* UITableView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Addition.m"; sourceTree = "<group>"; };
 		425260BE1557919300D4D689 /* libADLivelyTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADLivelyTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2325,6 +2355,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		424C4E9615D2321100DFF323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424C4EAC15D2331400DFF323 /* Foundation.framework in Frameworks */,
+				424C4EAD15D2331400DFF323 /* libsqlite3.dylib in Frameworks */,
+				424C4EAE15D2331400DFF323 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		425260BC1557919300D4D689 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2584,6 +2624,7 @@
 				4225CA5E14F74654003B893A /* libCurledView.a in Frameworks */,
 				427B5A341473BB5000747E9B /* libDCRoundSwitch.a in Frameworks */,
 				42C2190D1498A77C00AD9FED /* libEGOPhotoViewer.a in Frameworks */,
+				424C4EB115D2333A00DFF323 /* libFMDatabase.a in Frameworks */,
 				42F6629213E93E740068F7CF /* libFTUtils.a in Frameworks */,
 				423F456F15240BF600F11D23 /* libiCarousel.a in Frameworks */,
 				427EFF4615736A86009ED244 /* libITNSStreamUtil.a in Frameworks */,
@@ -2783,6 +2824,7 @@
 				42A445CF15C9293000A907F0 /* libATMHud.a */,
 				4208F52E15CA33860032490B /* libMBProgressHUD.a */,
 				420E68C715CF6B5B001127FF /* libKissXML.a */,
+				424C4E9B15D2321100DFF323 /* libFMDatabase.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2816,6 +2858,7 @@
 				427B59FA1473BAC100747E9B /* DCRoundSwitch */,
 				42C218AD1498A62400AD9FED /* EGOPhotoViewer */,
 				42F6627D13E93E5C0068F7CF /* FTUtils */,
+				424C4E9F15D232EA00DFF323 /* FMDatabase */,
 				42852FC01575EC8F005D7632 /* HTMLParser */,
 				423F456715240BE400F11D23 /* iCarousel */,
 				427EFF3F15736A4D009ED244 /* ITNSStreamUtil */,
@@ -3019,6 +3062,7 @@
 				42F6616813E9343B0068F7CF /* NSData */,
 				C4A050A614756A28006CC4B0 /* NSDate */,
 				42F65C6213E6B8110068F7CF /* NSDateFormatter */,
+				424C4EB215D2345200DFF323 /* NSDictionary */,
 				42F6600113E927DD0068F7CF /* NSFileManager */,
 				422D565A15469DB100B648C0 /* NSInvocation */,
 				42F65C6313E6B81C0068F7CF /* NSLocale */,
@@ -3104,6 +3148,28 @@
 				424A2159145E4923007E0EF8 /* MKMapView+Addition.m */,
 			);
 			name = MK;
+			sourceTree = "<group>";
+		};
+		424C4E9F15D232EA00DFF323 /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				424C4EA015D232EA00DFF323 /* FMDatabase.h */,
+				424C4EA115D232EA00DFF323 /* FMDatabase.m */,
+				424C4EA215D232EA00DFF323 /* FMDatabaseAdditions.h */,
+				424C4EA315D232EA00DFF323 /* FMDatabaseAdditions.m */,
+				424C4EA415D232EA00DFF323 /* FMResultSet.h */,
+				424C4EA515D232EA00DFF323 /* FMResultSet.m */,
+			);
+			path = FMDatabase;
+			sourceTree = "<group>";
+		};
+		424C4EB215D2345200DFF323 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				424C4EB315D2348900DFF323 /* NSDictionary+Addition.h */,
+				424C4EB415D2348900DFF323 /* NSDictionary+Addition.m */,
+			);
+			name = NSDictionary;
 			sourceTree = "<group>";
 		};
 		424D19F415999E76002825B1 /* UITableView */ = {
@@ -4541,6 +4607,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		424C4E8F15D2321100DFF323 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424C4EA615D232EA00DFF323 /* FMDatabase.h in Headers */,
+				424C4EA815D232EA00DFF323 /* FMDatabaseAdditions.h in Headers */,
+				424C4EAA15D232EA00DFF323 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		425260BA1557919300D4D689 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -4909,6 +4985,7 @@
 				42AAEEAE15AD76F80071F394 /* YTGradientView.h in Headers */,
 				42280D9215C2661900C360A1 /* YTSplitViewController.h in Headers */,
 				422C48B415C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
+				424C4EB515D2348900DFF323 /* NSDictionary+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5179,6 +5256,7 @@
 				42AAEEAF15AD76F80071F394 /* YTGradientView.h in Headers */,
 				42280D9315C2661900C360A1 /* YTSplitViewController.h in Headers */,
 				422C48B515C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
+				424C4EB615D2348900DFF323 /* NSDictionary+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5388,6 +5466,23 @@
 			name = MCSegmentedControl;
 			productName = MCSegmentedControl;
 			productReference = 42448780156F729C0008055E /* libMCSegmentedControl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		424C4E8C15D2321100DFF323 /* FMDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424C4E9815D2321100DFF323 /* Build configuration list for PBXNativeTarget "FMDatabase" */;
+			buildPhases = (
+				424C4E8D15D2321100DFF323 /* Sources */,
+				424C4E8F15D2321100DFF323 /* Headers */,
+				424C4E9615D2321100DFF323 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDatabase;
+			productName = ZipArchive;
+			productReference = 424C4E9B15D2321100DFF323 /* libFMDatabase.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		425260BD1557919300D4D689 /* ADLivelyTableView */ = {
@@ -5786,6 +5881,7 @@
 				4225CA5D14F74650003B893A /* PBXTargetDependency */,
 				427B5A1C1473BB2400747E9B /* PBXTargetDependency */,
 				42C2190C1498A77600AD9FED /* PBXTargetDependency */,
+				424C4EB015D2333100DFF323 /* PBXTargetDependency */,
 				42F6629113E93E6F0068F7CF /* PBXTargetDependency */,
 				423F456E15240BF100F11D23 /* PBXTargetDependency */,
 				4284E70C1585959D0089718F /* PBXTargetDependency */,
@@ -5994,6 +6090,7 @@
 				4225CA3F14F745DC003B893A /* CurledView */,
 				427B59F01473BA9A00747E9B /* DCRoundSwitch */,
 				42C218A91498A60A00AD9FED /* EGOPhotoViewer */,
+				424C4E8C15D2321100DFF323 /* FMDatabase */,
 				42F6627013E93E460068F7CF /* FTUtils */,
 				42E694D71574999200F9679F /* HTMLParser */,
 				423F456315240BC900F11D23 /* iCarousel */,
@@ -6220,6 +6317,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				42448789156F72BC0008055E /* MCSegmentedControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424C4E8D15D2321100DFF323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424C4EA715D232EA00DFF323 /* FMDatabase.m in Sources */,
+				424C4EA915D232EA00DFF323 /* FMDatabaseAdditions.m in Sources */,
+				424C4EAB15D232EA00DFF323 /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6559,6 +6666,7 @@
 				42AAEEB015AD76F80071F394 /* YTGradientView.m in Sources */,
 				42280D9415C2661900C360A1 /* YTSplitViewController.m in Sources */,
 				422C48B615C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
+				424C4EB715D2348900DFF323 /* NSDictionary+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6805,6 +6913,7 @@
 				42AAEEB115AD76F80071F394 /* YTGradientView.m in Sources */,
 				42280D9515C2661900C360A1 /* YTSplitViewController.m in Sources */,
 				422C48B715C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
+				424C4EB815D2348900DFF323 /* NSDictionary+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6966,6 +7075,11 @@
 			isa = PBXTargetDependency;
 			target = 4244877F156F729C0008055E /* MCSegmentedControl */;
 			targetProxy = 4244878A156F72E60008055E /* PBXContainerItemProxy */;
+		};
+		424C4EB015D2333100DFF323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 424C4E8C15D2321100DFF323 /* FMDatabase */;
+			targetProxy = 424C4EAF15D2333100DFF323 /* PBXContainerItemProxy */;
 		};
 		425260E51557920D00D4D689 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7360,6 +7474,33 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = MCSegmentedControl;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		424C4E9915D2321100DFF323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = FMDatabase;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		424C4E9A15D2321100DFF323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = FMDatabase;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -8415,6 +8556,15 @@
 			buildConfigurations = (
 				42448781156F729D0008055E /* Debug */,
 				42448782156F729D0008055E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		424C4E9815D2321100DFF323 /* Build configuration list for PBXNativeTarget "FMDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424C4E9915D2321100DFF323 /* Debug */,
+				424C4E9A15D2321100DFF323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
