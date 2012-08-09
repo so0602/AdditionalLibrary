@@ -8,6 +8,7 @@
 #import "NSData+Addition.h"
 #import "NSDate+NSCategory.h"
 #import "NSDateFormatter+Addition.h"
+#import "NSDictionary+Addition.h"
 #import "NSFileManager+Addition.h"
 #import "NSInvocation+Addition.h"
 #import "NSLocale+Addition.h"

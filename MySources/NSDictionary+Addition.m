@@ -1,4 +1,7 @@
 #import "NSDictionary+Addition.h"
+#import "NSArray+Addition.h"
+
+#import "YTGlobalValues.h"
 
 @implementation NSDictionary (Addition)
 
@@ -8,7 +11,8 @@
 		return FALSE;
 	}
 	
-	FMDatabase* database = [FMDatabase databaseWithPath:[CachedPath() stringByAppendingPathComponent:databaseName]];
+	NSString* path = [CachedPath() stringByAppendingPathComponent:databaseName];
+	FMDatabase* database = [FMDatabase databaseWithPath:path];
 	for( NSString* key in [self allKeys] ){
 		NSArray* array = [self objectForKey:key];
 		if( array.count == 0 ) continue;
