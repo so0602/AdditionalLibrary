@@ -10,4 +10,7 @@
 @property (nonatomic, readonly) HTMLNode* liNode;
 @property (nonatomic, readonly) NSArray* liNodes;
 
+-(HTMLNode*)findChildOfId:(NSString*)idName;
+-(NSArray*)findChildrenOfId:(NSString*)idName;
+
 @end

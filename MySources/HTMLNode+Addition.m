@@ -29,4 +29,12 @@
 	return [self findChildTags:@"li"];
 }
 
+-(HTMLNode*)findChildOfId:(NSString*)idName{
+	return [self findChildWithAttribute:@"id" matchingName:idName allowPartial:FALSE];
+}
+
+-(NSArray*)findChildrenOfId:(NSString*)idName{
+	return [self findChildrenWithAttribute:@"id" matchingName:idName allowPartial:FALSE];
+}
+
 @end

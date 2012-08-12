@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface YTGradientView : UIView
+@interface YTGradientView : UIView<NSCoding>
 
 @property (nonatomic, copy) NSArray* colors;
 @property (nonatomic, copy) NSArray* locations;

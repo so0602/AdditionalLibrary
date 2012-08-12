@@ -148,7 +148,7 @@
 	NSMutableArray* keyArray = nil;
 	NSMutableArray* valueArray = nil;
 	
-	static int MAX_EACH_COUNT = 20;
+	static int MAX_EACH_COUNT = 25;
 	
 	int count = self.count / MAX_EACH_COUNT;
 	if( self.count % MAX_EACH_COUNT != 0 ) count += 1;
@@ -182,7 +182,7 @@
 				}
 				[sql_value appendString:@");"];
 				[sql appendString:sql_value];
-//				if( [tableName isEqualToString:@"PETS"] ) NSLog(@"sql: %@", sql);
+				NSLog(@"sql: %@", sql);
 				rs = [database executeQuery:sql];
 				[rs next];
 			}else{
@@ -215,7 +215,7 @@
 					}
 					[sql appendFormat:@"UNION SELECT %@ ", [values componentsJoinedByString:@", "]];
 				}
-//				if( [tableName isEqualToString:@"PETS"] ) NSLog(@"sql: %@", sql);
+				NSLog(@"sql: %@", sql);
 				rs = [database executeQuery:sql];
 				[rs next];
 			}
