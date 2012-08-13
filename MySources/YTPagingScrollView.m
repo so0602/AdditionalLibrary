@@ -53,17 +53,37 @@
 	}
 	self.viewControllers = nil;
 	
-	self.totalPages = [self.dataSouce numberOfPagesInPagingScrollView:self];
+	self.totalPages = [self.dataSource numberOfPagesInPagingScrollView:self];
 	
 	if( self.totalPages > 0 ){
 		self.viewControllers = [NSMutableArray arrayWithCapacity:self.totalPages];
 		for( int i = 0; i < self.totalPages; i++ ) [(NSMutableArray*)self.viewControllers addObject:[NSNull null]];
 		
-		self.currentPage = [self.dataSouce currentPage:self];
+		self.currentPage = [self.dataSource currentPage:self];
 		
 		[self loadScrollViewWithPage:self.currentPage - 1];
 		[self loadScrollViewWithPage:self.currentPage];
 		[self loadScrollViewWithPage:self.currentPage + 1];
+		
+		NSInteger page = self.currentPage - 1;
+		UIViewController* viewController = nil;
+		if( page >= 0 ){
+			viewController = [self.viewControllers objectAtIndex:page];
+			[viewController viewWillAppear:TRUE];
+			[viewController viewDidAppear:TRUE];
+		}
+		
+		page = self.currentPage;
+		viewController = [self.viewControllers objectAtIndex:page];
+		[viewController viewWillAppear:TRUE];
+		[viewController viewDidAppear:TRUE];
+		
+		page = self.currentPage + 1;
+		if( page < self.viewControllers.count ){
+			viewController = [self.viewControllers objectAtIndex:page];
+			[viewController viewWillAppear:TRUE];
+			[viewController viewDidAppear:TRUE];
+		}
 		
 		self.scrollView.contentSize = CGSizeMake(self.scrollView.width * self.totalPages, self.scrollView.height);
 		self.scrollView.contentOffset = CGPointMake(self.scrollView.width * self.currentPage, 0);
@@ -102,7 +122,7 @@
 	
 	UIViewController* viewController = [self.viewControllers objectAtIndex:page];
 	if( [viewController isKindOfClass:[NSNull class]] ){
-		viewController = [self.dataSouce pagingScrollView:self viewControllerAtPage:page];
+		viewController = [self.dataSource pagingScrollView:self viewControllerAtPage:page];
 		[(NSMutableArray*)self.viewControllers replaceObjectAtIndex:page withObject:viewController];
 	}
 	
@@ -165,7 +185,7 @@
 
 -(void)dealloc{
 	self.delegate = nil;
-	self.dataSouce = nil;
+	self.dataSource = nil;
 	
 	self.scrollView = nil;
 	self.viewControllers = nil;
@@ -180,7 +200,7 @@
 #pragma mark @synthesize
 
 @synthesize delegate = _delegate;
-@synthesize dataSouce = _dataSouce;
+@synthesize dataSource = _dataSource;
 @synthesize scrollView = _scrollView;
 @synthesize currentPage = _currentPage;
 @synthesize totalPages = _totalPages;

@@ -24,7 +24,7 @@
 @interface YTPagingScrollView : UIView<UIScrollViewDelegate>{
 @private
 	id<YTPagingScrollViewDelegate> _delegate;
-	id<YTPagingScrollViewDataSource> _dataSouce;
+	id<YTPagingScrollViewDataSource> _dataSource;
 	
 	UIScrollView* _scrollView;
 	
@@ -36,7 +36,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet id<YTPagingScrollViewDelegate> delegate;
-@property (nonatomic, retain) IBOutlet id<YTPagingScrollViewDataSource> dataSouce;
+@property (nonatomic, retain) IBOutlet id<YTPagingScrollViewDataSource> dataSource;
 
 @property (nonatomic, retain) UIScrollView* scrollView;
 @property (nonatomic, retain, readonly) NSArray* viewControllers;
