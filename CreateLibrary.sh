@@ -147,6 +147,13 @@ mkdir "$FMDATABASE_PATH"
 fi
 cp FMDatabase/*.h "$FMDATABASE_PATH"
 
+#GMGridView
+GMGRIDVIEW_PATH=${STATICLIB}/GMGridView
+if [ ! -e "$GMGRIDVIEW_PATH" ]; then
+mkdir "$GMGRIDVIEW_PATH"
+fi
+cp GMGridView/*.h "$GMGRIDVIEW_PATH"
+
 #HTMLParser
 HTMLPARSER_PATH=${STATICLIB}/HTMLParser
 if [ ! -e "$HTMLPARSER_PATH" ]; then

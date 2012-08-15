@@ -59,6 +59,7 @@
 #import "EGOPhotoGlobal.h"
 #import "FMDatabase.h"
 #import "FTAnimation.h"
+#import "GMGridView.h"
 #import "HTMLParser.h"
 #import "ITNSStreamUtil.h"
 #import "iCarousel.h"
