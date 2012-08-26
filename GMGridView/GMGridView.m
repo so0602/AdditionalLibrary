@@ -533,6 +533,7 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
 
 - (void)longPressGestureUpdated:(UILongPressGestureRecognizer *)longPressGesture
 {
+	
     if (self.enableEditOnLongPress && !self.editing) {
         CGPoint locationTouch = [longPressGesture locationInView:self];
         NSInteger position = [self.layoutStrategy itemPositionFromLocation:locationTouch];

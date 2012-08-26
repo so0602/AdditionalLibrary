@@ -80,7 +80,7 @@
 }
 
 -(void)sizeToFitWidth{
-	int height = [self.text sizeWithFont:self.font constrainedToSize:CGSizeMake(self.frame.size.width, 10000)].height;
+	int height = [self.text sizeWithFont:self.font constrainedToSize:CGSizeMake(self.width, 10000) lineBreakMode:self.lineBreakMode].height;
 	self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, height);
 }
 

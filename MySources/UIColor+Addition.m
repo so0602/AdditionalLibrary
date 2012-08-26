@@ -99,11 +99,13 @@ UIColor* ColorWithHexString(NSString* string){
 
 -(CGFloat)green{
 	NSAssert( [self canProvideRGBComponents], @"Must be a RGB color to use -red, -green, -blue");
+	return CGColorGetComponents(self.CGColor)[1];
 	return CGColorGetComponents(self.CGColor)[[self colorSpaceModel] == kCGColorSpaceModelMonochrome ? 0 : 1];
 }
 
 -(CGFloat)blue{
 	NSAssert( [self canProvideRGBComponents], @"Must be a RGB color to use -red, -green, -blue");
+	return CGColorGetComponents(self.CGColor)[2];
 	return CGColorGetComponents(self.CGColor)[[self colorSpaceModel] == kCGColorSpaceModelMonochrome ? 0 : 1];
 }
 
