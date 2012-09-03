@@ -2,6 +2,58 @@
 
 @implementation UIButton (Addition)
 
+-(UIImage*)normalImage{
+	return [self imageForState:UIControlStateNormal];
+}
+-(void)setNormalImage:(UIImage *)normalImage{
+	[self setImage:normalImage forState:UIControlStateNormal];
+}
+-(UIImage*)normalBackgroundImage{
+	return [self backgroundImageForState:UIControlStateNormal];
+}
+-(void)setNormalBackgroundImage:(UIImage *)normalBackgroundImage{
+	[self setBackgroundImage:normalBackgroundImage forState:UIControlStateNormal];
+}
+
+-(UIImage*)highlightedImage{
+	return [self imageForState:UIControlStateHighlighted];
+}
+-(void)setHighlightedImage:(UIImage *)highlightedImage{
+	[self setImage:highlightedImage forState:UIControlStateHighlighted];
+}
+-(UIImage*)highlightedBackgroundImage{
+	return [self backgroundImageForState:UIControlStateHighlighted];
+}
+-(void)setHighlightedBackgroundImage:(UIImage *)highlightedBackgroundImage{
+	[self setBackgroundImage:highlightedBackgroundImage forState:UIControlStateHighlighted];
+}
+
+-(UIImage*)disabledImage{
+	return [self imageForState:UIControlStateDisabled];
+}
+-(void)setDisabledImage:(UIImage *)disabledImage{
+	[self setImage:disabledImage forState:UIControlStateDisabled];
+}
+-(UIImage*)disabledBackgroundImage{
+	return [self backgroundImageForState:UIControlStateDisabled];
+}
+-(void)setDisabledBackgroundImage:(UIImage *)disabledBackgroundImage{
+	[self setBackgroundImage:disabledBackgroundImage forState:UIControlStateDisabled];
+}
+
+-(UIImage*)selectedImage{
+	return [self imageForState:UIControlStateSelected];
+}
+-(void)setSelectedImage:(UIImage *)selectedImage{
+	[self setImage:selectedImage forState:UIControlStateSelected];
+}
+-(UIImage*)selectedBackgroundImage{
+	return [self backgroundImageForState:UIControlStateSelected];
+}
+-(void)setSelectedBackgroundImage:(UIImage *)selectedBackgroundImage{
+	[self setBackgroundImage:selectedBackgroundImage forState:UIControlStateSelected];
+}
+
 +(id)buttonWithType:(UIButtonType)buttonType title:(NSString*)title{
 	return [UIButton buttonWithType:buttonType title:title titleColor:nil font:nil image:nil backgroundImage:nil];
 }

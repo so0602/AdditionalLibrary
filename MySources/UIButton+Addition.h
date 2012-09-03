@@ -10,6 +10,15 @@
 
 @interface UIButton (Addition)
 
+@property (nonatomic, retain) UIImage* normalImage;
+@property (nonatomic, retain) UIImage* normalBackgroundImage;
+@property (nonatomic, retain) UIImage* highlightedImage;
+@property (nonatomic, retain) UIImage* highlightedBackgroundImage;
+@property (nonatomic, retain) UIImage* disabledImage;
+@property (nonatomic, retain) UIImage* disabledBackgroundImage;
+@property (nonatomic, retain) UIImage* selectedImage;
+@property (nonatomic, retain) UIImage* selectedBackgroundImage;
+
 +(id)buttonWithType:(UIButtonType)buttonType title:(NSString*)title;
 +(id)buttonWithType:(UIButtonType)buttonType title:(NSString*)title titleColor:(UIColor*)titleColor;
 +(id)buttonWithType:(UIButtonType)buttonType title:(NSString*)title titleColor:(UIColor*)titleColor font:(UIFont*)font;
