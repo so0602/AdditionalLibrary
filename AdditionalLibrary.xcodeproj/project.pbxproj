@@ -1132,6 +1132,10 @@
 		C44F13B813E8507000849700 /* UIApplication+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F65E5813E7D45A0068F7CF /* UIApplication+Addition.h */; };
 		C44F13B913E8507600849700 /* NSObject+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F65C6613E6B8460068F7CF /* NSObject+Addition.h */; };
 		C44F13BA13E8507A00849700 /* YTDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F65EB413E7ED1C0068F7CF /* YTDatabase.h */; };
+		C455B41D15F68000005526E6 /* YTPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = C455B41B15F68000005526E6 /* YTPageControl.h */; };
+		C455B41E15F68000005526E6 /* YTPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = C455B41B15F68000005526E6 /* YTPageControl.h */; };
+		C455B41F15F68000005526E6 /* YTPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C455B41C15F68000005526E6 /* YTPageControl.m */; };
+		C455B42015F68000005526E6 /* YTPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C455B41C15F68000005526E6 /* YTPageControl.m */; };
 		C45A9F7915890AE100019B38 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = C45A9F3415890AE100019B38 /* DDData.h */; };
 		C45A9F7A15890AE100019B38 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = C45A9F3515890AE100019B38 /* DDData.m */; };
 		C45A9F7B15890AE100019B38 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = C45A9F3615890AE100019B38 /* DDNumber.h */; };
@@ -2105,6 +2109,8 @@
 		C43E085B1567DAF100DCFCD5 /* PetHunterUseItemInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterUseItemInput.m; sourceTree = "<group>"; };
 		C43E085D1567DC1A00DCFCD5 /* PetHunterUseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetHunterUseItem.h; sourceTree = "<group>"; };
 		C43E085E1567DC1B00DCFCD5 /* PetHunterUseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterUseItem.m; sourceTree = "<group>"; };
+		C455B41B15F68000005526E6 /* YTPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPageControl.h; sourceTree = "<group>"; };
+		C455B41C15F68000005526E6 /* YTPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPageControl.m; sourceTree = "<group>"; };
 		C45A9F3015890A9B00019B38 /* libCocoaHTTPServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaHTTPServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45A9F3415890AE100019B38 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
 		C45A9F3515890AE100019B38 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
@@ -3937,6 +3943,8 @@
 				423F45891524112A00F11D23 /* YTLocalizationSystem.m */,
 				42F65F2B13E901BA0068F7CF /* YTModalAlertView.h */,
 				42F65F2C13E901BA0068F7CF /* YTModalAlertView.m */,
+				C455B41B15F68000005526E6 /* YTPageControl.h */,
+				C455B41C15F68000005526E6 /* YTPageControl.m */,
 				42FAF84D13F4D05200D9F083 /* YTPagingScrollView.h */,
 				42FAF84E13F4D05200D9F083 /* YTPagingScrollView.m */,
 				C47235D3155689E500119B89 /* YTPieChartView.h */,
@@ -5056,6 +5064,7 @@
 				42280D9215C2661900C360A1 /* YTSplitViewController.h in Headers */,
 				422C48B415C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
 				424C4EB515D2348900DFF323 /* NSDictionary+Addition.h in Headers */,
+				C455B41D15F68000005526E6 /* YTPageControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5341,6 +5350,7 @@
 				42280D9315C2661900C360A1 /* YTSplitViewController.h in Headers */,
 				422C48B515C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
 				424C4EB615D2348900DFF323 /* NSDictionary+Addition.h in Headers */,
+				C455B41E15F68000005526E6 /* YTPageControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6770,6 +6780,7 @@
 				42280D9415C2661900C360A1 /* YTSplitViewController.m in Sources */,
 				422C48B615C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
 				424C4EB715D2348900DFF323 /* NSDictionary+Addition.m in Sources */,
+				C455B41F15F68000005526E6 /* YTPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7029,6 +7040,7 @@
 				42280D9515C2661900C360A1 /* YTSplitViewController.m in Sources */,
 				422C48B715C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
 				424C4EB815D2348900DFF323 /* NSDictionary+Addition.m in Sources */,
+				C455B42015F68000005526E6 /* YTPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

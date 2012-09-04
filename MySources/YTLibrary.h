@@ -16,6 +16,7 @@
 #import "YTInputAlertView.h"
 #import "YTLabel.h"
 #import "YTModalAlertView.h"
+#import "YTPageControl.h"
 #import "YTPagingScrollView.h"
 #import "YTPieChartView.h"
 #import "YTProgressAlertView.h"

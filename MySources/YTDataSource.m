@@ -61,6 +61,13 @@ static NSString* CodeKey_Data = @"DATA";
 	[aCoder encodeObject:self.data forKey:CodeKey_Data];
 }
 
+#pragma mark - NSCopying
+
+-(id)copyWithZone:(NSZone *)zone{
+	YTDataSource* copy = [[[self class] allocWithZone:zone] initWithDictionary:self.data];
+	return copy;
+}
+
 #pragma mark - Memory Management
 
 -(void)dealloc{
