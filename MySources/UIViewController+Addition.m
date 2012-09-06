@@ -17,7 +17,17 @@
 }
 
 +(id)loadNib{
-	return [[[self alloc] initWithNibName:[[self class] description] bundle:nil] autorelease];
+	Class class = self.class;
+	UIViewController* viewController = nil;
+	do{
+		NSString* className = NSStringFromClass(class);
+		viewController = [[[self alloc] initWithNibName:className bundle:nil] autorelease];
+		if( !viewController ){
+			class = self.superclass;
+		}
+	}while(!viewController);
+	return viewController;
+//	return [[[self alloc] initWithNibName:[[self class] description] bundle:nil] autorelease];
 }
 
 +(id)loadNibWithNavigationController{
