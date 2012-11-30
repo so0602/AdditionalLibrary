@@ -16,7 +16,8 @@ xcodebuild -sdk $SIMULATOR "ARCHS=i386 x86_64" "VALID_ARCHS=i386 x86_64" -target
 BUILD_PATH=${BUILD_DIR}
 #Change Your Build Directory
 #BUILD_PATH="/Users/DeViLsO/Desktop/iPhone/Builds"
-BUILD_PATH="/Users/freddyso/Desktop/iPhone/AdditionalLibrary/build"
+#BUILD_PATH="/Users/freddyso/Desktop/iPhone/AdditionalLibrary/build"
+BUILD_PATH="/Users/freddy_so/Documents/iOS/AdditionalLibrary/build"
 
 RELEASE_DEVICE_DIR=${BUILD_PATH}/Release-iphoneos
 RELEASE_SIMULATOR_DIR=${BUILD_PATH}/Release-iphonesimulator
@@ -279,6 +280,13 @@ if [ ! -e "$RTLABEL_PATH" ]; then
 	mkdir "$RTLABEL_PATH"
 fi
 cp RTLabel/*.h "$RTLABEL_PATH"
+
+#RNTextStatistics
+RNTEXTSTATISTICS_PATH=${STATICLIB}/RNTextStatistics
+if [ ! -e "$RNTEXTSTATISTICS_PATH" ]; then
+mkdir "$RNTEXTSTATISTICS_PATH"
+fi
+cp RNTextStatistics/*.h "$RNTEXTSTATISTICS_PATH"
 
 #SYCache
 SYCACHE_PATH=${STATICLIB}/SYCache

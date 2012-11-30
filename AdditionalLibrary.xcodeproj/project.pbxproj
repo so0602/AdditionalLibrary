@@ -1306,6 +1306,22 @@
 		C4FAF3B5156402E00036BA76 /* PetHunterMapList.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FAF3B4156402E00036BA76 /* PetHunterMapList.m */; };
 		C4FAF3B81564036C0036BA76 /* PetHunterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FAF3B71564036C0036BA76 /* PetHunterMap.m */; };
 		C4FAF3CD156406410036BA76 /* libsbjson-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FAF3C8156406220036BA76 /* libsbjson-ios.a */; };
+		EFD7271216685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */; };
+		EFD7271316685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */; };
+		EFD7271416685DC700A2FE60 /* NSString+RegexReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270E16685DC700A2FE60 /* NSString+RegexReplace.h */; };
+		EFD7271516685DC700A2FE60 /* NSString+RegexReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270F16685DC700A2FE60 /* NSString+RegexReplace.m */; };
+		EFD7271616685DC700A2FE60 /* NSString+RNTextStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7271016685DC700A2FE60 /* NSString+RNTextStatistics.h */; };
+		EFD7271716685DC700A2FE60 /* NSString+RNTextStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7271116685DC700A2FE60 /* NSString+RNTextStatistics.m */; };
+		EFD7271816685DFC00A2FE60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		EFD7271916685DFC00A2FE60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		EFD7271A16685DFC00A2FE60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		EFD7271B16685F3D00A2FE60 /* libRNTextStatistics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */; };
+		EFD7271C1668619600A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */; };
+		EFD7271D1668619600A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */; };
+		EFD7271E1668619600A2FE60 /* NSString+RegexReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270E16685DC700A2FE60 /* NSString+RegexReplace.h */; };
+		EFD7271F1668619600A2FE60 /* NSString+RegexReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270F16685DC700A2FE60 /* NSString+RegexReplace.m */; };
+		EFD727201668619600A2FE60 /* NSString+RNTextStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7271016685DC700A2FE60 /* NSString+RNTextStatistics.h */; };
+		EFD727211668619600A2FE60 /* NSString+RNTextStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7271116685DC700A2FE60 /* NSString+RNTextStatistics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1602,6 +1618,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BCC2626813920FC7003D9994;
 			remoteInfo = "sbjson-ios";
+		};
+		EFD727221668688000A2FE60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFD726FC16685D0700A2FE60;
+			remoteInfo = RNTextStatistics;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2302,6 +2325,13 @@
 		C4FAF3B61564036C0036BA76 /* PetHunterMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetHunterMap.h; sourceTree = "<group>"; };
 		C4FAF3B71564036C0036BA76 /* PetHunterMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterMap.m; sourceTree = "<group>"; };
 		C4FAF3B9156406220036BA76 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = SBJson/SBJson.xcodeproj; sourceTree = SOURCE_ROOT; };
+		EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTextStatistics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+SimpleRegex.h"; sourceTree = "<group>"; };
+		EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+SimpleRegex.m"; sourceTree = "<group>"; };
+		EFD7270E16685DC700A2FE60 /* NSString+RegexReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexReplace.h"; sourceTree = "<group>"; };
+		EFD7270F16685DC700A2FE60 /* NSString+RegexReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexReplace.m"; sourceTree = "<group>"; };
+		EFD7271016685DC700A2FE60 /* NSString+RNTextStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RNTextStatistics.h"; sourceTree = "<group>"; };
+		EFD7271116685DC700A2FE60 /* NSString+RNTextStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RNTextStatistics.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2640,6 +2670,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD7271B16685F3D00A2FE60 /* libRNTextStatistics.a in Frameworks */,
 				42A445F515C92B3B00A907F0 /* AudioToolbox.framework in Frameworks */,
 				42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */,
 				42A277371575EB71000C59A1 /* CFNetwork.framework in Frameworks */,
@@ -2822,6 +2853,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFD7270416685D0700A2FE60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD7271816685DFC00A2FE60 /* CoreGraphics.framework in Frameworks */,
+				EFD7271916685DFC00A2FE60 /* Foundation.framework in Frameworks */,
+				EFD7271A16685DFC00A2FE60 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -2881,6 +2922,7 @@
 				420E68C715CF6B5B001127FF /* libKissXML.a */,
 				424C4E9B15D2321100DFF323 /* libFMDatabase.a */,
 				C414AB6A15DC20AB002DE598 /* libGMGridView.a */,
+				EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2913,8 +2955,8 @@
 				4225CA4314F745F2003B893A /* CurledView */,
 				427B59FA1473BAC100747E9B /* DCRoundSwitch */,
 				42C218AD1498A62400AD9FED /* EGOPhotoViewer */,
-				42F6627D13E93E5C0068F7CF /* FTUtils */,
 				424C4E9F15D232EA00DFF323 /* FMDatabase */,
+				42F6627D13E93E5C0068F7CF /* FTUtils */,
 				C414ABB615DC26BF002DE598 /* GMGridView */,
 				42852FC01575EC8F005D7632 /* HTMLParser */,
 				423F456715240BE400F11D23 /* iCarousel */,
@@ -2929,6 +2971,7 @@
 				4284E72B1585B72E0089718F /* Objective-Zip */,
 				C4640F9915565B2F0029DF8F /* PrettyKit */,
 				42BB884F1495F8AC0099E2E4 /* RTLabel */,
+				EFD7270B16685DC700A2FE60 /* RNTextStatistics */,
 				4225CA9D14F74DA5003B893A /* SpriteAnimation */,
 				425AE96B15733E100002CBE8 /* StyledPageControl */,
 				42EE4D251576106A003F2F57 /* SVGeocoder */,
@@ -4617,6 +4660,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EFD7270B16685DC700A2FE60 /* RNTextStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */,
+				EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */,
+				EFD7270E16685DC700A2FE60 /* NSString+RegexReplace.h */,
+				EFD7270F16685DC700A2FE60 /* NSString+RegexReplace.m */,
+				EFD7271016685DC700A2FE60 /* NSString+RNTextStatistics.h */,
+				EFD7271116685DC700A2FE60 /* NSString+RNTextStatistics.m */,
+			);
+			path = RNTextStatistics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -5351,6 +5407,9 @@
 				422C48B515C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
 				424C4EB615D2348900DFF323 /* NSDictionary+Addition.h in Headers */,
 				C455B41E15F68000005526E6 /* YTPageControl.h in Headers */,
+				EFD7271C1668619600A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */,
+				EFD7271E1668619600A2FE60 /* NSString+RegexReplace.h in Headers */,
+				EFD727201668619600A2FE60 /* NSString+RNTextStatistics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5419,6 +5478,16 @@
 				C4A0507814756984006CC4B0 /* FlexDataTypes.h in Headers */,
 				C4A0507914756984006CC4B0 /* NSObject-AMFExtensions.h in Headers */,
 				C4A0507A14756984006CC4B0 /* NSObject-iPhoneExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFD726FE16685D0700A2FE60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD7271216685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */,
+				EFD7271416685DC700A2FE60 /* NSString+RegexReplace.h in Headers */,
+				EFD7271616685DC700A2FE60 /* NSString+RNTextStatistics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5966,6 +6035,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EFD727231668688000A2FE60 /* PBXTargetDependency */,
 				425260E51557920D00D4D689 /* PBXTargetDependency */,
 				4208F53015CA38CC0032490B /* PBXTargetDependency */,
 				42ABAD3314147C2800537B39 /* PBXTargetDependency */,
@@ -6164,6 +6234,23 @@
 			productReference = C4DA0F81155E948F0079321E /* PetHunter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EFD726FC16685D0700A2FE60 /* RNTextStatistics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFD7270616685D0700A2FE60 /* Build configuration list for PBXNativeTarget "RNTextStatistics" */;
+			buildPhases = (
+				EFD726FD16685D0700A2FE60 /* Sources */,
+				EFD726FE16685D0700A2FE60 /* Headers */,
+				EFD7270416685D0700A2FE60 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNTextStatistics;
+			productName = ZipArchive;
+			productReference = EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -6216,6 +6303,7 @@
 				42A277221575EA53000C59A1 /* NSLogger */,
 				4284E71F1585B6BC0089718F /* Objective-Zip */,
 				C4DA0F80155E948F0079321E /* PetHunter */,
+				EFD726FC16685D0700A2FE60 /* RNTextStatistics */,
 				C4640F7B15565B1D0029DF8F /* PrettyKit */,
 				42BB88471495F8960099E2E4 /* RTLabel */,
 				4225CA9214F74D78003B893A /* SpriteAnimation */,
@@ -7041,6 +7129,9 @@
 				422C48B715C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
 				424C4EB815D2348900DFF323 /* NSDictionary+Addition.m in Sources */,
 				C455B42015F68000005526E6 /* YTPageControl.m in Sources */,
+				EFD7271D1668619600A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */,
+				EFD7271F1668619600A2FE60 /* NSString+RegexReplace.m in Sources */,
+				EFD727211668619600A2FE60 /* NSString+RNTextStatistics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7157,6 +7248,16 @@
 				C43E085C1567DAF200DCFCD5 /* PetHunterUseItemInput.m in Sources */,
 				C43E085F1567DC1D00DCFCD5 /* PetHunterUseItem.m in Sources */,
 				C499C7D015681BF900D39D23 /* ScheduleTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFD726FD16685D0700A2FE60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD7271316685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */,
+				EFD7271516685DC700A2FE60 /* NSString+RegexReplace.m in Sources */,
+				EFD7271716685DC700A2FE60 /* NSString+RNTextStatistics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7352,6 +7453,11 @@
 			isa = PBXTargetDependency;
 			name = "sbjson-ios";
 			targetProxy = C4FAF3CB156406370036BA76 /* PBXContainerItemProxy */;
+		};
+		EFD727231668688000A2FE60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFD726FC16685D0700A2FE60 /* RNTextStatistics */;
+			targetProxy = EFD727221668688000A2FE60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -8650,6 +8756,35 @@
 			};
 			name = Release;
 		};
+		EFD7270716685D0700A2FE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = RNTextStatistics;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFD7270816685D0700A2FE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = RNTextStatistics;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -9036,6 +9171,15 @@
 			buildConfigurations = (
 				C4DA0F92155E948F0079321E /* Debug */,
 				C4DA0F93155E948F0079321E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFD7270616685D0700A2FE60 /* Build configuration list for PBXNativeTarget "RNTextStatistics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFD7270716685D0700A2FE60 /* Debug */,
+				EFD7270816685D0700A2FE60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
