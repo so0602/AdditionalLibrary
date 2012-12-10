@@ -1306,6 +1306,20 @@
 		C4FAF3B5156402E00036BA76 /* PetHunterMapList.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FAF3B4156402E00036BA76 /* PetHunterMapList.m */; };
 		C4FAF3B81564036C0036BA76 /* PetHunterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FAF3B71564036C0036BA76 /* PetHunterMap.m */; };
 		C4FAF3CD156406410036BA76 /* libsbjson-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FAF3C8156406220036BA76 /* libsbjson-ios.a */; };
+		EF62BD2A167581B600209E31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		EF62BD2B167581B600209E31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		EF62BD2C167581B600209E31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		EF62BD30167581CF00209E31 /* DejalActivityView.h in Headers */ = {isa = PBXBuildFile; fileRef = EF62BD2E167581CF00209E31 /* DejalActivityView.h */; };
+		EF62BD31167581CF00209E31 /* DejalActivityView.h in Headers */ = {isa = PBXBuildFile; fileRef = EF62BD2E167581CF00209E31 /* DejalActivityView.h */; };
+		EF62BD32167581CF00209E31 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62BD2F167581CF00209E31 /* DejalActivityView.m */; };
+		EF62BD33167581CF00209E31 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62BD2F167581CF00209E31 /* DejalActivityView.m */; };
+		EF62BD461675832B00209E31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		EF62BD471675833300209E31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		EF62BD481675833E00209E31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		EF62BD4C1675837200209E31 /* WCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = EF62BD4A1675837200209E31 /* WCAlertView.h */; };
+		EF62BD4D1675837200209E31 /* WCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = EF62BD4A1675837200209E31 /* WCAlertView.h */; };
+		EF62BD4E1675837200209E31 /* WCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62BD4B1675837200209E31 /* WCAlertView.m */; };
+		EF62BD4F1675837200209E31 /* WCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62BD4B1675837200209E31 /* WCAlertView.m */; };
 		EFD7271216685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */; };
 		EFD7271316685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */; };
 		EFD7271416685DC700A2FE60 /* NSString+RegexReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270E16685DC700A2FE60 /* NSString+RegexReplace.h */; };
@@ -1618,6 +1632,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = BCC2626813920FC7003D9994;
 			remoteInfo = "sbjson-ios";
+		};
+		EF62BD50167583DA00209E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF62BD18167580F300209E31;
+			remoteInfo = DejalActivityView;
+		};
+		EF62BD52167583DA00209E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF62BD381675831200209E31;
+			remoteInfo = WCAlertView;
 		};
 		EFD727221668688000A2FE60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2325,6 +2353,12 @@
 		C4FAF3B61564036C0036BA76 /* PetHunterMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetHunterMap.h; sourceTree = "<group>"; };
 		C4FAF3B71564036C0036BA76 /* PetHunterMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetHunterMap.m; sourceTree = "<group>"; };
 		C4FAF3B9156406220036BA76 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = SBJson/SBJson.xcodeproj; sourceTree = SOURCE_ROOT; };
+		EF62BD25167580F300209E31 /* libDejalActivityView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDejalActivityView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF62BD2E167581CF00209E31 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
+		EF62BD2F167581CF00209E31 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		EF62BD451675831200209E31 /* libWCAlertView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWCAlertView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF62BD4A1675837200209E31 /* WCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAlertView.h; sourceTree = "<group>"; };
+		EF62BD4B1675837200209E31 /* WCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAlertView.m; sourceTree = "<group>"; };
 		EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTextStatistics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+SimpleRegex.h"; sourceTree = "<group>"; };
 		EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+SimpleRegex.m"; sourceTree = "<group>"; };
@@ -2853,6 +2887,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF62BD20167580F300209E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62BD2A167581B600209E31 /* CoreGraphics.framework in Frameworks */,
+				EF62BD2B167581B600209E31 /* Foundation.framework in Frameworks */,
+				EF62BD2C167581B600209E31 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62BD401675831200209E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62BD481675833E00209E31 /* UIKit.framework in Frameworks */,
+				EF62BD471675833300209E31 /* CoreGraphics.framework in Frameworks */,
+				EF62BD461675832B00209E31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFD7270416685D0700A2FE60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2923,6 +2977,8 @@
 				424C4E9B15D2321100DFF323 /* libFMDatabase.a */,
 				C414AB6A15DC20AB002DE598 /* libGMGridView.a */,
 				EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */,
+				EF62BD25167580F300209E31 /* libDejalActivityView.a */,
+				EF62BD451675831200209E31 /* libWCAlertView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2954,6 +3010,7 @@
 				425AE9DA1573425C0002CBE8 /* CocoaSecurity */,
 				4225CA4314F745F2003B893A /* CurledView */,
 				427B59FA1473BAC100747E9B /* DCRoundSwitch */,
+				EF62BD2D167581CF00209E31 /* DejalActivityView */,
 				42C218AD1498A62400AD9FED /* EGOPhotoViewer */,
 				424C4E9F15D232EA00DFF323 /* FMDatabase */,
 				42F6627D13E93E5C0068F7CF /* FTUtils */,
@@ -2970,8 +3027,8 @@
 				42A276F71575EA37000C59A1 /* NSLogger */,
 				4284E72B1585B72E0089718F /* Objective-Zip */,
 				C4640F9915565B2F0029DF8F /* PrettyKit */,
-				42BB884F1495F8AC0099E2E4 /* RTLabel */,
 				EFD7270B16685DC700A2FE60 /* RNTextStatistics */,
+				42BB884F1495F8AC0099E2E4 /* RTLabel */,
 				4225CA9D14F74DA5003B893A /* SpriteAnimation */,
 				425AE96B15733E100002CBE8 /* StyledPageControl */,
 				42EE4D251576106A003F2F57 /* SVGeocoder */,
@@ -2983,6 +3040,7 @@
 				42AD39D014F771B900C18A08 /* UAModalPanel */,
 				C4A0505E14756956006CC4B0 /* UICalendarMonthView */,
 				4204BF3715578B1A00DCA6E7 /* UIGlossyButton */,
+				EF62BD491675837200209E31 /* WCAlertView */,
 				42F6600C13E9289D0068F7CF /* ZipArchive */,
 			);
 			name = "Other Sources";
@@ -4660,6 +4718,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EF62BD2D167581CF00209E31 /* DejalActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				EF62BD2E167581CF00209E31 /* DejalActivityView.h */,
+				EF62BD2F167581CF00209E31 /* DejalActivityView.m */,
+			);
+			path = DejalActivityView;
+			sourceTree = "<group>";
+		};
+		EF62BD491675837200209E31 /* WCAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				EF62BD4A1675837200209E31 /* WCAlertView.h */,
+				EF62BD4B1675837200209E31 /* WCAlertView.m */,
+			);
+			path = WCAlertView;
+			sourceTree = "<group>";
+		};
 		EFD7270B16685DC700A2FE60 /* RNTextStatistics */ = {
 			isa = PBXGroup;
 			children = (
@@ -5410,6 +5486,8 @@
 				EFD7271C1668619600A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */,
 				EFD7271E1668619600A2FE60 /* NSString+RegexReplace.h in Headers */,
 				EFD727201668619600A2FE60 /* NSString+RNTextStatistics.h in Headers */,
+				EF62BD31167581CF00209E31 /* DejalActivityView.h in Headers */,
+				EF62BD4C1675837200209E31 /* WCAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5478,6 +5556,22 @@
 				C4A0507814756984006CC4B0 /* FlexDataTypes.h in Headers */,
 				C4A0507914756984006CC4B0 /* NSObject-AMFExtensions.h in Headers */,
 				C4A0507A14756984006CC4B0 /* NSObject-iPhoneExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62BD1A167580F300209E31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62BD30167581CF00209E31 /* DejalActivityView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62BD3A1675831200209E31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62BD4D1675837200209E31 /* WCAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6035,6 +6129,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				EF62BD51167583DA00209E31 /* PBXTargetDependency */,
+				EF62BD53167583DA00209E31 /* PBXTargetDependency */,
 				EFD727231668688000A2FE60 /* PBXTargetDependency */,
 				425260E51557920D00D4D689 /* PBXTargetDependency */,
 				4208F53015CA38CC0032490B /* PBXTargetDependency */,
@@ -6234,6 +6330,40 @@
 			productReference = C4DA0F81155E948F0079321E /* PetHunter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EF62BD18167580F300209E31 /* DejalActivityView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF62BD22167580F300209E31 /* Build configuration list for PBXNativeTarget "DejalActivityView" */;
+			buildPhases = (
+				EF62BD19167580F300209E31 /* Sources */,
+				EF62BD1A167580F300209E31 /* Headers */,
+				EF62BD20167580F300209E31 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DejalActivityView;
+			productName = ZipArchive;
+			productReference = EF62BD25167580F300209E31 /* libDejalActivityView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EF62BD381675831200209E31 /* WCAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF62BD421675831200209E31 /* Build configuration list for PBXNativeTarget "WCAlertView" */;
+			buildPhases = (
+				EF62BD391675831200209E31 /* Sources */,
+				EF62BD3A1675831200209E31 /* Headers */,
+				EF62BD401675831200209E31 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCAlertView;
+			productName = ZipArchive;
+			productReference = EF62BD451675831200209E31 /* libWCAlertView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		EFD726FC16685D0700A2FE60 /* RNTextStatistics */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFD7270616685D0700A2FE60 /* Build configuration list for PBXNativeTarget "RNTextStatistics" */;
@@ -6288,6 +6418,7 @@
 				425AE9CF157341F40002CBE8 /* CocoaSecurity */,
 				4225CA3F14F745DC003B893A /* CurledView */,
 				427B59F01473BA9A00747E9B /* DCRoundSwitch */,
+				EF62BD18167580F300209E31 /* DejalActivityView */,
 				42C218A91498A60A00AD9FED /* EGOPhotoViewer */,
 				424C4E8C15D2321100DFF323 /* FMDatabase */,
 				42F6627013E93E460068F7CF /* FTUtils */,
@@ -6320,6 +6451,7 @@
 				42F6605B13E92D330068F7CF /* ZipArchive */,
 				42BA65F51590927F00092EA6 /* MiniZip */,
 				C43916871590EB31001DBE24 /* YTFramework */,
+				EF62BD381675831200209E31 /* WCAlertView */,
 			);
 		};
 /* End PBXProject section */
@@ -7132,6 +7264,8 @@
 				EFD7271D1668619600A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */,
 				EFD7271F1668619600A2FE60 /* NSString+RegexReplace.m in Sources */,
 				EFD727211668619600A2FE60 /* NSString+RNTextStatistics.m in Sources */,
+				EF62BD33167581CF00209E31 /* DejalActivityView.m in Sources */,
+				EF62BD4E1675837200209E31 /* WCAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7248,6 +7382,22 @@
 				C43E085C1567DAF200DCFCD5 /* PetHunterUseItemInput.m in Sources */,
 				C43E085F1567DC1D00DCFCD5 /* PetHunterUseItem.m in Sources */,
 				C499C7D015681BF900D39D23 /* ScheduleTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62BD19167580F300209E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62BD32167581CF00209E31 /* DejalActivityView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62BD391675831200209E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62BD4F1675837200209E31 /* WCAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7453,6 +7603,16 @@
 			isa = PBXTargetDependency;
 			name = "sbjson-ios";
 			targetProxy = C4FAF3CB156406370036BA76 /* PBXContainerItemProxy */;
+		};
+		EF62BD51167583DA00209E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF62BD18167580F300209E31 /* DejalActivityView */;
+			targetProxy = EF62BD50167583DA00209E31 /* PBXContainerItemProxy */;
+		};
+		EF62BD53167583DA00209E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF62BD381675831200209E31 /* WCAlertView */;
+			targetProxy = EF62BD52167583DA00209E31 /* PBXContainerItemProxy */;
 		};
 		EFD727231668688000A2FE60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8756,6 +8916,60 @@
 			};
 			name = Release;
 		};
+		EF62BD23167580F300209E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = DejalActivityView;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF62BD24167580F300209E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = DejalActivityView;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		EF62BD431675831200209E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = WCAlertView;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF62BD441675831200209E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = WCAlertView;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		EFD7270716685D0700A2FE60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9171,6 +9385,24 @@
 			buildConfigurations = (
 				C4DA0F92155E948F0079321E /* Debug */,
 				C4DA0F93155E948F0079321E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF62BD22167580F300209E31 /* Build configuration list for PBXNativeTarget "DejalActivityView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF62BD23167580F300209E31 /* Debug */,
+				EF62BD24167580F300209E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF62BD421675831200209E31 /* Build configuration list for PBXNativeTarget "WCAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF62BD431675831200209E31 /* Debug */,
+				EF62BD441675831200209E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

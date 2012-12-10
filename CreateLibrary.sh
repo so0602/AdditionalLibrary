@@ -126,6 +126,13 @@ if [ ! -e "$DCROUNDSWITCH_PATH" ]; then
 fi
 cp DCRoundSwitch/*.h "$DCROUNDSWITCH_PATH"
 
+#DejalActivityView
+DEJALACTIVITYVIEW_PATH=${STATICLIB}/DejalActivityView
+if [ ! -e "$DEJALACTIVITYVIEW_PATH" ]; then
+mkdir "$DEJALACTIVITYVIEW_PATH"
+fi
+cp DejalActivityView/*.h "$DEJALACTIVITYVIEW_PATH"
+
 #EGOPhotoViewer
 EGOPHOTOVIEWER_PATH=${STATICLIB}/EGOPhotoViewer
 if [ ! -e "$EGOPHOTOVIEWER_PATH" ]; then
@@ -368,6 +375,13 @@ if [ ! -e "$UICALENDARMONTHVIEW_PATH" ]; then
 mkdir "$UICALENDARMONTHVIEW_PATH"
 fi
 cp UICalendarMonthView/*.h "$UICALENDARMONTHVIEW_PATH"
+
+#WCAlertView
+WCALERTVIEW_PATH=${STATICLIB}/WCAlertView
+if [ ! -e "$WCALERTVIEW_PATH" ]; then
+mkdir "$WCALERTVIEW_PATH"
+fi
+cp WCAlertView/*.h "$WCALERTVIEW_PATH"
 
 #ZipArchive
 ZIP_PATH=${STATICLIB}/ZipArchive

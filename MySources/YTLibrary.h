@@ -57,6 +57,7 @@
 #import "CocoaSecurity.h"
 #import "DCRoundSwitch.h"
 #import "DDXML.h"
+#import "DejalActivityView.h"
 #import "EGOPhotoGlobal.h"
 #import "FMDatabase.h"
 #import "FTAnimation.h"
@@ -80,6 +81,7 @@
 #import "UAModalPanel.h"
 #import "UIGlossyButton.h"
 #import "UICalendarMonthView.h"
+#import "WCAlertView.h"
 #import "ZipArchive.h"
 
 // Localization
