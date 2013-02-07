@@ -1320,6 +1320,12 @@
 		EF62BD4D1675837200209E31 /* WCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = EF62BD4A1675837200209E31 /* WCAlertView.h */; };
 		EF62BD4E1675837200209E31 /* WCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62BD4B1675837200209E31 /* WCAlertView.m */; };
 		EF62BD4F1675837200209E31 /* WCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62BD4B1675837200209E31 /* WCAlertView.m */; };
+		EF6B3EE216C3A85E006CD7A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		EF6B3EE316C3A863006CD7A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		EF6B3EE416C3A86C006CD7A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8F13D82DEB003CA78D /* QuartzCore.framework */; };
+		EF6B3EE716C3A882006CD7A0 /* NVSlideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */; };
+		EF6B3EE816C3A882006CD7A0 /* NVSlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */; };
+		EF6B3EEB16C3A8BA006CD7A0 /* libNVSlideMenuController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */; };
 		EFD7271216685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */; };
 		EFD7271316685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */; };
 		EFD7271416685DC700A2FE60 /* NSString+RegexReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270E16685DC700A2FE60 /* NSString+RegexReplace.h */; };
@@ -1646,6 +1652,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EF62BD381675831200209E31;
 			remoteInfo = WCAlertView;
+		};
+		EF6B3EE916C3A8B0006CD7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6B3ED416C3A83C006CD7A0;
+			remoteInfo = NVSlideMenuController;
 		};
 		EFD727221668688000A2FE60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2359,6 +2372,9 @@
 		EF62BD451675831200209E31 /* libWCAlertView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWCAlertView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF62BD4A1675837200209E31 /* WCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAlertView.h; sourceTree = "<group>"; };
 		EF62BD4B1675837200209E31 /* WCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAlertView.m; sourceTree = "<group>"; };
+		EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNVSlideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NVSlideMenuController.h; path = NVSlideMenuController/NVSlideMenuController.h; sourceTree = "<group>"; };
+		EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NVSlideMenuController.m; path = NVSlideMenuController/NVSlideMenuController.m; sourceTree = "<group>"; };
 		EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTextStatistics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+SimpleRegex.h"; sourceTree = "<group>"; };
 		EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+SimpleRegex.m"; sourceTree = "<group>"; };
@@ -2704,6 +2720,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6B3EEB16C3A8BA006CD7A0 /* libNVSlideMenuController.a in Frameworks */,
 				EFD7271B16685F3D00A2FE60 /* libRNTextStatistics.a in Frameworks */,
 				42A445F515C92B3B00A907F0 /* AudioToolbox.framework in Frameworks */,
 				42EE4D31157611BE003F2F57 /* AddressBook.framework in Frameworks */,
@@ -2907,6 +2924,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF6B3EDC16C3A83C006CD7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6B3EE416C3A86C006CD7A0 /* QuartzCore.framework in Frameworks */,
+				EF6B3EE316C3A863006CD7A0 /* UIKit.framework in Frameworks */,
+				EF6B3EE216C3A85E006CD7A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFD7270416685D0700A2FE60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2979,6 +3006,7 @@
 				EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */,
 				EF62BD25167580F300209E31 /* libDejalActivityView.a */,
 				EF62BD451675831200209E31 /* libWCAlertView.a */,
+				EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3025,6 +3053,7 @@
 				42448785156F72BC0008055E /* MCSegmentedControl */,
 				420B1DC91566030D005796A6 /* MGSplitViewController */,
 				42A276F71575EA37000C59A1 /* NSLogger */,
+				EF6B3ECF16C3A820006CD7A0 /* NVSlideMenuController */,
 				4284E72B1585B72E0089718F /* Objective-Zip */,
 				C4640F9915565B2F0029DF8F /* PrettyKit */,
 				EFD7270B16685DC700A2FE60 /* RNTextStatistics */,
@@ -4736,6 +4765,15 @@
 			path = WCAlertView;
 			sourceTree = "<group>";
 		};
+		EF6B3ECF16C3A820006CD7A0 /* NVSlideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */,
+				EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */,
+			);
+			name = NVSlideMenuController;
+			sourceTree = "<group>";
+		};
 		EFD7270B16685DC700A2FE60 /* RNTextStatistics */ = {
 			isa = PBXGroup;
 			children = (
@@ -5575,6 +5613,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF6B3ED616C3A83C006CD7A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6B3EE716C3A882006CD7A0 /* NVSlideMenuController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFD726FE16685D0700A2FE60 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -6129,6 +6175,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EF6B3EEA16C3A8B0006CD7A0 /* PBXTargetDependency */,
 				EF62BD51167583DA00209E31 /* PBXTargetDependency */,
 				EF62BD53167583DA00209E31 /* PBXTargetDependency */,
 				EFD727231668688000A2FE60 /* PBXTargetDependency */,
@@ -6364,6 +6411,23 @@
 			productReference = EF62BD451675831200209E31 /* libWCAlertView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		EF6B3ED416C3A83C006CD7A0 /* NVSlideMenuController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6B3EDE16C3A83C006CD7A0 /* Build configuration list for PBXNativeTarget "NVSlideMenuController" */;
+			buildPhases = (
+				EF6B3ED516C3A83C006CD7A0 /* Sources */,
+				EF6B3ED616C3A83C006CD7A0 /* Headers */,
+				EF6B3EDC16C3A83C006CD7A0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVSlideMenuController;
+			productName = ZipArchive;
+			productReference = EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		EFD726FC16685D0700A2FE60 /* RNTextStatistics */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFD7270616685D0700A2FE60 /* Build configuration list for PBXNativeTarget "RNTextStatistics" */;
@@ -6452,6 +6516,7 @@
 				42BA65F51590927F00092EA6 /* MiniZip */,
 				C43916871590EB31001DBE24 /* YTFramework */,
 				EF62BD381675831200209E31 /* WCAlertView */,
+				EF6B3ED416C3A83C006CD7A0 /* NVSlideMenuController */,
 			);
 		};
 /* End PBXProject section */
@@ -7401,6 +7466,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF6B3ED516C3A83C006CD7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6B3EE816C3A882006CD7A0 /* NVSlideMenuController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFD726FD16685D0700A2FE60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7613,6 +7686,11 @@
 			isa = PBXTargetDependency;
 			target = EF62BD381675831200209E31 /* WCAlertView */;
 			targetProxy = EF62BD52167583DA00209E31 /* PBXContainerItemProxy */;
+		};
+		EF6B3EEA16C3A8B0006CD7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6B3ED416C3A83C006CD7A0 /* NVSlideMenuController */;
+			targetProxy = EF6B3EE916C3A8B0006CD7A0 /* PBXContainerItemProxy */;
 		};
 		EFD727231668688000A2FE60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8972,6 +9050,33 @@
 			};
 			name = Release;
 		};
+		EF6B3EDF16C3A83C006CD7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = NVSlideMenuController;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF6B3EE016C3A83C006CD7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = NVSlideMenuController;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		EFD7270716685D0700A2FE60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9405,6 +9510,15 @@
 			buildConfigurations = (
 				EF62BD431675831200209E31 /* Debug */,
 				EF62BD441675831200209E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6B3EDE16C3A83C006CD7A0 /* Build configuration list for PBXNativeTarget "NVSlideMenuController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6B3EDF16C3A83C006CD7A0 /* Debug */,
+				EF6B3EE016C3A83C006CD7A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

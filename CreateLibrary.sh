@@ -249,6 +249,13 @@ mkdir "$NSLOGGER_DESTOPVIEWER_PATH"
 fi
 cp -r NSLogger/DesktopViewer/* "$NSLOGGER_DESTOPVIEWER_PATH"
 
+#NVSlideMenuController
+NVSLIDEMENUCONTROLLER_PATH=${STATICLIB}/NVSlideMenuController
+if [ ! -e "$NVSLIDEMENUCONTROLLER_PATH" ]; then
+mkdir "NVSLIDEMENUCONTROLLER_PATH"
+fi
+cp NVSlideMenuController/*.h "$NVSLIDEMENUCONTROLLER_PATH"
+
 #Objective-Zip
 OBJECTIVEZIP_PATH=${STATICLIB}/Objective-Zip
 if [ ! -e "$OBJECTIVEZIP_PATH" ]; then

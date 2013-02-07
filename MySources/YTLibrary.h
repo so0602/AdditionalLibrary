@@ -70,6 +70,7 @@
 #import "MBProgressHUD.h"
 #import "MCSegmentedControl.h"
 #import "MGSplitViewController.h"
+#import "NVSlideMenuController.h"
 #import "ZipFile.h"
 #import "PrettyKit.h"
 #import "Reachability.h"
