@@ -6,6 +6,9 @@
 
 #define printFunc NSLog(@"%s At Line: %d", __FUNCTION__, __LINE__)
 
+#define MACRO_NAME(f) #f
+#define MACRO_VALUE(f) MACRO_NAME(f)
+
 typedef enum{
 	AlignmentTypeCenter = 0,
 	AlignmentTypeTop = 1,

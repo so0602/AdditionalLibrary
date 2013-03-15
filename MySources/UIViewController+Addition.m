@@ -19,9 +19,13 @@
 +(id)loadNib{
 	Class class = self.class;
 	UIViewController* viewController = nil;
+	NSFileManager* fileManager = [NSFileManager defaultManager];
+	NSString* path = [NSBundle mainBundle].resourcePath;
 	do{
 		NSString* className = NSStringFromClass(class);
-		viewController = [[[self alloc] initWithNibName:className bundle:nil] autorelease];
+		if( [fileManager fileExistsAtPath:[path stringByAppendingFormat:@"/%@.nib", className]] ){
+			viewController = [[[self alloc] initWithNibName:className bundle:nil] autorelease];
+		}
 		if( !viewController ){
 			class = self.superclass;
 		}

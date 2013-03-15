@@ -866,6 +866,14 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
 	{
 		return;
 	}
+    
+    for(UIView* v in self.visibleItemViews) {
+        CGRect f = v.frame;
+        f.origin.y = 0;
+        f.size.height = self.bounds.size.height;
+        f.size.width = self.bounds.size.width;
+        v.frame = f;
+    }
 	
     //record current item width
     CGFloat prevItemWidth = itemWidth;
