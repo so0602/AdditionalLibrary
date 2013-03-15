@@ -19,11 +19,17 @@
 +(id)loadNib{
 	Class class = self.class;
 	UIViewController* viewController = nil;
+    NSBundle* mainBundle = [NSBundle mainBundle];
+    NSFileManager* fileManager = [NSFileManager defaultManager];
 	do{
 		NSString* className = NSStringFromClass(class);
-		viewController = [[[self alloc] initWithNibName:className bundle:nil] autorelease];
+        NSString* path = [NSString stringWithFormat:@"%@/%@.nib", mainBundle.bundlePath, className];
+        if( [fileManager fileExistsAtPath:path] ){
+            viewController = [[[self alloc] initWithNibName:className bundle:nil] autorelease];
+        }
+		
 		if( !viewController ){
-			class = self.superclass;
+			class = class.superclass;
 		}
 	}while(!viewController);
 	return viewController;
@@ -31,8 +37,9 @@
 }
 
 +(id)loadNibWithNavigationController{
-	UINavigationController* vc = [[UINavigationController alloc] initWithRootViewController:[self loadNib]];
-	return [vc autorelease];
+    UIViewController* viewController = [self loadNib];
+    if( !viewController ) return nil;
+    return [[[UINavigationController alloc] initWithRootViewController:viewController] autorelease];
 }
 
 -(BOOL)buttonExclusiveTouch{
