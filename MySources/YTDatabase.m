@@ -159,7 +159,8 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 }
 
 +(id)databaseWithName:(NSString*)name copyAtResource:(BOOL)isCopy{
-	return [[[self alloc] initWithName:name copyAtResource:isCopy] autorelease];
+    YTDatabase* database = [[YTDatabase alloc] initWithName:name copyAtResource:isCopy];
+    return [database autorelease];
 }
 
 -(void)cleanTable:(NSString*)tableName{
@@ -436,6 +437,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 		sqlite3_close(*database);
 		*database = nil;
 		NSLog(@"Database Failed To Open.");
+        return;
 	}
 	sqlite3_create_function(*database, "distance", 4, SQLITE_UTF8, NULL, &distanceFunc, NULL, NULL);
 }
