@@ -1326,6 +1326,10 @@
 		EF6B3EE716C3A882006CD7A0 /* NVSlideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */; };
 		EF6B3EE816C3A882006CD7A0 /* NVSlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */; };
 		EF6B3EEB16C3A8BA006CD7A0 /* libNVSlideMenuController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */; };
+		EFBA213F16F6C6820018AF8B /* FMDatabase+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA213D16F6C6820018AF8B /* FMDatabase+Addition.h */; };
+		EFBA214016F6C6820018AF8B /* FMDatabase+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA213D16F6C6820018AF8B /* FMDatabase+Addition.h */; };
+		EFBA214116F6C6820018AF8B /* FMDatabase+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA213E16F6C6820018AF8B /* FMDatabase+Addition.m */; };
+		EFBA214216F6C6820018AF8B /* FMDatabase+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA213E16F6C6820018AF8B /* FMDatabase+Addition.m */; };
 		EFD7271216685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */; };
 		EFD7271316685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */; };
 		EFD7271416685DC700A2FE60 /* NSString+RegexReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270E16685DC700A2FE60 /* NSString+RegexReplace.h */; };
@@ -1342,6 +1346,13 @@
 		EFD7271F1668619600A2FE60 /* NSString+RegexReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270F16685DC700A2FE60 /* NSString+RegexReplace.m */; };
 		EFD727201668619600A2FE60 /* NSString+RNTextStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7271016685DC700A2FE60 /* NSString+RNTextStatistics.h */; };
 		EFD727211668619600A2FE60 /* NSString+RNTextStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7271116685DC700A2FE60 /* NSString+RNTextStatistics.m */; };
+		EFF4283116F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4282A16F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.h */; };
+		EFF4283216F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4282B16F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.m */; };
+		EFF4283316F6D3460039432A /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4282C16F6D3460039432A /* FMDatabasePool.h */; };
+		EFF4283416F6D3460039432A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4282D16F6D3460039432A /* FMDatabasePool.m */; };
+		EFF4283516F6D3460039432A /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4282E16F6D3460039432A /* FMDatabaseQueue.h */; };
+		EFF4283616F6D3460039432A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4282F16F6D3460039432A /* FMDatabaseQueue.m */; };
+		EFF4283716F6D3460039432A /* fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4283016F6D3460039432A /* fmdb.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2375,6 +2386,8 @@
 		EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNVSlideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NVSlideMenuController.h; path = NVSlideMenuController/NVSlideMenuController.h; sourceTree = "<group>"; };
 		EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NVSlideMenuController.m; path = NVSlideMenuController/NVSlideMenuController.m; sourceTree = "<group>"; };
+		EFBA213D16F6C6820018AF8B /* FMDatabase+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+Addition.h"; sourceTree = "<group>"; };
+		EFBA213E16F6C6820018AF8B /* FMDatabase+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+Addition.m"; sourceTree = "<group>"; };
 		EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTextStatistics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+SimpleRegex.h"; sourceTree = "<group>"; };
 		EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+SimpleRegex.m"; sourceTree = "<group>"; };
@@ -2382,6 +2395,13 @@
 		EFD7270F16685DC700A2FE60 /* NSString+RegexReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexReplace.m"; sourceTree = "<group>"; };
 		EFD7271016685DC700A2FE60 /* NSString+RNTextStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RNTextStatistics.h"; sourceTree = "<group>"; };
 		EFD7271116685DC700A2FE60 /* NSString+RNTextStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RNTextStatistics.m"; sourceTree = "<group>"; };
+		EFF4282A16F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		EFF4282B16F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		EFF4282C16F6D3460039432A /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		EFF4282D16F6D3460039432A /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		EFF4282E16F6D3460039432A /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		EFF4282F16F6D3460039432A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		EFF4283016F6D3460039432A /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmdb.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3283,6 +3303,7 @@
 				42F65F2413E8EF590068F7CF /* Custom */,
 				42F65EB313E7ED0F0068F7CF /* Database */,
 				428EDD5713E0151A00F10F87 /* Download */,
+				EFBA213916F6C64C0018AF8B /* FMDatabase */,
 				4293D8A315907B020019DAC7 /* HTMLParser */,
 				42F65F2213E8EE4C0068F7CF /* Location */,
 				428ED9F513DEB82300F10F87 /* MFMailComposeViewController */,
@@ -3340,6 +3361,13 @@
 		424C4E9F15D232EA00DFF323 /* FMDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				EFF4282A16F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.h */,
+				EFF4282B16F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.m */,
+				EFF4282C16F6D3460039432A /* FMDatabasePool.h */,
+				EFF4282D16F6D3460039432A /* FMDatabasePool.m */,
+				EFF4282E16F6D3460039432A /* FMDatabaseQueue.h */,
+				EFF4282F16F6D3460039432A /* FMDatabaseQueue.m */,
+				EFF4283016F6D3460039432A /* fmdb.m */,
 				424C4EA015D232EA00DFF323 /* FMDatabase.h */,
 				424C4EA115D232EA00DFF323 /* FMDatabase.m */,
 				424C4EA215D232EA00DFF323 /* FMDatabaseAdditions.h */,
@@ -4774,6 +4802,15 @@
 			name = NVSlideMenuController;
 			sourceTree = "<group>";
 		};
+		EFBA213916F6C64C0018AF8B /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				EFBA213D16F6C6820018AF8B /* FMDatabase+Addition.h */,
+				EFBA213E16F6C6820018AF8B /* FMDatabase+Addition.m */,
+			);
+			name = FMDatabase;
+			sourceTree = "<group>";
+		};
 		EFD7270B16685DC700A2FE60 /* RNTextStatistics */ = {
 			isa = PBXGroup;
 			children = (
@@ -4862,6 +4899,9 @@
 				424C4EA615D232EA00DFF323 /* FMDatabase.h in Headers */,
 				424C4EA815D232EA00DFF323 /* FMDatabaseAdditions.h in Headers */,
 				424C4EAA15D232EA00DFF323 /* FMResultSet.h in Headers */,
+				EFF4283116F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.h in Headers */,
+				EFF4283316F6D3460039432A /* FMDatabasePool.h in Headers */,
+				EFF4283516F6D3460039432A /* FMDatabaseQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5235,6 +5275,7 @@
 				422C48B415C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
 				424C4EB515D2348900DFF323 /* NSDictionary+Addition.h in Headers */,
 				C455B41D15F68000005526E6 /* YTPageControl.h in Headers */,
+				EFBA213F16F6C6820018AF8B /* FMDatabase+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5526,6 +5567,7 @@
 				EFD727201668619600A2FE60 /* NSString+RNTextStatistics.h in Headers */,
 				EF62BD31167581CF00209E31 /* DejalActivityView.h in Headers */,
 				EF62BD4C1675837200209E31 /* WCAlertView.h in Headers */,
+				EFBA214016F6C6820018AF8B /* FMDatabase+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6725,6 +6767,10 @@
 				424C4EA715D232EA00DFF323 /* FMDatabase.m in Sources */,
 				424C4EA915D232EA00DFF323 /* FMDatabaseAdditions.m in Sources */,
 				424C4EAB15D232EA00DFF323 /* FMResultSet.m in Sources */,
+				EFF4283216F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				EFF4283416F6D3460039432A /* FMDatabasePool.m in Sources */,
+				EFF4283616F6D3460039432A /* FMDatabaseQueue.m in Sources */,
+				EFF4283716F6D3460039432A /* fmdb.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7066,6 +7112,7 @@
 				422C48B615C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
 				424C4EB715D2348900DFF323 /* NSDictionary+Addition.m in Sources */,
 				C455B41F15F68000005526E6 /* YTPageControl.m in Sources */,
+				EFBA214116F6C6820018AF8B /* FMDatabase+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7331,6 +7378,7 @@
 				EFD727211668619600A2FE60 /* NSString+RNTextStatistics.m in Sources */,
 				EF62BD33167581CF00209E31 /* DejalActivityView.m in Sources */,
 				EF62BD4E1675837200209E31 /* WCAlertView.m in Sources */,
+				EFBA214216F6C6820018AF8B /* FMDatabase+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

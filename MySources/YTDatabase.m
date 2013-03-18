@@ -195,7 +195,6 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 		
 		if( sqlite3_prepare_v2(self.database, sql, -1, &stmt, NULL) != SQLITE_OK ) NSAssert1(0, @"Error while creating insert statement. '%s'", sqlite3_errmsg(self.database));
 		if( SQLITE_DONE != sqlite3_step(stmt) ) NSAssert1(0, @"Error while inserting. '%s'", sqlite3_errmsg(self.database));
-		
 		sqlite3_reset( stmt );
 	}else NSLog(@"%s Database Error", _cmd);
 }
@@ -248,23 +247,25 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 		sqlite3_stmt* stmt;
 		if( self.printLog ) NSLog(@"\n========== SQL Statement ==========\n\n%@\n\n========== SQL Statement ==========", selectStatement);
 		const char* sql = [selectStatement UTF8String];
-		if( sqlite3_prepare_v2(self.database, sql, -1, &stmt, NULL) == SQLITE_OK ){
-			objs = [[NSMutableArray alloc] init];
+		NSInteger result = sqlite3_prepare_v2(self.database, sql, -1, &stmt, NULL);
+		if( result == SQLITE_OK ){
+			objs = [NSMutableArray array];
 			int count = sqlite3_column_count(stmt);
 			while( sqlite3_step(stmt) == SQLITE_ROW ){
 				char* c;
-				NSMutableDictionary* dict = [[NSMutableDictionary alloc] init];
+				NSMutableDictionary* dict = [NSMutableDictionary dictionary];
 				for( int i = 0; i < count; i++ ){
 					c = (char*)sqlite3_column_text(stmt, i);
 					[dict setValue:c == nil ? nil : [NSString stringWithUTF8String:c] forKey:[NSString stringWithUTF8String:(char*)sqlite3_column_name(stmt, i)]];
 				}
 				[objs addObject:dict];
-				ReleaseObject(&dict);
 			}
-		}
+		}else{
+            NSLog(@"result: %d", result);
+        }
 	}else NSLog(@"%s: Database Error", _cmd);
 	
-	return [objs autorelease];
+	return objs;
 }
 
 -(void)deleteAllFrom:(NSString*)tableName{
@@ -475,7 +476,8 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 		if( limit >= 0 ) [str appendFormat:@" LIMIT %d", limit];
 		if( self.printLog ) NSLog(@"\n========== SQL Statement ==========\n\n%@\n\n========== SQL Statement ==========", str);
 		const char* sql = [str UTF8String];
-		if( sqlite3_prepare_v2( db, sql, -1, &stmt, NULL ) == SQLITE_OK ){
+		NSInteger result = sqlite3_prepare_v2( db, sql, -1, &stmt, NULL );
+		if( result == SQLITE_OK ){
 			objs = [[NSMutableArray alloc] init];
 			int count = sqlite3_column_count( stmt );
 			NSMutableDictionary* dict = nil;
@@ -499,7 +501,9 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 				[objs addObject:dict];
 				[dict release], dict = nil;
 			}
-		}
+		}else{
+			NSLog(@"result: %d", result);
+        }
 		[str release], str = nil;
 	}else NSLog( @"%s: Database Error", _cmd );
 	

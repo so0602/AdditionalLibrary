@@ -1,116 +1,155 @@
 #import <Foundation/Foundation.h>
 #import "sqlite3.h"
 #import "FMResultSet.h"
+#import "FMDatabasePool.h"
 
-@interface FMDatabase : NSObject 
-{
-	sqlite3*    db;
-	NSString*   databasePath;
-    BOOL        logsErrors;
-    BOOL        crashOnErrors;
-    BOOL        inUse;
-    BOOL        inTransaction;
-    BOOL        traceExecution;
-    BOOL        checkedOut;
-    int         busyRetryTimeout;
-    BOOL        shouldCacheStatements;
-    NSMutableDictionary *cachedStatements;
+
+#if ! __has_feature(objc_arc)
+    #define FMDBAutorelease(__v) ([__v autorelease]);
+    #define FMDBReturnAutoreleased FMDBAutorelease
+
+    #define FMDBRetain(__v) ([__v retain]);
+    #define FMDBReturnRetained FMDBRetain
+
+    #define FMDBRelease(__v) ([__v release]);
+
+	#define FMDBDispatchQueueRelease(__v) (dispatch_release(__v));
+#else
+    // -fobjc-arc
+    #define FMDBAutorelease(__v)
+    #define FMDBReturnAutoreleased(__v) (__v)
+
+    #define FMDBRetain(__v)
+    #define FMDBReturnRetained(__v) (__v)
+
+    #define FMDBRelease(__v)
+
+	#if TARGET_OS_IPHONE
+		// Compiling for iOS
+		#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 60000
+			// iOS 6.0 or later
+			#define FMDBDispatchQueueRelease(__v)
+		#else
+			// iOS 5.X or earlier
+			#define FMDBDispatchQueueRelease(__v) (dispatch_release(__v));
+		#endif
+	#else
+		// Compiling for Mac OS X
+		#if MAC_OS_X_VERSION_MIN_REQUIRED >= 1080     
+			// Mac OS X 10.8 or later
+			#define FMDBDispatchQueueRelease(__v)
+		#else
+			// Mac OS X 10.7 or earlier
+			#define FMDBDispatchQueueRelease(__v) (dispatch_release(__v));
+		#endif
+	#endif
+#endif
+
+
+@interface FMDatabase : NSObject  {
+    
+    sqlite3*            _db;
+    NSString*           _databasePath;
+    BOOL                _logsErrors;
+    BOOL                _crashOnErrors;
+    BOOL                _traceExecution;
+    BOOL                _checkedOut;
+    BOOL                _shouldCacheStatements;
+    BOOL                _isExecutingStatement;
+    BOOL                _inTransaction;
+    int                 _busyRetryTimeout;
+    
+    NSMutableDictionary *_cachedStatements;
+    NSMutableSet        *_openResultSets;
+    NSMutableSet        *_openFunctions;
+
 }
+
+
+@property (atomic, assign) BOOL traceExecution;
+@property (atomic, assign) BOOL checkedOut;
+@property (atomic, assign) int busyRetryTimeout;
+@property (atomic, assign) BOOL crashOnErrors;
+@property (atomic, assign) BOOL logsErrors;
+@property (atomic, retain) NSMutableDictionary *cachedStatements;
 
 
 + (id)databaseWithPath:(NSString*)inPath;
 - (id)initWithPath:(NSString*)inPath;
 
-- (BOOL) open;
+- (BOOL)open;
 #if SQLITE_VERSION_NUMBER >= 3005000
-- (BOOL) openWithFlags:(int)flags;
+- (BOOL)openWithFlags:(int)flags;
 #endif
-- (void) close;
-- (BOOL) goodConnection;
-- (void) clearCachedStatements;
+- (BOOL)close;
+- (BOOL)goodConnection;
+- (void)clearCachedStatements;
+- (void)closeOpenResultSets;
+- (BOOL)hasOpenResultSets;
 
 // encryption methods.  You need to have purchased the sqlite encryption extensions for these to work.
-- (BOOL) setKey:(NSString*)key;
-- (BOOL) rekey:(NSString*)key;
+- (BOOL)setKey:(NSString*)key;
+- (BOOL)rekey:(NSString*)key;
 
+- (NSString *)databasePath;
 
-- (NSString *) databasePath;
+- (NSString*)lastErrorMessage;
 
-- (NSString*) lastErrorMessage;
+- (int)lastErrorCode;
+- (BOOL)hadError;
+- (NSError*)lastError;
 
-- (int) lastErrorCode;
-- (BOOL) hadError;
-- (sqlite_int64) lastInsertRowId;
+- (sqlite_int64)lastInsertRowId;
 
-- (sqlite3*) sqliteHandle;
+- (sqlite3*)sqliteHandle;
 
-- (BOOL) executeUpdate:(NSString*)sql, ...;
-- (BOOL) executeUpdate:(NSString*)sql withArgumentsInArray:(NSArray *)arguments;
-- (id) executeQuery:(NSString *)sql withArgumentsInArray:(NSArray*)arrayArgs orVAList:(va_list)args; // you shouldn't ever need to call this.  use the previous two instead.
+- (BOOL)update:(NSString*)sql withErrorAndBindings:(NSError**)outErr, ...;
+- (BOOL)executeUpdate:(NSString*)sql, ...;
+- (BOOL)executeUpdateWithFormat:(NSString *)format, ...;
+- (BOOL)executeUpdate:(NSString*)sql withArgumentsInArray:(NSArray *)arguments;
+- (BOOL)executeUpdate:(NSString*)sql withParameterDictionary:(NSDictionary *)arguments;
 
-- (id) executeQuery:(NSString*)sql, ...;
-- (id) executeQuery:(NSString *)sql withArgumentsInArray:(NSArray *)arguments;
-- (BOOL) executeUpdate:(NSString*)sql withArgumentsInArray:(NSArray*)arrayArgs orVAList:(va_list)args; // you shouldn't ever need to call this.  use the previous two instead.
+- (FMResultSet *)executeQuery:(NSString*)sql, ...;
+- (FMResultSet *)executeQueryWithFormat:(NSString*)format, ...;
+- (FMResultSet *)executeQuery:(NSString *)sql withArgumentsInArray:(NSArray *)arguments;
+- (FMResultSet *)executeQuery:(NSString *)sql withParameterDictionary:(NSDictionary *)arguments;
 
-- (BOOL) rollback;
-- (BOOL) commit;
-- (BOOL) beginTransaction;
-- (BOOL) beginDeferredTransaction;
-
-- (BOOL)logsErrors;
-- (void)setLogsErrors:(BOOL)flag;
-
-- (BOOL)crashOnErrors;
-- (void)setCrashOnErrors:(BOOL)flag;
-
-- (BOOL)inUse;
-- (void)setInUse:(BOOL)value;
-
+- (BOOL)rollback;
+- (BOOL)commit;
+- (BOOL)beginTransaction;
+- (BOOL)beginDeferredTransaction;
 - (BOOL)inTransaction;
-- (void)setInTransaction:(BOOL)flag;
-
-- (BOOL)traceExecution;
-- (void)setTraceExecution:(BOOL)flag;
-
-- (BOOL)checkedOut;
-- (void)setCheckedOut:(BOOL)flag;
-
-- (int)busyRetryTimeout;
-- (void)setBusyRetryTimeout:(int)newBusyRetryTimeout;
-
 - (BOOL)shouldCacheStatements;
 - (void)setShouldCacheStatements:(BOOL)value;
 
-- (NSMutableDictionary *)cachedStatements;
-- (void)setCachedStatements:(NSMutableDictionary *)value;
+#if SQLITE_VERSION_NUMBER >= 3007000
+- (BOOL)startSavePointWithName:(NSString*)name error:(NSError**)outErr;
+- (BOOL)releaseSavePointWithName:(NSString*)name error:(NSError**)outErr;
+- (BOOL)rollbackToSavePointWithName:(NSString*)name error:(NSError**)outErr;
+- (NSError*)inSavePoint:(void (^)(BOOL *rollback))block;
+#endif
 
-
-+ (NSString*) sqliteLibVersion;
-
++ (BOOL)isSQLiteThreadSafe;
++ (NSString*)sqliteLibVersion;
 
 - (int)changes;
+
+- (void)makeFunctionNamed:(NSString*)name maximumArguments:(int)count withBlock:(void (^)(sqlite3_context *context, int argc, sqlite3_value **argv))block;
 
 @end
 
 @interface FMStatement : NSObject {
-    sqlite3_stmt *statement;
-    NSString *query;
-    long useCount;
+    sqlite3_stmt *_statement;
+    NSString *_query;
+    long _useCount;
 }
 
+@property (atomic, assign) long useCount;
+@property (atomic, retain) NSString *query;
+@property (atomic, assign) sqlite3_stmt *statement;
 
-- (void) close;
-- (void) reset;
-
-- (sqlite3_stmt *)statement;
-- (void)setStatement:(sqlite3_stmt *)value;
-
-- (NSString *)query;
-- (void)setQuery:(NSString *)value;
-
-- (long)useCount;
-- (void)setUseCount:(long)value;
-
+- (void)close;
+- (void)reset;
 
 @end
 
