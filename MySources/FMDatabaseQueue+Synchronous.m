@@ -1,5 +1,9 @@
 #import "FMDatabaseQueue+Synchronous.h"
 
+#import "FMDatabaseQueue+Default.h"
+
+#import "NSArray+Addition.h"
+
 #import "FMDatabase.h"
 #import "FMResultSet.h"
 
@@ -7,6 +11,7 @@
 
 -(NSArray*)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy limit:(int)limit;
 -(BOOL)insertOr:(NSString*)otherMethod into:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values;
+-(BOOL)multipleInsertOr:(NSString*)otherMethod into:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values;
 
 @end
 
@@ -108,6 +113,14 @@
 
 -(BOOL)insertOrReplaceInto:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values{
     return [self insertOr:@"REPLACE" into:tableName columns:columns values:values];
+}
+
+-(BOOL)multipleInsertOrIgnoreInto:(NSString *)tableName columns:(NSArray *)columns values:(NSArray *)values{
+    return [self multipleInsertOr:@"IGNORE" into:tableName columns:columns values:values];
+}
+
+-(BOOL)multipleInsertOrReplaceInto:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values{
+    return [self multipleInsertOr:@"REPLACE" into:tableName columns:columns values:values];
 }
 
 -(BOOL)deleteAllFrom:(NSString*)tableName{
@@ -241,6 +254,66 @@
                                   otherMethod, tableName, columnNameStr, columnValueStr];
     
     return [self executeUpdateSync:statement];
+}
+
+-(BOOL)multipleInsertOr:(NSString*)otherMethod into:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values{
+    NSAssert2(tableName.length != 0, @"%s [Line: %d] TableName must not empty.", __PRETTY_FUNCTION__, __LINE__);
+    NSAssert2(columns.count != 0, @"%s [Line: %d] Columns must not empty.", __PRETTY_FUNCTION__, __LINE__);
+    NSAssert2(values.count != 0, @"%s [Line: %d] Values must not empty.", __PRETTY_FUNCTION__, __LINE__);
+    
+    if( self.maxInsertCount < 5 ){
+        self.maxInsertCount = 25;
+    }
+    NSInteger maxInsertCount = self.maxInsertCount;
+    
+    NSMutableArray* array = [NSMutableArray array];
+    if( values.count <= maxInsertCount ){
+        [array addObject:values];
+    }else{
+        for( NSUInteger i = 0; i * maxInsertCount < values.count; i++ ){
+            NSUInteger start = i * maxInsertCount;
+            NSRange range = NSMakeRange(start, MIN(values.count - start, maxInsertCount));
+            NSArray* subArray = [values subarrayWithRange:range];
+            [array addObject:subArray];
+        }
+    }
+    
+    BOOL result = TRUE;
+    
+    for( NSArray* values in array ){
+        NSMutableString* statement = [NSMutableString stringWithFormat:@"INSERT OR %@ INTO %@ SELECT ", otherMethod, tableName];
+        NSDictionary* value = values.firstObject;
+        for( NSString* column in columns ){
+            NSObject* object = [value objectForKey:column];
+            if( [object isKindOfClass:[NSNull class]] ){
+                object = @"NULL";
+            }
+            [statement appendFormat:@"%@ AS %@, ", object == nil ? @"NULL" : object, column];
+        }
+        
+        if( [statement hasSuffix:@", "] ){
+            
+            [statement replaceCharactersInRange:NSMakeRange(statement.length - 2, 2) withString:@""];
+        }
+        for( int i = 1; i < values.count; i++ ){
+            NSDictionary* value = [values objectAtIndex:i];
+            NSMutableArray* array = [NSMutableArray array];
+            for( NSString* column in columns ){
+                NSObject* object = [value objectForKey:column];
+                if( !object ){
+                    object = [NSNull null];
+                }
+                [array addObject:object];
+            }
+            [statement appendFormat:@" UNION SELECT %@", [array componentsJoinedByString:@", "]];
+        }
+        
+        BOOL r = [self executeUpdateSync:statement];
+        if( result ){
+            result = r;
+        }
+    }
+    return result;
 }
 
 @end

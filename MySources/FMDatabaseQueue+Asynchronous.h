@@ -20,6 +20,10 @@
 -(void)insertOrIgnoreInto:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))completion;
 -(void)insertOrReplaceInto:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))completion;
 
+// Values = NSArray of NSDictionary
+-(void)multipleInsertOrIgnoreInto:(NSString *)tableName columns:(NSArray *)columns values:(NSArray *)values completion:(void(^)(BOOL result))completion;
+-(void)multipleInsertOrReplaceInto:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))completion;
+
 -(void)deleteAllFrom:(NSString*)tableName completion:(void(^)(BOOL result))completion;
 -(void)deleteFrom:(NSString*)tableName where:(NSString*)where completion:(void(^)(BOOL result))completion;
 

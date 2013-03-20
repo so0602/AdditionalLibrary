@@ -1,5 +1,8 @@
 #import "FMDatabaseQueue+Asynchronous.h"
 
+#import "FMDatabaseQueue+Default.h"
+#import "NSArray+Addition.h"
+
 #import "FMDatabase.h"
 #import "FMResultSet.h"
 
@@ -7,6 +10,7 @@
 
 -(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* result))c;
 -(void)insertOr:(NSString*)otherMethod into:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))c;
+-(void)multipleInsertOr:(NSString*)otherMethod into:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))c;
 
 @end
 
@@ -96,9 +100,18 @@
     [self insertOr:@"REPLACE" into:tableName columns:columns values:values completion:completion];
 }
 
+-(void)multipleInsertOrIgnoreInto:(NSString *)tableName columns:(NSArray *)columns values:(NSArray *)values completion:(void(^)(BOOL result))completion{
+    [self multipleInsertOr:@"IGNORE" into:tableName columns:columns values:values completion:completion];
+}
+
+-(void)multipleInsertOrReplaceInto:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))completion{
+    [self multipleInsertOr:@"REPLACE" into:tableName columns:columns values:values completion:completion];
+}
+
 -(void)deleteAllFrom:(NSString*)tableName completion:(void(^)(BOOL result))completion{
     [self deleteFrom:tableName where:nil completion:completion];
 }
+
 -(void)deleteFrom:(NSString*)tableName where:(NSString*)where completion:(void(^)(BOOL result))completion{
     NSAssert2(tableName.length != 0, @"%s [Line: %d] TableName must not empty.", __PRETTY_FUNCTION__, __LINE__);
     
@@ -227,6 +240,69 @@
                                   otherMethod, tableName, columnNameStr, columnValueStr];
     
     [self executeUpdateAsync:statement completion:completion];
+}
+
+-(void)multipleInsertOr:(NSString*)otherMethod into:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))completion{
+    NSAssert2(tableName.length != 0, @"%s [Line: %d] TableName must not empty.", __PRETTY_FUNCTION__, __LINE__);
+    NSAssert2(columns.count != 0, @"%s [Line: %d] Columns must not empty.", __PRETTY_FUNCTION__, __LINE__);
+    NSAssert2(values.count != 0, @"%s [Line: %d] Values must not empty.", __PRETTY_FUNCTION__, __LINE__);
+    
+    if( self.maxInsertCount < 5 ){
+        self.maxInsertCount = 25;
+    }
+    NSInteger maxInsertCount = self.maxInsertCount;
+    
+    NSMutableArray* array = [NSMutableArray array];
+    if( values.count <= maxInsertCount ){
+        [array addObject:values];
+    }else{
+        for( NSUInteger i = 0; i * maxInsertCount < values.count; i++ ){
+            NSUInteger start = i * maxInsertCount;
+            NSRange range = NSMakeRange(start, MIN(values.count - start, maxInsertCount));
+            NSArray* subArray = [values subarrayWithRange:range];
+            [array addObject:subArray];
+        }
+    }
+    
+    __block BOOL result = TRUE;
+    __block NSMutableArray* results = [NSMutableArray arrayWithArray:array];
+    
+    for( NSArray* values in array ){
+        NSMutableString* statement = [NSMutableString stringWithFormat:@"INSERT OR %@ INTO %@ SELECT ", otherMethod, tableName];
+        NSDictionary* value = values.firstObject;
+        for( NSString* column in columns ){
+            NSObject* object = [value objectForKey:column];
+            [statement appendFormat:@"%@ AS %@, ", object == nil ? [NSNull null] : object, column];
+        }
+        if( [statement hasSuffix:@","] ){
+            [statement replaceCharactersInRange:NSMakeRange(statement.length - 1, 1) withString:@""];
+        }
+        
+        for( int i = 1; i < values.count; i++ ){
+            NSDictionary* value = [values objectAtIndex:i];
+            NSMutableArray* array = [NSMutableArray array];
+            for( NSString* column in columns ){
+                NSObject* object = [value objectForKey:column];
+                if( !object ){
+                    object = [NSNull null];
+                }
+                [array addObject:object];
+            }
+            [statement appendFormat:@" UNION SELECT %@", [array componentsJoinedByString:@", "]];
+        }
+        
+        [self executeUpdateAsync:statement completion:^(BOOL r){
+            if( result ){
+                result = r;
+            }
+            [results removeLastObject];
+            if( results.count == 0 ){
+                if( completion ){
+                    completion(result);
+                }
+            }
+        }];
+    }
 }
 
 @end
