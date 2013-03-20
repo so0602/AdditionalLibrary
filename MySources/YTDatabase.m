@@ -159,8 +159,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 }
 
 +(id)databaseWithName:(NSString*)name copyAtResource:(BOOL)isCopy{
-    YTDatabase* database = [[YTDatabase alloc] initWithName:name copyAtResource:isCopy];
-    return [database autorelease];
+    return [[[self alloc] initWithName:name copyAtResource:isCopy] autorelease];
 }
 
 -(void)cleanTable:(NSString*)tableName{
@@ -196,7 +195,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 		if( sqlite3_prepare_v2(self.database, sql, -1, &stmt, NULL) != SQLITE_OK ) NSAssert1(0, @"Error while creating insert statement. '%s'", sqlite3_errmsg(self.database));
 		if( SQLITE_DONE != sqlite3_step(stmt) ) NSAssert1(0, @"Error while inserting. '%s'", sqlite3_errmsg(self.database));
 		sqlite3_reset( stmt );
-	}else NSLog(@"%s Database Error", _cmd);
+	}else NSLog(@"%s Database Error", __PRETTY_FUNCTION__);
 }
 
 -(NSArray*)selectAllFrom:(NSString*)tableName{
@@ -263,7 +262,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 		}else{
             NSLog(@"result: %d", result);
         }
-	}else NSLog(@"%s: Database Error", _cmd);
+	}else NSLog(@"%s: Database Error", __PRETTY_FUNCTION__);
 	
 	return objs;
 }
@@ -287,7 +286,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 			if( SQLITE_DONE != sqlite3_step(stmt) ) NSAssert1(0, @"Error while deleting. '%s'", sqlite3_errmsg(self.database));
 			sqlite3_reset(stmt);
 		}
-	}else NSLog(@"%s: Database Error", _cmd);
+	}else NSLog(@"%s: Database Error", __PRETTY_FUNCTION__);
 }
 
 -(void)update:(NSString*)tableName set:(NSString*)set{
@@ -310,7 +309,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 			if( SQLITE_DONE != sqlite3_step(stmt) ) NSAssert1(0, @"Error while deleting. '%s'", sqlite3_errmsg(self.database));
 			sqlite3_reset(stmt);
 		}
-	}else NSLog(@"%s: Database Error", _cmd);
+	}else NSLog(@"%s: Database Error", __PRETTY_FUNCTION__);
 }
 
 -(void)dropTable:(NSString*)tableName{
@@ -505,7 +504,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 			NSLog(@"result: %d", result);
         }
 		[str release], str = nil;
-	}else NSLog( @"%s: Database Error", _cmd );
+	}else NSLog(@"%s: Database Error", __PRETTY_FUNCTION__);
 	
 	return [objs autorelease];
 }
@@ -530,7 +529,7 @@ static void distanceFunc( sqlite3_context *context, int argc, sqlite3_value **ar
 				[dict release];
 			}
 		}
-	}else NSLog( @"%s Database Error", _cmd );
+	}else NSLog(@"%s Database Error", __PRETTY_FUNCTION__);
 	
 	return [objs autorelease];
 }

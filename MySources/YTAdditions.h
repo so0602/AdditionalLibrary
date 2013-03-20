@@ -39,6 +39,9 @@
 
 #import "ASIFormDataRequest+Addition.h"
 
+#import "FMDatabaseQueue+Synchronous.h"
+#import "FMDatabaseQueue+Asynchronous.h"
+
 #import "HTMLNode+Addition.h"
 
 #import "MGSplitViewController+Addition.h"

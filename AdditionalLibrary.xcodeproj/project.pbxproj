@@ -1326,10 +1326,6 @@
 		EF6B3EE716C3A882006CD7A0 /* NVSlideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */; };
 		EF6B3EE816C3A882006CD7A0 /* NVSlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */; };
 		EF6B3EEB16C3A8BA006CD7A0 /* libNVSlideMenuController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */; };
-		EFBA213F16F6C6820018AF8B /* FMDatabase+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA213D16F6C6820018AF8B /* FMDatabase+Addition.h */; };
-		EFBA214016F6C6820018AF8B /* FMDatabase+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA213D16F6C6820018AF8B /* FMDatabase+Addition.h */; };
-		EFBA214116F6C6820018AF8B /* FMDatabase+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA213E16F6C6820018AF8B /* FMDatabase+Addition.m */; };
-		EFBA214216F6C6820018AF8B /* FMDatabase+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA213E16F6C6820018AF8B /* FMDatabase+Addition.m */; };
 		EFD7271216685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */; };
 		EFD7271316685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */; };
 		EFD7271416685DC700A2FE60 /* NSString+RegexReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD7270E16685DC700A2FE60 /* NSString+RegexReplace.h */; };
@@ -1352,7 +1348,14 @@
 		EFF4283416F6D3460039432A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4282D16F6D3460039432A /* FMDatabasePool.m */; };
 		EFF4283516F6D3460039432A /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4282E16F6D3460039432A /* FMDatabaseQueue.h */; };
 		EFF4283616F6D3460039432A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4282F16F6D3460039432A /* FMDatabaseQueue.m */; };
-		EFF4283716F6D3460039432A /* fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4283016F6D3460039432A /* fmdb.m */; };
+		EFF4284B16F6F2650039432A /* FMDatabaseQueue+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4284916F6F2650039432A /* FMDatabaseQueue+Synchronous.h */; };
+		EFF4284C16F6F2650039432A /* FMDatabaseQueue+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4284916F6F2650039432A /* FMDatabaseQueue+Synchronous.h */; };
+		EFF4284D16F6F2650039432A /* FMDatabaseQueue+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4284A16F6F2650039432A /* FMDatabaseQueue+Synchronous.m */; };
+		EFF4284E16F6F2650039432A /* FMDatabaseQueue+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4284A16F6F2650039432A /* FMDatabaseQueue+Synchronous.m */; };
+		EFF4285116F70E870039432A /* FMDatabaseQueue+Asynchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4284F16F70E870039432A /* FMDatabaseQueue+Asynchronous.h */; };
+		EFF4285216F70E870039432A /* FMDatabaseQueue+Asynchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4284F16F70E870039432A /* FMDatabaseQueue+Asynchronous.h */; };
+		EFF4285316F70E870039432A /* FMDatabaseQueue+Asynchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4285016F70E870039432A /* FMDatabaseQueue+Asynchronous.m */; };
+		EFF4285416F70E870039432A /* FMDatabaseQueue+Asynchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF4285016F70E870039432A /* FMDatabaseQueue+Asynchronous.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2386,8 +2389,6 @@
 		EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNVSlideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NVSlideMenuController.h; path = NVSlideMenuController/NVSlideMenuController.h; sourceTree = "<group>"; };
 		EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NVSlideMenuController.m; path = NVSlideMenuController/NVSlideMenuController.m; sourceTree = "<group>"; };
-		EFBA213D16F6C6820018AF8B /* FMDatabase+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+Addition.h"; sourceTree = "<group>"; };
-		EFBA213E16F6C6820018AF8B /* FMDatabase+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+Addition.m"; sourceTree = "<group>"; };
 		EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTextStatistics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD7270C16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+SimpleRegex.h"; sourceTree = "<group>"; };
 		EFD7270D16685DC700A2FE60 /* NSRegularExpression+SimpleRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+SimpleRegex.m"; sourceTree = "<group>"; };
@@ -2402,6 +2403,10 @@
 		EFF4282E16F6D3460039432A /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
 		EFF4282F16F6D3460039432A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		EFF4283016F6D3460039432A /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmdb.m; sourceTree = "<group>"; };
+		EFF4284916F6F2650039432A /* FMDatabaseQueue+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabaseQueue+Synchronous.h"; sourceTree = "<group>"; };
+		EFF4284A16F6F2650039432A /* FMDatabaseQueue+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabaseQueue+Synchronous.m"; sourceTree = "<group>"; };
+		EFF4284F16F70E870039432A /* FMDatabaseQueue+Asynchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabaseQueue+Asynchronous.h"; sourceTree = "<group>"; };
+		EFF4285016F70E870039432A /* FMDatabaseQueue+Asynchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabaseQueue+Asynchronous.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4805,8 +4810,10 @@
 		EFBA213916F6C64C0018AF8B /* FMDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				EFBA213D16F6C6820018AF8B /* FMDatabase+Addition.h */,
-				EFBA213E16F6C6820018AF8B /* FMDatabase+Addition.m */,
+				EFF4284916F6F2650039432A /* FMDatabaseQueue+Synchronous.h */,
+				EFF4284A16F6F2650039432A /* FMDatabaseQueue+Synchronous.m */,
+				EFF4284F16F70E870039432A /* FMDatabaseQueue+Asynchronous.h */,
+				EFF4285016F70E870039432A /* FMDatabaseQueue+Asynchronous.m */,
 			);
 			name = FMDatabase;
 			sourceTree = "<group>";
@@ -5275,7 +5282,8 @@
 				422C48B415C6858E004255FC /* MGSplitViewController+Addition.h in Headers */,
 				424C4EB515D2348900DFF323 /* NSDictionary+Addition.h in Headers */,
 				C455B41D15F68000005526E6 /* YTPageControl.h in Headers */,
-				EFBA213F16F6C6820018AF8B /* FMDatabase+Addition.h in Headers */,
+				EFF4284B16F6F2650039432A /* FMDatabaseQueue+Synchronous.h in Headers */,
+				EFF4285116F70E870039432A /* FMDatabaseQueue+Asynchronous.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5567,7 +5575,8 @@
 				EFD727201668619600A2FE60 /* NSString+RNTextStatistics.h in Headers */,
 				EF62BD31167581CF00209E31 /* DejalActivityView.h in Headers */,
 				EF62BD4C1675837200209E31 /* WCAlertView.h in Headers */,
-				EFBA214016F6C6820018AF8B /* FMDatabase+Addition.h in Headers */,
+				EFF4284C16F6F2650039432A /* FMDatabaseQueue+Synchronous.h in Headers */,
+				EFF4285216F70E870039432A /* FMDatabaseQueue+Asynchronous.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6770,7 +6779,6 @@
 				EFF4283216F6D3460039432A /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				EFF4283416F6D3460039432A /* FMDatabasePool.m in Sources */,
 				EFF4283616F6D3460039432A /* FMDatabaseQueue.m in Sources */,
-				EFF4283716F6D3460039432A /* fmdb.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7112,7 +7120,8 @@
 				422C48B615C6858E004255FC /* MGSplitViewController+Addition.m in Sources */,
 				424C4EB715D2348900DFF323 /* NSDictionary+Addition.m in Sources */,
 				C455B41F15F68000005526E6 /* YTPageControl.m in Sources */,
-				EFBA214116F6C6820018AF8B /* FMDatabase+Addition.m in Sources */,
+				EFF4284D16F6F2650039432A /* FMDatabaseQueue+Synchronous.m in Sources */,
+				EFF4285316F70E870039432A /* FMDatabaseQueue+Asynchronous.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7378,7 +7387,8 @@
 				EFD727211668619600A2FE60 /* NSString+RNTextStatistics.m in Sources */,
 				EF62BD33167581CF00209E31 /* DejalActivityView.m in Sources */,
 				EF62BD4E1675837200209E31 /* WCAlertView.m in Sources */,
-				EFBA214216F6C6820018AF8B /* FMDatabase+Addition.m in Sources */,
+				EFF4284E16F6F2650039432A /* FMDatabaseQueue+Synchronous.m in Sources */,
+				EFF4285416F70E870039432A /* FMDatabaseQueue+Asynchronous.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

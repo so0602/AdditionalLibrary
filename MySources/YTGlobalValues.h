@@ -9,9 +9,9 @@ extern NSString* NOT_ENOUGH_UDID;
 #define YTLogE(fmt, ...) NSLog((@"ERROR >> %s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define YTLogW(fmt, ...) NSLog((@"WARNING >> %s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
-#define YTLogRect(rect) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, NSStringFromCGRect(rect))
-#define YTLogSize(size) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, NSStringFromCGSize(size))
-#define YTLogPoint(point) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, NSStringFromCGPoint(point))
+#define YTLogRect(rect) NSLog(@"%s [Line %d] %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromCGRect(rect))
+#define YTLogSize(size) NSLog(@"%s [Line %d] %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromCGSize(size))
+#define YTLogPoint(point) NSLog(@"%s [Line %d] %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromCGPoint(point))
 
 #ifdef __cplusplus
 extern "C"
