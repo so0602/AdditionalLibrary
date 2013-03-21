@@ -272,7 +272,10 @@
         NSDictionary* value = values.firstObject;
         for( NSString* column in columns ){
             NSObject* object = [value objectForKey:column];
-            [statement appendFormat:@"%@ AS %@, ", object == nil ? [NSNull null] : object, column];
+            if( [object isKindOfClass:[NSNull class]] || !object ){
+                object = @"NULL";
+            }
+            [statement appendFormat:@"%@ AS %@, ", object, column];
         }
         if( [statement hasSuffix:@","] ){
             [statement replaceCharactersInRange:NSMakeRange(statement.length - 1, 1) withString:@""];
@@ -283,8 +286,8 @@
             NSMutableArray* array = [NSMutableArray array];
             for( NSString* column in columns ){
                 NSObject* object = [value objectForKey:column];
-                if( !object ){
-                    object = [NSNull null];
+                if( [object isKindOfClass:[NSNull class]] || !object ){
+                    object = @"NULL";
                 }
                 [array addObject:object];
             }

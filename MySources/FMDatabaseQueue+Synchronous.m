@@ -285,10 +285,10 @@
         NSDictionary* value = values.firstObject;
         for( NSString* column in columns ){
             NSObject* object = [value objectForKey:column];
-            if( [object isKindOfClass:[NSNull class]] ){
+            if( [object isKindOfClass:[NSNull class]] || !object ){
                 object = @"NULL";
             }
-            [statement appendFormat:@"%@ AS %@, ", object == nil ? @"NULL" : object, column];
+            [statement appendFormat:@"%@ AS %@, ", object, column];
         }
         
         if( [statement hasSuffix:@", "] ){
@@ -300,8 +300,8 @@
             NSMutableArray* array = [NSMutableArray array];
             for( NSString* column in columns ){
                 NSObject* object = [value objectForKey:column];
-                if( !object ){
-                    object = [NSNull null];
+                if( [object isKindOfClass:[NSNull class]] || !object ){
+                    object = @"NULL";
                 }
                 [array addObject:object];
             }
