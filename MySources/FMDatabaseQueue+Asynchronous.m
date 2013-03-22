@@ -8,7 +8,7 @@
 
 @interface FMDatabaseQueue (Ayynchronous_Private)
 
--(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* result))c;
+-(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* results))c;
 -(void)insertOr:(NSString*)otherMethod into:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))c;
 -(void)multipleInsertOr:(NSString*)otherMethod into:(NSString*)tableName columns:(NSArray*)columns values:(NSArray*)values completion:(void(^)(BOOL result))c;
 
@@ -16,11 +16,11 @@
 
 @implementation FMDatabaseQueue (Asynchronous)
 
--(void)executQueryAsync:(NSString*)stmt completion:(void(^)(NSArray* result))c{
+-(void)executQueryAsync:(NSString*)stmt completion:(void(^)(NSArray* results))c{
     NSAssert2(stmt.length != 0, @"%s [Line: %d] Statement must not empty.", __PRETTY_FUNCTION__, __LINE__);
     
     __block NSString* statement = stmt;
-    __block void(^completion)(NSArray* result) = c;
+    __block void(^completion)(NSArray* results) = c;
     [self inDatabase:^(FMDatabase *db) {
         NSLog(@"\n========== SQL Statement ==========\n\n%@\n\n========== SQL Statement ==========", statement);
         
@@ -52,43 +52,43 @@
     }];
 }
 
--(void)selectAllFrom:(NSString*)tableName completion:(void(^)(NSArray* result))completion{
+-(void)selectAllFrom:(NSString*)tableName completion:(void(^)(NSArray* results))completion{
     [self select:nil from:tableName where:nil groupBy:nil orderBy:nil limit:-1 completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName completion:(void(^)(NSArray* results))completion{
     [self select:columns from:tableName where:nil groupBy:nil orderBy:nil limit:-1 completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where completion:(void(^)(NSArray* results))completion{
     [self select:columns from:tableName where:where groupBy:nil orderBy:nil limit:-1 completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy completion:(void(^)(NSArray* results))completion{
     [self select:columns from:tableName where:where groupBy:groupBy orderBy:nil limit:-1 completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy orderBy:(NSString*)orderBy completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy orderBy:(NSString*)orderBy completion:(void(^)(NSArray* results))completion{
     [self select:columns from:tableName where:where groupBy:groupBy orderBy:orderBy limit:-1 completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* results))completion{
     [self select:columns from:tableName where:where groupBy:groupBy having:nil orderBy:orderBy limit:limit completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName having:(NSString*)having completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName having:(NSString*)having completion:(void(^)(NSArray* results))completion{
 	[self select:columns from:tableName groupBy:nil having:having orderBy:nil limit:-1 completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName groupBy:(NSString*)groupBy having:(NSString*)having completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName groupBy:(NSString*)groupBy having:(NSString*)having completion:(void(^)(NSArray* results))completion{
 	[self select:columns from:tableName groupBy:groupBy having:having orderBy:nil limit:-1 completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy completion:(void(^)(NSArray* results))completion{
 	[self select:columns from:tableName groupBy:groupBy having:having orderBy:orderBy limit:-1 completion:completion];
 }
 
--(void)select:(NSString*)columns from:(NSString*)tableName groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* results))completion{
     [self select:columns from:tableName where:nil groupBy:groupBy having:having orderBy:orderBy limit:limit completion:completion];
 }
 
@@ -200,7 +200,7 @@
     [self executeUpdateAsync:statement completion:completion];
 }
 
--(void)pragmaTableInfo:(NSString*)tableName completion:(void(^)(NSArray* result))completion{
+-(void)pragmaTableInfo:(NSString*)tableName completion:(void(^)(NSArray* results))completion{
     NSAssert2(tableName.length != 0, @"%s [Line: %d] TableName must not empty.", __PRETTY_FUNCTION__, __LINE__);
     
     NSString* statement = [NSString stringWithFormat:@"PRAGMA TABLE_INFO(%@)", tableName];
@@ -214,7 +214,7 @@
 
 #pragma mark - Private Functions
 
--(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* result))completion{
+-(void)select:(NSString*)columns from:(NSString*)tableName where:(NSString*)where groupBy:(NSString*)groupBy having:(NSString*)having orderBy:(NSString*)orderBy limit:(int)limit completion:(void(^)(NSArray* results))completion{
     NSAssert2(tableName.length != 0, @"%s [Line: %d] TableName must not empty.", __PRETTY_FUNCTION__, __LINE__);
     NSAssert2(!(where && having), @"%s [Line: %d] Can not have both WHERE & HAVING", __PRETTY_FUNCTION__, __LINE__);
     
