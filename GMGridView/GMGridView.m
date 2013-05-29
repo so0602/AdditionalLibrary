@@ -187,7 +187,7 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
     _tapGesture.delegate = self;
     _tapGesture.numberOfTapsRequired = 1;
     _tapGesture.numberOfTouchesRequired = 1;
-    _tapGesture.cancelsTouchesInView = NO;
+    _tapGesture.cancelsTouchesInView = FALSE;
     [self addGestureRecognizer:_tapGesture];
     
     /////////////////////////////

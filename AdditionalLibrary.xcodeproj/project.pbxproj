@@ -1326,6 +1326,16 @@
 		EF6B3EE716C3A882006CD7A0 /* NVSlideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */; };
 		EF6B3EE816C3A882006CD7A0 /* NVSlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */; };
 		EF6B3EEB16C3A8BA006CD7A0 /* libNVSlideMenuController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */; };
+		EF8193211755E5D3008D1FC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF9113D82DEB003CA78D /* UIKit.framework */; };
+		EF8193221755E5D3008D1FC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8A13D82DEB003CA78D /* CoreGraphics.framework */; };
+		EF8193231755E5D3008D1FC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEF8C13D82DEB003CA78D /* Foundation.framework */; };
+		EF8193331755E613008D1FC3 /* APNavigationControllerForSplitController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF81932C1755E613008D1FC3 /* APNavigationControllerForSplitController.h */; };
+		EF8193341755E613008D1FC3 /* APNavigationControllerForSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF81932D1755E613008D1FC3 /* APNavigationControllerForSplitController.m */; };
+		EF8193351755E613008D1FC3 /* APSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF81932E1755E613008D1FC3 /* APSplitViewController.h */; };
+		EF8193361755E613008D1FC3 /* APSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF81932F1755E613008D1FC3 /* APSplitViewController.m */; };
+		EF8193371755E613008D1FC3 /* APTabBarControllerForSplitController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8193301755E613008D1FC3 /* APTabBarControllerForSplitController.h */; };
+		EF8193381755E613008D1FC3 /* APTabBarControllerForSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8193311755E613008D1FC3 /* APTabBarControllerForSplitController.m */; };
+		EF81933A1755E784008D1FC3 /* libAPSplitViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8193271755E5D3008D1FC3 /* libAPSplitViewController.a */; };
 		EFB4AF8116F99BDF0022ACB2 /* FMDatabaseQueue+Default.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB4AF7F16F99BDF0022ACB2 /* FMDatabaseQueue+Default.h */; };
 		EFB4AF8216F99BDF0022ACB2 /* FMDatabaseQueue+Default.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB4AF7F16F99BDF0022ACB2 /* FMDatabaseQueue+Default.h */; };
 		EFB4AF8316F99BDF0022ACB2 /* FMDatabaseQueue+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB4AF8016F99BDF0022ACB2 /* FMDatabaseQueue+Default.m */; };
@@ -1677,6 +1687,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EF6B3ED416C3A83C006CD7A0;
 			remoteInfo = NVSlideMenuController;
+		};
+		EF81933B1755E791008D1FC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF81931B1755E5D3008D1FC3;
+			remoteInfo = APSplitViewController;
 		};
 		EFD727221668688000A2FE60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2393,6 +2410,14 @@
 		EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNVSlideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6B3EE516C3A882006CD7A0 /* NVSlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NVSlideMenuController.h; path = NVSlideMenuController/NVSlideMenuController.h; sourceTree = "<group>"; };
 		EF6B3EE616C3A882006CD7A0 /* NVSlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NVSlideMenuController.m; path = NVSlideMenuController/NVSlideMenuController.m; sourceTree = "<group>"; };
+		EF8193271755E5D3008D1FC3 /* libAPSplitViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAPSplitViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF81932C1755E613008D1FC3 /* APNavigationControllerForSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNavigationControllerForSplitController.h; sourceTree = "<group>"; };
+		EF81932D1755E613008D1FC3 /* APNavigationControllerForSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNavigationControllerForSplitController.m; sourceTree = "<group>"; };
+		EF81932E1755E613008D1FC3 /* APSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSplitViewController.h; sourceTree = "<group>"; };
+		EF81932F1755E613008D1FC3 /* APSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSplitViewController.m; sourceTree = "<group>"; };
+		EF8193301755E613008D1FC3 /* APTabBarControllerForSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTabBarControllerForSplitController.h; sourceTree = "<group>"; };
+		EF8193311755E613008D1FC3 /* APTabBarControllerForSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTabBarControllerForSplitController.m; sourceTree = "<group>"; };
+		EF8193391755E657008D1FC3 /* APSplitViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = APSplitViewController.bundle; sourceTree = "<group>"; };
 		EFB4AF7F16F99BDF0022ACB2 /* FMDatabaseQueue+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabaseQueue+Default.h"; sourceTree = "<group>"; };
 		EFB4AF8016F99BDF0022ACB2 /* FMDatabaseQueue+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabaseQueue+Default.m"; sourceTree = "<group>"; };
 		EFD7270916685D0700A2FE60 /* libRNTextStatistics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTextStatistics.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2751,6 +2776,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF81933A1755E784008D1FC3 /* libAPSplitViewController.a in Frameworks */,
 				EF6B3EEB16C3A8BA006CD7A0 /* libNVSlideMenuController.a in Frameworks */,
 				EFD7271B16685F3D00A2FE60 /* libRNTextStatistics.a in Frameworks */,
 				42A445F515C92B3B00A907F0 /* AudioToolbox.framework in Frameworks */,
@@ -2965,6 +2991,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF8193201755E5D3008D1FC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8193211755E5D3008D1FC3 /* UIKit.framework in Frameworks */,
+				EF8193221755E5D3008D1FC3 /* CoreGraphics.framework in Frameworks */,
+				EF8193231755E5D3008D1FC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFD7270416685D0700A2FE60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -3038,6 +3074,7 @@
 				EF62BD25167580F300209E31 /* libDejalActivityView.a */,
 				EF62BD451675831200209E31 /* libWCAlertView.a */,
 				EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */,
+				EF8193271755E5D3008D1FC3 /* libAPSplitViewController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3061,6 +3098,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* AdditionalLibrary_Prefix.pch */,
 				425260D8155791C900D4D689 /* ADLivelyTableView */,
+				EF81932B1755E613008D1FC3 /* APSplitViewController */,
 				42ABACB314147B4000537B39 /* ASIHTTPRequest */,
 				42A445D315C9298A00A907F0 /* ATMHud */,
 				42F6636E13E9618E0068F7CF /* AudioStreamer */,
@@ -4813,6 +4851,20 @@
 			name = NVSlideMenuController;
 			sourceTree = "<group>";
 		};
+		EF81932B1755E613008D1FC3 /* APSplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF8193391755E657008D1FC3 /* APSplitViewController.bundle */,
+				EF81932C1755E613008D1FC3 /* APNavigationControllerForSplitController.h */,
+				EF81932D1755E613008D1FC3 /* APNavigationControllerForSplitController.m */,
+				EF81932E1755E613008D1FC3 /* APSplitViewController.h */,
+				EF81932F1755E613008D1FC3 /* APSplitViewController.m */,
+				EF8193301755E613008D1FC3 /* APTabBarControllerForSplitController.h */,
+				EF8193311755E613008D1FC3 /* APTabBarControllerForSplitController.m */,
+			);
+			path = APSplitViewController;
+			sourceTree = "<group>";
+		};
 		EFBA213916F6C64C0018AF8B /* FMDatabase */ = {
 			isa = PBXGroup;
 			children = (
@@ -5682,6 +5734,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF81931E1755E5D3008D1FC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8193331755E613008D1FC3 /* APNavigationControllerForSplitController.h in Headers */,
+				EF8193351755E613008D1FC3 /* APSplitViewController.h in Headers */,
+				EF8193371755E613008D1FC3 /* APTabBarControllerForSplitController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFD726FE16685D0700A2FE60 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -6236,6 +6298,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EF81933C1755E791008D1FC3 /* PBXTargetDependency */,
 				EF6B3EEA16C3A8B0006CD7A0 /* PBXTargetDependency */,
 				EF62BD51167583DA00209E31 /* PBXTargetDependency */,
 				EF62BD53167583DA00209E31 /* PBXTargetDependency */,
@@ -6489,6 +6552,23 @@
 			productReference = EF6B3EE116C3A83C006CD7A0 /* libNVSlideMenuController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		EF81931B1755E5D3008D1FC3 /* APSplitViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8193241755E5D3008D1FC3 /* Build configuration list for PBXNativeTarget "APSplitViewController" */;
+			buildPhases = (
+				EF81931C1755E5D3008D1FC3 /* Sources */,
+				EF81931E1755E5D3008D1FC3 /* Headers */,
+				EF8193201755E5D3008D1FC3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APSplitViewController;
+			productName = ZipArchive;
+			productReference = EF8193271755E5D3008D1FC3 /* libAPSplitViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		EFD726FC16685D0700A2FE60 /* RNTextStatistics */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFD7270616685D0700A2FE60 /* Build configuration list for PBXNativeTarget "RNTextStatistics" */;
@@ -6578,6 +6658,7 @@
 				C43916871590EB31001DBE24 /* YTFramework */,
 				EF62BD381675831200209E31 /* WCAlertView */,
 				EF6B3ED416C3A83C006CD7A0 /* NVSlideMenuController */,
+				EF81931B1755E5D3008D1FC3 /* APSplitViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -7544,6 +7625,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF81931C1755E5D3008D1FC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8193341755E613008D1FC3 /* APNavigationControllerForSplitController.m in Sources */,
+				EF8193361755E613008D1FC3 /* APSplitViewController.m in Sources */,
+				EF8193381755E613008D1FC3 /* APTabBarControllerForSplitController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFD726FD16685D0700A2FE60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7761,6 +7852,11 @@
 			isa = PBXTargetDependency;
 			target = EF6B3ED416C3A83C006CD7A0 /* NVSlideMenuController */;
 			targetProxy = EF6B3EE916C3A8B0006CD7A0 /* PBXContainerItemProxy */;
+		};
+		EF81933C1755E791008D1FC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF81931B1755E5D3008D1FC3 /* APSplitViewController */;
+			targetProxy = EF81933B1755E791008D1FC3 /* PBXContainerItemProxy */;
 		};
 		EFD727231668688000A2FE60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -9147,6 +9243,33 @@
 			};
 			name = Release;
 		};
+		EF8193251755E5D3008D1FC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = APSplitViewController;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF8193261755E5D3008D1FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = APSplitViewController;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		EFD7270716685D0700A2FE60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9589,6 +9712,15 @@
 			buildConfigurations = (
 				EF6B3EDF16C3A83C006CD7A0 /* Debug */,
 				EF6B3EE016C3A83C006CD7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8193241755E5D3008D1FC3 /* Build configuration list for PBXNativeTarget "APSplitViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8193251755E5D3008D1FC3 /* Debug */,
+				EF8193261755E5D3008D1FC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

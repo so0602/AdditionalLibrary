@@ -50,6 +50,8 @@
 
 // Other
 #import "ADLivelyTableView.h"
+#import "APSplitViewController.h"
+#import "APTabBarControllerForSplitController.h"
 #import "ATMHud.h"
 #import "ATMHudQueueItem.h"
 #import "AudioStreamer.h"

@@ -976,6 +976,9 @@
 		
 	} else {
 		[_viewControllers addObject:newMaster];
+        if( master ){
+            [self addChildViewController:master];
+        }
 	}
 	
 	if (changed) {
