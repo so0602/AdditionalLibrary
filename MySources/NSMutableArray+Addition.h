@@ -2,6 +2,9 @@
 
 @interface NSMutableArray (Addition)
 
+-(void)addNilObject:(id)obj;
+-(void)addNilObjectsFromArray:(NSArray *)otherArray;
+
 #pragma mark - Filtering
 
 -(void)filterWithMatch:(NSString*)match;

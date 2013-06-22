@@ -44,6 +44,7 @@
     __block void(^completion)(BOOL result) = c;
     
     [self inDatabase:^(FMDatabase *db) {
+        NSLog(@"\n========== SQL Statement ==========\n\n%@\n\n========== SQL Statement ==========", statement);
         BOOL result = [db executeUpdate:statement];
         
         if( completion ){

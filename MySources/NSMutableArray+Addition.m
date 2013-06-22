@@ -8,6 +8,18 @@
 
 @implementation NSMutableArray (Addition)
 
+-(void)addNilObject:(id)obj{
+    if( obj ){
+        [self addObject:obj];
+    }
+}
+
+-(void)addNilObjectsFromArray:(NSArray *)otherArray{
+    if( otherArray ){
+        [self addObjectsFromArray:otherArray];
+    }
+}
+
 #pragma mark - Filtering
 
 -(void)filterWithMatch:(NSString*)match{
