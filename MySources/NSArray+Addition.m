@@ -9,10 +9,16 @@
 @implementation NSArray (Addition)
 
 -(id)firstObject{
+    if( self.count == 0 ){
+        return nil;
+    }
 	return [self objectAtIndex:0];
 }
 
 -(id)lastSecondObject{
+    if( self.count == 0 ){
+        return nil;
+    }
 	return [self objectAtIndex:self.count - 2];
 }
 
@@ -135,7 +141,7 @@
 	FMResultSet* rs = nil;
 	
 	NSMutableString* sql = [NSString stringWithFormat:@"create table if not exists %@ (%@);", tableName, [[firstDict allKeys] componentsJoinedByString:@","]];
-	//	NSLog(@"SQL: %@", sql);
+    NSLog(@"SQL: %@, columns: %d", sql, firstDict.allKeys.count);
 	rs = [database executeQuery:sql];
 	[rs next];
 	
@@ -154,6 +160,7 @@
 	if( self.count % MAX_EACH_COUNT != 0 ) count += 1;
 	NSLog(@"self.count: %d", self.count);
 	
+    NSArray* allKeys = nil;
 	for( int i = 0; i < count; i++ ){
 		NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 		{
@@ -189,8 +196,10 @@
 				[sql appendFormat:@"insert into %@ select ", tableName];
 				NSDictionary* firstDict = [array objectAtIndex:0];
 				NSMutableArray* values = [NSMutableArray array];
-				
-				for( NSString* key in [firstDict allKeys] ){
+                if( !allKeys ){
+                    allKeys = [firstDict.allKeys retain];
+                }
+				for( NSString* key in allKeys ){
 					NSObject* obj = [firstDict objectForKey:key];
 					NSString* value = [NSString stringWithFormat:@"'%@' AS '%@'",
 											 [obj isKindOfClass:[NSString class]] ?
@@ -205,7 +214,7 @@
 					firstDict = [array objectAtIndex:j];
 					[values removeAllObjects];
 					values = [NSMutableArray array];
-					for( NSString* key in [firstDict allKeys] ){
+					for( NSString* key in allKeys ){
 						NSObject* obj = [firstDict objectForKey:key];
 						NSString* value = [NSString stringWithFormat:@"'%@'",
 												 [obj isKindOfClass:[NSString class]] ?
@@ -222,6 +231,7 @@
 		}
 		[pool drain];
 	}
+    [allKeys release];
 	
 	return TRUE;
 }

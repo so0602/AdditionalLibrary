@@ -8,6 +8,18 @@
 
 @implementation NSMutableArray (Addition)
 
+-(BOOL)addNilObject:(id)object{
+    if( !object ) return FALSE;
+    [self addObject:object];
+    return TRUE;
+}
+
+-(BOOL)addNilObjectsFromArray:(NSArray*)array{
+    if( !array ) return FALSE;
+    [self addObjectsFromArray:array];
+    return TRUE;
+}
+
 #pragma mark - Filtering
 
 -(void)filterWithMatch:(NSString*)match{
