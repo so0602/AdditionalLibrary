@@ -22,7 +22,16 @@ NSString* BundleVersion(){
 }
 
 NSString* UDID(){
-	return CurrentDevice().uniqueIdentifier ? [UIDevice currentDevice].uniqueIdentifier : NOT_ENOUGH_UDID;
+    SEL selector = @selector(uniqueIdentifier);
+    NSString* udid = NOT_ENOUGH_UDID;
+    if( RespondsToSelector(CurrentDevice(), selector) ){
+        udid = [CurrentDevice() performSelector:selector];
+        if( udid.length == 0 ){
+            udid = NOT_ENOUGH_UDID;
+        }
+    }
+    return udid;
+//	return CurrentDevice().uniqueIdentifier ? [UIDevice currentDevice].uniqueIdentifier : NOT_ENOUGH_UDID;
 }
 
 NSString* CFUDID(){

@@ -2,8 +2,13 @@
 
 @interface NSMutableArray (Addition)
 
+<<<<<<< HEAD
 -(void)addNilObject:(id)obj;
 -(void)addNilObjectsFromArray:(NSArray *)otherArray;
+=======
+-(BOOL)addNilObject:(id)object;
+-(BOOL)addNilObjectsFromArray:(NSArray*)array;
+>>>>>>> 9f6c858dc5de59de0f4be34325c5ffe4ed27bb9b
 
 #pragma mark - Filtering
 

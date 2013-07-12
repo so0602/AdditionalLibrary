@@ -8,6 +8,7 @@
 
 @implementation NSMutableArray (Addition)
 
+<<<<<<< HEAD
 -(void)addNilObject:(id)obj{
     if( obj ){
         [self addObject:obj];
@@ -18,6 +19,18 @@
     if( otherArray && [otherArray isKindOfClass:[NSArray class]] ){
         [self addObjectsFromArray:otherArray];
     }
+=======
+-(BOOL)addNilObject:(id)object{
+    if( !object ) return FALSE;
+    [self addObject:object];
+    return TRUE;
+}
+
+-(BOOL)addNilObjectsFromArray:(NSArray*)array{
+    if( !array ) return FALSE;
+    [self addObjectsFromArray:array];
+    return TRUE;
+>>>>>>> 9f6c858dc5de59de0f4be34325c5ffe4ed27bb9b
 }
 
 #pragma mark - Filtering
