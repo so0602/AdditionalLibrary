@@ -15,7 +15,7 @@
 }
 
 -(void)addNilObjectsFromArray:(NSArray *)otherArray{
-    if( otherArray ){
+    if( otherArray && [otherArray isKindOfClass:[NSArray class]] ){
         [self addObjectsFromArray:otherArray];
     }
 }

@@ -9,11 +9,17 @@
 @implementation NSArray (Addition)
 
 -(id)firstObject{
-	return [self objectAtIndex:0];
+    if( self.count ){
+        return [self objectAtIndex:0];
+    }
+	return nil;
 }
 
 -(id)lastSecondObject{
-	return [self objectAtIndex:self.count - 2];
+    if( self.count ){
+        return [self objectAtIndex:self.count - 2];
+    }
+	return nil;
 }
 
 #pragma mark - Filtering
