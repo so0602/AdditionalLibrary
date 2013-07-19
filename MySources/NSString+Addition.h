@@ -32,6 +32,10 @@
 
 -(NSString*)trimEndNewline;
 
+-(BOOL)contains:(NSString*)string;
+-(BOOL)beginsWith:(NSString*)string;
+-(BOOL)endsWith:(NSString*)string;
+
 @property (nonatomic, readonly) NSString* mimeType;
 
 @end

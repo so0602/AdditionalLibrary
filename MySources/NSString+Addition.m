@@ -99,6 +99,27 @@
 	return self;
 }
 
+-(BOOL)contains:(NSString*)string{
+    BOOL result = FALSE;
+    result = [self rangeOfString:string].location != NSNotFound;
+    return result;
+}
+
+-(BOOL)beginsWith:(NSString*)string{
+    BOOL result = FALSE;
+    result = [self rangeOfString:string].location == 0;
+    return result;
+}
+
+-(BOOL)endsWith:(NSString*)string{
+    BOOL result = FALSE;
+    NSRange range = [self rangeOfString:string];
+    if( range.location != NSNotFound ){
+        result = (range.location + range.length) == self.length;
+    }
+    return result;
+}
+
 -(NSString*)mimeType{
 	return [NSFileManager mimeTypeForFileAtPath:self];
 }
