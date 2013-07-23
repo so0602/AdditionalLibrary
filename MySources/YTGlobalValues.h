@@ -78,6 +78,8 @@ extern "C"
 	UIImage* LocalImage(NSString* imageName, NSString* imageType);
 	UIImage* MixImage(NSArray* images, CGSize size, AlignmentType verticalAlignment, AlignmentType horizontalAlignment);
 	UIImage* Capture(UIView* view);
+    
+    void ShowAllFonts();
 	
 #ifdef __cplusplus
 }
