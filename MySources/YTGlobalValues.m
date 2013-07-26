@@ -350,7 +350,8 @@ UIImage* MixImage(NSArray* images, CGSize size, AlignmentType verticalAlignment,
 }
 
 UIImage* Capture(UIView* view){
-	UIGraphicsBeginImageContext(view.frame.size);
+    CGSize size = view.frame.size;
+    UIGraphicsBeginImageContextWithOptions(size, FALSE, 0.0);
 	[view.layer renderInContext:UIGraphicsGetCurrentContext()];
 	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
